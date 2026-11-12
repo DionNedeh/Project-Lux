@@ -117,6 +117,45 @@ test('Keyboard entry, reduced motion, and custom 404',async({page})=>{
   await expect(page).toHaveURL(/library\/index.html/);
 });
 
+test('Field grid visibly flows inside a stationary diagram, pauses, and stops off-screen',async({page})=>{
+  await page.emulateMedia({reducedMotion:'no-preference'});
+  await page.goto('');
+  const scene=page.locator('.plasma-scene');
+  await scene.scrollIntoViewIfNeeded();
+  await expect(scene).toHaveClass(/motion-running/);
+  const initialBounds=await scene.boundingBox();
+  const before=await scene.screenshot();
+  await page.waitForTimeout(800);
+  expect((await scene.screenshot()).equals(before)).toBe(false);
+  expect(await scene.boundingBox()).toEqual(initialBounds);
+  await expect(page.locator('.plasma-art')).toHaveCSS('transform','none');
+  await page.getByRole('button',{name:'Pause motion',exact:true}).click();
+  await expect(scene).not.toHaveClass(/motion-running/);
+  const stopped=await scene.screenshot();
+  await page.waitForTimeout(300);
+  expect((await scene.screenshot()).equals(stopped)).toBe(true);
+  await page.getByRole('button',{name:'Play motion',exact:true}).click();
+  await expect(scene).toHaveClass(/motion-running/);
+  await page.locator('.site-footer').scrollIntoViewIfNeeded();
+  await expect(scene).not.toHaveClass(/motion-running/);
+});
+
+test('Conceptual field respects reduced motion and live preference changes',async({page})=>{
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await page.goto('');
+  await expect(page.locator('.field-grid-canvas')).toBeHidden();
+  await expect(page.locator('.field-body')).toBeVisible();
+  await expect(page.getByRole('button',{name:'Reduced motion enabled'})).toBeDisabled();
+  await expect(page.locator('.plasma-scene')).not.toHaveClass(/motion-running/);
+  await page.emulateMedia({reducedMotion:'no-preference'});
+  await expect(page.locator('.plasma-scene')).toHaveClass(/motion-running/);
+  await expect(page.locator('.field-grid-canvas')).toBeVisible();
+  await expect(page.getByRole('button',{name:'Pause motion',exact:true})).toBeEnabled();
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await expect(page.locator('.field-grid-canvas')).toBeHidden();
+  await expect(page.locator('.field-body')).toBeVisible();
+});
+
 test('No-script reading remains complete',async({browser,baseURL})=>{
   const context=await browser.newContext({javaScriptEnabled:false,baseURL});
   const page=await context.newPage();

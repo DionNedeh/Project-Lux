@@ -14,6 +14,7 @@ import posixpath
 import re
 import shutil
 import sys
+import xml.etree.ElementTree as ET
 from urllib.parse import quote, urlsplit
 
 from bs4 import BeautifulSoup
@@ -228,6 +229,22 @@ def build_catalogue(docs):
 
 def build_home(docs,refs):
     raw=(ROOT/'templates/home.html').read_text(encoding='utf-8')
+    # Preserve the original SVG as the accessible, static fallback for the moving grid.
+    field=ET.fromstring((ROOT/'assets/field.svg').read_text(encoding='utf-8'))
+    ns='{http://www.w3.org/2000/svg}'
+    ET.register_namespace('',ns[1:-1])
+    field.attrib.update({'class':'plasma-art','role':'img','aria-labelledby':'field-title','width':'600','height':'540'})
+    title=ET.Element(ns+'title',{'id':'field-title'})
+    title.text='An abstract toroidal field drawn in fine amber and copper lines, surrounding a luminous center.'
+    field.insert(0,title)
+    body=ET.Element(ns+'g',{'class':'field-body'})
+    curves=field.findall(ns+'polyline')
+    insert_at=list(field).index(curves[0])
+    for curve in curves:
+        field.remove(curve)
+        body.append(curve)
+    field.insert(insert_at,body)
+    raw=raw.replace('<!-- MOVING_FIELD -->',ET.tostring(field,encoding='unicode'))
     raw=re.sub(r'<!-- LIBRARY_ROWS_START -->.*?<!-- LIBRARY_ROWS_END -->','\n'.join(featured_row(r) for r in refs),raw,flags=re.S)
     raw=raw.replace('Design draft · 11 November 2026','A Voelori research resource').replace('CURATED DRAFT SELECTION','FEATURED RESEARCH')
     raw=raw.replace('The draft reflects those records, not a comprehensive November research update.','These summaries reflect those records; publication is not a new scientific validation.')

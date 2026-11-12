@@ -13,3 +13,18 @@
 @media print{.site-header,.site-footer,.doc-nav,.backlinks,.topic-links,.doc-toc{display:none!important}.wrap{width:100%;max-width:none}.doc-head{background:none;padding:0 0 20px}.doc-body{padding-top:20px}.table-wrap{overflow:visible}.prose table{font-size:10pt}.prose p,.prose li{font-size:11pt;color:#000}.prose h2{break-after:avoid}.source-box{break-inside:avoid}}
 /* Keep small step labels legible on the selected tab background. */
 .stage-buttons button span{color:#843b22}
+
+/* Only the grid flows: the torus projection, glow and reference marks stay fixed. */
+.plasma-scene{position:relative;isolation:isolate}
+.plasma-scene .plasma-art{margin-block:0}
+.field-grid-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;display:none}
+.motion-ready .field-grid-canvas{display:block}
+.motion-ready .field-body{visibility:hidden}
+.motion-tools{display:flex;justify-content:flex-end;margin:16px 18px 0;min-height:32px}
+.motion-toggle{display:inline-flex;align-items:center;gap:8px;min-height:32px;border:1px solid #cfbda3;border-radius:18px;background:transparent;color:#79432e;font:inherit;font-size:.64rem;padding:6px 12px;cursor:pointer}
+.motion-toggle::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor}
+.motion-toggle:hover{background:#eee2ce}
+.motion-toggle:disabled{cursor:default;color:#796552}
+@media(max-width:740px){.plasma-scene{margin-block:-10px}.motion-tools{margin-inline:0}}
+@media(prefers-reduced-motion:reduce){.field-grid-canvas{display:none!important}.field-body{visibility:visible!important}}
+@media print{.field-grid-canvas,.motion-tools{display:none!important}.field-body{visibility:visible!important}}
