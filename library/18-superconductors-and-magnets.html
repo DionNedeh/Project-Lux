@@ -1,0 +1,302 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Superconductors and Magnet Engineering — Project Lux</title><meta name="description" content="Project Lux · The component that changed fusion&#x27;s economics, and what it takes to build one"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/18-superconductors-and-magnets.html"><meta property="og:title" content="Superconductors and Magnet Engineering — Project Lux"><meta property="og:description" content="Project Lux · The component that changed fusion&#x27;s economics, and what it takes to build one"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/18-superconductors-and-magnets.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Synthesis</p><p class="eyebrow">Synthesis · Document 18</p><h1 id="doc-title">Superconductors and Magnet Engineering</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Synthesis</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-11-02">2 November 2026</time></dd></div><div><dt>First written</dt><dd>25 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=engineering">engineering</a><a href="index.html?topic=magnets">magnets</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#1-why-the-magnet-is-the-machine">1. Why the magnet is the machine</a></li><li><a href="#2-the-three-conductor-generations">2. The three conductor generations</a></li><li><a href="#3-how-rebco-tape-is-actually-made--and-why-supply-is-tight">3. How REBCO tape is actually made — and why supply is tight</a></li><li><a href="#4-from-tape-to-cable-the-architectures">4. From tape to cable: the architectures</a></li><li><a href="#5-insulation-or-the-deliberate-absence-of-it">5. Insulation, or the deliberate absence of it</a></li><li><a href="#6-quench-the-failure-mode">6. Quench: the failure mode</a></li><li><a href="#7-radiation--the-unretired-risk">7. Radiation — the unretired risk</a></li><li><a href="#8-cryogenics--the-system-nobody-mentions">8. Cryogenics — the system nobody mentions</a></li><li><a href="#9-where-magnet-technology-stands-august-2026">9. Where magnet technology stands, August 2026</a></li><li><a href="#evidence-in-raw">Evidence in raw/</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><em>Project Lux · The component that changed fusion's economics, and what it takes to build one</em></p>
+<hr/>
+<h2 id="1-why-the-magnet-is-the-machine">1. Why the magnet is the machine<a aria-hidden="true" class="heading-link" href="#1-why-the-magnet-is-the-machine" tabindex="-1" title="Link to this section">#</a></h2>
+<p>For a magnetically confined reactor, fusion power density scales as <strong>β²B⁴</strong>. <a href="plasma-beta.html">Beta</a> is bounded by MHD stability at a few percent for tokamaks. So <strong>the magnet sets the machine.</strong></p>
+<p>Everything downstream follows from the field strength you can generate: the plasma volume you need, the building you need to put it in, the amount of steel and concrete, the construction schedule, and therefore the capital cost. A machine that can run at twice the field can, in principle, do the same job at one-sixteenth the plasma volume.</p>
+<p>This is why the single most consequential event in fusion between 2010 and 2022 was not a plasma result. It was a <strong>magnet test</strong>: CFS and MIT reaching <strong>20 tesla</strong> on a large-bore REBCO model coil on 5 September 2021.</p>
+<hr/>
+<h2 id="2-the-three-conductor-generations">2. The three conductor generations<a aria-hidden="true" class="heading-link" href="#2-the-three-conductor-generations" tabindex="-1" title="Link to this section">#</a></h2>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Generation</th>
+<th scope="col">Material</th>
+<th scope="col">Practical field limit</th>
+<th scope="col">Operating temperature</th>
+<th scope="col">Where used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Copper</strong> (resistive)</td>
+<td>Cu, or Cu with Bitter plates</td>
+<td>~20 T, pulsed only</td>
+<td>Room temp / water-cooled</td>
+<td><a href="diii-d.html">DIII-D</a>, <a href="alcator-c-mod.html">Alcator C-Mod</a>, <a href="jet.html">JET</a>, <a href="st40.html">ST40</a></td>
+</tr>
+<tr>
+<td><strong>LTS</strong> (low-temperature superconductor)</td>
+<td>NbTi, Nb₃Sn</td>
+<td><strong>~12–13 T</strong> on conductor</td>
+<td><strong>4.5 K</strong></td>
+<td><a href="iter.html">ITER</a>, W7-X, <a href="jt-60sa.html">JT-60SA</a>, <a href="east.html">EAST</a>, <a href="kstar.html">KSTAR</a></td>
+</tr>
+<tr>
+<td><strong>HTS</strong> (high-temperature superconductor)</td>
+<td><strong>REBCO</strong> tape</td>
+<td><strong>&gt;20 T</strong> demonstrated</td>
+<td>4–20 K (usable at 77 K at low field)</td>
+<td><a href="sparc.html">SPARC</a>/<a href="arc.html">ARC</a>, <a href="wham.html">WHAM</a>, Demo4, <a href="hh70.html">HH70</a>, Thea, Type One</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="copper">Copper<a aria-hidden="true" class="heading-link" href="#copper" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Simple and cheap, and it dissipates ohmic power continuously — megawatts to hundreds of megawatts. Fine for a pulsed research device; impossible for a power plant, because the magnets would consume more power than the plasma produces. Every copper-magnet <a href="tokamak.html">Tokamak</a> is, by construction, a physics experiment rather than a reactor prototype.</p>
+<h3 id="lts-nbti-and-nb₃sn">LTS: NbTi and Nb₃Sn<a aria-hidden="true" class="heading-link" href="#lts-nbti-and-nb₃sn" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>NbTi</strong> is ductile, cheap and well understood, usable to about 9 T. <strong>Nb₃Sn</strong> reaches 12–13 T but is <strong>brittle</strong> — it must be wound in a ductile precursor state and then <em>reacted</em> by heat treatment at ~650 °C for days, after which the coil cannot be bent without cracking the superconductor. This "wind-and-react" constraint dictates the entire manufacturing sequence of an ITER-class magnet.</p>
+<p>ITER consumed roughly <strong>100,000 km of Nb₃Sn strand</strong> — enough to circle the Earth 2.5 times — and building it <strong>increased world Nb₃Sn production capacity by roughly an order of magnitude</strong>. That industrial legacy now benefits the private sector directly, and it is arguably ITER's most durable contribution.</p>
+<h3 id="hts-rebco">HTS: REBCO<a aria-hidden="true" class="heading-link" href="#hts-rebco" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Rare-Earth Barium Copper Oxide</strong> (typically YBCO or GdBCO). Not a wire but a <strong>tape</strong>: a ~1 μm superconducting layer deposited on a buffered metal substrate, capped with silver and copper, typically 4 or 12 mm wide and ~0.1 mm thick.</p>
+<p>Its critical property is not the high transition temperature (~90 K) — fusion magnets run cold anyway. It is that <strong>REBCO retains enormous current density in enormous magnetic fields</strong>, well past where Nb₃Sn quenches. Operating at 20 K rather than 4.5 K is a secondary but real benefit: the specific heat of materials is orders of magnitude higher at 20 K, which gives a magnet far more thermal margin against a local disturbance.</p>
+<hr/>
+<h2 id="3-how-rebco-tape-is-actually-made--and-why-supply-is-tight">3. How REBCO tape is actually made — and why supply is tight<a aria-hidden="true" class="heading-link" href="#3-how-rebco-tape-is-actually-made--and-why-supply-is-tight" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The superconducting layer must be <strong>biaxially textured</strong>: its crystal grains aligned in all three axes, because REBCO carries almost no current across a misaligned grain boundary. Achieving that on a flexible metal tape is the whole manufacturing problem.</p>
+<p>Two routes to the textured template:</p>
+<ul>
+<li><strong>IBAD</strong> (Ion Beam Assisted Deposition) — an ion beam sputters a buffer layer at a grazing angle, preferentially destroying misaligned grains</li>
+<li><strong>RABiTS</strong> (Rolling Assisted Biaxially Textured Substrates) — texture the metal substrate itself by rolling and annealing, then epitaxially grow buffers on it</li>
+</ul>
+<p>Two main routes to depositing the REBCO layer itself:</p>
+<ul>
+<li><strong>PLD</strong> (Pulsed Laser Deposition) — a laser ablates a REBCO target onto the moving tape. High quality, and the dominant route among top-tier producers</li>
+<li><strong>MOCVD</strong> (Metal-Organic Chemical Vapour Deposition) — higher throughput, chemically finicky</li>
+</ul>
+<p>The result is a multi-layer vapour-deposition process running on a continuously moving substrate, requiring uniformity along kilometres of tape, with performance quoted as critical current per centimetre-width at a given field and temperature.</p>
+<p><strong>Global capacity is around 10,000 km/year.</strong> The top PLD-based manufacturers each produce over 3,000 km-of-12mm annually, together exceeding half of world output, and <strong>China holds substantial manufacturing strength</strong>. A single high-field tokamak consumes thousands of kilometres. This is the sector's tightest physical bottleneck.</p>
+<p><strong>The 2026 responses:</strong></p>
+<ul>
+<li><strong><a href="arpa-e.html">ARPA-E</a> SCALEUP awarded <a href="thea-energy.html">Thea Energy</a> $20 million (July 2026)</strong> to establish <strong>the first US production line for modular HTS magnets</strong></li>
+<li><strong>CFS began selling magnets as a merchant product in April 2026</strong>, starting with <a href="realta-fusion.html">Realta Fusion</a> — explicitly to create the aggregate demand that justifies tape-capacity investment</li>
+<li><strong><a href="tokamak-energy.html">Tokamak Energy</a></strong> sells magnets through its <strong>TE Magnetics</strong> division and won the <strong>£70 m <a href="step.html">STEP</a> magnet systems contract</strong></li>
+</ul>
+<hr/>
+<h2 id="4-from-tape-to-cable-the-architectures">4. From tape to cable: the architectures<a aria-hidden="true" class="heading-link" href="#4-from-tape-to-cable-the-architectures" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A single tape carries a few hundred amperes. A fusion magnet needs tens of kiloamperes. So tapes must be assembled into cables — and because REBCO is a flat, anisotropic tape rather than a round wire, this is genuinely hard. The cable must handle enormous Lorentz forces, allow helium cooling, permit current sharing between tapes, and tolerate bending during winding.</p>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Architecture</th>
+<th scope="col">Description</th>
+<th scope="col">Used by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VIPER</strong></td>
+<td>Stacks of HTS tape in channels within a copper former, soldered and VPI-impregnated, with a central cooling channel</td>
+<td><strong>CFS / MIT PSFC</strong></td>
+</tr>
+<tr>
+<td><strong>PIT VIPER</strong></td>
+<td>VIPER with <strong>internal electrical insulation partitioning each tape stack</strong>, and a <strong>fibre-optic sensor per stack</strong></td>
+<td><strong>CFS</strong> — for pulsed magnets</td>
+</tr>
+<tr>
+<td><strong>CORC</strong></td>
+<td><em>Conductor On Round Core</em> — tapes helically wound around a round former. High engineering current density; good tolerance to transverse compression and bending</td>
+<td>Various; attractive for fusion</td>
+</tr>
+<tr>
+<td><strong>Twisted stacked-tape cable</strong></td>
+<td>Stacks twisted along the cable axis to equalise flux linkage</td>
+<td>Research</td>
+</tr>
+<tr>
+<td><strong>Roebel</strong></td>
+<td>Tapes punched and interleaved in a transposed pattern</td>
+<td>Accelerator and fusion research</td>
+</tr>
+<tr>
+<td><strong>STARS</strong></td>
+<td>Simple-stacked, non-insulated conductor</td>
+<td><strong><a href="helical-fusion.html">Helical Fusion</a></strong> (Japan)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>VIPER's published specification: 45.6 kA at 10 K and 10.9 T.</strong></p>
+<p>A notable milestone: the <strong>first non-planar REBCO <a href="stellarator.html">Stellarator</a> coil</strong> was built using VIPER cable — demonstrating that HTS can be wound into the 3D geometries that stellarators require, which had been a serious open question for the private stellarator sector.</p>
+<p>The alternative is to avoid non-planar winding. <a href="canis.html">Canis</a> used <strong>nine planar REBCO shaping coils assembled from 45 double pancakes</strong>, with tape from three suppliers. At 20 K, closed-loop control reproduced two static field patterns with 0.56% and 0.60% RMS error. This is a manufacturing and magnet-control proof of concept, not a stellarator-plasma result; see <a href="prototyping-test-canis-hts-planar-coil-array.html">Prototyping and Test of the Canis HTS Planar Coil Array for Stellarator Field Shaping</a>.</p>
+<hr/>
+<h2 id="5-insulation-or-the-deliberate-absence-of-it">5. Insulation, or the deliberate absence of it<a aria-hidden="true" class="heading-link" href="#5-insulation-or-the-deliberate-absence-of-it" tabindex="-1" title="Link to this section">#</a></h2>
+<p>This is the most conceptually interesting choice in HTS magnet design.</p>
+<h3 id="the-no-insulation-idea">The no-insulation idea<a aria-hidden="true" class="heading-link" href="#the-no-insulation-idea" tabindex="-1" title="Link to this section">#</a></h3>
+<p>In a conventional magnet, turns are electrically insulated so current follows the winding path. In a <strong>no-insulation (NI)</strong> coil, adjacent turns are in electrical contact. Current normally follows the spiral path (lowest impedance), but if a local defect or hot spot appears, <strong>current simply bypasses it radially through the neighbouring turns</strong>.</p>
+<p>The result is a magnet that is <strong>self-protecting</strong>: it routes around damage rather than quenching catastrophically. For a device storing gigajoules, this is a profound advantage.</p>
+<p><strong>CFS's NINT</strong> — <em>no-insulation, no-twist</em> — was proven in the <strong>2021 TFMC 20 T test</strong>. It suits <strong>steady-state</strong> magnets operating at unvarying current, such as a tokamak's toroidal field coils.</p>
+<h3 id="the-cost-and-pit-viper">The cost, and PIT VIPER<a aria-hidden="true" class="heading-link" href="#the-cost-and-pit-viper" tabindex="-1" title="Link to this section">#</a></h3>
+<p>NI's weakness is the mirror of its strength: because current can move radially, the coil has slow, complex charging dynamics and does not respond cleanly to rapid current changes. That makes it unsuitable for <strong>pulsed</strong> magnets — central solenoids and poloidal field coils, which must ramp on second timescales.</p>
+<p>CFS's answer, announced as its "second breakthrough superconducting technology," is <strong>PIT VIPER</strong>: partition each stack of HTS tape with internal electrical insulation, restoring predictable pulsed behaviour, and then solve the protection problem a different way — <strong>give every stack its own fibre-optic cable</strong>. Light travelling through the fibre reveals a forming hot spot, and the machine can react <strong>in under a second</strong>.</p>
+<p>That pairing — NINT for the steady-state TF coils, PIT VIPER for the pulsed coils — is the current state of the art in fusion magnet design, and it is a good illustration of how the field solves problems: not with one universal answer but with two architectures matched to two duty cycles.</p>
+<hr/>
+<h2 id="6-quench-the-failure-mode">6. <a href="quench.html">Quench</a>: the failure mode<a aria-hidden="true" class="heading-link" href="#6-quench-the-failure-mode" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A <strong>quench</strong> is a local loss of superconductivity. The affected region becomes resistive, dissipates energy, heats, and the normal zone spreads. In a magnet storing gigajoules, an undetected quench concentrates that energy in a small volume and destroys the conductor.</p>
+<p><strong>HTS makes this harder, not easier.</strong> LTS magnets have a fast <strong>normal zone propagation velocity</strong> — metres per second — so a quench spreads quickly, distributes its energy, and is easy to detect by the voltage rise. REBCO's NZPV is of order <strong>centimetres per second</strong>. A hot spot can therefore reach destructive temperature while remaining electrically almost invisible.</p>
+<p>Detection approaches:</p>
+<ul>
+<li><strong>Voltage taps</strong> — the conventional method; too slow and too noisy for HTS alone</li>
+<li><strong>Fibre-optic sensing</strong> — distributed temperature and strain along the conductor. This is CFS's PIT VIPER approach</li>
+<li><strong>Acoustic emission</strong> — listening for the mechanical signature of a quench</li>
+<li><strong>Current-distribution monitoring</strong> — measuring how current redistributes among tapes. Demonstrated (<em>Scientific Reports</em>, 2022) to detect both quench <strong>and cumulative damage</strong>, which is the more useful capability for a magnet expected to last decades</li>
+<li><strong>No-insulation self-protection</strong>, as above</li>
+</ul>
+<p>DOE's roadmap makes this a formal deliverable: Challenge Area C's mid-term milestone includes <em>"qualify HTS magnet cables/coils and radiation-hard diagnostics."</em></p>
+<hr/>
+<h2 id="7-radiation--the-unretired-risk">7. Radiation — the unretired risk<a aria-hidden="true" class="heading-link" href="#7-radiation--the-unretired-risk" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Superconductors are crystalline materials, and neutron irradiation creates defects. In REBCO, the picture is not monotonic:</p>
+<ul>
+<li>Modest irradiation can <strong>improve</strong> performance, because defects act as flux-pinning centres that stop vortex motion</li>
+<li>Beyond a threshold fluence, the superconducting layer degrades and critical current falls irreversibly</li>
+<li><strong>The organic components fail first.</strong> Epoxy impregnation, insulation and solder joints degrade at fluences well below the superconductor's own limit</li>
+</ul>
+<p>For a compact high-field machine, the magnet sits close to the plasma with limited shielding space. In a <strong><a href="spherical-tokamak.html">spherical tokamak</a>'s centre column</strong>, there is barely room for the conductor, let alone shielding — which is the concept's central unsolved engineering problem.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>A worked instance, and the design does not currently clear its own limit
+<a href="st-e1-neutronics-crossref-metadata-2026.html">ST-E1's neutronics paper</a> — full text read
+2026-11-02 — sets a fast-flux limit to the <a href="rebco.html">HTS</a> of <strong>&lt; 4 × 10⁹ cm⁻² s⁻¹</strong> for 30
+full-power years, and reports a <strong>peak of 9.5 × 10⁹</strong>, about <strong>2.4× over</strong>, for an estimated
+<strong>13 fpy</strong>. A larger 2400 MW variant using tungsten boride at aspect ratio 2.31 reaches
+≈ 5.6 × 10⁹ and roughly <strong>25 fpy</strong>.</p>
+<p>Two things follow. First, this is the vault's only numerical magnet-lifetime shortfall
+published by a design team against its own criterion — evidence that the problem above is live,
+not rhetorical. Second, the abstract of the same paper describes the design as demonstrating
+feasibility of a 30-year life, so <strong>the shortfall is visible only in the full text</strong>. See
+<a href="st-e1.html">ST-E1</a>.</p>
+<p>The cryogenic side is tight too: <strong>18.5 kW</strong> of nuclear heating at 20 K against a <strong>20 kW</strong>
+budget — a 7.5% margin, of which the error-field correction coils alone take 9.8 kW.</p>
+</aside>
+<p>The DOE roadmap's near-term milestone is blunt about the state of knowledge: <strong>"Conduct REBCO irradiation campaigns to define magnet performance and standards."</strong></p>
+<p>Put plainly: <strong>an industry is being built around a conductor whose in-service radiation lifetime has not been established.</strong> Lawrence Berkeley's work on gas production in REBCO-based magnets under irradiation is part of closing that gap. This belongs on any honest risk list.</p>
+<hr/>
+<h2 id="8-cryogenics--the-system-nobody-mentions">8. Cryogenics — the system nobody mentions<a aria-hidden="true" class="heading-link" href="#8-cryogenics--the-system-nobody-mentions" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Superconducting magnets need to be cold, and keeping something cold in a machine designed to be extremely hot is a large industrial plant in its own right.</p>
+<p><strong>ITER's cryoplant, by the numbers:</strong></p>
+<div aria-label="Table 3 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col"></th>
+<th scope="col"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Facility area</td>
+<td><strong>5,400 m²</strong></td>
+</tr>
+<tr>
+<td>Equipment mass</td>
+<td><strong>~5,500 tonnes</strong></td>
+</tr>
+<tr>
+<td>Helium inventory</td>
+<td><strong>~25 tonnes</strong></td>
+</tr>
+<tr>
+<td>Distribution network</td>
+<td><strong>~5 km</strong> of pipes, pumps and valves</td>
+</tr>
+<tr>
+<td>Refrigerators</td>
+<td><strong>Three identical helium refrigerators in parallel</strong></td>
+</tr>
+<tr>
+<td>Total cooling capacity</td>
+<td><strong>75 kW at 4.5 K</strong> (−269 °C)</td>
+</tr>
+<tr>
+<td>Mass cooled</td>
+<td><strong>10,000 tonnes of superconducting magnets</strong>, plus thermal shields, cryopumps and diagnostics</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>This is one of the largest cryogenic installations in the world</strong>, and it exists purely as a support system.</p>
+<h3 id="why-it-matters-economically">Why it matters economically<a aria-hidden="true" class="heading-link" href="#why-it-matters-economically" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Removing heat at 4.5 K costs roughly <strong>250–1,000 W of room-temperature electrical power per watt removed</strong> (the Carnot penalty plus real inefficiency). So every watt of nuclear heating deposited in a cold magnet is amplified by two to three orders of magnitude in the plant's <a href="recirculating-power.html">recirculating power</a> budget.</p>
+<p>This is a direct argument for HTS beyond field strength: <strong>operating at 20 K instead of 4.5 K reduces the Carnot penalty by roughly a factor of four or five.</strong> It is one of the least-advertised advantages of the HTS transition and one of the more important ones for Q_eng.</p>
+<h3 id="vacuum">Vacuum<a aria-hidden="true" class="heading-link" href="#vacuum" tabindex="-1" title="Link to this section">#</a></h3>
+<p>ITER's vacuum system is comparably extreme — the cryostat is the largest stainless steel vacuum chamber ever built (30 m × 30 m, ~3,850 t), and pumping is done by <strong>cryopumps</strong>: large cryoadsorption panels cooled by supercritical helium at 4 K, which freeze gas onto their surfaces. <strong>Six torus cryopumps</strong> sit around the vacuum vessel, with <strong>two more on the cryostat</strong>, and they consume <strong>15% of the cryogenic power</strong> on their own.</p>
+<p>Cryopumps must periodically be regenerated — warmed to release trapped gas — which in a D-T machine means releasing a tritium-bearing gas load into the fuel cycle. Pumping, fuelling and tritium processing are one coupled system, not three.</p>
+<hr/>
+<h2 id="9-where-magnet-technology-stands-august-2026">9. Where magnet technology stands, August 2026<a aria-hidden="true" class="heading-link" href="#9-where-magnet-technology-stands-august-2026" tabindex="-1" title="Link to this section">#</a></h2>
+<div aria-label="Table 4 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Achievement</th>
+<th scope="col">Value</th>
+<th scope="col">Who</th>
+<th scope="col">When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Highest field on a confined fusion plasma</td>
+<td><strong>17 T</strong></td>
+<td>WHAM (UW-Madison / Realta)</td>
+<td>Jul 2024</td>
+</tr>
+<tr>
+<td>HTS model coil field</td>
+<td><strong>20 T</strong></td>
+<td>CFS / MIT (TFMC)</td>
+<td>Sep 2021</td>
+</tr>
+<tr>
+<td>Full tokamak-configuration HTS magnet</td>
+<td><strong>11.8 T, 7 MA-turns</strong></td>
+<td>Tokamak Energy (Demo4)</td>
+<td>2026</td>
+</tr>
+<tr>
+<td>First fully HTS tokamak</td>
+<td>Complete machine, built in ~2 years</td>
+<td><a href="energy-singularity.html">Energy Singularity</a> (HH70)</td>
+<td>2024</td>
+</tr>
+<tr>
+<td>VIPER cable rating</td>
+<td><strong>45.6 kA at 10 K, 10.9 T</strong></td>
+<td>CFS / MIT</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Largest LTS magnet system</td>
+<td><strong>51 GJ stored, ~10,000 t</strong></td>
+<td>ITER</td>
+<td>Complete 2026</td>
+</tr>
+<tr>
+<td>Largest superconducting magnet component tested</td>
+<td><strong>582-tonne magnet</strong> for <a href="best-tokamak.html">BEST</a></td>
+<td>China (<a href="asipp.html">ASIPP</a>)</td>
+<td>4 Aug 2026</td>
+</tr>
+<tr>
+<td>First non-planar REBCO stellarator coil</td>
+<td>—</td>
+<td>VIPER-based</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Planar HTS shaping-coil array</td>
+<td><strong>9 coils; 45 double pancakes; 20 K</strong></td>
+<td><a href="canis.html">Canis</a> / <a href="thea-energy.html">Thea Energy</a></td>
+<td>2025</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-strategic-read">The strategic read<a aria-hidden="true" class="heading-link" href="#the-strategic-read" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>HTS is the technology that made the current fusion boom possible.</strong> Every compact private tokamak, every private stellarator, and the mirror revival all depend on it. Without REBCO, the sector would look like it did in 2015.</p>
+<p><strong>Three risks remain unretired</strong>, and they are the ones to watch:</p>
+<ol>
+<li><strong>Supply.</strong> ~10,000 km/year globally, concentrated, against a fleet requirement orders of magnitude larger</li>
+<li><strong>Radiation lifetime.</strong> Not established. If REBCO or its insulation degrades faster than assumed, compact high-field machines need more shielding, which means bigger machines, which erases much of the advantage</li>
+<li><strong>Quench protection at scale.</strong> Demonstrated on model coils; not yet demonstrated on a full magnet system in a machine that has run for years</li>
+</ol>
+<p>The magnet is no longer the reason fusion cannot work. It is now one of the reasons it might be expensive.</p>
+<h2 id="evidence-in-raw">Evidence in <code>raw/</code><a aria-hidden="true" class="heading-link" href="#evidence-in-raw" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Primary sources held in this vault that evidence the claims above:</p>
+<ul>
+<li><a href="sparc-toroidal-field-model-coil-program.html">The SPARC Toroidal Field Model Coil Program</a></li>
+</ul>
+<hr/>
+<p><strong>Continue to:</strong> <a href="19-simulation-codes-nuclear-data.html">19 — Simulation, Codes and Nuclear Data</a> · <a href="22-critical-materials-supply-chains.html">22 — Critical Materials and Supply Chains</a> · <a href="09-engineering-challenges.html">09 — Engineering Challenges</a></p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/synthesis/18-superconductors-and-magnets.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/synthesis/18-superconductors-and-magnets.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="09-engineering-challenges.html">Engineering Challenges</a> <small>Synthesis</small></li><li><a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a> <small>Synthesis</small></li><li><a href="22-critical-materials-supply-chains.html">Critical Materials and Supply Chains</a> <small>Synthesis</small></li></ul></section><details class="backlinks"><summary>Linked from 16 library notes</summary><ul><li><a href="16-heating-current-drive-fuelling.html">Heating, Current Drive and Fuelling</a></li><li><a href="17-diagnostics-control-disruption.html">Diagnostics, Control and Disruption Mitigation</a></li><li><a href="22-critical-materials-supply-chains.html">Critical Materials and Supply Chains</a></li><li><a href="38-component-manufacturing.html">Component Manufacturing</a></li><li><a href="b4-scaling.html">The B⁴ Scaling</a></li><li><a href="canis.html">Canis</a></li><li><a href="helical-fusion.html">Helical Fusion</a></li><li><a href="moc-engineering.html">MOC — Engineering</a></li><li><a href="prototyping-test-canis-hts-planar-coil-array.html">Prototyping and Test of the Canis HTS Planar Coil Array for Stellarator Field Shaping</a></li><li><a href="quench.html">Quench</a></li><li><a href="rebco.html">REBCO High-Temperature Superconductor</a></li><li><a href="renaissance-fusion.html">Renaissance Fusion</a></li><li><a href="sparc-toroidal-field-model-coil-program.html">The SPARC Toroidal Field Model Coil Program</a></li><li><a href="st-e1.html">ST-E1</a></li><li><a href="st-e1-neutronics-crossref-metadata-2026.html">Nuclear Technology Considerations and Neutronics for the ST-E1 Fusion Power Plant</a></li><li><a href="tokamak-energy.html">Tokamak Energy</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

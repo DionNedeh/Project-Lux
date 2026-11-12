@@ -1,0 +1,10 @@
+node_modules/
+_site/
+.venv/
+__pycache__/
+test-results/
+playwright-report/
+.preview/
+*.log
+.DS_Store
+Thumbs.db

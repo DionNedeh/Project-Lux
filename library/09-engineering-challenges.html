@@ -1,0 +1,475 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Engineering Challenges — Project Lux</title><meta name="description" content="Project Lux · The problems that will actually decide whether fusion becomes an energy source"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/09-engineering-challenges.html"><meta property="og:title" content="Engineering Challenges — Project Lux"><meta property="og:description" content="Project Lux · The problems that will actually decide whether fusion becomes an energy source"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/09-engineering-challenges.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Synthesis</p><p class="eyebrow">Synthesis · Document 09</p><h1 id="doc-title">Engineering Challenges</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Synthesis</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-10-19">19 October 2026</time></dd></div><div><dt>First written</dt><dd>25 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div><div><dt>Cited on the homepage</dt><dd><a href="../index.html#purpose">Project purpose</a> · <a href="../index.html#systems-title">The whole energy system</a></dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=engineering">engineering</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#framing">Framing</a></li><li><a href="#1-the-141-mev-neutron--the-root-of-most-other-problems">1. The 14.1 MeV neutron — the root of most other problems</a></li><li><a href="#2-structural-materials">2. Structural materials</a></li><li><a href="#3-tritium-and-the-fuel-cycle">3. Tritium and the fuel cycle</a></li><li><a href="#4-plasma-facing-components-and-exhaust">4. Plasma-facing components and exhaust</a></li><li><a href="#5-magnets">5. Magnets</a></li><li><a href="#6-remote-maintenance-availability-and-the-thing-utilities-actually-care-about">6. Remote maintenance, availability, and the thing utilities actually care about</a></li><li><a href="#7-balance-of-plant-and-the-recirculating-power-trap">7. Balance of plant and the recirculating power trap</a></li><li><a href="#8-systems-integration--the-challenge-nobody-can-test-in-isolation">8. Systems integration — the challenge nobody can test in isolation</a></li><li><a href="#9-ranked-assessment">9. Ranked assessment</a></li><li><a href="#waste-volume-as-an-engineering-consequence">Waste volume as an engineering consequence</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><em>Project Lux · The problems that will actually decide whether fusion becomes an energy source</em></p>
+<hr/>
+<h2 id="framing">Framing<a aria-hidden="true" class="heading-link" href="#framing" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The plasma physics community has spent seventy years answering one question: <em>can a plasma be made to release net fusion energy?</em> The answer, as of December 2022, is yes.</p>
+<p>Everything in this document is the answer to a different question: <em>can a machine be built around such a plasma that survives, refuels itself, and pays for itself?</em> None of these problems is solved. Several have never been tested at any scale.</p>
+<p>The fusion companies themselves agree. Asked to name their long-term challenges, the 44 respondents to the FIA's 2026 survey ranked <strong>neutron-resilient materials (25 mentions)</strong> and <strong>tritium self-sufficiency (23)</strong> at the top, with <strong>plasma science at 7</strong>. The industry has largely stopped worrying about plasmas and started worrying about metal.</p>
+<hr/>
+<h2 id="1-the-141-mev-neutron--the-root-of-most-other-problems">1. The 14.1 MeV neutron — the root of most other problems<a aria-hidden="true" class="heading-link" href="#1-the-141-mev-neutron--the-root-of-most-other-problems" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Every problem in this document descends from a single fact: <strong>80% of D-T fusion energy leaves the plasma as a 14.1 MeV neutron</strong>, and that neutron is unlike anything the nuclear industry has dealt with before.</p>
+<p>Fission neutrons average about 2 MeV. A 14.1 MeV neutron is different in kind, not degree, for one reason: it is above the threshold for <strong>(n,α) and (n,p) transmutation reactions</strong> in structural metals, which sit around 3 MeV.</p>
+<h3 id="displacement-damage">Displacement damage<a aria-hidden="true" class="heading-link" href="#displacement-damage" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A fast neutron knocks an atom out of its lattice site, which knocks out others in a cascade. The cumulative measure is <strong><a href="displacements-per-atom.html">displacements per atom (dpa)</a></strong>.</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Environment</th>
+<th scope="col">dpa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="iter.html">ITER</a>, entire operational life</td>
+<td><strong>&lt; 2 dpa</strong></td>
+</tr>
+<tr>
+<td>Fusion power plant first wall</td>
+<td><strong>~15 dpa per year</strong></td>
+</tr>
+<tr>
+<td>Target for a 5-year component life</td>
+<td><strong>~70–100 dpa</strong></td>
+</tr>
+<tr>
+<td><a href="ifmif-dones.html">IFMIF-DONES</a> phase 1 / phase 2</td>
+<td>~20 / ~50 dpa</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="gas-production--the-part-fission-data-cannot-cover">Gas production — the part fission data cannot cover<a aria-hidden="true" class="heading-link" href="#gas-production--the-part-fission-data-cannot-cover" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The transmutation reactions produce <strong>helium and hydrogen inside the metal</strong>. Helium is insoluble; it migrates to grain boundaries and forms bubbles.</p>
+<p>The critical ratio is <strong>helium appm per dpa</strong>:</p>
+<ul>
+<li><strong>Fission spectrum: ~0.1–1 appm He/dpa</strong></li>
+<li><strong>Fusion spectrum: ~10–15 appm He/dpa</strong></li>
+</ul>
+<p>An order of magnitude more helium for the same displacement damage. The consequences are:</p>
+<ul>
+<li><strong>High-temperature <a href="helium-embrittlement.html">helium embrittlement</a></strong> — grain-boundary bubbles cause intergranular fracture with essentially no ductility</li>
+<li><strong>Void swelling</strong> — helium stabilises voids, causing dimensional change of several percent</li>
+<li><strong>Shift in ductile-to-brittle transition temperature (DBTT)</strong> — steels that are ductile at room temperature become brittle, sometimes by hundreds of degrees</li>
+</ul>
+<p><strong>This is why fission irradiation data cannot qualify fusion materials</strong>, and why the field's most important missing facility is a fusion-spectrum neutron source.</p>
+<h3 id="activation">Activation<a aria-hidden="true" class="heading-link" href="#activation" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Neutron capture makes the entire structure radioactive. The mitigation is <strong>elemental</strong>: design alloys from elements whose <a href="activation-products.html">activation products</a> are short-lived. This is the origin of <strong>reduced-activation</strong> materials — replacing molybdenum with tungsten, niobium with tantalum, and eliminating nickel, cobalt and copper wherever possible.</p>
+<p>Done well, the result is a structure that decays to hands-on or recyclable levels in <strong>50–100 years</strong> rather than the geological timescales of fission waste. See <a href="11-policy-regulation-safety.html">Document 11</a>.</p>
+<hr/>
+<h2 id="2-structural-materials">2. Structural materials<a aria-hidden="true" class="heading-link" href="#2-structural-materials" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-candidates">The candidates<a aria-hidden="true" class="heading-link" href="#the-candidates" tabindex="-1" title="Link to this section">#</a></h3>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Material</th>
+<th scope="col">Operating window</th>
+<th scope="col">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RAFM steels</strong> — EUROFER-97 (EU), F82H (Japan), CLAM (China)</td>
+<td>~350–550 °C</td>
+<td><strong>The baseline.</strong> Best-characterised. Reduced-activation ferritic-martensitic</td>
+</tr>
+<tr>
+<td><strong>ODS steels</strong> (oxide-dispersion-strengthened)</td>
+<td>up to ~650 °C</td>
+<td>Higher temperature = higher thermal efficiency. Nano-oxide dispersions also trap helium. Hard to manufacture and join</td>
+</tr>
+<tr>
+<td><strong>Vanadium alloys</strong> (V-4Cr-4Ti)</td>
+<td>~400–700 °C</td>
+<td>Excellent thermal and low-activation properties; compatible with liquid lithium. Extremely oxygen-sensitive. <strong>DOE targets 500 kg domestic heats</strong></td>
+</tr>
+<tr>
+<td><strong>SiC/SiC composites</strong></td>
+<td>&gt;1000 °C</td>
+<td>Very low activation, very high temperature. Immature; joining, hermeticity and irradiation stability unresolved</td>
+</tr>
+<tr>
+<td><strong>Tungsten</strong></td>
+<td>plasma-facing only</td>
+<td>Not structural — see §4</td>
+</tr>
+</tbody>
+</table></div>
+<p>The RAFM operating window is narrow and both ends are set by irradiation: below ~350 °C, irradiation hardening and embrittlement dominate; above ~550 °C, thermal creep and helium embrittlement take over. <strong>Every degree of that window is worth money</strong>, because thermal-cycle efficiency scales with coolant outlet temperature.</p>
+<h3 id="what-the-roadmap-actually-asks-for">What the roadmap actually asks for<a aria-hidden="true" class="heading-link" href="#what-the-roadmap-actually-asks-for" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The DOE roadmap's near-, mid- and long-term milestones for Challenge Area A are unusually concrete:</p>
+<ul>
+<li><strong>Near (2–3 yr):</strong> accelerated qualification pathways for Fe- and V-alloys with full datasets within four years; a centralised AI/HPC materials data strategy; <strong>domestic industrial heats of multi-tonne Fe-alloy and 500 kg V-alloy</strong>; corrosion loops and a high-heat-flux facility</li>
+<li><strong>Mid (3–5 yr):</strong> complete irradiation campaigns and post-irradiation examination to <strong>~10 dpa</strong>; <strong>quantify helium-assisted embrittlement thresholds</strong> and high-temperature creep-fatigue limits; integrated tritium retention and permeation datasets</li>
+<li><strong>Long (5–10 yr):</strong> component-relevant performance under fusion-prototypic neutron, heat and tritium loads simultaneously; <strong>codify fusion-specific requirements into ASME-based standards</strong>; qualify domestic manufacture of thick sections and additive builds</li>
+</ul>
+<p>Note the last item in the mid-term list and the first in the long-term list. <strong>10 dpa is where the mid-term ends.</strong> A power plant needs 70–100. The roadmap is candid that the near-term programme gets nowhere near power-plant conditions.</p>
+<h3 id="the-missing-facility">The missing facility<a aria-hidden="true" class="heading-link" href="#the-missing-facility" tabindex="-1" title="Link to this section">#</a></h3>
+<p>There is <strong>no operating fusion-spectrum neutron source anywhere in the world.</strong></p>
+<ul>
+<li><strong>IFMIF-DONES</strong> (Granada, Spain) — a 40 MeV, 125 mA deuteron beam striking a flowing lithium jet, producing neutrons by Li(d,xn) stripping with a spectrum approximating D-T. Phase 1 targets ~20 dpa, phase 2 ~50 dpa. Under construction; the design has evolved from the original IFMIF via EVEDA.</li>
+<li><strong>FPNS</strong> (US Fusion Prototypical Neutron Source) — placed in the DOE roadmap's <strong>mid-term (3–5 year)</strong> construction window, i.e. not operating before the early 2030s.</li>
+<li><strong>Surrogates in the interim</strong> — spallation sources (SNS, ISIS), fission reactors (HFIR, BOR-60, ATR) with helium implantation to mimic the gas ratio, and ion-beam irradiation for rapid screening. All are approximations; none reproduces the combination of dpa rate, He/dpa ratio and spectrum.</li>
+<li><strong>Commercial neutron sources are emerging as a stopgap.</strong> <strong><a href="astral-systems.html">Astral Systems</a></strong> (Bristol) now sells continuous DD and DT irradiation services and has run hundreds of hours of commercial campaigns on tritium breeder materials including solid lithium, FLiBe and composite breeders. <strong><a href="avalanche-energy.html">Avalanche Energy</a></strong> is building <strong>FusionWERX</strong> as a commercial fusion test facility. This is a genuinely useful market response to a public-infrastructure gap.</li>
+</ul>
+<p><strong>The timing problem is stark.</strong> Companies plan pilot plants for the early-to-mid 2030s. The facility that would qualify those plants' materials will begin producing meaningful data in roughly the same period. Every pilot plant will therefore be built on <strong>extrapolated and surrogate data</strong>, and will itself function as the materials experiment.</p>
+<hr/>
+<h2 id="3-tritium-and-the-fuel-cycle">3. Tritium and the fuel cycle<a aria-hidden="true" class="heading-link" href="#3-tritium-and-the-fuel-cycle" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-arithmetic">The arithmetic<a aria-hidden="true" class="heading-link" href="#the-arithmetic" tabindex="-1" title="Link to this section">#</a></h3>
+<p>For a plant producing <strong>1 GW of fusion power</strong>:</p>
+<pre><code>1 GW / 17.6 MeV per reaction = 3.55 × 10²⁰ reactions/second
+→ tritium consumption ≈ 0.18 g/minute ≈ 152 g/day ≈ 55.6 kg/year
+</code></pre>
+<p>Against that:</p>
+<ul>
+<li><strong>Total world civilian tritium inventory: 30–40 kg</strong> projected over the next decade</li>
+<li><strong>CANDU production: under 0.13 kg per reactor per year</strong>; global supply a few kg/year</li>
+<li><strong>Market price: $30,000–35,000 per gram</strong> — so a 5 kg start-up inventory costs <strong>$150–175 million in fuel alone</strong></li>
+<li><strong>Half-life: 12.3 years</strong> — the inventory decays at 5.5% per year whether used or not</li>
+</ul>
+<p><strong>A single plant would consume more than the world's entire inventory in its first year.</strong> There is no scenario in which fusion runs on purchased tritium. Breeding is not an optimisation; it is the precondition for the technology existing at all.</p>
+<h3 id="breeding">Breeding<a aria-hidden="true" class="heading-link" href="#breeding" tabindex="-1" title="Link to this section">#</a></h3>
+<pre><code>n + ⁶Li → T + ⁴He + 4.8 MeV      (exothermic; large cross-section at low neutron energy)
+n + ⁷Li → T + ⁴He + n − 2.5 MeV  (endothermic; threshold ~2.5 MeV, but regenerates the neutron)
+</code></pre>
+<p>Every D-T neutron must, on average, produce <strong>more than one</strong> tritium atom to sustain the cycle — the <strong><a href="tritium-breeding-ratio.html">tritium breeding ratio (TBR)</a></strong>. But each fusion reaction produces exactly one neutron, and neutrons are lost to structure, ports, diagnostics and heating penetrations. So breeding above unity requires <strong>neutron multiplication</strong>:</p>
+<pre><code>⁹Be + n → 2n + 2⁴He        or        ²⁰⁸Pb + n → 2n + ²⁰⁷Pb
+</code></pre>
+<p>Beryllium is the better multiplier and is toxic, scarce and itself becomes activated. Lead is abundant and less effective. Most blanket designs use one or the other.</p>
+<p><strong>Required TBR:</strong> physically above 1.0; in practice designs target <strong>1.05–1.15</strong> to cover losses, decay and the surplus needed to start the <em>next</em> plant. <strong>DOE's roadmap sets TBR &gt; 1.1</strong>, both as a near-term FPP-scale target and as the long-term TRL-7 integrated demonstration.</p>
+<p>That band is not merely a design convention. <a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Abdou <em>et al.</em> 2021</a> — the primary source, added to the vault on 2026-10-19 — frames it as a confidence boundary: self-sufficiency is <strong>unlikely</strong> above 1.15, <strong>possible</strong> between 1.05 and 1.15, and <strong>attained with high confidence</strong> only at or below 1.05. The <strong>maximum achievable</strong> TBR for the most detailed blanket designs is estimated at <strong>1.15</strong>. Requirement and capability therefore occupy the same interval, and integral experiments found calculation <strong>overestimates</strong> tritium production by an average factor of <strong>1.14</strong> — a bias in the wrong direction, larger than the margin. See <a href="tritium-breeding-ratio.html">Tritium Breeding Ratio (TBR)</a>.</p>
+<h3 id="blanket-concepts">Blanket concepts<a aria-hidden="true" class="heading-link" href="#blanket-concepts" tabindex="-1" title="Link to this section">#</a></h3>
+<div aria-label="Table 3 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Concept</th>
+<th scope="col">Breeder</th>
+<th scope="col">Coolant</th>
+<th scope="col">Multiplier</th>
+<th scope="col">Champion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HCPB</strong></td>
+<td>Li₄SiO₄ / Li₂TiO₃ pebbles</td>
+<td>Helium</td>
+<td>Beryllium pebbles</td>
+<td>EU (DEMO), KIT</td>
+</tr>
+<tr>
+<td><strong>WCLL</strong></td>
+<td>Liquid PbLi</td>
+<td>Water</td>
+<td>Lead (in PbLi)</td>
+<td>EU (DEMO)</td>
+</tr>
+<tr>
+<td><strong>HCLL</strong></td>
+<td>Liquid PbLi</td>
+<td>Helium</td>
+<td>Lead</td>
+<td>EU</td>
+</tr>
+<tr>
+<td><strong>DCLL</strong></td>
+<td>Liquid PbLi</td>
+<td>PbLi + helium</td>
+<td>Lead</td>
+<td>US</td>
+</tr>
+<tr>
+<td><strong>FLiBe molten salt</strong></td>
+<td>LiF-BeF₂</td>
+<td>FLiBe itself</td>
+<td>Beryllium</td>
+<td><strong>CFS (<a href="arc.html">ARC</a>)</strong>, <a href="type-one-energy.html">Type One Energy</a></td>
+</tr>
+<tr>
+<td><strong>Liquid lithium</strong></td>
+<td>Li</td>
+<td>Li</td>
+<td>—</td>
+<td>Some mirror and <a href="stellarator.html">Stellarator</a> designs</td>
+</tr>
+<tr>
+<td><strong>Liquid PbLi cavity</strong></td>
+<td>PbLi</td>
+<td>PbLi</td>
+<td>Lead</td>
+<td><strong><a href="general-fusion.html">General Fusion</a></strong> (the liquid <em>is</em> the wall)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The liquid-breeder attraction.</strong> A flowing liquid breeder is simultaneously breeder, coolant and — in the immersion designs — first wall shielding. Crucially, <strong>a liquid cannot suffer displacement damage</strong>: there is no lattice to displace. CFS's ARC and General Fusion's MTF both make this a central architectural bet.</p>
+<p><strong>The liquid-breeder problem.</strong> A conducting fluid flowing across a strong magnetic field experiences an enormous <strong>MHD pressure drop</strong> — the induced currents oppose the flow. Mitigations are flow-channel inserts and electrical insulators, both of which must survive the neutron flux they exist to enable. The DOE roadmap's mid-term milestones name "MHD mitigation, flow-channel inserts/insulators, and manifold/channel designs" explicitly.</p>
+<h3 id="closing-the-cycle--the-part-nobody-discusses-enough">Closing the cycle — the part nobody discusses enough<a aria-hidden="true" class="heading-link" href="#closing-the-cycle--the-part-nobody-discusses-enough" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Breeding tritium is necessary but not sufficient. The tritium must be <strong>extracted, purified, isotopically separated, stored and re-injected</strong>, continuously, at very low loss.</p>
+<p>The reason this is hard is <strong><a href="tritium-burn-fraction.html">burn fraction</a></strong>. Only about <strong>1–3% of injected tritium fuses per pass</strong> through the plasma. The other 97–99% is pumped out with <a href="helium-ash.html">helium ash</a> and impurities and must be recycled. So a plant burning 56 kg/year <strong>circulates on the order of 2–5 tonnes of tritium per year</strong> through its fuel-cycle plant.</p>
+<p><strong>The precise figures are worse than that range suggests, and are the binding constraint on the whole fuel cycle.</strong> What matters is the product of burn fraction and fuelling efficiency, <code>η_f · f_b</code>. ITER's estimate at maximum fuelling is <strong>0.36%</strong> — well below the 1–3% band above, which corresponds to first-DEMO <em>expectations</em> rather than any demonstrated value. Self-sufficiency requires <code>η_f · f_b</code> <strong>&gt; 2%</strong>, ideally approaching <strong>5%</strong>, with inner-cycle processing time of <strong>1–4 h</strong>. At ITER's burn fraction a 3 GW plant would need TBR <strong>1.82</strong> and <strong>over 200 kg</strong> of start-up tritium; at 5% it needs TBR 1.02 and under 5 kg (<a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency</a>).</p>
+<p><strong>No blanket improvement can rescue a plant whose burn fraction is too low</strong> — which inverts the usual framing of tritium as a breeding problem.</p>
+<p>Sub-problems, each unsolved at scale:</p>
+<ul>
+<li><strong>Tritium-compatible vacuum pumping</strong> at plant throughput</li>
+<li><strong>Direct Internal Recycling (DIR)</strong> — returning unburned D-T straight to the fuelling system without full isotope separation, drastically cutting inventory and processing load. A DOE mid-term milestone</li>
+<li><strong>Isotope separation</strong> with high protium removal and low holdup</li>
+<li><strong>Permeation</strong> — tritium diffuses through hot metal. It will migrate into coolant, into concrete, into the environment. Permeation barriers are essential and must survive irradiation</li>
+<li><strong>Retention</strong> — tritium is absorbed by plasma-facing components and by dust. Retained inventory is both a fuel loss and a safety-case limit</li>
+<li><strong>Accountancy</strong> — regulators require knowing where every gram is, to within a small tolerance, in a system where it permeates through walls</li>
+</ul>
+<h3 id="start-up-inventory-the-fleet-problem">Start-up inventory: the fleet problem<a aria-hidden="true" class="heading-link" href="#start-up-inventory-the-fleet-problem" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A new plant needs a <a href="tritium-start-up-inventory.html">start-up inventory</a> before it can breed anything. Estimates range from a few kilograms to over ten, depending on design and on how efficiently DIR reduces holdup.</p>
+<p>The dependence is quantified: <strong>11 kg</strong> for a 3 GW plant at <code>η_f · f_b</code> = 2% and 4 h processing, falling <strong>below 5 kg</strong> at 5% and 1 h, and scaling <strong>linearly with fusion power</strong> — about <strong>1 kg</strong> for a 100 MW facility. A <strong>24 h reserve</strong> inventory is found to give unacceptable requirements, so reserves must cover only a few hours, making this a <strong>component-reliability</strong> problem rather than a storage one (<a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency</a>).</p>
+<p><strong><a href="availability.html">Availability and RAMI</a> is also a tritium parameter</strong>, and this is the finding with the sharpest consequence for the facilities listed below: self-sufficiency is <strong>impossible below 10% availability</strong> for any burn fraction, possible above 30%, and reasonably confident only above 50%. FNSF, VNS and CTF are all predicted <strong>below 30%</strong> — the devices expected to demonstrate breeding may be unable to close their own fuel cycle while doing so.</p>
+<ul>
+<li><strong>One plant</strong> can plausibly be started from the world's existing CANDU-derived inventory</li>
+<li><strong>A fleet</strong> cannot. It must be bootstrapped from the surplus bred by earlier plants — which introduces a <strong>doubling time</strong>, set by how far TBR exceeds 1 and by tritium decay</li>
+</ul>
+<p>This makes the difference between TBR = 1.05 and TBR = 1.15 the difference between a fusion industry that can double every few years and one that effectively cannot grow. <strong>It is one of the most consequential and least discussed numbers in the field.</strong></p>
+<h3 id="what-is-being-built-about-it">What is being built about it<a aria-hidden="true" class="heading-link" href="#what-is-being-built-about-it" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong><a href="unity-3.html">UNITY-3</a></strong> (ORNL, 2026) — <strong>the first facility generating 14 MeV neutrons to evaluate commercial breeding blanket designs and validate tritium production.</strong> Complements UNITY-1 (Japan) and UNITY-2 (Canada, under development), both from <a href="kyoto-fusioneering.html">Kyoto Fusioneering</a>.</li>
+<li><strong><a href="librti.html">LIBRTI</a></strong> (UK, <strong>£220 m</strong> over 2025/26–2029/30) — a global first-of-a-kind lithium breeding tritium facility.</li>
+<li><strong><a href="h3at.html">H3AT</a></strong> (UKAEA with Eni) — tritium processing and handling at plant scale.</li>
+<li><strong>ITER's Test Blanket Module programme</strong> — six TBM concepts in equatorial ports; the first in-device breeding test ever, from 2039.</li>
+<li><strong>BABY</strong> and similar small-scale experiments (arXiv:2412.02721 in <code>papers/</code>) — direct measurement of tritium production in small breeder volumes, establishing the measurement techniques.</li>
+<li><strong>Li-6 enrichment</strong>: natural lithium is only <strong>7.5% Li-6</strong>; blankets need <strong>30–90%</strong>. Historic capacity is concentrated in <strong>Russia and China</strong> — a sovereignty exposure flagged by both industry analysts and the DOE roadmap.</li>
+</ul>
+<hr/>
+<h2 id="4-plasma-facing-components-and-exhaust">4. Plasma-facing components and exhaust<a aria-hidden="true" class="heading-link" href="#4-plasma-facing-components-and-exhaust" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-heat-flux-problem">The heat flux problem<a aria-hidden="true" class="heading-link" href="#the-heat-flux-problem" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Fusion power that does not leave as neutrons leaves as charged particles and radiation, and must be exhausted. For a <strong>500 MW</strong> fusion plasma, roughly <strong>100 MW</strong> must be handled — and in a <a href="tokamak.html">Tokamak</a>, the scrape-off layer channels it onto a strike region only <strong>millimetres wide</strong> at the <a href="divertor.html">Divertor</a> target.</p>
+<div aria-label="Table 4 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col"></th>
+<th scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Material limit, steady-state</td>
+<td><strong>5–20 MW/m²</strong></td>
+</tr>
+<tr>
+<td>Tungsten divertor design target</td>
+<td><strong>&lt; 10 MW/m²</strong></td>
+</tr>
+<tr>
+<td>Unmitigated reactor heat flux</td>
+<td><strong>~10× above the limit</strong></td>
+</tr>
+<tr>
+<td>Required target plasma temperature</td>
+<td><strong>single-digit eV</strong> (to stay below the sputtering threshold)</td>
+</tr>
+</tbody>
+</table></div>
+<p>The scrape-off layer width <strong>narrows as machines get larger and fields get stronger</strong> (Eich scaling: λ_q roughly inversely proportional to poloidal field), so the problem worsens exactly where it matters most.</p>
+<h3 id="detachment--the-only-known-answer"><a href="detachment.html">Detachment</a> — the only known answer<a aria-hidden="true" class="heading-link" href="#detachment--the-only-known-answer" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Detachment</strong> deliberately radiates the exhaust power away in the divertor volume before it reaches a surface, by seeding impurities (nitrogen, neon, argon) and operating at high neutral density. Plasma-neutral interactions then remove power, momentum and particles simultaneously, and the ion flux to the target collapses.</p>
+<p>The tension is structural: <strong>the core must be hot and clean; the divertor must be cold and dirty</strong>, separated by perhaps a metre. Whether a detached divertor is compatible with a high-performance burning core at reactor scale is genuinely unresolved, and it is on ITER's critical question list.</p>
+<h3 id="alternative-configurations">Alternative configurations<a aria-hidden="true" class="heading-link" href="#alternative-configurations" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong><a href="super-x-divertor.html">Super-X divertor</a></strong> — lengthens the field-line connection and increases the wetted area. <strong><a href="mast-upgrade.html">MAST-Upgrade</a> demonstrated transient heat-load control</strong> with it (<em>Nature Energy</em>, 2025) — one of the decade's more important exhaust results</li>
+<li><strong>X-point radiator (XPR)</strong> — a stable, strongly radiating region near the X-point. <strong>Extended into D-T on <a href="jet.html">JET</a>'s DTE3</strong></li>
+<li><strong>Quasi-continuous exhaust (QCE)</strong> — a naturally small-ELM regime, also demonstrated in D-T on JET</li>
+<li><strong><a href="negative-triangularity.html">Negative triangularity</a></strong> — reverses the plasma cross-section curvature, suppressing the edge instabilities that drive ELMs while retaining good confinement. Explored extensively on <a href="diii-d.html">DIII-D</a> and <a href="tcv.html">TCV</a>; the basis of the <a href="manta.html">MANTA</a> pilot-plant design study</li>
+<li><strong>Liquid metal PFCs</strong> — lithium or tin surfaces that are continuously replenished, so erosion is irrelevant and there is no lattice to damage. DOE's long-term milestone is to "operate continuous-flow liquid walls proving stability, impurity control, and tritium recovery." Attractive; MHD control and tritium retention in the liquid are the open questions</li>
+</ul>
+<h3 id="tungstens-own-limits">Tungsten's own limits<a aria-hidden="true" class="heading-link" href="#tungstens-own-limits" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Tungsten is the consensus plasma-facing material — highest melting point of any metal, low sputtering yield, low tritium retention. It also:</p>
+<ul>
+<li><strong>Recrystallises above ~1300 °C</strong>, losing strength permanently</li>
+<li>Has a <strong>DBTT around 400 °C</strong> that irradiation pushes higher — so it is brittle when cold and weak when hot, with a narrow usable band</li>
+<li>Is a <strong>high-Z radiator</strong>: even trace tungsten in the core radiates catastrophically. Core tungsten concentration must stay below roughly 10⁻⁵</li>
+<li><strong>Transmutes to rhenium and osmium</strong> under neutron irradiation, changing its properties over life</li>
+</ul>
+<p>DOE's Challenge Area B milestones accordingly cover cyclic/transient/ELM-like loading databases, erosion-redeposition and cracking limits, W/Cu-alloy mockup fatigue and creep testing, and AI-guided screening of low-erosion, low-retention alternatives.</p>
+<hr/>
+<h2 id="5-magnets">5. Magnets<a aria-hidden="true" class="heading-link" href="#5-magnets" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="why-hts-changed-everything">Why HTS changed everything<a aria-hidden="true" class="heading-link" href="#why-hts-changed-everything" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Fusion power density scales as <strong>β²B⁴</strong>. Nb₃Sn — ITER's conductor — saturates around 12–13 T on the conductor. <strong>REBCO tape operates above 20 T.</strong> That single materials substitution is the reason a machine the size of JET can attempt what ITER attempts at forty times the volume.</p>
+<p>Demonstrated milestones:</p>
+<ul>
+<li><strong>CFS/MIT: 20 T</strong> on a large-bore model coil (September 2021)</li>
+<li><strong><a href="wham.html">WHAM</a>/Realta: 17 T</strong> on a confined plasma (July 2024)</li>
+<li><strong><a href="tokamak-energy.html">Tokamak Energy</a> Demo4: 11.8 T, 7 MA-turns</strong> in a full tokamak-configuration magnet (2026)</li>
+<li><strong><a href="hh70.html">HH70</a> (<a href="energy-singularity.html">Energy Singularity</a>)</strong>: the first fully HTS tokamak, built in about two years</li>
+</ul>
+<h3 id="the-open-problems">The open problems<a aria-hidden="true" class="heading-link" href="#the-open-problems" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Supply chain.</strong> Global HTS tape capacity is roughly <strong>10,000 km/year</strong>. The top pulsed-laser-deposition manufacturers produce over 3,000 km-12mm each, more than half of global output, and <strong>China holds substantial manufacturing strength</strong>. A single high-field tokamak consumes thousands of kilometres. Scaling to a fleet requires order-of-magnitude expansion.</p>
+<p>Responses: <strong><a href="arpa-e.html">ARPA-E</a> SCALEUP awarded <a href="thea-energy.html">Thea Energy</a> $20 M (July 2026)</strong> for the first US modular HTS magnet production line; <strong>CFS is selling magnets as a merchant product</strong>, beginning with Realta (April 2026), explicitly to create the demand that justifies tape-capacity investment.</p>
+<p><strong>Radiation tolerance.</strong> REBCO's critical current degrades under fast-neutron fluence, and the epoxies and insulation degrade sooner. In a compact high-field machine the magnet sits close to the plasma with limited shielding space — most acutely in a <strong>spherical tokamak's centre column</strong>, where there is barely room for the conductor let alone shielding. DOE's near-term milestone is explicit: <strong>"Conduct REBCO irradiation campaigns to define magnet performance and standards."</strong></p>
+<p><strong><a href="quench.html">Quench</a> protection.</strong> HTS has a very slow normal-zone propagation velocity, so a local hot spot does not spread quickly enough to be detected by conventional means before it damages the conductor. <strong>No-insulation winding</strong> helps by letting current bypass a defect radially, but complicates ramp dynamics. In a magnet storing gigajoules, quench detection is a safety-critical system.</p>
+<p><strong>Array manufacture and control.</strong> <a href="canis.html">Canis</a> demonstrated nine planar <a href="rebco.html">REBCO High-Temperature Superconductor</a> shaping coils made from 45 double pancakes and tape from three suppliers, integrated and operated at 20 K. Two static field patterns matched prediction with 0.56% and 0.60% RMS error. This retires part of the repeatability and mutual-coupling risk for small planar arrays, not the integrated <a href="eos.html">Eos</a> case: the test formed no closed flux surfaces or plasma, and several transient, quench and defect-robustness tests remained future work. See <a href="prototyping-test-canis-hts-planar-coil-array.html">Prototyping and Test of the Canis HTS Planar Coil Array for Stellarator Field Shaping</a>.</p>
+<p><strong>Cryogenic load.</strong> Nuclear heating deposits power directly into a 4–20 K magnet, and every watt at 4 K costs several hundred watts of room-temperature electrical power. This feeds straight into the <a href="recirculating-power.html">recirculating power</a> fraction and therefore into Q_eng. Cryoplant heat management appears in the FIA challenge list, if modestly.</p>
+<hr/>
+<h2 id="6-remote-maintenance-availability-and-the-thing-utilities-actually-care-about">6. Remote maintenance, availability, and the thing utilities actually care about<a aria-hidden="true" class="heading-link" href="#6-remote-maintenance-availability-and-the-thing-utilities-actually-care-about" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A fusion plant is <strong>intensely radioactive after first operation</strong> and can never be entered by a human again. Every subsequent maintenance operation — replacing a divertor cassette, changing a blanket module, repairing a diagnostic — must be done by remote handling, through ports, in a confined, activated, tritium-contaminated space.</p>
+<p>This drives <strong>RAMI</strong> — Reliability, Availability, Maintainability, Inspectability — and it is the single most likely reason a technically successful fusion plant would be commercially useless.</p>
+<p>The arithmetic is brutal: if replacing a full set of blanket modules takes six months and must happen every two years, the plant's availability is capped at 75% before any unplanned outage. Fission plants achieve 90%+; a plant with a $6,000/kW capital cost and 50% availability has an LCOE roughly double the same plant at 90%.</p>
+<p>DOE's Challenge Area F milestones therefore include:</p>
+<ul>
+<li>An <strong>initial RAMI handbook</strong> with metrics, availability targets and design-for-maintainability guidance (near term)</li>
+<li><strong>Qualified joining and cutting methods for irradiated materials</strong> to enable modular in-vessel replacement (mid term)</li>
+<li>Remote handling and sensing prototypes for activated blankets and PFCs in corrosive, hazardous environments</li>
+<li>Validated mock-up maintenance workflows with reliability data</li>
+<li>Automated controls and remote operation in steady-state and high-repetition-rate facilities (long term)</li>
+</ul>
+<p><strong>Design responses.</strong> CFS's ARC uses <strong>demountable joints</strong> in the toroidal-field magnets so the entire vacuum vessel can be lifted out and replaced rather than repaired in place — treating the most-irradiated component as a consumable. General Fusion's liquid wall sidesteps the problem by having no solid first wall to replace. Mirror and linear geometries are inherently easier to service than a torus threaded through a 3D coil set — which is one of the strongest practical arguments for Realta's and Zap's architectures, and one of the strongest against stellarators.</p>
+<hr/>
+<h2 id="7-balance-of-plant-and-the-recirculating-power-trap">7. Balance of plant and the recirculating power trap<a aria-hidden="true" class="heading-link" href="#7-balance-of-plant-and-the-recirculating-power-trap" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Fusion plants that use a thermal cycle face conventional thermodynamics: <strong>35–45% conversion efficiency</strong> from a Rankine or closed Brayton cycle, set by the coolant outlet temperature, which is set by the structural material's temperature limit, which is set by irradiation behaviour. The entire chain from neutron damage to electricity price runs through that one link.</p>
+<p>See <a href="balance-of-plant.html">Balance of Plant</a> for the subsystem itself, which is <strong>30–40% of plant capital cost</strong> and the least-discussed majority of the machine.</p>
+<p>Against gross electrical output, the plant must subtract <strong>recirculating power</strong>:</p>
+<ul>
+<li>Cryoplant for the magnets</li>
+<li>Plasma heating and current drive (tens to &gt;100 MW, at 30–50% wall-plug efficiency)</li>
+<li>Coolant pumping (particularly severe for helium, and for liquid metals against MHD drag)</li>
+<li>Tritium plant, vacuum systems, controls</li>
+</ul>
+<p>For a tokamak, plausible recirculating fractions are <strong>20–40% of gross output</strong>. This is why <strong>Q_eng &gt; 1 typically requires Q_sci in the 10–30+ range</strong>, and why scientific breakeven, while a genuine milestone, is a long way from a generator.</p>
+<h3 id="a-worked-accounting">A worked accounting<a aria-hidden="true" class="heading-link" href="#a-worked-accounting" tabindex="-1" title="Link to this section">#</a></h3>
+<p><a href="helios.html">Helios</a> is the first design in this vault to publish the whole chain end to end (<a href="overview-of-the-helios-design.html">Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant</a> — a <strong>preconceptual design</strong>, so these are projected, not measured):</p>
+<div aria-label="Table 5 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Stage</th>
+<th scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D-T fusion power in plasma</td>
+<td>958 MW</td>
+</tr>
+<tr>
+<td>Lithium-6 breeding exotherm</td>
+<td>+135 MW</td>
+</tr>
+<tr>
+<td>Total thermal</td>
+<td><strong>1,094 MW</strong></td>
+</tr>
+<tr>
+<td>Steam superheat / turbines</td>
+<td>635 °C, three stages</td>
+</tr>
+<tr>
+<td>Generated electric</td>
+<td>459.9 MWe</td>
+</tr>
+<tr>
+<td>Coolant pumping</td>
+<td>−21.8 MWe (gross 438.1 MWe)</td>
+</tr>
+<tr>
+<td>Maintenance, tritium plant, cryoplant, ECRH</td>
+<td>−48.0 MWe</td>
+</tr>
+<tr>
+<td>Waste heat</td>
+<td>681 MW in text, 703.0 MW in the Sankey diagram</td>
+</tr>
+<tr>
+<td><strong>Net export</strong></td>
+<td><strong>390.1 MWe</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Pumping plus the four auxiliary loads is 69.8 MW — the "70 MW of auxiliary power" the paper quotes elsewhere, not an additional charge on top.</p>
+<h3 id="and-the-same-accounting-for-a-pulsed-machine">And the same accounting for a pulsed machine<a aria-hidden="true" class="heading-link" href="#and-the-same-accounting-for-a-pulsed-machine" tabindex="-1" title="Link to this section">#</a></h3>
+<p><a href="eu-demo.html">EU-DEMO</a>'s published balance of plant makes the contrast structural rather than numerical (<a href="maturation-of-critical-technologies-demo-balance-of-plant.html">Maturation of Critical Technologies for the DEMO Balance of Plant Systems</a>, <a href="tokamak-cooling-systems-and-power-conversion-system-options.html">Tokamak Cooling Systems and Power Conversion System Options</a>). It needs <strong>8–14 separated <a href="primary-heat-transfer-system.html">primary heat transfer systems</a></strong> where a fission plant of nearly twice the thermal power needs one, because blanket, first wall, divertor and vacuum vessel all demand different fluids, pressures and temperatures — helium at 8 MPa and 300/520 °C for an HCPB blanket, water at ~1 MPa and 190/200 °C for the vacuum vessel. The cold loops cannot make useful steam and are demoted to feedwater preheating.</p>
+<p>It must also bridge a dwell: <strong>2 hours of burn, then ~10 minutes at 1–2% of nominal power</strong>. Neither paper states a net cycle efficiency, so none is quoted here. What they do state is that the once-through steam generator must hold stable operation at <strong>1% of nominal</strong> in dwell, against industrial practice of 5% and above — an open problem, in a pre-concept design, in the part of the plant usually assumed to be mature.</p>
+<p>Two things are worth extracting. First, self-consumption is about <strong>15% of generated power</strong> rather than 20–40%, because an ignited <a href="stellarator.html">Stellarator</a> carries no current-drive load — under 1 MW of heating once burning, against tens to &gt;100 MW for a tokamak. Second, <strong>the efficiency figure is convention-dependent</strong>: 40.2% net of pumping, 42.2% on total generated power, from the same plant. Quote neither bare; see <a href="balance-of-plant.html">Balance of Plant</a>.</p>
+<p><strong>The schemes that escape this.</strong> <a href="direct-energy-conversion.html">Direct energy conversion</a> — capturing charged-particle energy electrically without a thermal cycle — bypasses the Carnot limit entirely. It is only available to configurations with an open field line or a pulsed compression:</p>
+<ul>
+<li><strong>Realta demonstrated DEC on WHAM on 19 June 2026</strong> — the first commercial fusion company to convert plasma energy directly to electricity</li>
+<li><strong>Helion's</strong> entire architecture is built on inductive recovery from an expanding compressed FRC</li>
+<li>Aneutronic fuels (p-¹¹B) would make this dramatically more valuable, since nearly all the energy is in charged particles</li>
+</ul>
+<p>This is the strongest single argument for the non-tokamak concepts, and it is why several of them target <strong>industrial process heat or off-grid power first</strong> — markets where the thermal-cycle penalty does not apply.</p>
+<hr/>
+<h2 id="8-systems-integration--the-challenge-nobody-can-test-in-isolation">8. Systems integration — the challenge nobody can test in isolation<a aria-hidden="true" class="heading-link" href="#8-systems-integration--the-challenge-nobody-can-test-in-isolation" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Every problem above has been listed separately. In a real plant they interact, and the interactions are where first-of-a-kind projects die:</p>
+<ul>
+<li>The blanket must breed tritium <strong>and</strong> remove heat <strong>and</strong> shield the magnets <strong>and</strong> be replaceable remotely — and optimising any one degrades the others</li>
+<li>Higher coolant temperature raises efficiency <strong>and</strong> worsens creep and helium embrittlement</li>
+<li>Thicker shielding protects the magnets <strong>and</strong> displaces breeder volume, reducing TBR</li>
+<li>Impurity seeding protects the divertor <strong>and</strong> dilutes and cools the core</li>
+<li>A compact machine costs less <strong>and</strong> narrows the scrape-off layer and concentrates neutron flux</li>
+</ul>
+<p>DOE's Challenge Area F addresses this with a standards-based <strong>FAIR data repository</strong>, a common <strong>verification, validation and uncertainty quantification</strong> framework for whole-plant modelling, AI/HPC pipelines connected to DIII-D, NSTX-U and <a href="mpex.html">MPEX</a>, and <strong>modular digital-twin platforms</strong> coupling live data, simulation and predictive diagnostics for licensed plant design.</p>
+<p>Thea Energy's stellarator digital twin with <strong>NVIDIA, Synopsys, Argonne and Princeton</strong> is the clearest private-sector instance of the same idea.</p>
+<hr/>
+<h2 id="9-ranked-assessment">9. Ranked assessment<a aria-hidden="true" class="heading-link" href="#9-ranked-assessment" tabindex="-1" title="Link to this section">#</a></h2>
+<div aria-label="Table 6 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Rank</th>
+<th scope="col">Challenge</th>
+<th scope="col">Why</th>
+<th scope="col">Best case</th>
+<th scope="col">Realistic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Neutron-tolerant materials</strong></td>
+<td>No qualification facility exists; 10 dpa is the mid-term target against a 70–100 dpa need</td>
+<td>Surrogates + AI-accelerated qualification prove adequate</td>
+<td>Pilot plants built on extrapolated data and become the experiment</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Tritium breeding and fuel cycle</strong></td>
+<td>Never demonstrated; TBR &gt; 1.1 required; Li-6 supply concentrated in Russia and China</td>
+<td>UNITY-3 / LIBRTI validate blankets this decade</td>
+<td>One plant fuellable; a <em>fleet</em> constrained by doubling time</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Divertor and exhaust</strong></td>
+<td>10× above material limits; core-edge compatibility unproven at scale</td>
+<td>Detachment + Super-X/XPR scale; or liquid metals work</td>
+<td>Solved case-by-case; caps machine power density</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Capital cost and FOAK risk</strong></td>
+<td>$1,400–43,000/kW spread; nobody has built one</td>
+<td>Modular, factory-built plants drive learning curves</td>
+<td>First plants heavily subsidised or sold at premium to hyperscalers</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Availability and remote maintenance</strong></td>
+<td>Determines whether a working plant is economic</td>
+<td>Demountable / replaceable architectures work</td>
+<td>The reason first plants underperform their business case</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>HTS supply chain</strong></td>
+<td>~10,000 km/yr global; concentrated</td>
+<td>Capacity scales like solar did</td>
+<td>A cost and schedule constraint, not a blocker</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Plasma physics</strong></td>
+<td>Largely conceded; Q &gt; 1 imminent</td>
+<td><a href="sparc.html">SPARC</a> exceeds Q = 1 comfortably in 2027</td>
+<td>Fine, with residual <a href="disruption.html">Disruption</a> and burn-control risk</td>
+</tr>
+</tbody>
+</table></div>
+<p>The ordering matters. <strong>Fusion's remaining risk is concentrated in nuclear engineering and project economics, not in plasma physics</strong> — and the field's public communication still, largely, has this backwards.</p>
+<h2 id="waste-volume-as-an-engineering-consequence">Waste volume as an engineering consequence<a aria-hidden="true" class="heading-link" href="#waste-volume-as-an-engineering-consequence" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The consumable-component problem has a disposal tail. Because first wall, divertor and breeding
+blanket are replaced on a schedule, every replacement set becomes waste, and a fusion power core is
+a large thin-walled structure to begin with. <a href="43-fusion-waste-classification-and-disposal.html">Fusion Waste: Classification, Clearance and Disposal</a> sets out the consequence: fusion trades
+waste <em>intensity</em> for waste <em>volume</em>, and the disposal class is fixed at procurement by impurity
+control rather than being remediable later.</p>
+<hr/>
+<p><strong>Continue to:</strong> <a href="10-economics-and-markets.html">10 — Economics and Markets</a> · <a href="11-policy-regulation-safety.html">11 — Policy, Regulation and Safety</a> · <a href="14-open-problems-and-risks.html">14 — Open Problems</a></p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/synthesis/09-engineering-challenges.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/synthesis/09-engineering-challenges.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="10-economics-and-markets.html">Economics and Markets</a> <small>Synthesis</small></li><li><a href="11-policy-regulation-safety.html">Policy, Regulation and Safety</a> <small>Synthesis</small></li><li><a href="14-open-problems-and-risks.html">Open Problems and Risks</a> <small>Synthesis</small></li><li><a href="availability.html">Availability and RAMI</a> <small>Concept</small></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a> <small>Concept</small></li><li><a href="tritium-breeding-ratio.html">Tritium Breeding Ratio (TBR)</a> <small>Concept</small></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a> <small>Concept</small></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a> <small>Concept</small></li></ul></section><details class="backlinks"><summary>Linked from 47 library notes</summary><ul><li><a href="01-fusion-physics-fundamentals.html">Physics Fundamentals</a></li><li><a href="04-magnetic-confinement-devices.html">Magnetic Confinement Devices</a></li><li><a href="07-private-fusion-industry.html">The Private Fusion Industry</a></li><li><a href="08-national-programs.html">National Programs</a></li><li><a href="10-economics-and-markets.html">Economics and Markets</a></li><li><a href="13-roadmap-to-2040.html">Roadmap to 2040</a></li><li><a href="16-heating-current-drive-fuelling.html">Heating, Current Drive and Fuelling</a></li><li><a href="18-superconductors-and-magnets.html">Superconductors and Magnet Engineering</a></li><li><a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a></li><li><a href="20-fusion-beyond-electricity.html">Fusion Beyond Electricity</a></li><li><a href="22-critical-materials-supply-chains.html">Critical Materials and Supply Chains</a></li><li><a href="23-standards-codes-liability.html">Standards, Codes and Liability</a></li><li><a href="24-grid-integration-and-operations.html">Grid Integration and Plant Operations</a></li><li><a href="28-vacuum-wall-conditioning-tritium-plant.html">Vacuum, Wall Conditioning and the Tritium Plant</a></li><li><a href="29-remote-handling-and-maintenance.html">Remote Handling and Maintenance</a></li><li><a href="30-power-plant-designs-compared.html">Power Plant Designs Compared</a></li><li><a href="35-fusion-and-climate.html">Fusion and Climate</a></li><li><a href="38-component-manufacturing.html">Component Manufacturing</a></li><li><a href="39-the-discourse.html">The Discourse</a></li><li><a href="43-fusion-waste-classification-and-disposal.html">Fusion Waste: Classification, Clearance and Disposal</a></li><li><a href="44-state-capital-and-the-public-balance-sheet.html">State Capital and the Public Balance Sheet</a></li><li><a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency</a></li><li><a href="baby-tritium-self-sufficiency-experiment.html">Advancing Tritium Self-Sufficiency in Fusion Power Plants: Insights from the BABY Experiment</a></li><li><a href="balance-of-plant.html">Balance of Plant</a></li><li><a href="detachment.html">Detachment</a></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a></li><li><a href="displacements-per-atom.html">Displacements per Atom (dpa)</a></li><li><a href="divertor.html">Divertor</a></li><li><a href="fpns.html">Fusion Prototypic Neutron Source (FPNS)</a></li><li><a href="gauss-fusion.html">Gauss Fusion</a></li><li><a href="h3at.html">H3AT</a></li><li><a href="helium-embrittlement.html">Helium Embrittlement</a></li><li><a href="ifmif-dones.html">IFMIF-DONES</a></li><li><a href="ktm.html">Kazakhstan Tokamak for Material Testing</a></li><li><a href="mast-upgrade.html">MAST-Upgrade</a></li><li><a href="maturation-of-critical-technologies-demo-balance-of-plant.html">Maturation of Critical Technologies for the DEMO Balance of Plant Systems</a></li><li><a href="moc-engineering.html">MOC — Engineering</a></li><li><a href="overview-of-the-helios-design.html">Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant</a></li><li><a href="primary-heat-transfer-system.html">Primary Heat Transfer System (PHTS)</a></li><li><a href="rafm-steel.html">Reduced-Activation Steels</a></li><li><a href="super-x-divertor.html">Super-X Divertor</a></li><li><a href="tokamak-cooling-systems-and-power-conversion-system-options.html">Tokamak Cooling Systems and Power Conversion System Options</a></li><li><a href="tritium-breeding-ratio.html">Tritium Breeding Ratio (TBR)</a></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a></li><li><a href="tritium-retention.html">Tritium Retention</a></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a></li><li><a href="willis-2026-st-e1-pre-concept-design-overview.html">Tokamak Energy&#x27;s Pre-concept Design for a Fusion Power Plant: An Overview of ST-E1</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

@@ -1,0 +1,215 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Grid Integration and Plant Operations — Project Lux</title><meta name="description" content="Project Lux · A fusion plant is a pulsed heat source pretending to be a power station"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/24-grid-integration-and-operations.html"><meta property="og:title" content="Grid Integration and Plant Operations — Project Lux"><meta property="og:description" content="Project Lux · A fusion plant is a pulsed heat source pretending to be a power station"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/24-grid-integration-and-operations.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Synthesis</p><p class="eyebrow">Synthesis · Document 24</p><h1 id="doc-title">Grid Integration and Plant Operations</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Synthesis</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-09-12">12 September 2026</time></dd></div><div><dt>First written</dt><dd>25 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=economics">economics</a><a href="index.html?topic=operations">operations</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#1-the-problem-the-physics-creates-for-the-grid">1. The problem the physics creates for the grid</a></li><li><a href="#2-the-three-ways-out">2. The three ways out</a></li><li><a href="#3-the-other-pulsed-load-the-machines-own-power-supplies">3. The other pulsed load: the machine&#x27;s own power supplies</a></li><li><a href="#4-plant-operations-the-things-that-determine-whether-it-earns-money">4. Plant operations: the things that determine whether it earns money</a></li><li><a href="#5-siting">5. Siting</a></li><li><a href="#6-what-this-means">6. What this means</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><em>Project Lux · A fusion plant is a pulsed heat source pretending to be a power station</em></p>
+<hr/>
+<h2 id="1-the-problem-the-physics-creates-for-the-grid">1. The problem the physics creates for the grid<a aria-hidden="true" class="heading-link" href="#1-the-problem-the-physics-creates-for-the-grid" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A <a href="tokamak.html">Tokamak</a>'s plasma current is driven inductively by a central solenoid acting as a transformer primary. A transformer has a finite volt-second budget. When it is exhausted, the pulse ends and the solenoid must be re-charged.</p>
+<p><strong><a href="iter.html">ITER</a>'s design point is 500 MW for 400-second pulses.</strong> <a href="eu-demo.html">EU DEMO</a>'s baseline is pulsed. Most tokamak power plant designs assume pulses of <strong>hours</strong> followed by a <strong>dwell</strong> of minutes.</p>
+<p>This is a real problem, and it is not primarily a grid-stability problem — it is a <strong>turbine problem</strong>.</p>
+<blockquote>
+<p>Because the tokamak operates in long-pulse mode, the electric power output from the plant exhibits significant pulsation, which <strong>adversely affects steam turbine lifetime and power grid stability.</strong></p>
+</blockquote>
+<p>Thermal cycling a several-hundred-megawatt steam turbine is the issue. Turbines are designed for continuous operation; thermal transients cause differential expansion, rotor stress and creep-fatigue damage in exactly the components that are most expensive to replace. A turbine cycled every few hours for thirty years is a different — and much shorter-lived — machine than one that runs continuously.</p>
+<hr/>
+<h2 id="2-the-three-ways-out">2. The three ways out<a aria-hidden="true" class="heading-link" href="#2-the-three-ways-out" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="21-thermal-energy-storage--the-mainstream-answer">2.1 Thermal energy storage — the mainstream answer<a aria-hidden="true" class="heading-link" href="#21-thermal-energy-storage--the-mainstream-answer" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Insert a <strong>thermal buffer</strong> between the fusion core and the power conversion system. During the burn, store surplus heat; during the dwell, discharge it. The turbine sees a smooth, continuous steam supply and never knows the plasma stopped.</p>
+<p>This is the standard approach in European DEMO studies and it works, at a price:</p>
+<ul>
+<li>A molten-salt or similar store sized for a full dwell period is <strong>large and expensive</strong></li>
+<li>Round-trip losses reduce net efficiency</li>
+<li>It adds a large, high-temperature, safety-relevant system to a plant that already has too many</li>
+</ul>
+<h4 id="what-demo-actually-specified">What DEMO actually specified<a aria-hidden="true" class="heading-link" href="#what-demo-actually-specified" tabindex="-1" title="Link to this section">#</a></h4>
+<p>The pre-concept design phase settled a reference per blanket, and the pair shows the trade in the open (<a href="maturation-of-critical-technologies-demo-balance-of-plant.html">Maturation of Critical Technologies for the DEMO Balance of Plant Systems</a>):</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col"></th>
+<th scope="col">WCLL — direct coupling</th>
+<th scope="col">HCPB — indirect coupling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Store</td>
+<td>HITEC molten salt, <strong>400 m³</strong></td>
+<td>intermediate loop + larger store</td>
+</tr>
+<tr>
+<td>Steam load in dwell</td>
+<td><strong>~10% of nominal</strong></td>
+<td><strong>same as pulse</strong></td>
+</tr>
+<tr>
+<td>What it buys</td>
+<td>generator stays synchronised</td>
+<td>power conversion system is "not pulsed"</td>
+</tr>
+<tr>
+<td>Turbine</td>
+<td>still cycles</td>
+<td>does not</td>
+</tr>
+</tbody>
+</table></div>
+<p>The small store is <strong>not an energy system</strong> — it is a synchronisation device, sized to stop the generator dropping off the grid rather than to keep selling power. Only the indirect variant actually removes the turbine-life penalty, and it pays for that with a whole intermediate heat transport system. The technology is borrowed from <strong>concentrated solar power</strong>, which is the one industry that has already qualified molten-salt storage at this scale (~200 MWe, up to 1 GWh_th).</p>
+<p>The duty cycle it must cover is <strong>2 hours of burn, ramps of 100–200 seconds, and about 10 minutes of dwell at 1–2% of nominal power</strong> (<a href="tokamak-cooling-systems-and-power-conversion-system-options.html">Tokamak Cooling Systems and Power Conversion System Options</a>). Note the unsolved piece: the once-through steam generator has to run stably at <strong>1% of nominal</strong> in dwell, where industrial practice is 5% and above, and steam-turbine rotor materials for that duty remain open R&amp;D.</p>
+<p>Recent Chinese work (<em>Fusion Engineering and Design</em>, 2024; <em>Journal of Energy Storage</em>, 2026) proposes <strong>hybrid thermal-plus-electrochemical storage</strong>: thermal storage smooths the bulk output while a battery handles fast transients. The battery is small relative to the thermal store and considerably cheaper than sizing the thermal system for the worst case.</p>
+<h3 id="22-steady-state-operation--the-physics-answer">2.2 Steady-state operation — the physics answer<a aria-hidden="true" class="heading-link" href="#22-steady-state-operation--the-physics-answer" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Drive the current non-inductively and never stop. As <a href="16-heating-current-drive-fuelling.html">Document 16 §5</a> explains, this requires <strong><a href="bootstrap-current.html">bootstrap current</a> fractions of 70–90%</strong> in an advanced tokamak scenario, with the remainder driven by beams or RF at a recirculating-power cost.</p>
+<p>Advanced scenarios are harder to control, more MHD-sensitive, and rely on internal transport barriers that are delicate. Steady-state is a genuinely harder physics problem than pulsed operation, which is why ITER and DEMO chose pulsed baselines and treat steady-state as an upgrade path.</p>
+<p><strong>Stellarators simply do not have this problem.</strong> No plasma current means no transformer, no dwell, no thermal cycling, and no storage system. Combined with the absence of disruptions, this is the strongest practical argument for the concept, and it is what "inherently steady-state" actually buys in plant terms — not a physics elegance point but the removal of a multi-hundred-million-dollar storage system and a turbine lifetime penalty.</p>
+<h4 id="what-that-looks-like-in-a-design">What that looks like in a design<a aria-hidden="true" class="heading-link" href="#what-that-looks-like-in-a-design" tabindex="-1" title="Link to this section">#</a></h4>
+<p><a href="helios.html">Helios</a> is the first plant design in this vault to publish its grid interface in detail (<a href="overview-of-the-helios-design.html">Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant</a> — preconceptual, so projected). It has <strong>no thermal store at all</strong>, because it never stops: three steam turbines run continuously on 635 °C steam for <strong>~390 MWe</strong> net export, with an <strong>88% capacity factor</strong> limited by maintenance rather than by dwell (<a href="availability.html">Availability and RAMI</a>).</p>
+<p>Its electrical architecture is nonetheless not simple:</p>
+<ul>
+<li><strong>Twin 300 MVA transformers</strong> export from the turbine-generator at <strong>345 kV</strong></li>
+<li>A <strong>34.5 kV</strong> medium-voltage backbone, fed by a station-service transformer, supplies six internal groups: primary heat transfer, ECRH and magnet power supplies, cryogenics, controls and computing, utilities, and tritium systems</li>
+<li>A <strong>200–300 Mvar STATCOM or SVC</strong>, harmonic filters and a <strong>battery energy storage system</strong> stabilise transients</li>
+<li>Steady-state auxiliary demand is <strong>70 MW</strong>, with ramp-rate-limited power-up sequencing through controls, cryogenics, fuelling and ECRH</li>
+</ul>
+<p>So the storage system that §2.1 exists to avoid does not vanish entirely — it reappears, far smaller, as a battery sized for power-quality transients rather than for a full dwell period. That is the honest version of the steady-state advantage: a different and much cheaper storage problem, not none.</p>
+<h3 id="23-embrace-pulsing-entirely--the-helion-answer">2.3 Embrace pulsing entirely — the Helion answer<a aria-hidden="true" class="heading-link" href="#23-embrace-pulsing-entirely--the-helion-answer" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Helion</strong> operates at the opposite extreme: pulse repetition on the order of <strong>once per second or faster</strong>, with <strong>direct inductive energy recovery</strong> rather than a thermal cycle. At that rate the pulsation is far above any grid or turbine timescale, and power electronics smooth it trivially. There is no steam cycle to thermally cycle because there is no steam cycle.</p>
+<p><strong>Inertial fusion energy is similar.</strong> A plant firing at <strong>10–20 Hz</strong> is, from the grid's perspective, continuous. The pulsation problem disappears entirely; it is replaced by target manufacture and chamber survival (<a href="05-inertial-confinement-fusion.html">Document 05</a>).</p>
+<p><strong>This is a genuine and underappreciated architectural advantage of the pulsed-and-fast concepts.</strong> The problematic regime is precisely the middle one — pulses of minutes to hours — which is where the tokamak sits.</p>
+<hr/>
+<h2 id="3-the-other-pulsed-load-the-machines-own-power-supplies">3. The other pulsed load: the machine's own power supplies<a aria-hidden="true" class="heading-link" href="#3-the-other-pulsed-load-the-machines-own-power-supplies" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Before a fusion plant can put power on the grid, it draws enormous <strong>pulsed power</strong> from it. Ramping a multi-megaampere plasma current, energising poloidal field coils, and running heating systems means transient loads of hundreds of megawatts on second timescales.</p>
+<p>Drawing that directly from the grid causes voltage flicker and, at ITER's scale, would be unacceptable to any transmission operator.</p>
+<p><strong>The standard solution is flywheel energy storage.</strong> Large flywheel generator sets store energy over minutes and release it over seconds, decoupling the machine from the grid:</p>
+<ul>
+<li><strong><a href="asdex-upgrade.html">ASDEX Upgrade</a></strong> runs on <strong>three large flywheel generators</strong> feeding its pulsed power supply system — high current for magnetic confinement, high voltage for additional heating</li>
+<li><a href="jet.html">JET</a> operated two flywheel generators of 775 MVA combined</li>
+<li>ITER has both steady-state and pulsed power distribution networks, drawing up to hundreds of megawatts during a pulse</li>
+</ul>
+<p>Flywheel generator sets are used because of their large capacity and short working time — a good match to a tokamak's duty cycle, and a mature technology borrowed from the accelerator world.</p>
+<hr/>
+<h2 id="4-plant-operations-the-things-that-determine-whether-it-earns-money">4. Plant operations: the things that determine whether it earns money<a aria-hidden="true" class="heading-link" href="#4-plant-operations-the-things-that-determine-whether-it-earns-money" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="availability-and-where-it-goes">Availability, and where it goes<a aria-hidden="true" class="heading-link" href="#availability-and-where-it-goes" tabindex="-1" title="Link to this section">#</a></h3>
+<p><a href="10-economics-and-markets.html">Document 10</a> established that LCOE is roughly inversely proportional to capacity factor. Here is what actually consumes availability in a fusion plant:</p>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Cause</th>
+<th scope="col">Frequency</th>
+<th scope="col">Duration</th>
+<th scope="col">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="divertor.html">Divertor</a> replacement</strong></td>
+<td>Every 1–2 full-power years</td>
+<td>Months</td>
+<td>The most-loaded component</td>
+</tr>
+<tr>
+<td><strong>Blanket module replacement</strong></td>
+<td>Every 2–5 years</td>
+<td>Months</td>
+<td>Remote handling of activated, tritium-bearing modules</td>
+</tr>
+<tr>
+<td><strong>Planned inspection</strong></td>
+<td>Annual</td>
+<td>Weeks</td>
+<td>Remote inspection of an interior no human enters</td>
+</tr>
+<tr>
+<td><strong><a href="disruption.html">Disruption</a> recovery</strong></td>
+<td>Unplanned</td>
+<td>Days to months</td>
+<td>Damage-dependent; tokamaks only</td>
+</tr>
+<tr>
+<td><strong>Magnet <a href="quench.html">Quench</a></strong></td>
+<td>Rare</td>
+<td>Weeks to years</td>
+<td>Potentially catastrophic</td>
+</tr>
+<tr>
+<td><strong>Tritium plant maintenance</strong></td>
+<td>Continuous concern</td>
+<td>—</td>
+<td>Cannot be shut down independently</td>
+</tr>
+<tr>
+<td><strong>Conventional plant</strong></td>
+<td>As any thermal station</td>
+<td>—</td>
+<td>Turbine, generator, cooling</td>
+</tr>
+</tbody>
+</table></div>
+<p>Fission plants achieve 90%+ availability with <strong>direct human access during outage</strong>, fuel changes that take weeks, and forty years of accumulated operational practice. Fusion has none of those advantages.</p>
+<p>DOE's roadmap treats this as a first-class problem: near-term, establish an <strong>initial RAMI handbook with metrics, availability targets and design-for-maintainability guidance</strong>; mid-term, <strong>validate mock-up maintenance workflows and collect reliability data for predictive maintenance models</strong>; and expand <strong>RAMI analysis to top failure-mode studies and pilot-relevant reliability targets</strong>.</p>
+<p>That phrasing — <em>establish an initial handbook</em> — is worth noting. <strong>The industry does not yet have agreed availability metrics for fusion plants</strong>, let alone data.</p>
+<h3 id="operational-planning-is-now-a-research-topic">Operational planning is now a research topic<a aria-hidden="true" class="heading-link" href="#operational-planning-is-now-a-research-topic" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Recent work applies <strong>mixed-integer programming unit-commitment models</strong> — the standard tool for scheduling conventional generation fleets — to magnetic confinement fusion power plants (<em>Fusion Engineering and Design</em>, 2025). That such a paper needed writing tells you something: <strong>nobody has yet worked out how a fusion plant bids into an electricity market.</strong></p>
+<p>The open questions are practical and unglamorous:</p>
+<ul>
+<li>Can a fusion plant provide <strong>frequency response</strong> or <strong>spinning reserve</strong>? A tokamak cannot ramp quickly; a thermal store might</li>
+<li>What is its <strong>forced outage rate</strong> for capacity-market accreditation?</li>
+<li>Can it <strong>black start</strong>? Almost certainly not — a fusion plant needs substantial grid power to start</li>
+<li>How does a pulsed plant participate in a market that settles in five-minute intervals?</li>
+</ul>
+<h3 id="startup-shutdown-and-the-tritium-constraint">Startup, shutdown and the tritium constraint<a aria-hidden="true" class="heading-link" href="#startup-shutdown-and-the-tritium-constraint" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A fusion plant cannot be started from cold quickly. Cooling 10,000 tonnes of magnet to 4.5 K takes <strong>weeks</strong>. Conditioning the vacuum vessel takes days. This makes a fusion plant a <strong>baseload machine by construction</strong>, unsuited to load-following, and it means an unplanned trip is expensive in ways a gas turbine's is not.</p>
+<p>There is also a fuel-cycle constraint with no analogue in fission: <strong>tritium decays at 5.5% per year whether the plant runs or not.</strong> An idle fusion plant is losing its fuel inventory continuously. Extended outages are therefore doubly costly — lost revenue plus lost tritium — and this feeds back into the fleet doubling-time argument in <a href="09-engineering-challenges.html">Document 09</a>.</p>
+<hr/>
+<h2 id="5-siting">5. Siting<a aria-hidden="true" class="heading-link" href="#5-siting" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A pattern has emerged across three continents, and it is deliberate:</p>
+<div aria-label="Table 3 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Project</th>
+<th scope="col">Site</th>
+<th scope="col">Former use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CFS <a href="arc.html">ARC</a></strong></td>
+<td>Chesterfield County, Virginia</td>
+<td>James River Industrial Center</td>
+</tr>
+<tr>
+<td><strong>UK <a href="step.html">STEP</a></strong></td>
+<td>West Burton, Nottinghamshire</td>
+<td><strong>Coal-fired power station</strong></td>
+</tr>
+<tr>
+<td><strong>Type One <a href="infinity-two.html">Infinity Two</a></strong></td>
+<td>Tennessee</td>
+<td><strong>TVA former coal facility</strong></td>
+</tr>
+<tr>
+<td><strong>Helion Orion</strong></td>
+<td>Malaga, Washington</td>
+<td>Industrial site near hydro generation</td>
+</tr>
+<tr>
+<td><strong>Realta</strong></td>
+<td>Madison, Wisconsin</td>
+<td><strong>Former Oscar Mayer plant</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Retired industrial and coal sites are close to an ideal siting profile for fusion:</strong></p>
+<ul>
+<li>Existing high-capacity <strong>grid connection and switchyard</strong> — the interconnection queue is a multi-year obstacle for greenfield generation</li>
+<li>Existing <strong>cooling water</strong> rights and infrastructure</li>
+<li>Existing <strong>industrial zoning</strong> and environmental baseline</li>
+<li>A local workforce with <strong>energy-industry skills</strong> and a community that wants the jobs back</li>
+<li>Local politics that is <strong>favourable rather than merely tolerant</strong></li>
+</ul>
+<p>CFS's application to <strong>PJM Interconnection</strong> in early 2026 — the first ever by a fusion company — is the corresponding move on the grid side, and the fact that it happened years before there is anything to connect reflects how long interconnection takes.</p>
+<hr/>
+<h2 id="6-what-this-means">6. What this means<a aria-hidden="true" class="heading-link" href="#6-what-this-means" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>The pulsed tokamak is the awkward case, and it is also the leading concept.</strong> Pulses of minutes to hours are precisely the timescale that damages turbines and requires expensive thermal storage. Faster-pulsed concepts (Helion, IFE) and continuous concepts (stellarators) both avoid it, from opposite directions.</p>
+<p><strong>Thermal storage is a real cost that rarely appears in cost estimates.</strong> A store sized for a DEMO-class dwell period is a significant capital item, and most published fusion LCOE figures do not obviously include it.</p>
+<p><strong>Availability is the least-analysed and most economically decisive parameter in fusion</strong>, and the industry is only now writing down how to measure it.</p>
+<p><strong>Siting has quietly gone well.</strong> Unanimous local approval in Virginia, a UK site transferred three and a half years early, and a US public utility hosting a <a href="stellarator.html">Stellarator</a> are not the outcomes a technology with fusion's public-communication history might have expected. The coal-site strategy is working.</p>
+<hr/>
+<p><strong>Continue to:</strong> <a href="25-failure-case-studies.html">25 — Failure Case Studies</a> · <a href="27-people-institutions-public-trust.html">27 — People, Institutions and Public Trust</a> · <a href="10-economics-and-markets.html">10 — Economics and Markets</a></p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/synthesis/24-grid-integration-and-operations.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/synthesis/24-grid-integration-and-operations.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="05-inertial-confinement-fusion.html">Inertial Confinement Fusion</a> <small>Synthesis</small></li><li><a href="09-engineering-challenges.html">Engineering Challenges</a> <small>Synthesis</small></li><li><a href="10-economics-and-markets.html">Economics and Markets</a> <small>Synthesis</small></li><li><a href="16-heating-current-drive-fuelling.html">Heating, Current Drive and Fuelling</a> <small>Synthesis</small></li><li><a href="25-failure-case-studies.html">Failure Case Studies</a> <small>Synthesis</small></li><li><a href="27-people-institutions-public-trust.html">People, Institutions and Public Trust</a> <small>Synthesis</small></li><li><a href="balance-of-plant.html">Balance of Plant</a> <small>Concept</small></li><li><a href="fusion-fission-twin-conjoint-public-support-2026.html">Twin Conjoint Experiment on Fusion and Next-generation Fission</a> <small>Source note</small></li><li><a href="helios.html">Helios</a> <small>Entity</small></li></ul></section><details class="backlinks"><summary>Linked from 17 library notes</summary><ul><li><a href="16-heating-current-drive-fuelling.html">Heating, Current Drive and Fuelling</a></li><li><a href="22-critical-materials-supply-chains.html">Critical Materials and Supply Chains</a></li><li><a href="23-standards-codes-liability.html">Standards, Codes and Liability</a></li><li><a href="27-people-institutions-public-trust.html">People, Institutions and Public Trust</a></li><li><a href="29-remote-handling-and-maintenance.html">Remote Handling and Maintenance</a></li><li><a href="34-investment-mechanics.html">The Investment Mechanics</a></li><li><a href="35-fusion-and-climate.html">Fusion and Climate</a></li><li><a href="availability.html">Availability and RAMI</a></li><li><a href="balance-of-plant.html">Balance of Plant</a></li><li><a href="bootstrap-current.html">Bootstrap Current</a></li><li><a href="infinity-two.html">Infinity Two</a></li><li><a href="maturation-of-critical-technologies-demo-balance-of-plant.html">Maturation of Critical Technologies for the DEMO Balance of Plant Systems</a></li><li><a href="primary-heat-transfer-system.html">Primary Heat Transfer System (PHTS)</a></li><li><a href="recirculating-power.html">Recirculating Power</a></li><li><a href="stellarator.html">Stellarator</a></li><li><a href="thermal-storage-pulsed-operation.html">Pulsed Operation and Thermal Storage</a></li><li><a href="tokamak-cooling-systems-and-power-conversion-system-options.html">Tokamak Cooling Systems and Power Conversion System Options</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

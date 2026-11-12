@@ -1,0 +1,219 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Simulation, Codes and Nuclear Data — Project Lux</title><meta name="description" content="Project Lux · The computational infrastructure fusion runs on, and the data gaps underneath it"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/19-simulation-codes-nuclear-data.html"><meta property="og:title" content="Simulation, Codes and Nuclear Data — Project Lux"><meta property="og:description" content="Project Lux · The computational infrastructure fusion runs on, and the data gaps underneath it"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/19-simulation-codes-nuclear-data.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Synthesis</p><p class="eyebrow">Synthesis · Document 19</p><h1 id="doc-title">Simulation, Codes and Nuclear Data</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Synthesis</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-11-02">2 November 2026</time></dd></div><div><dt>First written</dt><dd>25 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=computation">computation</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#1-why-fusion-is-a-computational-science">1. Why fusion is a computational science</a></li><li><a href="#2-the-plasma-physics-code-ecosystem">2. The plasma physics code ecosystem</a></li><li><a href="#3-integrated-modelling-and-imas">3. Integrated modelling and IMAS</a></li><li><a href="#4-nuclear-data--the-quiet-weak-link">4. Nuclear data — the quiet weak link</a></li><li><a href="#5-exascale-and-digital-twins">5. Exascale and digital twins</a></li><li><a href="#6-where-ai-actually-sits-in-the-stack">6. Where AI actually sits in the stack</a></li><li><a href="#7-the-honest-limitations">7. The honest limitations</a></li><li><a href="#8-why-this-belongs-in-a-fusion-dossier">8. Why this belongs in a fusion dossier</a></li><li><a href="#evidence-in-raw">Evidence in raw/</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><em>Project Lux · The computational infrastructure fusion runs on, and the data gaps underneath it</em></p>
+<hr/>
+<h2 id="1-why-fusion-is-a-computational-science">1. Why fusion is a computational science<a aria-hidden="true" class="heading-link" href="#1-why-fusion-is-a-computational-science" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Fusion has an unusual relationship with simulation. In most engineering fields, you build prototypes and iterate. In fusion, a prototype costs a billion dollars and takes a decade, so <strong>the design must be substantially correct before construction begins</strong> — and that means it must be simulated.</p>
+<p>Three specific pressures make this acute:</p>
+<ol>
+<li><strong>Extrapolation.</strong> No machine has ever operated in the burning-plasma regime. Every reactor design extrapolates from devices that are smaller, colder, and running the wrong fuel.</li>
+<li><strong>Coupled multiphysics.</strong> Plasma turbulence, MHD stability, neutron transport, thermal-hydraulics, structural mechanics and tritium chemistry are all coupled, on timescales spanning microseconds to years.</li>
+<li><strong>Irreducible cost of the underlying physics.</strong> A first-principles turbulence simulation of a single confinement time in a reactor-scale plasma is an exascale problem.</li>
+</ol>
+<p>The DOE roadmap treats this as infrastructure on a par with hardware: the <strong>AI-Fusion Digital Convergence Platform</strong> is one of only two Build-pillar key actions, and <strong>HPC, advanced manufacturing and AI</strong> is one of the eight Infrastructure Streams.</p>
+<hr/>
+<h2 id="2-the-plasma-physics-code-ecosystem">2. The plasma physics code ecosystem<a aria-hidden="true" class="heading-link" href="#2-the-plasma-physics-code-ecosystem" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="gyrokinetics--turbulent-transport">Gyrokinetics — turbulent transport<a aria-hidden="true" class="heading-link" href="#gyrokinetics--turbulent-transport" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The dominant loss channel in a magnetically confined plasma is <strong>microturbulence</strong> driven by the gradients confinement creates. Simulating it from first principles requires solving a 5-dimensional kinetic equation (three space, two velocity) after averaging out the fast gyration — the <strong>gyrokinetic</strong> approximation.</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Code</th>
+<th scope="col">Type</th>
+<th scope="col">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GENE</strong></td>
+<td>Eulerian (continuum)</td>
+<td>Open source, used worldwide, developed at IPP Garching. The European workhorse</td>
+</tr>
+<tr>
+<td><strong>CGYRO</strong></td>
+<td>Eulerian</td>
+<td>General Atomics. Used for the <strong><a href="sparc.html">SPARC</a> first-campaign performance predictions</strong> (arXiv:2403.15633)</td>
+</tr>
+<tr>
+<td><strong>GYRO / TGLF</strong></td>
+<td>Eulerian / reduced model</td>
+<td>TGLF is a fast quasilinear surrogate used inside design loops</td>
+</tr>
+<tr>
+<td><strong>XGC</strong></td>
+<td>Particle-in-cell, gyrokinetic</td>
+<td>Optimised for the <strong>edge</strong> — the open-field-line region conventional codes cannot handle</td>
+</tr>
+<tr>
+<td><strong>GTC / GEM / ORB5</strong></td>
+<td>Particle-in-cell</td>
+<td>Global core turbulence</td>
+</tr>
+<tr>
+<td><strong>STELLA / GENE-3D</strong></td>
+<td>—</td>
+<td><a href="stellarator.html">Stellarator</a> geometry</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The core-edge coupling problem.</strong> Core codes assume closed flux surfaces; edge codes must handle open field lines, neutrals and wall interaction. Real plasmas do not respect the boundary. The <strong>WDMApp</strong> project built <strong>EFFIS 2.0</strong>, an integration framework coupling <strong>XGC</strong> (edge) to <strong>GENE</strong> or <strong>GEM</strong> (core) in a single running simulation — one of the significant computational achievements of the last decade, and a prerequisite for predicting whether a detached <a href="divertor.html">Divertor</a> is compatible with a high-performance core.</p>
+<h3 id="mhd--large-scale-stability">MHD — large-scale stability<a aria-hidden="true" class="heading-link" href="#mhd--large-scale-stability" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong>M3D-C1, NIMROD, JOREK</strong> — nonlinear extended MHD; used for disruptions, ELMs, vertical displacement events, and <a href="shattered-pellet-injection.html">shattered pellet injection</a> modelling</li>
+<li><strong>DREAM</strong> — the runaway electron fluid/kinetic framework behind the <a href="iter.html">ITER</a> <a href="disruption.html">Disruption</a> results in <a href="17-diagnostics-control-disruption.html">Document 17</a></li>
+<li><strong>MARS, MISHKA, ELITE</strong> — linear stability and <a href="pedestal.html">Pedestal</a> analysis</li>
+</ul>
+<h3 id="equilibrium-and-design">Equilibrium and design<a aria-hidden="true" class="heading-link" href="#equilibrium-and-design" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong>EFIT</strong> — real-time equilibrium reconstruction from magnetic measurements. Runs on essentially every <a href="tokamak.html">Tokamak</a> in the world</li>
+<li><strong>VMEC, DESC, SPEC</strong> — 3D equilibrium for stellarators</li>
+<li><strong>SIMSOPT, STELLOPT</strong> — stellarator optimisation frameworks</li>
+<li><strong>FreeGS, CHEASE, TRANSP</strong> — free-boundary equilibrium and integrated transport analysis</li>
+</ul>
+<h3 id="edge-and-divertor">Edge and divertor<a aria-hidden="true" class="heading-link" href="#edge-and-divertor" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong>SOLPS-ITER</strong> — the standard for divertor design; couples plasma fluid transport to kinetic neutrals. Notoriously expensive to run, which is why <strong>latent-space surrogate models for <a href="detachment.html">Detachment</a> control</strong> (arXiv:2502.19654) matter: they put a fast learned approximation inside a real-time control loop.</li>
+</ul>
+<hr/>
+<h2 id="3-integrated-modelling-and-imas">3. Integrated modelling and IMAS<a aria-hidden="true" class="heading-link" href="#3-integrated-modelling-and-imas" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Individual physics codes are not enough; a plant design needs them to talk to each other, consistently, with a shared description of the machine.</p>
+<p><strong>IMAS</strong> — the <strong>ITER Integrated Modelling &amp; Analysis Suite</strong> — is the field's answer. Its core contribution is not a solver but a <strong>standardised data model</strong>: the <em>Interface Data Structures</em> (IDS), a common schema for describing plasma equilibria, profiles, machine geometry and diagnostic data.</p>
+<p>This sounds bureaucratic and is, in practice, transformative. Before IMAS, coupling two codes meant writing a bespoke translator, and every pairing was a separate project. With a shared schema, codes become composable. IMAS has been progressively open-sourced and adopted well beyond ITER.</p>
+<p>Other integrated frameworks: <strong>OMFIT</strong> (a widely used workflow and analysis integration environment), <strong>FACIT/JINTRAC/ETS</strong> in Europe, and <strong>TRANSP</strong> at PPPL.</p>
+<p>DOE's Challenge Area F milestones include launching <strong>"a centralized, standards-based data repository implementing FAIR principles"</strong> and publishing <strong>"a common VV/UQ framework enabling interoperable, traceable whole-plant modeling."</strong> The <strong>FEDER</strong> FIRE Collaborative (Fusion Energy Data Ecosystem and Repository) is the vehicle.</p>
+<hr/>
+<h2 id="4-nuclear-data--the-quiet-weak-link">4. Nuclear data — the quiet weak link<a aria-hidden="true" class="heading-link" href="#4-nuclear-data--the-quiet-weak-link" tabindex="-1" title="Link to this section">#</a></h2>
+<p>This is the part of the computational stack that almost nobody discusses, and it directly threatens the field's second-hardest problem.</p>
+<h3 id="what-nuclear-data-is">What nuclear data is<a aria-hidden="true" class="heading-link" href="#what-nuclear-data-is" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Every neutronics calculation — <a href="tritium-breeding-ratio.html">tritium breeding ratio</a>, shielding, activation, nuclear heating, damage rates, shutdown dose — is only as good as the <strong>evaluated cross-section libraries</strong> it uses. These are curated compilations of how each isotope responds to neutrons at each energy, built from measurement, nuclear theory and evaluation.</p>
+<p><strong>FENDL</strong> — the <strong>Fusion Evaluated Nuclear Data Library</strong>, coordinated by the <strong>IAEA Nuclear Data Section</strong> — is the fusion community's standard, with sub-libraries for incident neutrons, protons and deuterons, covering both transport and inventory calculations.</p>
+<h3 id="the-state-of-it">The state of it<a aria-hidden="true" class="heading-link" href="#the-state-of-it" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The published assessment is not reassuring:</p>
+<ul>
+<li>In <strong>FENDL-3.1d</strong>, neutron cross sections for <strong>65 of 180 isotopes</strong> are simply inherited from <strong>ENDF/B-VII.1</strong> — a general-purpose fission-oriented library, not a fusion evaluation</li>
+<li><strong>Neutron fluxes computed with different libraries differ by as much as +12% / −8%</strong> against reference libraries</li>
+<li><strong>Five isotopes were found to have negative average heating numbers</strong> — a physically impossible value, i.e. an outright data defect</li>
+<li><strong>Uncertainty propagation to gamma heating and shutdown dose rate has never been published</strong> by any study. Most published uncertainty work has propagated only to tritium production rate and TBR</li>
+</ul>
+<h3 id="why-this-matters-more-than-it-sounds">Why this matters more than it sounds<a aria-hidden="true" class="heading-link" href="#why-this-matters-more-than-it-sounds" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The <strong>tritium breeding ratio design target is 1.1, and the failure threshold is 1.0.</strong> That is a <strong>10% margin</strong>.</p>
+<p>Nuclear data uncertainty on TBR is of order a few percent, and the flux discrepancies between libraries are up to 12%. <strong>The uncertainty in the calculation is a meaningful fraction of the entire design margin on the parameter that determines whether a fusion plant can operate at all.</strong></p>
+<p>The corollary: a blanket design validated only computationally has not been validated. This is precisely why <strong><a href="unity-3.html">UNITY-3</a></strong> (ORNL, 2026 — the first facility generating 14 MeV neutrons to evaluate commercial breeding blanket designs) and the UK's <strong>£220 m <a href="librti.html">LIBRTI</a></strong> exist, and why they matter more than their budgets suggest.</p>
+<p>DOE's Challenge Area E milestone states it directly: <strong>"Close neutronics data gaps for activation, shielding and tritium breeding; integrate into multiscale models."</strong></p>
+<h3 id="the-transport-codes">The transport codes<a aria-hidden="true" class="heading-link" href="#the-transport-codes" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong>MCNP</strong> — the long-standing Monte Carlo standard, export-controlled, developed at Los Alamos</li>
+<li><strong>OpenMC</strong> — open source, MIT-origin, increasingly the community choice. Notably, OpenMC benchmarking had to fall back to ENDF/B-VIII.0 <strong>because of problems in the converted FENDL-3.1d photon data</strong> — a small but telling detail</li>
+<li><strong>Serpent, Geant4, ADVANTG/FW-CADIS</strong> for variance reduction</li>
+<li>Emerging <strong>deterministic discontinuous-Galerkin</strong> approaches for fusion neutronics</li>
+<li><strong>Paramak / OpenMC-DAGMC</strong> — CAD-to-neutronics workflows, which matter because fusion geometry is far more complex than a fission core</li>
+<li><strong>G4Tokamak</strong> — an in-house <strong><a href="tokamak-energy.html">Tokamak Energy</a></strong> application for plant-scale neutronics, built on the <strong>Geant4</strong> toolkit and <em>"verified through benchmarking against MCNP"</em>, credited with faster design iteration on <a href="st-e1.html">ST-E1</a> (<a href="st-e1-neutronics-crossref-metadata-2026.html">Nuclear Technology Considerations and Neutronics for the ST-E1 Fusion Power Plant</a>). Added 2026-10-19</li>
+</ul>
+<aside class="callout callout-note"><p class="callout-label">Note</p>
+<p>A third lineage, and a company-built one
+G4Tokamak is worth flagging for two reasons. <strong>Geant4 is a high-energy-physics toolkit</strong>, not a
+reactor-physics code — so this is a third genealogy alongside MCNP's weapons-lab lineage and
+OpenMC's academic one, imported from particle physics into fusion plant design. And it is
+<strong>built and maintained by a private company for its own design loop</strong>, which is the pattern this
+document notes elsewhere for proprietary tooling: the benchmarking claim cannot be independently
+assessed from outside.</p>
+<p><strong>This vault holds only the abstract</strong>, which asserts MCNP agreement without an agreement metric,
+and does not name the nuclear data library used — a material omission given the FENDL-3.1d photon
+data problem recorded on <a href="nuclear-data-fendl.html">Nuclear Data and FENDL</a>. The full text is behind a publisher CAPTCHA.</p>
+</aside>
+<hr/>
+<h3 id="company-built-codes-enter-the-record">Company-built codes enter the record<a aria-hidden="true" class="heading-link" href="#company-built-codes-enter-the-record" tabindex="-1" title="Link to this section">#</a></h3>
+<p><em>Added 2026-11-02.</em> Until now this document's neutronics coverage was MCNP and OpenMC, both
+community tools. The <a href="st-e1.html">ST-E1</a> Focus Collection introduces two in-house alternatives, and
+they matter as a trend as much as individually: <strong>a design team that builds its own solver owns
+its own verification burden.</strong></p>
+<p><strong>G4Tokamak</strong> — <a href="tokamak-energy.html">Tokamak Energy</a>'s plant-scale neutronics application built on
+<strong>Geant4</strong>, running <strong>ENDF/B-VIII.0</strong> with ParticleHP for transport and <strong>FISPACT-II with
+TENDL-2019</strong> for activation (<a href="st-e1-neutronics-crossref-metadata-2026.html">Nuclear Technology Considerations and Neutronics for the ST-E1 Fusion Power Plant</a>). Against MCNP on a 20°
+sector its mean flux ratio is <strong>0.90</strong> — a ~10% underestimate — while returning a <strong>2% higher</strong>
+<a href="tritium-breeding-ratio.html">TBR</a> (1.194 against 1.169). Largest discrepancies: vacuum-vessel outer
+wall, its insulation, and the solenoid former.</p>
+<aside class="callout callout-note"><p class="callout-label">Note</p>
+<p>"Verified through benchmarking" is a claim with a number but not a criterion
+No tolerance, acceptance threshold or statistical test accompanies the 0.90 ratio. A code that
+underestimates flux while overestimating breeding is biased in the <em>optimistic</em> direction on both
+counts — shielding looks better and breeding looks better. The paper does not discuss this.
+See <a href="nuclear-data-fendl.html">Nuclear Data and FENDL</a>.</p>
+</aside>
+<p><strong>PyFuel</strong> — Tokamak Energy's fuel-cycle code, used for the ST-E1 inventory modelling, including a
+concentration-dependent tritium-extraction efficiency curve
+(<a href="st-e1-tritium-systems-crossref-metadata-2026.html">Tritium Production and Processing Systems for ST-E1</a>). Alongside <strong>TMAP8</strong>, which INL maintains and which
+reproduces <a href="meschini-2023-tritium-fuel-cycle-arc-step.html">Meschini <em>et al.</em> 2023</a> as a benchmark
+case, and the Matlab Simulink model that paper itself uses, the vault now holds <strong>three distinct
+fuel-cycle code lineages</strong> — none validated against an operating fuel cycle, because none exists.</p>
+<h2 id="5-exascale-and-digital-twins">5. Exascale and digital twins<a aria-hidden="true" class="heading-link" href="#5-exascale-and-digital-twins" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-compute">The compute<a aria-hidden="true" class="heading-link" href="#the-compute" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Fusion has been a driver application for every generation of leadership computing. Exascale machines — Frontier, Aurora, El Capitan, LUMI, JUPITER — run gyrokinetic and MHD simulations at scales that were impossible five years ago.</p>
+<p>The stated ambition has shifted from <em>simulating isolated aspects</em> to <em>integrated simulation</em>: <strong>combining plasma physics, materials science and engineering into a comprehensive virtual replica of a fusion device</strong> — a digital twin.</p>
+<h3 id="the-digital-twin-defined-properly">The digital twin, defined properly<a aria-hidden="true" class="heading-link" href="#the-digital-twin-defined-properly" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A digital twin is not just a simulation. It is a model <strong>coupled to live data from the physical machine</strong>, updated continuously, used for prediction, diagnosis and control. The distinction matters: a simulation tells you what should happen; a twin tells you what is happening in the parts of the machine you cannot see.</p>
+<p>Recent milestones:</p>
+<ul>
+<li><em>Towards digital twins of fusion systems</em>, <strong>Nucl. Fusion (2026)</strong> — the current review</li>
+<li><em>Summary report from the mini-conference on Digital Twins for Fusion Research</em>, <strong>Phys. Plasmas 32, 050601 (2025)</strong> — the community's consolidated position</li>
+<li><strong><a href="thea-energy.html">Thea Energy</a>'s stellarator digital twin</strong> with <strong>NVIDIA, Synopsys, Argonne and Princeton</strong> — the clearest private-sector instance, and notably it includes an EDA company (Synopsys), which signals a chip-industry approach to design verification</li>
+<li><strong>DOE's Genesis Mission</strong> selected its first projects in July 2026, several fusion-focused</li>
+</ul>
+<p>The 2026 literature converges on a specific formulation: <strong>validated tools leveraging high-fidelity exascale computing combined with multi-fidelity models, including AI-based surrogates.</strong> You cannot run a gyrokinetic simulation inside a control loop; you can run a neural surrogate trained on one.</p>
+<hr/>
+<h2 id="6-where-ai-actually-sits-in-the-stack">6. Where AI actually sits in the stack<a aria-hidden="true" class="heading-link" href="#6-where-ai-actually-sits-in-the-stack" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Distinguishing the four genuinely different uses is worth doing, because they are often conflated:</p>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Use</th>
+<th scope="col">What it does</th>
+<th scope="col">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Surrogate modelling</strong></td>
+<td>Learned approximations replacing expensive solvers inside design and control loops</td>
+<td><strong>Working, widely deployed.</strong> TGLF-like reduced models, latent-space detachment models, NIF <a href="ignition.html">Ignition</a> prediction (<em>Science</em>, 2024)</td>
+</tr>
+<tr>
+<td><strong>Real-time control</strong></td>
+<td>RL agents commanding actuators directly</td>
+<td><strong>Demonstrated on real machines.</strong> <a href="tcv.html">TCV</a> magnetic control (<em>Nature</em>, 2022); <a href="diii-d.html">DIII-D</a> tearing avoidance (<em>Nature</em>, 2024)</td>
+</tr>
+<tr>
+<td><strong>Design optimisation</strong></td>
+<td>Searching high-dimensional design spaces</td>
+<td><strong>Working.</strong> Stellarator optimisation; latent diffusion models generating quasi-isodynamic configurations (arXiv:2608.16938)</td>
+</tr>
+<tr>
+<td><strong>Data curation and interpretation</strong></td>
+<td>Making decades of heterogeneous experimental data usable</td>
+<td><strong>Underinvested.</strong> DOE's FAIR repository and FEDER address exactly this</td>
+</tr>
+</tbody>
+</table></div>
+<p>That last row is where the least glamorous and possibly highest-return work is. Fusion has seventy years of experimental data in inconsistent formats across dozens of machines, and the empirical scaling laws that reactor designs depend on — IPB98(y,2) and its successors — are regressions over exactly that data.</p>
+<hr/>
+<h2 id="7-the-honest-limitations">7. The honest limitations<a aria-hidden="true" class="heading-link" href="#7-the-honest-limitations" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>Turbulence simulations still cannot span a discharge.</strong> A first-principles gyrokinetic run covers milliseconds of a plasma that lives for seconds to minutes. Reactor predictions rely on reduced models calibrated against short high-fidelity runs, and on empirical scaling laws fitted to machines an order of magnitude smaller than the one being designed.</p>
+<p><strong>Nobody has simulated a <a href="burning-plasma.html">burning plasma</a> with validated confidence</strong>, because there is no burning plasma to validate against. Every prediction for SPARC and ITER is an extrapolation, and the codes agree with each other more than they have been tested against reality.</p>
+<p><strong>Nuclear data uncertainty is comparable to the TBR design margin</strong>, as above.</p>
+<p><strong>Integrated whole-plant modelling barely exists.</strong> Coupling plasma to blanket to fuel cycle to structural response with quantified uncertainty is a DOE <strong>long-term</strong> milestone — 5 to 10 years out — meaning first-generation pilot plants will be designed without it.</p>
+<p><strong>Validation and uncertainty quantification is the weakest link.</strong> A code that reproduces existing experiments has been <em>calibrated</em>, not necessarily <em>validated</em>, and the difference only becomes apparent when you extrapolate. This is why DOE's roadmap calls for a <strong>common VV/UQ framework</strong> as a near-term deliverable — it is an admission that the field does not currently have one.</p>
+<hr/>
+<h2 id="8-why-this-belongs-in-a-fusion-dossier">8. Why this belongs in a fusion dossier<a aria-hidden="true" class="heading-link" href="#8-why-this-belongs-in-a-fusion-dossier" tabindex="-1" title="Link to this section">#</a></h2>
+<p>It is tempting to treat computation as support infrastructure. It is not. Three concrete dependencies:</p>
+<ul>
+<li><strong>SPARC's performance prediction — the basis for a multi-billion-dollar machine and the DOE's national Milestone 1 — is a nonlinear CGYRO calculation.</strong> If the turbulence model is wrong, the machine underperforms and there is no cheap way to find out first.</li>
+<li><strong>Every tritium breeding ratio is a neutronics calculation</strong> resting on a library where a third of the isotopes are inherited from a fission evaluation and five have physically impossible heating numbers.</li>
+<li><strong>Every stellarator now being commercialised was designed by an optimiser</strong>, not drawn by an engineer. Proxima's Stellaris, Thea's planar-coil array and Type One's <a href="infinity-two.html">Infinity Two</a> exist because the objective function could be evaluated cheaply enough to search.</li>
+</ul>
+<p>Fusion's computational stack is load-bearing. Its weakest members are <strong>nuclear data</strong> and <strong>validated whole-plant integration</strong> — and neither gets a fraction of the attention that magnets or plasma records receive.</p>
+<h2 id="evidence-in-raw">Evidence in <code>raw/</code><a aria-hidden="true" class="heading-link" href="#evidence-in-raw" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Primary sources held in this vault that evidence the claims above:</p>
+<ul>
+<li><a href="sparc-first-campaign-cgyro-predictions.html">Core Performance Predictions in Projected SPARC First-Campaign Plasmas with Nonlinear CGYRO</a></li>
+</ul>
+<hr/>
+<p><strong>Continue to:</strong> <a href="20-fusion-beyond-electricity.html">20 — Fusion Beyond Electricity</a> · <a href="26-appendix-quantitative-data.html">26 — Appendix: Quantitative Progress Data</a> · <a href="09-engineering-challenges.html">09 — Engineering Challenges</a></p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/synthesis/19-simulation-codes-nuclear-data.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/synthesis/19-simulation-codes-nuclear-data.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="09-engineering-challenges.html">Engineering Challenges</a> <small>Synthesis</small></li><li><a href="17-diagnostics-control-disruption.html">Diagnostics, Control and Disruption Mitigation</a> <small>Synthesis</small></li><li><a href="20-fusion-beyond-electricity.html">Fusion Beyond Electricity</a> <small>Synthesis</small></li><li><a href="26-appendix-quantitative-data.html">Appendix: Quantitative Progress Data</a> <small>Synthesis</small></li><li><a href="fusionmae-crossref-metadata-2026.html">FusionMAE: Self-supervised Pretraining for Fusion Diagnostics and Control</a> <small>Source note</small></li><li><a href="hl3-data-driven-rl-control-2025.html">Data-driven Dynamics and Reinforcement-learning Control on HL-3</a> <small>Source note</small></li><li><a href="tcv-predict-first-rampdown-2025.html">Learning Plasma Dynamics and Robust Ramp-down Trajectories at TCV</a> <small>Source note</small></li><li><a href="tokamak-agnostic-elm-crossref-metadata-2026.html">Explainable Tokamak-agnostic ELM Forecasting</a> <small>Source note</small></li></ul></section><details class="backlinks"><summary>Linked from 19 library notes</summary><ul><li><a href="00-executive-summary.html">Executive Summary</a></li><li><a href="17-diagnostics-control-disruption.html">Diagnostics, Control and Disruption Mitigation</a></li><li><a href="18-superconductors-and-magnets.html">Superconductors and Magnet Engineering</a></li><li><a href="27-people-institutions-public-trust.html">People, Institutions and Public Trust</a></li><li><a href="29-remote-handling-and-maintenance.html">Remote Handling and Maintenance</a></li><li><a href="31-plasma-physics-deeper-cuts.html">Plasma Physics: The Deeper Cuts</a></li><li><a href="40-ai-for-fusion-transferable-control.html">AI for Fusion: From Device-Specific Models to Transferable Control</a></li><li><a href="flynn-larsen-2022-kalman-filters-tritium-accountancy.html">Investigating the application of Kalman Filters for real-time accountancy in fusion fuel cycles</a></li><li><a href="iaea.html">International Atomic Energy Agency</a></li><li><a href="marsteller-2025-t2apir-first-results.html">First Results of the Tritium Absorption InfraRed Spectroscopy (T2ApIR) Experiment</a></li><li><a href="nuclear-data-fendl.html">Nuclear Data and FENDL</a></li><li><a href="pppl.html">Princeton Plasma Physics Laboratory</a></li><li><a href="sparc-first-campaign-cgyro-predictions.html">Core Performance Predictions in Projected SPARC First-Campaign Plasmas with Nonlinear CGYRO</a></li><li><a href="st-e1.html">ST-E1</a></li><li><a href="st-e1-neutronics-crossref-metadata-2026.html">Nuclear Technology Considerations and Neutronics for the ST-E1 Fusion Power Plant</a></li><li><a href="thea-energy.html">Thea Energy</a></li><li><a href="tokamak-energy.html">Tokamak Energy</a></li><li><a href="tritium-breeding-ratio.html">Tritium Breeding Ratio (TBR)</a></li><li><a href="yang-2026-st-e1-tritium-tmap8-surrogate-models.html">Multiscale Assessment of Tritium Behavior in Preliminary Fusion Pilot Plant Design Using Surrogate Models in TMAP8</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

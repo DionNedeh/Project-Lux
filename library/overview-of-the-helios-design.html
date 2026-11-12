@@ -1,0 +1,62 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant — Project Lux</title><meta name="description" content="The overview paper for Thea Energy &#x27;s preconceptual design of Helios , a planar-coil Stellarator power plant, summarising a Fusion Engineering and Design special…"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/overview-of-the-helios-design.html"><meta property="og:title" content="Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant — Project Lux"><meta property="og:description" content="The overview paper for Thea Energy &#x27;s preconceptual design of Helios , a planar-coil Stellarator power plant, summarising a Fusion Engineering and Design special…"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/overview-of-the-helios-design.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Source note</p><p class="eyebrow">Source note</p><h1 id="doc-title">Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Source note</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-09-12">12 September 2026</time></dd></div><div><dt>First written</dt><dd>8 September 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div><div><dt>Source date</dt><dd>2026-01-05</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=designs">designs</a><a href="index.html?topic=engineering">engineering</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#the-facility-power-balance">The facility power balance</a></li><li><a href="#access-limitations">Access limitations</a></li><li><a href="#internal-tensions-preserved">Internal tensions preserved</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p>The overview paper for <a href="thea-energy.html">Thea Energy</a>'s <strong>preconceptual design</strong> of <a href="helios.html">Helios</a>, a planar-coil <a href="stellarator.html">Stellarator</a> power plant, summarising a <em>Fusion Engineering and Design</em> special issue and referring detail to some twenty companion papers. Funded under the <a href="us-doe.html">US Department of Energy — Office of Fusion</a> Milestone-Based Fusion Development Program.</p>
+<p><strong>This is a design study, not a result.</strong> Every figure below comes from simulation — DESC, BP3, OpenMC, TMAP8, COMSOL, Amesim. No Helios hardware exists; Thea's only hardware evidence remains <a href="canis.html">Canis</a> (<a href="prototyping-test-canis-hts-planar-coil-array.html">Prototyping and Test of the Canis HTS Planar Coil Array for Stellarator Field Shaping</a>).</p>
+<h2 id="the-facility-power-balance">The facility power balance<a aria-hidden="true" class="heading-link" href="#the-facility-power-balance" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The vault's first end-to-end company-authored accounting (<a href="balance-of-plant.html">Balance of Plant</a>), read from both the §4.4 text and the Figure 11 Sankey diagram:</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Stage</th>
+<th scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D-T fusion power</td>
+<td>958 MW (80% neutrons)</td>
+</tr>
+<tr>
+<td>Lithium-6 breeding exotherm</td>
+<td>+135 MW</td>
+</tr>
+<tr>
+<td>Total thermal</td>
+<td><strong>1,094 MW</strong></td>
+</tr>
+<tr>
+<td>Generated electric</td>
+<td>459.9 MWe</td>
+</tr>
+<tr>
+<td>Coolant pumping</td>
+<td>−21.8 → gross <strong>438.1 MWe</strong></td>
+</tr>
+<tr>
+<td>Auxiliary (maintenance 20.0, tritium 15.0, cryoplant 10.5, ECRH 2.5)</td>
+<td>−48.0 MWe</td>
+</tr>
+<tr>
+<td><strong>Net to grid</strong></td>
+<td><strong>390.1 MWe</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Lead-lithium and helium feed intermediate heat exchangers; steam superheated to <strong>635 °C</strong> drives three turbines. The diagram settles a question the prose leaves open — the 2.5 MW ECRH budget sits <em>inside</em> the 48 MW, not beside it.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>Two efficiency conventions, one plant
+Rankine efficiency is reported as <strong>~40.2%</strong>, and as <strong>~42.2%</strong> if computed from total generated power, "as in some fusion power plant design studies". Never write either bare — this is the <a href="q-gain-definitions.html">error class of unqualified Q</a>.</p>
+</aside>
+<p>Because Helios is designed <strong>ignited</strong>, no <code>Q_sci</code> is quoted. No cost or LCOE appears, so nothing here bears on <a href="lcoe-fusion.html">Fusion LCOE and Capital Cost</a>.</p>
+<h2 id="access-limitations">Access limitations<a aria-hidden="true" class="heading-link" href="#access-limitations" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Inspected in full: the <strong>arXiv v3 preprint</strong> (submitted 8 December 2025, v3 dated 5 January 2026), captured to <code>raw/</code> and cross-checked against Thea's author-hosted PDF of 10 December 2025 on seventeen key figures — all agreeing. The publisher version of record was unreachable; ScienceDirect serves a CAPTCHA.</p>
+<p><strong>Not inspected:</strong> the dedicated companion paper on this exact subject — Tang <em>et al.</em>, <em>Fusion Engineering and Design</em> <strong>230</strong>:115896, DOI 10.1016/j.fusengdes.2026.115896. It is CC BY 4.0, yet Unpaywall and OpenAlex record the publisher page as its only open-access location, and it is absent from arXiv, OSTI and Thea's own listing. Every power figure above is therefore the overview's <em>summary</em> of that paper.</p>
+<h2 id="internal-tensions-preserved">Internal tensions preserved<a aria-hidden="true" class="heading-link" href="#internal-tensions-preserved" tabindex="-1" title="Link to this section">#</a></h2>
+<ul>
+<li><strong>Tritium.</strong> Table 1 gives startup inventory <strong>1–2 kg</strong> and idealised <a href="tritium-breeding-ratio.html">TBR</a> <strong>1.3</strong>; the fuel-cycle section concludes <strong>&lt;1 kg</strong> and TBR <strong>&lt;1.15</strong> suffice. Design value versus analysis requirement.</li>
+<li><strong>Waste heat.</strong> §4.4 states <strong>681 MW</strong>; Figure 11 labels the sink <strong>703.0 MW</strong>. The diagram total is consistent with also absorbing plasma-vessel coolant and auxiliary loads (1,094.1 − 390.1 = 704.0); the prose figure reconciles to no stated sum.</li>
+</ul>
+<p>Neither affects the headline chain, on which text and diagram agree to within rounding.</p>
+<aside class="callout callout-note"><p class="callout-label">Note</p>
+<p>Where the decimal values live
+The itemised figures exist <strong>only in the Figure 11 image</strong>, not the PDF text layer — <code>raw/extracts/</code> will not contain them. Re-render page 15 to re-check.</p>
+</aside>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p>Swanson, Kumar, Dudt et al. (42 authors, Thea Energy) · arXiv:2512.08027v3 (preprint); Fusion Engineering and Design (version of record)</p><p class="provenance">The source note records a local capture. Captured third-party files are not redistributed here. Publisher and DOI links appear in the note or bibliography.</p><p><a href="../research/sources/overview-of-the-helios-design.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/sources/overview-of-the-helios-design.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="09-engineering-challenges.html">Engineering Challenges</a> <small>Synthesis</small></li><li><a href="30-power-plant-designs-compared.html">Power Plant Designs Compared</a> <small>Synthesis</small></li><li><a href="balance-of-plant.html">Balance of Plant</a> <small>Concept</small></li><li><a href="canis.html">Canis</a> <small>Entity</small></li><li><a href="eos.html">Eos</a> <small>Entity</small></li><li><a href="helios.html">Helios</a> <small>Entity</small></li><li><a href="recirculating-power.html">Recirculating Power</a> <small>Concept</small></li><li><a href="thea-energy.html">Thea Energy</a> <small>Entity</small></li></ul></section><details class="backlinks"><summary>Linked from 22 library notes</summary><ul><li><a href="04-magnetic-confinement-devices.html">Magnetic Confinement Devices</a></li><li><a href="09-engineering-challenges.html">Engineering Challenges</a></li><li><a href="22-critical-materials-supply-chains.html">Critical Materials and Supply Chains</a></li><li><a href="24-grid-integration-and-operations.html">Grid Integration and Plant Operations</a></li><li><a href="30-power-plant-designs-compared.html">Power Plant Designs Compared</a></li><li><a href="availability.html">Availability and RAMI</a></li><li><a href="balance-of-plant.html">Balance of Plant</a></li><li><a href="canis.html">Canis</a></li><li><a href="declared-tbr-values.html">Declared TBR Values and Their Conflicts</a></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a></li><li><a href="divertor.html">Divertor</a></li><li><a href="eos.html">Eos</a></li><li><a href="helios.html">Helios</a></li><li><a href="lithium-lead-eutectic.html">Lithium-Lead Eutectic (PbLi)</a></li><li><a href="moc-sources.html">MOC — Sources</a></li><li><a href="quench.html">Quench</a></li><li><a href="rafm-steel.html">Reduced-Activation Steels</a></li><li><a href="recirculating-power.html">Recirculating Power</a></li><li><a href="stellarator.html">Stellarator</a></li><li><a href="thea-energy.html">Thea Energy</a></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a></li><li><a href="tungsten-pfc.html">Tungsten Plasma-Facing Components</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

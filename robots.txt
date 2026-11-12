@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dionnedeh.github.io/Project-Lux/sitemap.xml

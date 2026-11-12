@@ -1,0 +1,163 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency — Project Lux</title><meta name="description" content="The canonical quantitative treatment of whether a D-T fusion plant can fuel itself. A 51-page Nuclear Fusion review from nine authors across UCLA, KIT, the ITER…"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html"><meta property="og:title" content="Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency — Project Lux"><meta property="og:description" content="The canonical quantitative treatment of whether a D-T fusion plant can fuel itself. A 51-page Nuclear Fusion review from nine authors across UCLA, KIT, the ITER…"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Source note</p><p class="eyebrow">Source note</p><h1 id="doc-title">Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Source note</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-10-19">19 October 2026</time></dd></div><div><dt>First written</dt><dd>19 October 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div><div><dt>Source date</dt><dd>2020-11-23</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=engineering">engineering</a><a href="index.html?topic=subsystems">subsystems</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#the-central-reframing-tbr-is-not-the-binding-constraint">The central reframing: TBR is not the binding constraint</a></li><li><a href="#the-achievability-bands">The achievability bands</a></li><li><a href="#availability-is-a-tritium-parameter">Availability is a tritium parameter</a></li><li><a href="#direct-internal-recycling">Direct internal recycling</a></li><li><a href="#rd-gaps-the-paper-names">R&amp;D gaps the paper names</a></li><li><a href="#access-limitations">Access limitations</a></li><li><a href="#what-this-source-does-not-establish">What this source does not establish</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p>The <strong>canonical quantitative treatment</strong> of whether a D-T fusion plant can fuel itself. A 51-page
+<em>Nuclear Fusion</em> review from nine authors across UCLA, KIT, the <a href="iter.html">ITER Organization</a>,
+<a href="ornl.html">ORNL</a>, INL and NFRI Korea, built on a time-dependent fuel-cycle dynamics model covering all
+components of the cycle.</p>
+<p>Until this ingest the vault asserted the <strong>1.05–1.15</strong> design band on the authority of the
+<a href="doe-fusion-science-technology-roadmap-2026.html">DOE roadmap</a> alone. This is the primary source that
+band comes from, with its reasoning attached.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>The paper's primary conclusion is negative
+The authors state plainly that the physics and technology state-of-the-art <strong>will not enable</strong>
+DEMO and future power plants to satisfy the fuel-cycle requirements they set out. This is a
+review that concludes a gap, not a solution.</p>
+</aside>
+<h2 id="the-central-reframing-tbr-is-not-the-binding-constraint">The central reframing: TBR is not the binding constraint<a aria-hidden="true" class="heading-link" href="#the-central-reframing-tbr-is-not-the-binding-constraint" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The vault has treated tritium as a <strong>breeding</strong> problem. This paper's case is that breeding is
+downstream of two plasma parameters and one chemical-plant parameter.</p>
+<p>What binds is the <strong>product of fuelling efficiency and burn fraction</strong>, <code>η_f · f_b</code>, together with
+the inner-cycle <strong>processing time</strong> <code>t_p</code>:</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Condition</th>
+<th scope="col">Required TBR</th>
+<th scope="col">Start-up inventory (3 GW)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ITER's estimated <code>f_b</code> = 0.36%, 100% availability</td>
+<td><strong>1.82</strong></td>
+<td><strong>&gt;200 kg</strong> — the paper calls this unacceptable</td>
+</tr>
+<tr>
+<td><code>η_f · f_b</code> = 1%</td>
+<td>1.08</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>η_f · f_b</code> = 2%, <code>t_p</code> = 4 h</td>
+<td>—</td>
+<td><strong>11 kg</strong></td>
+</tr>
+<tr>
+<td><code>η_f · f_b</code> = 5%, <code>t_p</code> = 1 h</td>
+<td>1.02</td>
+<td><strong>&lt;5 kg</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Stated requirement: <code>η_f · f_b</code> &gt; 2% and <code>t_p</code> of 1–4 h</strong> for self-sufficiency with reasonable
+confidence. Start-up inventory scales <strong>linearly with fusion power</strong> — a 100 MW facility needs
+about <strong>1 kg</strong>.</p>
+<p>See <a href="tritium-burn-fraction.html">Tritium Burn Fraction</a> and <a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a>.</p>
+<aside class="callout callout-note"><p class="callout-label">Note</p>
+<p>Independently corroborated, 2026-10-19
+<a href="st-e1-tritium-systems-crossref-metadata-2026.html">ST-E1's fuel-cycle paper</a> reports <strong>extraction
+sensitivity and fuelling efficiency as the dominant drivers of inventory performance, rather than
+marginal improvements in breeding ratio</strong> — this paper's central reframing, reached six years later
+by a company design team using inventory modelling of a liquid-lithium blanket, with no shared
+authorship. Read from an abstract only, and carrying no figures, so it corroborates the <em>ordering</em>
+of the parameters and not their values.</p>
+</aside>
+<h2 id="the-achievability-bands">The achievability bands<a aria-hidden="true" class="heading-link" href="#the-achievability-bands" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The paper's own confidence framing, which the vault now adopts with attribution:</p>
+<ul>
+<li><strong>Unlikely</strong> if required TBR &gt; <strong>1.15</strong></li>
+<li><strong>Possible</strong> if <strong>1.05 &lt; TBR ≤ 1.15</strong></li>
+<li><strong>Attained with high confidence</strong> if TBR ≤ <strong>1.05</strong></li>
+</ul>
+<p>Against this, the <strong>maximum achievable</strong> TBR for the most detailed blanket system designs available
+is estimated at <strong>1.15</strong>, with high confidence only at <strong>1.05</strong>. The achievable range is given as
+<strong>1.05–1.15</strong> — so the requirement and the capability occupy the same interval, and the working
+margin is <strong>10%</strong>.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>A measured reason to distrust calculated TBR
+A series of integral blanket-neutronics experiments found calculation <strong>overestimated</strong> the
+tritium production rate by an <strong>average factor of 1.14</strong>, against a 5% measurement uncertainty.
+The authors call the overestimation <em>"alarming"</em> and a safety factor of <strong>&gt;1.1 to 1.2</strong> on
+calculated TBR was recommended. This is a sharper, sourced statement of the warning already on
+<a href="tritium-breeding-ratio.html">Tritium Breeding Ratio (TBR)</a>.</p>
+</aside>
+<h2 id="availability-is-a-tritium-parameter">Availability is a tritium parameter<a aria-hidden="true" class="heading-link" href="#availability-is-a-tritium-parameter" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The finding the authors themselves flag as significant, and the one with the widest consequences
+for this vault's coverage of near-term devices:</p>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Availability factor</th>
+<th scope="col">Self-sufficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AF &lt; 10%</td>
+<td><strong>Impossible</strong> for any <code>η_f · f_b</code></td>
+</tr>
+<tr>
+<td>AF &gt; 30%, <code>1% ≤ η_f · f_b ≤ 2%</code></td>
+<td>Possible</td>
+</tr>
+<tr>
+<td>AF &gt; 50%, <code>η_f · f_b</code> &gt; 2%</td>
+<td>Achievable with reasonable confidence</td>
+</tr>
+</tbody>
+</table></div>
+<p>This bears directly on the near-term facilities the vault treats as the path to a blanket
+demonstration — FNSF, VNS and CTF are all predicted <strong>below 30%</strong>. See <a href="availability.html">Availability and RAMI</a>.</p>
+<p><strong>Reserve inventory.</strong> A reserve time of <strong>24 h</strong> leads to unacceptable reserve and start-up
+inventories. The conclusion is that reserves must cover only <strong>a few hours</strong>, which converts the
+problem into one of reliability and fast maintainability rather than storage.</p>
+<h2 id="direct-internal-recycling">Direct internal recycling<a aria-hidden="true" class="heading-link" href="#direct-internal-recycling" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The paper credits the <strong><a href="eu-demo.html">EU-DEMO</a> direct internal recycling concept</strong> — routing plasma
+exhaust straight to fuelling without passing the isotope separation system — with reducing overall
+processing time and inventories, and with a positive effect on required TBR. At <code>η_f · f_b</code> = 1%,
+recycling <strong>80%</strong> of exhaust directly lowers required TBR from <strong>1.120 to 1.075</strong>. See
+<a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a>.</p>
+<h2 id="rd-gaps-the-paper-names">R&amp;D gaps the paper names<a aria-hidden="true" class="heading-link" href="#rd-gaps-the-paper-names" tabindex="-1" title="Link to this section">#</a></h2>
+<ul>
+<li>Cutting processing time, including <strong>batch to continuous</strong> tritium technology</li>
+<li>Raising <code>η_f · f_b</code> toward 5%; high-field-side <a href="pellet-injection.html">pellet injection</a> is the
+favoured route, but sustained high-speed injection has been demonstrated only at <strong>1 Hz,
+short-pulse</strong> capability</li>
+<li>Separate D and T transport in core and pedestal, and the inward DT pinch</li>
+<li>A <strong>fusion nuclear science facility</strong> sized to accumulate surplus tritium for DEMO start-up</li>
+</ul>
+<h2 id="access-limitations">Access limitations<a aria-hidden="true" class="heading-link" href="#access-limitations" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>Inspected in full.</strong> The 51-page published version was captured to <code>raw/</code> from IOP and extracted
+to <code>raw/extracts/</code>; all figures recorded above were read from that extract, not from a secondary
+summary. Bibliographic record verified against the article's own first page: <em>Nucl. Fusion</em> <strong>61</strong>
+(2021) 013001, DOI <code>10.1088/1741-4326/abbf35</code>, © 2020 IAEA Vienna.</p>
+<p><strong>Licence not confirmed.</strong> IOP labels the article a <em>"Free article"</em> and serves the PDF without
+paywall, but states no open-access licence, and the PDF carries a per-article price line. Recorded
+here as <strong>free to read at the publisher</strong>, not as CC-licensed.</p>
+<aside class="callout callout-note"><p class="callout-label">Note</p>
+<p>Two bibliographic traps in this record
+<strong>One paper, not two.</strong> Web search results in this session reported "Abdou 2021" and
+"Nucl. Fusion 61 013001" as <em>different</em> papers — a 2021 review and a separate 2020 time-dependent
+model. The article's own first page settles it: they are the <strong>same paper</strong>, published online
+23 November 2020 in the January 2021 issue. The <code>source_date</code> above is the online date.</p>
+<p><strong>A 1986 predecessor exists.</strong> Abdou <em>et al.</em>, <em>Deuterium–Tritium Fuel Self-Sufficiency in Fusion
+Reactors</em> (1986), reached a compatible conclusion about restricted parameter space. It is <strong>not
+held in <code>raw/</code></strong> and nothing on this page derives from it.</p>
+</aside>
+<h2 id="what-this-source-does-not-establish">What this source does not establish<a aria-hidden="true" class="heading-link" href="#what-this-source-does-not-establish" tabindex="-1" title="Link to this section">#</a></h2>
+<ul>
+<li><strong>No measured plant fuel cycle.</strong> Every figure is model output or a design requirement. No D-T
+plant has ever closed its fuel cycle; this paper does not change that.</li>
+<li><strong>The loss assumption is weak by the authors' own account.</strong> Environmental tritium losses are set
+to <strong>10⁻⁴</strong> — and the paper says <em>arbitrarily</em>. Five components, including the blanket and
+plasma-facing components, are assigned <strong>zero</strong> direct environmental loss on the grounds that they
+sit inside the vacuum vessel. Published critiques of this paper attack the loss assumption; a
+figure of <strong>0.1%</strong> circulates in that commentary and is <strong>not</strong> the paper's value, which is
+ten times smaller. The vault records the paper's own figure and does not endorse the critique.</li>
+<li><strong>Burning-plasma predictions are self-declared unreliable.</strong> The authors state that the maximum
+achievable burn fraction in ITER <em>"remain[s] uncertain"</em>, that ITER fuelling estimates
+<em>"cannot be fully validated"</em> for lack of burning-plasma experiments, and that pellet fuelling
+efficiency at shallow penetration is <em>"highly uncertain"</em> and possibly optimistic.</li>
+<li><strong>Schedules in it are stale.</strong> The authors note that ITER and FNSF start-date results were
+calculated years earlier and the schedules have since slipped. Anything date-dependent here is
+read as of <strong>2020</strong>, not 2026.</li>
+</ul>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p>Abdou, Riva, Ying, Day, Loarte, Baylor, Humrickhouse, Fuerst &amp; Cho (9 authors) · Nuclear Fusion 61 013001 (IAEA / IOP Publishing), 51 pp</p><p class="provenance">The source note records a local capture. Captured third-party files are not redistributed here. Publisher and DOI links appear in the note or bibliography.</p><p><a href="../research/sources/abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/sources/abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="09-engineering-challenges.html">Engineering Challenges</a> <small>Synthesis</small></li><li><a href="14-open-problems-and-risks.html">Open Problems and Risks</a> <small>Synthesis</small></li><li><a href="28-vacuum-wall-conditioning-tritium-plant.html">Vacuum, Wall Conditioning and the Tritium Plant</a> <small>Synthesis</small></li><li><a href="availability.html">Availability and RAMI</a> <small>Concept</small></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a> <small>Concept</small></li><li><a href="eu-demo.html">EU DEMO</a> <small>Entity</small></li><li><a href="iter.html">ITER</a> <small>Entity</small></li><li><a href="lithium-6.html">Lithium-6</a> <small>Concept</small></li><li><a href="pellet-injection.html">Pellet Injection</a> <small>Concept</small></li><li><a href="st-e1-tritium-systems-crossref-metadata-2026.html">Tritium Production and Processing Systems for ST-E1</a> <small>Source note</small></li><li><a href="tritium-breeding-ratio.html">Tritium Breeding Ratio (TBR)</a> <small>Concept</small></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a> <small>Concept</small></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a> <small>Concept</small></li></ul></section><details class="backlinks"><summary>Linked from 19 library notes</summary><ul><li><a href="09-engineering-challenges.html">Engineering Challenges</a></li><li><a href="14-open-problems-and-risks.html">Open Problems and Risks</a></li><li><a href="28-vacuum-wall-conditioning-tritium-plant.html">Vacuum, Wall Conditioning and the Tritium Plant</a></li><li><a href="availability.html">Availability and RAMI</a></li><li><a href="declared-tbr-values.html">Declared TBR Values and Their Conflicts</a></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a></li><li><a href="eu-demo.html">EU DEMO</a></li><li><a href="flynn-larsen-2022-kalman-filters-tritium-accountancy.html">Investigating the application of Kalman Filters for real-time accountancy in fusion fuel cycles</a></li><li><a href="lithium-6.html">Lithium-6</a></li><li><a href="meschini-2023-tritium-fuel-cycle-arc-step.html">Modeling and analysis of the tritium fuel cycle for ARC- and STEP-class D-T fusion power plants</a></li><li><a href="meschini-2025-trapping-tritium-self-sufficiency.html">Impact of trapping on tritium self-sufficiency and tritium inventories in fusion power plant fuel cycles</a></li><li><a href="moc-sources.html">MOC — Sources</a></li><li><a href="pellet-injection.html">Pellet Injection</a></li><li><a href="st-e1-tritium-systems-crossref-metadata-2026.html">Tritium Production and Processing Systems for ST-E1</a></li><li><a href="tritium-breeding-ratio.html">Tritium Breeding Ratio (TBR)</a></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a></li><li><a href="tritium-doubling-time.html">Tritium Doubling Time</a></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a></li><li><a href="yang-2026-st-e1-tritium-tmap8-surrogate-models.html">Multiscale Assessment of Tritium Behavior in Preliminary Fusion Pilot Plant Design Using Surrogate Models in TMAP8</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

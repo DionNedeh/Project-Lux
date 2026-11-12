@@ -1,0 +1,139 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Plasma Physics: The Deeper Cuts — Project Lux</title><meta name="description" content="Project Lux · The specific physics that decides whether ITER works"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/31-plasma-physics-deeper-cuts.html"><meta property="og:title" content="Plasma Physics: The Deeper Cuts — Project Lux"><meta property="og:description" content="Project Lux · The specific physics that decides whether ITER works"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/31-plasma-physics-deeper-cuts.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Synthesis</p><p class="eyebrow">Synthesis · Document 31</p><h1 id="doc-title">Plasma Physics: The Deeper Cuts</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Synthesis</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-08-26">26 August 2026</time></dd></div><div><dt>First written</dt><dd>25 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=physics">physics</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#scope">Scope</a></li><li><a href="#1-the-l-h-transition--and-the-threshold-problem">1. The L-H transition — and the threshold problem</a></li><li><a href="#2-the-pedestal">2. The pedestal</a></li><li><a href="#3-turbulence-self-regulation-and-the-isotope-effect">3. Turbulence self-regulation and the isotope effect</a></li><li><a href="#4-energetic-particle-physics">4. Energetic particle physics</a></li><li><a href="#5-burn-control--the-thing-nobody-has-ever-done">5. Burn control — the thing nobody has ever done</a></li><li><a href="#6-why-this-matters-for-reading-claims">6. Why this matters for reading claims</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><em>Project Lux · The specific physics that decides whether <a href="iter.html">ITER</a> works</em></p>
+<hr/>
+<h2 id="scope">Scope<a aria-hidden="true" class="heading-link" href="#scope" tabindex="-1" title="Link to this section">#</a></h2>
+<p><a href="01-fusion-physics-fundamentals.html">Document 01</a> covered what fusion requires. This covers the physics that determines whether a specific machine achieves it — the phenomena that appear in reactor design margins, that ITER was built partly to resolve, and that would be the actual cause if a next-step machine underperformed.</p>
+<p>Five topics: the <strong>L-H transition</strong>, the <strong><a href="pedestal.html">Pedestal</a></strong>, <strong>turbulence self-regulation</strong>, <strong>energetic particle physics</strong>, and <strong><a href="burn-control.html">burn control</a></strong>.</p>
+<hr/>
+<h2 id="1-the-l-h-transition--and-the-threshold-problem">1. The L-H transition — and the threshold problem<a aria-hidden="true" class="heading-link" href="#1-the-l-h-transition--and-the-threshold-problem" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="what-it-is">What it is<a aria-hidden="true" class="heading-link" href="#what-it-is" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Above a threshold heating power, a <a href="tokamak.html">Tokamak</a> plasma spontaneously reorganises into <strong><a href="h-mode.html">H-mode</a></strong>, with roughly double the energy confinement time. Discovered on ASDEX in 1982; the baseline scenario for essentially every reactor design since.</p>
+<p>The mechanism, as currently understood: at the plasma edge, <strong>sheared E×B flow</strong> tears apart the turbulent eddies responsible for transport. Turbulence generates the flow (through Reynolds stress); the flow suppresses the turbulence; the suppression steepens the pressure gradient; the steeper gradient sustains the flow. It is a <strong>bifurcation in a self-regulating system</strong>.</p>
+<h3 id="why-the-threshold-is-a-genuine-design-risk">Why the threshold is a genuine design risk<a aria-hidden="true" class="heading-link" href="#why-the-threshold-is-a-genuine-design-risk" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The empirical scaling used for design is the <strong>ITPA Martin 2008</strong> law:</p>
+<pre><code>P_L-H = 0.0488 · ⟨n_e,20⟩^0.717 · B_tor^0.803 · S^0.941 · (2/A_eff)
+</code></pre>
+<p>where S is plasma surface area and A_eff the effective isotope mass.</p>
+<p><strong>The problem, stated in the literature:</strong> experimental observations from multiple devices demonstrate <em>"significant departures from the current power threshold empirical scaling law from the 2008 ITPA Martin scaling, which undermines the confidence in the predicted power threshold for ITER."</em></p>
+<p>This matters concretely. ITER has a <strong>finite installed heating power</strong> — 33 MW of neutral beam plus 20 MW ICRH plus 20 MW ECRH. If its actual L-H threshold exceeds the Martin prediction by enough, <strong>ITER may struggle to access H-mode in some of its planned scenarios</strong>, and H-mode is the basis of the entire Q=10 case.</p>
+<h3 id="the-complications">The complications<a aria-hidden="true" class="heading-link" href="#the-complications" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong><a href="isotope-effect.html">The isotope effect</a>.</strong> The threshold scales roughly <strong>inversely with isotope mass</strong> — hydrogen is worst, deuterium better, tritium better still. This is the <code>(2/A_eff)</code> term. It is bad news for ITER's early campaigns, which run hydrogen and deuterium precisely to avoid activation, and it means the first attempts at H-mode will be made under the hardest conditions.</p>
+<p><strong>Grad-B drift direction.</strong> Reversing the ion ∇B drift direction relative to the X-point changes the threshold by roughly a factor of two. This is a purely geometric choice with a first-order effect, and it is not fully explained.</p>
+<p><strong>Hidden parameters.</strong> Wall conditioning state, <a href="divertor.html">Divertor</a> geometry, neutral density, error fields, and rotation all move the threshold. Work on <strong>reducing the L-H transition power threshold in ITER-similar-shape <a href="diii-d.html">DIII-D</a> hydrogen plasmas</strong> exists precisely because the community is trying to buy margin.</p>
+<h3 id="the-physics-underneath">The physics underneath<a aria-hidden="true" class="heading-link" href="#the-physics-underneath" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The transition dynamics are <em>"not fully understood."</em> What is observed is a <strong>complex interaction between turbulence-driven E×B zonal flow oscillations and geodesic acoustic modes</strong>. Below threshold, plasmas show <strong>limit-cycle oscillations</strong> — competition between turbulence level and zonal-flow shearing, cycling back and forth without locking into H-mode. Cross the threshold and the system locks.</p>
+<p>This is one of the cleanest examples in plasma physics of a <strong>predator-prey system</strong>: turbulence feeds the flow, the flow eats the turbulence, and the transition is what happens when the predator wins permanently.</p>
+<hr/>
+<h2 id="2-the-pedestal">2. The pedestal<a aria-hidden="true" class="heading-link" href="#2-the-pedestal" tabindex="-1" title="Link to this section">#</a></h2>
+<p>H-mode's confinement bonus lives in a narrow edge region — the <strong>pedestal</strong> — where the pressure gradient is steep and turbulence is suppressed. Because core profiles are roughly <em>stiff</em> (their gradients are pinned near a turbulence threshold), <strong>the pedestal height sets the whole plasma's pressure</strong>, and therefore its fusion power. A 20% improvement in pedestal pressure is worth roughly 40% in fusion power.</p>
+<h3 id="eped">EPED<a aria-hidden="true" class="heading-link" href="#eped" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The <strong>EPED</strong> model predicts pedestal height and width from two constraints acting together:</p>
+<ul>
+<li><strong>Peeling-ballooning MHD stability</strong> — the limit at which the edge current and pressure gradient drive a large-scale instability (this is what an ELM is)</li>
+<li><strong>Kinetic ballooning mode</strong> — a local turbulence constraint that sets the pedestal <em>width</em></li>
+</ul>
+<p>EPED has been notably successful, and it is one of the few genuinely predictive models in tokamak physics.</p>
+<h3 id="super-h-mode">Super H-mode<a aria-hidden="true" class="heading-link" href="#super-h-mode" tabindex="-1" title="Link to this section">#</a></h3>
+<p>EPED predicts something unexpected: in <strong>strongly shaped plasmas above a critical pedestal density, the pedestal pressure bifurcates</strong> — there is a second, much higher stable branch. This is the <strong>Super H-mode</strong> regime, and it has been accessed experimentally on DIII-D.</p>
+<p>If Super H-mode is achievable and sustainable at reactor scale, it is a large free performance gain. Whether it is compatible with a detached divertor and a reactor's density requirements is unresolved — and it is the same core-edge compatibility tension that appears throughout this dossier.</p>
+<h3 id="elms-and-the-regimes-that-avoid-them">ELMs, and the regimes that avoid them<a aria-hidden="true" class="heading-link" href="#elms-and-the-regimes-that-avoid-them" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The peeling-ballooning limit is not a soft boundary. When the pedestal reaches it, it <strong>collapses</strong> — an <strong><a href="elm.html">edge-localised mode</a></strong> expelling several percent of the plasma's stored energy onto the divertor in under a millisecond. Uncontrolled Type-I ELMs would destroy a reactor divertor.</p>
+<p>The escape routes, in rough order of maturity:</p>
+<ul>
+<li><strong>Resonant magnetic perturbations</strong> — 3D fields that degrade the pedestal slightly and suppress ELMs entirely. Works; costs confinement</li>
+<li><strong>Pellet pacing</strong> — trigger small ELMs deliberately before large ones can build</li>
+<li><strong>Quasi-continuous exhaust (QCE)</strong> — a naturally small-ELM regime; <strong>demonstrated in D-T on <a href="jet.html">JET</a>'s DTE3</strong></li>
+<li><strong>X-point radiator (XPR)</strong> — a stable strongly radiating region near the X-point; <strong>also demonstrated in D-T on JET</strong></li>
+<li><strong><a href="negative-triangularity.html">Negative triangularity</a></strong> — reverse the plasma cross-section curvature. Access to good confinement <strong>without an H-mode pedestal at all</strong>, and therefore without ELMs. The basis of the <a href="manta.html">MANTA</a> design</li>
+<li><strong>I-mode, EDA H-mode, QH-mode</strong> — naturally ELM-free regimes with varying reactor relevance</li>
+</ul>
+<p>That JET demonstrated <strong>two</strong> of these in actual deuterium-tritium plasmas in its final campaign is, in retrospect, one of the most valuable results it produced.</p>
+<hr/>
+<h2 id="3-turbulence-self-regulation-and-the-isotope-effect">3. Turbulence self-regulation and the isotope effect<a aria-hidden="true" class="heading-link" href="#3-turbulence-self-regulation-and-the-isotope-effect" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="zonal-flows">Zonal flows<a aria-hidden="true" class="heading-link" href="#zonal-flows" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The organising concept in modern transport physics. Turbulence in a magnetised plasma <strong>spontaneously generates its own large-scale sheared flows</strong> (zonal flows), which then shear apart the turbulence that made them. Confinement is therefore not a fixed property but the equilibrium of a self-regulating loop, and small changes in the loop's parameters produce disproportionate changes in transport.</p>
+<p>This is why confinement scaling laws are empirical rather than derived, and why gyrokinetic simulation is expensive: you cannot get the answer without resolving the loop.</p>
+<h3 id="the-isotope-effect--an-unsolved-problem-hiding-in-plain-sight">The isotope effect — an unsolved problem hiding in plain sight<a aria-hidden="true" class="heading-link" href="#the-isotope-effect--an-unsolved-problem-hiding-in-plain-sight" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Simple gyro-Bohm theory says confinement should <strong>degrade</strong> with increasing isotope mass. Experiments consistently show it <strong>improves</strong>: deuterium plasmas confine better than hydrogen, and D-T better still.</p>
+<p><strong>This has never been fully explained.</strong> It matters enormously, because every reactor projection is extrapolated from deuterium experiments to D-T operation, and the direction and magnitude of the isotope correction is a real uncertainty in those projections. JET's D-T campaigns were among the few opportunities to measure it directly.</p>
+<h3 id="turbulence-spreading-and-non-locality">Turbulence spreading and non-locality<a aria-hidden="true" class="heading-link" href="#turbulence-spreading-and-non-locality" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Turbulence generated in one region propagates into adjacent regions, so transport is not purely local to the gradient. This breaks the assumptions of the reduced transport models used inside design codes, and it is one of the reasons high-fidelity gyrokinetics remains necessary (<a href="19-simulation-codes-nuclear-data.html">Document 19</a>).</p>
+<hr/>
+<h2 id="4-energetic-particle-physics">4. Energetic particle physics<a aria-hidden="true" class="heading-link" href="#4-energetic-particle-physics" tabindex="-1" title="Link to this section">#</a></h2>
+<p>In a <a href="burning-plasma.html">burning plasma</a>, 3.5 MeV alphas constitute a population of <strong>super-Alfvénic</strong> particles — moving faster than the Alfvén speed — carrying a substantial fraction of the plasma's energy. This creates a physics regime that only ITER and <a href="sparc.html">SPARC</a> will access.</p>
+<h3 id="alfvén-eigenmodes">Alfvén eigenmodes<a aria-hidden="true" class="heading-link" href="#alfvén-eigenmodes" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A population of fast ions with a spatial gradient can resonantly drive <strong>Alfvén eigenmodes</strong> — TAEs (toroidicity-induced), RSAEs (reversed-shear), EPMs (energetic particle modes). The modes then transport the fast ions outward.</p>
+<p>The loop is self-defeating: alphas drive the mode, the mode expels the alphas, the alphas no longer heat the plasma — and on the way out they can strike the wall in localised spots.</p>
+<p><strong>Whether this is benign or severe at reactor scale is not settled.</strong> It is one of the specific things ITER exists to determine, and it cannot be resolved by scaling from present machines because present machines cannot make a comparable alpha population.</p>
+<h3 id="fast-ion-confinement-in-3d">Fast-ion confinement in 3D<a aria-hidden="true" class="heading-link" href="#fast-ion-confinement-in-3d" tabindex="-1" title="Link to this section">#</a></h3>
+<p>For stellarators this is a <strong>design constraint rather than a phenomenon</strong>. Fast alphas in a 3D field follow complex orbits, and an unoptimised <a href="stellarator.html">Stellarator</a> loses them promptly. <a href="quasi-symmetry.html">Quasi-symmetry and quasi-isodynamicity</a> optimisation (<a href="04-magnetic-confinement-devices.html">Document 04</a>) exist substantially to fix thermal transport, but <strong>good fast-alpha confinement is a separate and harder objective</strong>, and it is a live question for every stellarator power plant design.</p>
+<h3 id="alpha-channelling">Alpha channelling<a aria-hidden="true" class="heading-link" href="#alpha-channelling" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A speculative but serious idea: use waves to <strong>extract energy from alphas and give it to fuel ions</strong> before the alphas thermalise, simultaneously improving heating efficiency and removing <a href="helium-ash.html">helium ash</a> faster. It appears in the p-¹¹B literature as one of the few routes that could make aneutronic fuels economic (<a href="03-confinement-approaches.html">Document 03</a>). Not demonstrated.</p>
+<hr/>
+<h2 id="5-burn-control--the-thing-nobody-has-ever-done">5. Burn control — the thing nobody has ever done<a aria-hidden="true" class="heading-link" href="#5-burn-control--the-thing-nobody-has-ever-done" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A burning plasma is a <strong>positive-feedback thermal system</strong>:</p>
+<pre><code>Fusion power → alpha heating → temperature ↑ → reactivity ↑ → fusion power ↑
+</code></pre>
+<p>Over the operating range of roughly 10–20 keV, <code>⟨σv⟩</code> rises steeply with temperature, so the loop gain is greater than one. Left alone, a burning plasma does one of two things: it <strong>runs away thermally</strong> until a pressure or density limit ends the discharge — usually violently — or it <strong>quenches</strong>.</p>
+<h3 id="the-control-problem">The control problem<a aria-hidden="true" class="heading-link" href="#the-control-problem" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Actuators available: fuelling rate, auxiliary heating, impurity seeding (to increase radiation), and in principle plasma shaping. All of them act on <strong>timescales of seconds</strong>. The plasma's thermal response is faster.</p>
+<p>There are further complications:</p>
+<ul>
+<li><strong>Helium ash accumulation</strong> dilutes the fuel over time, which is a slow <em>negative</em> feedback that partially self-stabilises but degrades performance</li>
+<li><strong>Impurity accumulation</strong> in the core can <a href="quench.html">Quench</a> the burn abruptly</li>
+<li><strong>Sawteeth and other MHD</strong> periodically redistribute the core, including the alpha population</li>
+<li>A <strong>detached divertor</strong> must be maintained simultaneously, using impurity seeding that also affects the core</li>
+</ul>
+<p><strong>No machine has ever done this.</strong> ITER's Q=10 scenario and SPARC's Q&gt;1 attempt will be the first tests, and burn control instability is a plausible failure mode that would look, from outside, like the machine simply not reaching its target.</p>
+<h3 id="start-up">Start-up<a aria-hidden="true" class="heading-link" href="#start-up" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A related and under-discussed problem: <strong>how do you get to a burning plasma from cold?</strong> The sequence — breakdown, current ramp, L-mode, L-H transition, density ramp, entry into the burning regime — must be traversed without hitting a density limit, a beta limit, or an MHD instability, on a machine where the plasma's properties change qualitatively partway through.</p>
+<p>ITER's specific version of this is harder than most, because its superconducting central solenoid cannot supply high loop voltage. Breakdown at <strong>low toroidal inductive electric field</strong> is consequently a research topic in its own right, and <strong><a href="jt-60sa.html">JT-60SA</a>'s demonstration of first plasma at 0.15 V/m</strong> was deliberately an ITER-relevant result (<a href="04-magnetic-confinement-devices.html">Document 04</a>).</p>
+<hr/>
+<h2 id="6-why-this-matters-for-reading-claims">6. Why this matters for reading claims<a aria-hidden="true" class="heading-link" href="#6-why-this-matters-for-reading-claims" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Each item above is a place where a machine can quietly fail to meet projection <strong>without anything dramatic happening</strong>:</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Phenomenon</th>
+<th scope="col">Failure mode</th>
+<th scope="col">Would look like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L-H threshold higher than Martin scaling</td>
+<td>Cannot access H-mode with installed power</td>
+<td>"Confinement below expectation"</td>
+</tr>
+<tr>
+<td>Pedestal lower than EPED predicts</td>
+<td>Core pressure caps out</td>
+<td>"Q below target"</td>
+</tr>
+<tr>
+<td>Isotope effect smaller than assumed</td>
+<td>D-T does not outperform D as projected</td>
+<td>"Extrapolation was optimistic"</td>
+</tr>
+<tr>
+<td>Alfvén eigenmodes expel alphas</td>
+<td>Reduced self-heating</td>
+<td>"Alpha heating anomaly"</td>
+</tr>
+<tr>
+<td>Burn control unstable</td>
+<td>Cannot sit at the operating point</td>
+<td>"Discharge terminated early"</td>
+</tr>
+<tr>
+<td>Helium ash accumulation</td>
+<td>Progressive dilution</td>
+<td>"Performance decays through the pulse"</td>
+</tr>
+</tbody>
+</table></div>
+<p>None of these would be a scandal. All of them are ordinary physics, well within the range of what the field considers possible, and <strong>any of them could mean SPARC returns Q = 0.8 rather than Q = 2</strong> — which would be reported as a failure and would in fact be a result.</p>
+<p>Conversely, <strong>Super H-mode, a favourable isotope effect, and benign alpha physics</strong> would push in the other direction, and a machine designed with ARC-style margin might comfortably exceed its stated goal.</p>
+<p>The honest position on SPARC and ITER is that the <strong>error bars on the projections are wider than the projections' own stated targets</strong>, and that this is normal for a first-of-a-kind experiment in an unexplored regime.</p>
+<hr/>
+<p><strong>Continue to:</strong> <a href="32-heavy-ion-fusion-and-pulsed-power.html">32 — Heavy Ion Fusion and Pulsed Power</a> · <a href="17-diagnostics-control-disruption.html">17 — Diagnostics, Control and Disruption</a> · <a href="01-fusion-physics-fundamentals.html">01 — Physics Fundamentals</a></p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/synthesis/31-plasma-physics-deeper-cuts.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/synthesis/31-plasma-physics-deeper-cuts.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="01-fusion-physics-fundamentals.html">Physics Fundamentals</a> <small>Synthesis</small></li><li><a href="03-confinement-approaches.html">Confinement Approaches</a> <small>Synthesis</small></li><li><a href="04-magnetic-confinement-devices.html">Magnetic Confinement Devices</a> <small>Synthesis</small></li><li><a href="17-diagnostics-control-disruption.html">Diagnostics, Control and Disruption Mitigation</a> <small>Synthesis</small></li><li><a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a> <small>Synthesis</small></li><li><a href="32-heavy-ion-fusion-and-pulsed-power.html">Heavy Ion Fusion and Pulsed Power</a> <small>Synthesis</small></li><li><a href="fusionmae-crossref-metadata-2026.html">FusionMAE: Self-supervised Pretraining for Fusion Diagnostics and Control</a> <small>Source note</small></li><li><a href="hl3-data-driven-rl-control-2025.html">Data-driven Dynamics and Reinforcement-learning Control on HL-3</a> <small>Source note</small></li><li><a href="tcv-predict-first-rampdown-2025.html">Learning Plasma Dynamics and Robust Ramp-down Trajectories at TCV</a> <small>Source note</small></li><li><a href="tokamak-agnostic-elm-crossref-metadata-2026.html">Explainable Tokamak-agnostic ELM Forecasting</a> <small>Source note</small></li></ul></section><details class="backlinks"><summary>Linked from 10 library notes</summary><ul><li><a href="30-power-plant-designs-compared.html">Power Plant Designs Compared</a></li><li><a href="40-ai-for-fusion-transferable-control.html">AI for Fusion: From Device-Specific Models to Transferable Control</a></li><li><a href="alfven-eigenmodes.html">Alfvén Eigenmodes and Energetic Particles</a></li><li><a href="burn-control.html">Burn Control</a></li><li><a href="burning-plasma.html">Burning Plasma</a></li><li><a href="isotope-effect.html">The Isotope Effect</a></li><li><a href="l-h-transition.html">L-H Transition and Power Threshold</a></li><li><a href="moc-physics.html">MOC — Physics</a></li><li><a href="pedestal.html">Pedestal</a></li><li><a href="sparc-first-campaign-cgyro-predictions.html">Core Performance Predictions in Projected SPARC First-Campaign Plasmas with Nonlinear CGYRO</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

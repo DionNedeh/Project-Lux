@@ -1,0 +1,75 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Nuclear Technology Considerations and Neutronics for the ST-E1 Fusion Power Plant — Project Lux</title><meta name="description" content="No TBR target is stated, and lithium enrichment is not mentioned — the breeder is covered in 086004 . Inboard breeding is ruled out for lack of space ; the outboard…"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/st-e1-neutronics-crossref-metadata-2026.html"><meta property="og:title" content="Nuclear Technology Considerations and Neutronics for the ST-E1 Fusion Power Plant — Project Lux"><meta property="og:description" content="No TBR target is stated, and lithium enrichment is not mentioned — the breeder is covered in 086004 . Inboard breeding is ruled out for lack of space ; the outboard…"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/st-e1-neutronics-crossref-metadata-2026.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Source note</p><p class="eyebrow">Source note</p><h1 id="doc-title">Nuclear Technology Considerations and Neutronics for the ST-E1 Fusion Power Plant</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Source note</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-11-02">2 November 2026</time></dd></div><div><dt>First written</dt><dd>19 October 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div><div><dt>Source date</dt><dd>2026-07-10</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=computation">computation</a><a href="index.html?topic=engineering">engineering</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#breeding-now-with-numbers">Breeding, now with numbers</a></li><li><a href="#what-the-full-text-settles">What the full text settles</a></li><li><a href="#what-it-still-does-not-establish">What it still does not establish</a></li><li><a href="#access-limitations">Access limitations</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p>The <a href="st-e1.html">ST-E1</a> Focus Collection's neutronics and shielding paper.</p>
+<aside class="callout callout-note"><p class="callout-label">Note</p>
+<p>Full text reached 2026-11-02. The page basename is historical
+Captured on 19 October 2026 as a Crossref metadata record only, because IOP served a CAPTCHA.
+<strong>The publisher block has since lifted and the full text was read on 2 November 2026</strong> —
+sections 1 to 3.6, via the harness's own fetch. The basename still says
+<code>crossref-metadata</code> and the <code>file:</code> field still points at the JSON, because <strong>no local
+capture of the full text was possible</strong>: plain HTTP requests are still bot-blocked. See
+<em>Access limitations</em>.</p>
+</aside>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>CORRECTION 2026-11-02 — the 30-year magnet life does not survive the full text
+This page previously recorded, from the abstract, that the design <em>"demonstrates feasibility of
+limiting neutron flux to the magnet systems to support a full power life of 30 years."</em> <strong>The
+full text shows the baseline does not achieve it.</strong> Peak HTS fast flux is <strong>9.5 × 10⁹ cm⁻² s⁻¹</strong>
+against a stated <strong>&lt; 4 × 10⁹</strong> limit — <strong>2.4× over</strong> — for <strong>13 full-power years</strong>, not 30. A
+<strong>2400 MW</strong> variant, tungsten boride at aspect ratio 2.31 with a 100 mm plasma–wall gap, reaches
+~<strong>5.6 × 10⁹</strong> and roughly <strong>25 fpy</strong>. The abstract described an <em>intent</em>; the paper reports a
+shortfall against it.</p>
+</aside>
+<h2 id="breeding-now-with-numbers">Breeding, now with numbers<a aria-hidden="true" class="heading-link" href="#breeding-now-with-numbers" tabindex="-1" title="Link to this section">#</a></h2>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Code</th>
+<th scope="col">TBR</th>
+<th scope="col">of which Li-7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MCNP</td>
+<td><strong>1.169</strong></td>
+<td>0.327</td>
+</tr>
+<tr>
+<td>G4Tokamak</td>
+<td><strong>1.194</strong></td>
+<td>0.322</td>
+</tr>
+</tbody>
+</table></div>
+<p>No TBR target is stated, and <strong>lithium enrichment is not mentioned</strong> — the breeder is covered in
+<a href="st-e1-tritium-systems-crossref-metadata-2026.html">086004</a>. Inboard breeding is <strong>ruled out for lack
+of space</strong>; the outboard vertical shield reflects neutrons back to recover TBR. Both values sit
+<strong>above</strong> 086004's 1.146 baseline — <a href="declared-tbr-values.html">Declared TBR Values and Their Conflicts</a>.</p>
+<h2 id="what-the-full-text-settles">What the full text settles<a aria-hidden="true" class="heading-link" href="#what-the-full-text-settles" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Detail sits on the pages that should carry it; this is the index of it.</p>
+<ul>
+<li><strong>Nuclear data</strong>, previously open: <strong>ENDF/B-VIII.0</strong> transport, <strong>FISPACT-II / TENDL-2019</strong>
+activation — <a href="nuclear-data-fendl.html">Nuclear Data and FENDL</a>.</li>
+<li><strong>The MCNP benchmark has a metric:</strong> mean flux ratio <strong>0.90</strong> — <a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a>.</li>
+<li><strong>Radiation damage:</strong> ≈ <strong>50 dpa/fpy</strong> in centre-column tungsten carbide —
+<a href="displacements-per-atom.html">Displacements per Atom (dpa)</a>.</li>
+<li><strong>Cryogenic margin:</strong> 18.5 kW against 20 kW — <a href="18-superconductors-and-magnets.html">Superconductors and Magnet Engineering</a>.</li>
+<li><strong>Materials:</strong> <strong>V-4Cr-4Ti</strong> shield box (<a href="vanadium-alloys.html">Vanadium Alloys</a>), <strong>F82H</strong> <a href="rafm-steel.html">RAFM</a>
+overhead shield, 316L(N)-IG vessel, K-doped <a href="tungsten-pfc.html">tungsten</a> armour.</li>
+</ul>
+<h2 id="what-it-still-does-not-establish">What it still does not establish<a aria-hidden="true" class="heading-link" href="#what-it-still-does-not-establish" tabindex="-1" title="Link to this section">#</a></h2>
+<ul>
+<li><strong>No neutron wall loading in MW m⁻²</strong>, so the overview's figures remain uncross-checked; <strong>no
+cumulative fluence</strong>, only the fast-flux limit.</li>
+<li><strong>Nothing measured.</strong> Pre-concept simulation of an unbuilt plant, by its designers.</li>
+<li><strong>Activation remains a named problem</strong>: non-reduced-activation steels and plasma-facing
+components activate most in the machine.</li>
+</ul>
+<h2 id="access-limitations">Access limitations<a aria-hidden="true" class="heading-link" href="#access-limitations" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>Read 2 November 2026</strong> via the harness's fetch of the IOP landing page — sections 1–3.6 of a
+120,716-character page; closing sections, licence statement and affiliations were not in the
+retrieved text. <strong>CC BY 4.0</strong> per Crossref.</p>
+<p><strong>No local capture was possible.</strong> A plain request returned a page carrying a Radware marker
+rather than the article; a substituted user-agent was <strong>not pursued</strong>, being bot-check
+circumvention. The raw capture remains the Crossref JSON of 19 October 2026; <code>raw/</code> is
+append-only.</p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p>Chandrasekhar, Lister Wilson, Michelle Levine, Irukuvarghula, Bharatbhai Godhani, David Naish et al. (8 authors, Tokamak Energy Ltd) · Nuclear Fusion 66 086003, DOI 10.1088/1741-4326/ae63e2, CC BY 4.0</p><p class="provenance">The source note records a local capture. Captured third-party files are not redistributed here. Publisher and DOI links appear in the note or bibliography.</p><p><a href="../research/sources/st-e1-neutronics-crossref-metadata-2026.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/sources/st-e1-neutronics-crossref-metadata-2026.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="18-superconductors-and-magnets.html">Superconductors and Magnet Engineering</a> <small>Synthesis</small></li><li><a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a> <small>Synthesis</small></li><li><a href="43-fusion-waste-classification-and-disposal.html">Fusion Waste: Classification, Clearance and Disposal</a> <small>Synthesis</small></li><li><a href="declared-tbr-values.html">Declared TBR Values and Their Conflicts</a> <small>Concept</small></li><li><a href="displacements-per-atom.html">Displacements per Atom (dpa)</a> <small>Concept</small></li><li><a href="nuclear-data-fendl.html">Nuclear Data and FENDL</a> <small>Concept</small></li><li><a href="rafm-steel.html">Reduced-Activation Steels</a> <small>Concept</small></li><li><a href="rebco.html">REBCO High-Temperature Superconductor</a> <small>Concept</small></li><li><a href="spherical-tokamak.html">Spherical Tokamak</a> <small>Concept</small></li><li><a href="st-e1.html">ST-E1</a> <small>Entity</small></li><li><a href="st-e1-tritium-systems-crossref-metadata-2026.html">Tritium Production and Processing Systems for ST-E1</a> <small>Source note</small></li><li><a href="tokamak-energy.html">Tokamak Energy</a> <small>Entity</small></li><li><a href="tritium-breeding-ratio.html">Tritium Breeding Ratio (TBR)</a> <small>Concept</small></li><li><a href="tungsten-pfc.html">Tungsten Plasma-Facing Components</a> <small>Concept</small></li><li><a href="vanadium-alloys.html">Vanadium Alloys</a> <small>Concept</small></li><li><a href="willis-2026-st-e1-pre-concept-design-overview.html">Tokamak Energy&#x27;s Pre-concept Design for a Fusion Power Plant: An Overview of ST-E1</a> <small>Source note</small></li></ul></section><details class="backlinks"><summary>Linked from 15 library notes</summary><ul><li><a href="18-superconductors-and-magnets.html">Superconductors and Magnet Engineering</a></li><li><a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a></li><li><a href="22-critical-materials-supply-chains.html">Critical Materials and Supply Chains</a></li><li><a href="declared-tbr-values.html">Declared TBR Values and Their Conflicts</a></li><li><a href="displacements-per-atom.html">Displacements per Atom (dpa)</a></li><li><a href="moc-sources.html">MOC — Sources</a></li><li><a href="nuclear-data-fendl.html">Nuclear Data and FENDL</a></li><li><a href="rafm-steel.html">Reduced-Activation Steels</a></li><li><a href="spherical-tokamak.html">Spherical Tokamak</a></li><li><a href="st-e1.html">ST-E1</a></li><li><a href="st-e1-tritium-systems-crossref-metadata-2026.html">Tritium Production and Processing Systems for ST-E1</a></li><li><a href="step.html">STEP</a></li><li><a href="tokamak-energy.html">Tokamak Energy</a></li><li><a href="vanadium-alloys.html">Vanadium Alloys</a></li><li><a href="willis-2026-st-e1-pre-concept-design-overview.html">Tokamak Energy&#x27;s Pre-concept Design for a Fusion Power Plant: An Overview of ST-E1</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

@@ -1,0 +1,343 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Vacuum, Wall Conditioning and the Tritium Plant — Project Lux</title><meta name="description" content="Project Lux · The plumbing. Nothing works without it and nobody writes about it."><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/28-vacuum-wall-conditioning-tritium-plant.html"><meta property="og:title" content="Vacuum, Wall Conditioning and the Tritium Plant — Project Lux"><meta property="og:description" content="Project Lux · The plumbing. Nothing works without it and nobody writes about it."><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/28-vacuum-wall-conditioning-tritium-plant.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Synthesis</p><p class="eyebrow">Synthesis · Document 28</p><h1 id="doc-title">Vacuum, Wall Conditioning and the Tritium Plant</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Synthesis</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-11-02">2 November 2026</time></dd></div><div><dt>First written</dt><dd>25 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=engineering">engineering</a><a href="index.html?topic=subsystems">subsystems</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#1-why-the-wall-is-a-component-of-the-plasma">1. Why the wall is a component of the plasma</a></li><li><a href="#2-vacuum">2. Vacuum</a></li><li><a href="#3-wall-conditioning">3. Wall conditioning</a></li><li><a href="#4-iters-boronization-system--a-case-study-in-second-order-consequences">4. ITER&#x27;s boronization system — a case study in second-order consequences</a></li><li><a href="#5-helium-ash--the-exhaust-nobody-plans-for">5. Helium ash — the exhaust nobody plans for</a></li><li><a href="#6-the-tritium-plant">6. The tritium plant</a></li><li><a href="#7-accountancy--the-measurement-discipline">7. Accountancy — the measurement discipline</a></li><li><a href="#8-assessment">8. Assessment</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><em>Project Lux · The plumbing. Nothing works without it and nobody writes about it.</em></p>
+<hr/>
+<h2 id="1-why-the-wall-is-a-component-of-the-plasma">1. Why the wall is a component of the plasma<a aria-hidden="true" class="heading-link" href="#1-why-the-wall-is-a-component-of-the-plasma" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A fusion plasma is not an isolated system. It sits inside a metal box, and that box is in continuous chemical and physical exchange with it: adsorbing fuel, releasing impurities, eroding, redepositing. A <a href="tokamak.html">Tokamak</a>'s performance on any given day depends substantially on <strong>what the wall did last week</strong>.</p>
+<p>The numbers make the sensitivity clear. <strong>A core tungsten concentration above roughly 10⁻⁵ radiates enough power to <a href="quench.html">Quench</a> the plasma.</strong> Oxygen at the parts-per-thousand level in the residual gas can prevent breakdown entirely. So a machine whose vessel is nominally clean can still be unusable.</p>
+<p>Managing that is <strong>wall conditioning</strong>, and it is one of the least-documented and most operationally decisive disciplines in fusion.</p>
+<hr/>
+<h2 id="2-vacuum">2. Vacuum<a aria-hidden="true" class="heading-link" href="#2-vacuum" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-requirement">The requirement<a aria-hidden="true" class="heading-link" href="#the-requirement" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A tokamak torus operates at a base pressure around <strong>10⁻⁶ Pa</strong> — roughly a hundred-billionth of atmospheric — inside a vessel with an enormous internal surface area, hundreds of penetrations, and metres of weld seam. <a href="iter.html">ITER</a>'s cryostat, the outer vacuum boundary, is <strong>the largest stainless steel vacuum chamber ever built</strong> at 30 m × 30 m and about 3,850 tonnes.</p>
+<h3 id="why-this-is-hard-at-scale">Why this is hard at scale<a aria-hidden="true" class="heading-link" href="#why-this-is-hard-at-scale" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong>Outgassing.</strong> Every internal surface releases adsorbed water, hydrocarbons and gases continuously. Surface area, not volume, sets the pumping requirement — and a tokamak's interior is a labyrinth of tiles, gaps and diagnostic ducts, all of which are surface.</li>
+<li><strong>Leak detection.</strong> Finding a leak of order 10⁻¹⁰ Pa·m³/s somewhere in a structure the size of a building is a specialised art. ITER's helium leak testing found the thermal shield cracks described in <a href="25-failure-case-studies.html">Document 25</a> — three panels out of nearly five hundred.</li>
+<li><strong>Materials selection.</strong> Everything inside must be vacuum-compatible: no organics, no cadmium or zinc plating, no trapped volumes. This constrains every design choice, including fastener selection.</li>
+<li><strong>Baking.</strong> The vessel is heated — ITER to 200 °C, higher for in-vessel components — to accelerate desorption. Baking a 5,000-tonne structure uniformly is an engineering problem in itself.</li>
+</ul>
+<h3 id="pumping">Pumping<a aria-hidden="true" class="heading-link" href="#pumping" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Turbomolecular pumps handle rough vacuum. High vacuum and — critically — <strong>high throughput during a pulse</strong> is handled by <strong>cryopumps</strong>: cryoadsorption panels at 4 K that freeze gas onto their surfaces. ITER has <strong>six torus cryopumps plus two on the cryostat</strong>, and they consume <strong>15% of the cryogenic power</strong> on their own.</p>
+<p>Cryopumps must be <strong>regenerated</strong> — warmed to release trapped gas. In a D-T machine that gas is tritium-bearing, so regeneration is not a vacuum operation but a <strong>fuel-cycle operation</strong>. Pumping, fuelling and tritium processing are one coupled system, and the design of a reactor's pumping determines the size of its tritium inventory.</p>
+<p><strong>Compound cryopumps</strong> — combining condensation for most species with adsorption on charcoal for helium, which will not freeze at 4 K — are the reactor-relevant technology, and helium is precisely what must be pumped (see §5).</p>
+<hr/>
+<h2 id="3-wall-conditioning">3. Wall conditioning<a aria-hidden="true" class="heading-link" href="#3-wall-conditioning" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-toolkit">The toolkit<a aria-hidden="true" class="heading-link" href="#the-toolkit" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Baking</strong> removes weakly bound water and hydrocarbons.</p>
+<p><strong>Glow discharge cleaning (GDC)</strong> — strike a low-density DC glow discharge in helium or hydrogen at ~1 Pa, using the vessel as the cathode. Ions bombard the entire wall at modest energy, sputtering off contaminants. Standard practice on every tokamak; unusable while superconducting magnets are energised, because the field constrains the discharge.</p>
+<p><strong>Ion cyclotron wall conditioning (ICWC)</strong> — an RF-driven discharge that <em>does</em> work with the magnetic field on, which is why it matters for superconducting machines that cannot de-energise between shots.</p>
+<p><strong>Lithium conditioning</strong> — evaporating or dropping lithium onto plasma-facing surfaces. Lithium getters oxygen aggressively and dramatically reduces recycling. Used extensively on NSTX and LTX.</p>
+<h3 id="boronization">Boronization<a aria-hidden="true" class="heading-link" href="#boronization" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The workhorse. <strong>Deposit a thin film of boron on the vessel walls</strong> to reduce impurity content — principally oxygen — in the vacuum.</p>
+<p><strong>Mechanism:</strong> boron is low-Z, so any that enters the plasma radiates weakly. It <strong>getters oxygen</strong> chemically, <strong>suppresses metallic impurity influx</strong> by forming a protective coating, and <strong>reduces carbon contamination</strong> by mitigating chemical erosion.</p>
+<p><strong>Method:</strong> chemical vapour deposition of elemental boron by <strong>glow discharge in a helium atmosphere containing boron hydrides</strong>. Common precursors: <strong>diborane (B₂H₆), trimethylboron, decaborane (B₁₀H₁₄)</strong>, and vapours of <strong>carborane (C₂B₁₀H₁₂)</strong>.</p>
+<p><strong>A recent variant worth noting: Inter-Shot Boronization (ISB).</strong> Requiring only basic vacuum hardware, ISB injects carborane <strong>between plasma discharges</strong> for continuous in-situ conditioning. Results on <strong><a href="globus-m2.html">Globus-M2</a></strong> show it outperforming conventional glow discharge boronization and permitting longer experimental sessions — an operationally significant result for machines that cannot afford to stop for conditioning.</p>
+<p>Related techniques: <strong>siliconization</strong> (demonstrated on HL-2A) and other low-Z coatings.</p>
+<hr/>
+<h2 id="4-iters-boronization-system--a-case-study-in-second-order-consequences">4. ITER's boronization system — a case study in second-order consequences<a aria-hidden="true" class="heading-link" href="#4-iters-boronization-system--a-case-study-in-second-order-consequences" tabindex="-1" title="Link to this section">#</a></h2>
+<p>This is worth setting out in full, because it is a clean illustration of how one design decision propagates through an entire plant.</p>
+<h3 id="the-cause">The cause<a aria-hidden="true" class="heading-link" href="#the-cause" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>In 2023, ITER changed the plasma chamber's armour tiles from <a href="beryllium.html">Beryllium</a> to tungsten.</strong></p>
+<p>Beryllium is low-Z and getters oxygen naturally — it was, in effect, a permanently self-conditioning wall. Tungsten is high-Z, does not getter, and radiates catastrophically if it enters the core. <strong>Removing beryllium removed ITER's built-in oxygen control</strong>, which increased impurities and created a requirement for a conditioning system that the original design did not have.</p>
+<h3 id="the-system">The system<a aria-hidden="true" class="heading-link" href="#the-system" tabindex="-1" title="Link to this section">#</a></h3>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col"></th>
+<th scope="col"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boron layer thickness</td>
+<td><strong>10–100 nanometres</strong> across all plasma-facing surfaces</td>
+</tr>
+<tr>
+<td>Precursor</td>
+<td><strong>Diborane at 5% concentration in a helium carrier</strong></td>
+</tr>
+<tr>
+<td>Injection lines in the Tokamak Building</td>
+<td><strong>over 1 kilometre</strong></td>
+</tr>
+<tr>
+<td>Injection lines inside the vessel</td>
+<td><strong>approximately 400 metres</strong></td>
+</tr>
+<tr>
+<td>Gas injection points</td>
+<td><strong>21</strong>, optimised and integrated into the vacuum vessel</td>
+</tr>
+<tr>
+<td>Deposition method</td>
+<td><strong>Glow-discharge-assisted</strong> — a current between the wall (cathode) and "glow anodes" creates a cold plasma that accelerates ions against the wall</td>
+</tr>
+<tr>
+<td>Anodes</td>
+<td><strong>Four additional anodes</strong> added to achieve even boron distribution, after modelling and international tokamak testing</td>
+</tr>
+<tr>
+<td>Effective lifetime</td>
+<td><strong>2.5 to 12.5 weeks</strong> per application</td>
+</tr>
+<tr>
+<td>Planned interval</td>
+<td><strong>maximum every two weeks</strong></td>
+</tr>
+<tr>
+<td>Installation begins</td>
+<td><strong>2028</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-diborane-problem">The diborane problem<a aria-hidden="true" class="heading-link" href="#the-diborane-problem" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Diborane is toxic, pyrophoric, and expensive. Non-decomposed diborane must be <strong>destroyed safely</strong>, by either:</p>
+<ul>
+<li><strong>Thermal breakdown at 700 °C</strong> — tested at <a href="west.html">WEST</a> and <a href="diii-d.html">DIII-D</a></li>
+<li><strong>Chemical trapping</strong> — proven at <a href="asdex-upgrade.html">ASDEX Upgrade</a></li>
+</ul>
+<p>The treatment infrastructure will occupy space <strong>in the Tritium Building</strong>, which is itself a constrained and expensive volume.</p>
+<h3 id="the-stated-challenges">The stated challenges<a aria-hidden="true" class="heading-link" href="#the-stated-challenges" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li>Testing ITER's high-energy anode design, which delivers <strong>ten times more energy than current tokamaks</strong>, for compatibility with frequent boronization cycles</li>
+<li>Determining optimal anode placement for even coverage</li>
+<li>Measuring the <strong>oxygen absorption capacity</strong> of boronized surfaces</li>
+<li><strong>Operating in a tritiated environment at unprecedented scale</strong></li>
+</ul>
+<h3 id="why-it-belongs-in-a-dossier">Why it belongs in a dossier<a aria-hidden="true" class="heading-link" href="#why-it-belongs-in-a-dossier" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A materials decision made for <a href="divertor.html">Divertor</a> lifetime reasons in 2023 produced, by 2026, a requirement for a kilometre of new gas lines, 21 vessel penetrations, a toxic-gas destruction plant in the Tritium Building, and a fortnightly operational procedure — <strong>on a machine that has not yet made a plasma.</strong></p>
+<p>That is what "systems integration" means in practice, and it is why <a href="09-engineering-challenges.html">Document 09</a> ranks integration as a first-class challenge. No component decision in a fusion plant is local.</p>
+<hr/>
+<h2 id="5-helium-ash--the-exhaust-nobody-plans-for">5. <a href="helium-ash.html">Helium ash</a> — the exhaust nobody plans for<a aria-hidden="true" class="heading-link" href="#5-helium-ash--the-exhaust-nobody-plans-for" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The D-T reaction produces helium. That helium thermalises in the plasma and, unlike the neutron, <strong>stays there</strong>.</p>
+<h3 id="why-it-matters">Why it matters<a aria-hidden="true" class="heading-link" href="#why-it-matters" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Helium is not a contaminant in the ordinary sense — it is chemically inert and low-Z, so it radiates little. Its problem is <strong>dilution</strong>: every helium nucleus displaces fuel. Since fusion power scales as the square of fuel density, a few percent helium is a direct multiplicative penalty on power output.</p>
+<p>The published framing is unambiguous: control of helium ash is <em>"one of the key issues affecting the performance and achievable burn time of a fusion reactor"</em>, and <em>"it will be mandatory to keep the concentration of helium ash within tolerable values, in order to avoid fuel dilution and achieve stationary burning."</em></p>
+<p>There is a second-order consequence that connects directly to the tritium problem: <strong>the helium fraction limits the maximum achievable tritium burn efficiency</strong>, because ash dilution in the core caps fusion performance per unit of fuel circulated. Poor ash removal means more tritium circulating for the same power, which means larger tritium inventory, which means higher cost and a tighter safety case.</p>
+<h3 id="how-it-is-removed">How it is removed<a aria-hidden="true" class="heading-link" href="#how-it-is-removed" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>The only significant pathway for thermalised helium to leave the vessel is pumping at the divertor.</strong> Helium must diffuse from the core to the edge, cross the separatrix, travel down the scrape-off layer to the divertor, and be captured by the cryopumps before it recycles back into the plasma.</p>
+<p>That chain has several weak links, and helium is a difficult gas to pump — it does not condense at 4 K, requiring <strong>charcoal adsorption panels</strong> in compound cryopumps.</p>
+<p>Approaches under study: <strong>selective helium pumping</strong> (exploiting differences in pumping speed between helium and hydrogen isotopes), divertor geometry optimised for helium compression, and <strong>pellet-based impurity capture</strong> — injecting small pellets through the plasma edge to capture and carry out helium and other impurities.</p>
+<p><a href="jet.html">JET</a> performed dedicated helium exhaust experiments with Type-I ELMs in <a href="h-mode.html">H-mode</a>, and SOLPS-ITER modelling of helium transport, recycling and pumping has been carried out for ASDEX Upgrade. <strong>It remains an open reactor-design question</strong>, and it is one of the "critical physics areas" the ARIES studies list alongside MHD stability and heat exhaust.</p>
+<hr/>
+<h2 id="6-the-tritium-plant">6. The tritium plant<a aria-hidden="true" class="heading-link" href="#6-the-tritium-plant" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The fuel cycle described conceptually in <a href="09-engineering-challenges.html">Document 09</a> is, physically, a chemical plant. Here is what it actually contains.</p>
+<h3 id="the-loop">The loop<a aria-hidden="true" class="heading-link" href="#the-loop" tabindex="-1" title="Link to this section">#</a></h3>
+<pre><code>Torus exhaust (D, T, He, impurities, tritiated water and methane)
+   → Tritium Exhaust Processing (recover all hydrogen isotopes, destroy tritiated compounds)
+      → Isotope Separation System (separate H / D / T)
+         → Storage and Delivery (metal hydride getter beds)
+            → Fuelling (gas puff, pellet injection)
+               → back to the torus
+</code></pre>
+<p>With side streams: <strong>water detritiation</strong>, <strong>atmosphere detritiation</strong>, <strong>breeder blanket tritium extraction</strong>, and <strong><a href="tritium-accountancy.html">accountancy</a></strong> at every node.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>"Accountancy at every node" was the thinnest phrase in this document
+It is now a page. Added 2026-10-19: accountancy is a <strong>measurement discipline</strong> built on material
+balance areas, key measurement points and an inventory-difference uncertainty budget — and fusion
+breaks it three ways. <strong>A power plant cannot stop for a physical inventory</strong>, and continuous-flow
+measurement uncertainty grows as <strong>√t</strong> until it dominates the balance. <strong>Retained tritium is a
+residual rather than a measurement</strong>, so every error elsewhere lands on it. And <strong>the two
+fusion-specific terms — burn-up in the plasma and breeding in the blanket — have no measurement
+method at all</strong>, which the source literature says <em>"would need to be developed"</em>.</p>
+<p>See <a href="tritium-accountancy.html">Tritium Accountancy</a>, <a href="srnl-2013-tritium-accountancy-in-fusion-systems.html">Tritium Accountancy in Fusion Systems</a> and
+<a href="sindelar-2023-tritium-accountancy-control-challenges-fusion.html">Assessment of Challenges for Tritium Accountancy and Control in Fusion Energy Systems</a>.</p>
+</aside>
+<h3 id="the-key-technologies">The key technologies<a aria-hidden="true" class="heading-link" href="#the-key-technologies" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>PERMCAT</strong> — the process chosen for the <strong>final clean-up stage of ITER's Tritium Exhaust Processing</strong>. It directly combines a <strong>palladium/silver membrane with a catalyst bed</strong>, detritiating gas mixtures that contain both molecular tritium <em>and</em> chemically bound tritium — tritiated water and tritiated methane, which are the hard cases. The catalyst cracks the compound; the Pd/Ag membrane, which is permeable to hydrogen isotopes and essentially nothing else, extracts the released tritium.</p>
+<p><strong>Palladium membranes</strong> appear throughout: permeation, membrane reaction, and catalytic-reaction-plus-permeation are all listed among ITER tritium plant subsystem technologies, alongside electrolysis and decomposition reactions.</p>
+<p><strong>Cryogenic distillation (CD)</strong> — the isotope separation workhorse. Hydrogen isotopologues (H₂, HD, D₂, HT, DT, T₂) have slightly different boiling points near 20 K, so a cryogenic distillation cascade separates them. It is <em>"currently the only readily deployable technology at this scale."</em></p>
+<p><strong>Water detritiation</strong> — the standard configuration is <strong>LPCE + CD</strong>: liquid-phase catalytic exchange transfers tritium from water to elemental hydrogen, then cryogenic distillation separates the isotopes. All current large-scale systems use this front-end-then-cascade architecture.</p>
+<p><strong>Blanket tritium extraction</strong> — a distinct problem, because tritium bred in a lithium blanket is dilute, distributed and hot. <strong>Zeolite membranes and palladium membrane reactors</strong> have been proposed for extraction from ITER and DEMO breeder blankets.</p>
+<p><strong>Storage</strong> — metal hydride getter beds (uranium or ZrCo), which absorb tritium reversibly and hold it as a solid rather than a pressurised gas.</p>
+<h3 id="where-the-research-frontier-is">Where the research frontier is<a aria-hidden="true" class="heading-link" href="#where-the-research-frontier-is" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Not throughput — <strong>inventory</strong>. The next generation of work targets <strong>low-tritium-inventory isotope separation technologies for future power plants</strong>.</p>
+<p>The reason is that every gram of tritium sitting in a distillation column, a getter bed or a pipe run is a gram that is not in the plasma, that costs $30,000–35,000, that decays at 5.5% per year, and that appears in the plant's safety case as a potential release. <strong>Reducing holdup is worth more than increasing throughput</strong>, and it is why <strong><a href="direct-internal-recycling.html">Direct Internal Recycling</a></strong> — bypassing full isotope separation for the bulk of the exhaust — is a DOE roadmap milestone.</p>
+<h3 id="the-quantities-added-2026-10-19">The quantities, added 2026-10-19<a aria-hidden="true" class="heading-link" href="#the-quantities-added-2026-10-19" tabindex="-1" title="Link to this section">#</a></h3>
+<p><a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Abdou <em>et al.</em> 2021</a> puts numbers on everything this section describes qualitatively:</p>
+<ul>
+<li><strong>Processing time is a hard requirement, not a performance metric.</strong> The inner fuel cycle must turn exhaust around in <strong>1–4 h</strong>. Longer makes self-sufficiency impossible below 1% <code>η_f · f_b</code>, and <strong>the isotope separation system dominates that time</strong> — which is precisely why DIR, which skips it, buys so much.</li>
+<li><strong>DIR's effect is quantified.</strong> At <code>η_f · f_b</code> = 1%, recycling <strong>80%</strong> of exhaust directly lowers required <a href="tritium-breeding-ratio.html">TBR</a> from <strong>1.120 to 1.075</strong>.</li>
+<li><strong>Batch-to-continuous is the named R&amp;D direction</strong> for cutting processing time.</li>
+<li><strong>Reserve inventory is a reliability problem.</strong> A 24 h reserve gives unacceptable inventories; reserves must cover <strong>only a few hours</strong>, which means every component in the fuel cycle needs high reliability and fast maintainability. §8's claim that these systems are "where operating cost and availability actually live" is strengthened: they are also where <em>fuel supply</em> lives.</li>
+</ul>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>The loss assumptions under all of this are weakly grounded
+Both fuel-cycle models in the vault assume very low environmental tritium losses, and neither
+validates the assumption. Abdou <em>et al.</em> set losses to <strong>10⁻⁴</strong> — stating in the paper that the
+value is chosen <em>arbitrarily</em> — and assign <strong>zero</strong> direct environmental loss to the blanket,
+plasma-facing components, storage and fuelling, on the grounds that they sit inside the vacuum
+vessel. The <a href="yang-2026-st-e1-tritium-tmap8-surrogate-models.html">ST-E1 modelling</a> uses per-component
+fractions of <strong>10⁻⁸ to 10⁻⁷</strong> with zero for the rest, taken from
+<a href="tokamak-energy.html">Tokamak Energy</a>.</p>
+<p>Given that §6 opens by noting tritium <em>permeates through hot metal, into coolant, into concrete</em>,
+the gap between that physical picture and a 10⁻⁴ arbitrary loss term is the single least-tested
+assumption in fusion fuel-cycle modelling. The vault records it as an open assumption, not as an
+error — no operating plant exists to measure against.</p>
+</aside>
+<h3 id="retention-and-recovery-one-modelled-case">Retention and recovery: one modelled case<a aria-hidden="true" class="heading-link" href="#retention-and-recovery-one-modelled-case" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The <a href="st-e1.html">ST-E1</a> study is the vault's only component-level tritium retention modelling. On its own conservative assumptions, <strong>bake-out works</strong>: heating an 8 mm tungsten-armour divertor to 873 K released <strong>over 95% of retained tritium in about 33 h</strong>. Component inventories reached quasi-steady state after roughly 10,000 s.</p>
+<p>Both figures are from an <strong>unreviewed preprint</strong> that excludes re-emission and irradiation damage and models a single trap per material in 1D — so they indicate feasibility of the <em>approach</em>, not a recovery guarantee. Bake-out as a tritium-recovery operation, rather than a vacuum one, is the point worth carrying forward: it is the same coupling §2 identifies for cryopump regeneration.</p>
+<hr/>
+<h3 id="a-second-fully-quantified-fuel-cycle-added-2026-11-02">A second fully quantified fuel cycle, added 2026-11-02<a aria-hidden="true" class="heading-link" href="#a-second-fully-quantified-fuel-cycle-added-2026-11-02" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Reading <a href="st-e1-tritium-systems-crossref-metadata-2026.html">ST-E1's fuel-cycle paper</a> in full gives
+this document its second end-to-end set of plant fuel-cycle numbers after Helios:</p>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Quantity</th>
+<th scope="col">ST-E1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="tritium-start-up-inventory.html">Start-up inventory</a></td>
+<td><strong>1.58 kg</strong> (incl. 20% commissioning contingency); 1.31 kg tritium-lean</td>
+</tr>
+<tr>
+<td><a href="tritium-doubling-time.html">Doubling time</a></td>
+<td><strong>152 days</strong></td>
+</tr>
+<tr>
+<td>Operational inventory</td>
+<td>2.4 kg, reached in 85 days; 24 h reserve</td>
+</tr>
+<tr>
+<td>Total inventory excl. storage</td>
+<td><strong>1.39 kg</strong> at 2% burn efficiency; 2.42 kg at 1%</td>
+</tr>
+<tr>
+<td>Largest single holdup</td>
+<td>Isotope separation, <strong>0.41 kg</strong>; blanket <strong>0.31 kg</strong></td>
+</tr>
+<tr>
+<td><a href="direct-internal-recycling.html">DIR</a></td>
+<td>fraction 0.7; protium 1 at% in / 0.8 at% out</td>
+</tr>
+<tr>
+<td>Extraction</td>
+<td>TES, 1% efficient below ~100 ppb rising to 80% above ~1 ppm; 20% bleed</td>
+</tr>
+<tr>
+<td>Cryogenic distillation</td>
+<td>5 cm per stage, max 70 stages, 3.5 m; 12 stages suffice at 50% DIR</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two details are worth keeping. The <strong>extraction efficiency is concentration-dependent</strong> by two
+orders of magnitude, which makes blanket tritium concentration a design variable rather than a
+consequence — and it is the quantity nobody can measure (§7). And the blanket loop is
+<strong>360,000 kg of lithium flowing at 296 kg s⁻¹</strong>, so a 0.31 kg blanket inventory is a sub-ppm
+concentration in a very large mass.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>Every figure above omits trapping
+<a href="meschini-2025-trapping-tritium-self-sufficiency.html">Meschini <em>et al.</em> 2025</a> raise doubling time
+<strong>+50%</strong>, start-up inventory <strong>+30%</strong> and required <a href="tritium-breeding-ratio.html">TBR</a> <strong>+2–5%</strong> once
+<a href="tritium-retention.html">trapping</a> is modelled — and put first-wall and vacuum-vessel inventory up a
+factor of <strong>10³–10⁴</strong> for an ARC-class plant. ST-E1 assigns its first wall and divertor
+0.012–0.024 kg. The two models are not comparable and <strong>no source reconciles them</strong>; the
+discrepancy is the largest open quantitative question in this section.</p>
+</aside>
+<h2 id="7-accountancy--the-measurement-discipline">7. Accountancy — the measurement discipline<a aria-hidden="true" class="heading-link" href="#7-accountancy--the-measurement-discipline" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Relocated here 2026-10-19 from <a href="tritium-accountancy.html">Tritium Accountancy</a>, which holds the framework; this section
+holds the detail that a concept page cannot carry at schema length.</p>
+<h3 id="what-can-actually-be-measured">What can actually be measured<a aria-hidden="true" class="heading-link" href="#what-can-actually-be-measured" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Practical accuracies, compiled in 2023 <strong>from Nishi <em>et al.</em>, <em>Fusion Engineering and Design</em> 81
+(2006) 745–751</strong> — and therefore twenty-year-old instrument figures, reaching this vault at second
+hand (<a href="sindelar-2023-tritium-accountancy-control-challenges-fusion.html">Assessment of Challenges for Tritium Accountancy and Control in Fusion Energy Systems</a>):</p>
+<div aria-label="Table 3 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Method</th>
+<th scope="col">Practical accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Laser Raman spectrometry (concentration)</td>
+<td><strong>&lt; 0.5%</strong> — the best listed</td>
+</tr>
+<tr>
+<td>Calorimetry, integrated</td>
+<td>~1%</td>
+</tr>
+<tr>
+<td>Static PVTC (pressure, volume, temperature, concentration)</td>
+<td>1–5% integrated</td>
+</tr>
+<tr>
+<td>— pressure · volume · temperature</td>
+<td>0.2–0.9% · &lt; 0.5% · 0.1 °C</td>
+</tr>
+<tr>
+<td>Dynamic PVTC — accountancy with mass flowing</td>
+<td>a few % integrated</td>
+</tr>
+<tr>
+<td>Mass spectrometry (concentration)</td>
+<td>0.5–5%</td>
+</tr>
+<tr>
+<td>Gas chromatograph · Bremsstrahlung X-ray</td>
+<td>few to 5% · a few %</td>
+</tr>
+<tr>
+<td>Ionisation chamber (concentration)</td>
+<td>few to 10%</td>
+</tr>
+<tr>
+<td><strong>Releases to the environment</strong></td>
+<td><strong>~10%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Static inventories live in <strong>metal hydride beds</strong>, <strong>molecular sieve beds</strong> and <strong>sealed confinement
+vessels</strong>; losses are detected by <strong>inventory-difference control limits</strong> and <strong>statistical sampling
+plans</strong>.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>The two measurements fusion most needs do not exist
+The table's own note: methods <em>"using neutron flux for tritium consumption by the fusion reaction
+and for tritium production in the blanket <strong>would need to be developed</strong>."</em></p>
+<p>Everything above measures tritium <strong>in a pipe or a bed</strong>. Nothing measures tritium being <em>made</em> in
+a blanket or <em>consumed</em> in a plasma — which are precisely the two terms the fusion-modified balance
+adds. See <a href="tritium-accountancy.html">Tritium Accountancy</a>.</p>
+</aside>
+<h3 id="who-is-building-the-missing-instruments">Who is building the missing instruments<a aria-hidden="true" class="heading-link" href="#who-is-building-the-missing-instruments" tabindex="-1" title="Link to this section">#</a></h3>
+<p>One programme, at <a href="ukaea.html">UKAEA</a>'s Tritium Fuel Cycle division with <a href="librti.html">LIBRTI</a>
+(<a href="thalia-hera-ukaea-tritium-accountancy-2026.html">Development of Analytical Techniques for Tritium Accountancy Around the Fusion Fuel Cycle (HERA and THALIA)</a>):</p>
+<ul>
+<li><strong>HERA</strong> — real-time analysis of <strong>gas streams</strong> by mass spectrometry and Raman, quantifying
+H₂, D₂ and T₂ from the limit of detection to 100%, with a <strong>palladium catalyst</strong> for
+semi-quantification of HD, HT and DT, and a glovebox generating its own calibration standards by
+PVTc. This attacks the continuous-flow problem directly, using the table's two best methods.</li>
+<li><strong>THALIA</strong> — accountancy for tritium <strong>trapped in liquid breeders</strong>: FLiBe first, then liquid
+lithium and <a href="lithium-lead-eutectic.html">LiPb</a>. Sub-projects <strong>ERATO</strong> (liquid scintillation counting
+of tritiated lithium salts) and <strong>CLIO</strong> (ICP-MS, <em>"not been developed for small atoms such as
+hydrogen"</em>).</li>
+</ul>
+<p><strong>Both are at low technology readiness level</strong>, principally because getting a tritiated lithium
+matrix into an analysable state is hard, and because <strong>tritium speciation in the breeder is
+unknown</strong>. <a href="st-e1.html">ST-E1</a> breeds in liquid lithium — THALIA's <em>third</em> target material.</p>
+<p>Underneath all spectroscopic methods sits reference data, and that too is thin: experimentally
+verified tritium material properties are <em>"sparse"</em>, which is the gap
+<a href="marsteller-2025-t2apir-first-results.html">T2ApIR</a> at Tritium Laboratory Karlsruhe exists to close — a
+cryogenic cell below 10 K with infrared, Raman and polariscope access, currently in commissioning
+with no property data published.</p>
+<h3 id="scale-and-a-distinction-worth-keeping">Scale, and a distinction worth keeping<a aria-hidden="true" class="heading-link" href="#scale-and-a-distinction-worth-keeping" tabindex="-1" title="Link to this section">#</a></h3>
+<p><a href="iter.html">ITER</a>'s total <strong>in-process</strong> inventory is expected at approximately <strong>1 kg</strong>, with commercial
+plants put at several hundred grams to 1 kg each across <em>"hundreds to thousands"</em> of plants at global
+scale (2023 estimates). <strong>In-process inventory is not
+<a href="tritium-start-up-inventory.html">start-up inventory</a></strong> — the same units, different quantities.</p>
+<p>Steady state is not reached until permeation and hold-up losses have saturated, which is
+plant-specific: <strong>early-life accountancy measures a system still filling its own walls.</strong></p>
+<hr/>
+<h2 id="8-assessment">8. Assessment<a aria-hidden="true" class="heading-link" href="#8-assessment" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>This document covers the systems that determine whether a fusion machine can be <em>operated</em>, as distinct from whether it can be <em>built</em>.</strong> They share three characteristics:</p>
+<ol>
+<li><strong>They are invisible in fusion communications.</strong> No press release has ever led with a boronization system.</li>
+<li><strong>They are coupled to everything.</strong> ITER's tungsten decision created a boronization requirement that consumes space in the Tritium Building. Cryopump regeneration is a fuel-cycle operation. Helium ash removal sets tritium inventory.</li>
+<li><strong>They are where operating cost and availability actually live.</strong> A fortnightly boronization is a fortnightly outage window. Poor helium exhaust is a permanent power penalty. Tritium holdup is a permanent capital charge.</li>
+</ol>
+<p>The most useful generalisation: <strong>fusion's plasma physics is a science problem, its materials are a research problem, and its vacuum, conditioning and fuel handling are an operations problem</strong> — and operations problems are the ones that determine whether a plant runs 90% of the year or 50%.</p>
+<hr/>
+<p><strong>Continue to:</strong> <a href="29-remote-handling-and-maintenance.html">29 — Remote Handling and Maintenance</a> · <a href="30-power-plant-designs-compared.html">30 — Power Plant Designs Compared</a> · <a href="09-engineering-challenges.html">09 — Engineering Challenges</a></p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/synthesis/28-vacuum-wall-conditioning-tritium-plant.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/synthesis/28-vacuum-wall-conditioning-tritium-plant.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="09-engineering-challenges.html">Engineering Challenges</a> <small>Synthesis</small></li><li><a href="25-failure-case-studies.html">Failure Case Studies</a> <small>Synthesis</small></li><li><a href="29-remote-handling-and-maintenance.html">Remote Handling and Maintenance</a> <small>Synthesis</small></li><li><a href="30-power-plant-designs-compared.html">Power Plant Designs Compared</a> <small>Synthesis</small></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a> <small>Concept</small></li><li><a href="st-e1.html">ST-E1</a> <small>Entity</small></li><li><a href="tritium-accountancy.html">Tritium Accountancy</a> <small>Concept</small></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a> <small>Concept</small></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a> <small>Concept</small></li></ul></section><details class="backlinks"><summary>Linked from 25 library notes</summary><ul><li><a href="30-power-plant-designs-compared.html">Power Plant Designs Compared</a></li><li><a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency</a></li><li><a href="boronization.html">Boronization and Wall Conditioning</a></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a></li><li><a href="flynn-larsen-2022-kalman-filters-tritium-accountancy.html">Investigating the application of Kalman Filters for real-time accountancy in fusion fuel cycles</a></li><li><a href="globus-m2.html">Globus-M2</a></li><li><a href="h3at.html">H3AT</a></li><li><a href="helium-ash.html">Helium Ash</a></li><li><a href="lithium-lead-eutectic.html">Lithium-Lead Eutectic (PbLi)</a></li><li><a href="marsteller-2025-t2apir-first-results.html">First Results of the Tritium Absorption InfraRed Spectroscopy (T2ApIR) Experiment</a></li><li><a href="meschini-2023-tritium-fuel-cycle-arc-step.html">Modeling and analysis of the tritium fuel cycle for ARC- and STEP-class D-T fusion power plants</a></li><li><a href="meschini-2025-trapping-tritium-self-sufficiency.html">Impact of trapping on tritium self-sufficiency and tritium inventories in fusion power plant fuel cycles</a></li><li><a href="moc-engineering.html">MOC — Engineering</a></li><li><a href="moc-start-here.html">START HERE</a></li><li><a href="sindelar-2023-tritium-accountancy-control-challenges-fusion.html">Assessment of Challenges for Tritium Accountancy and Control in Fusion Energy Systems</a></li><li><a href="srnl-2013-tritium-accountancy-in-fusion-systems.html">Tritium Accountancy in Fusion Systems</a></li><li><a href="st-e1.html">ST-E1</a></li><li><a href="st-e1-tritium-systems-crossref-metadata-2026.html">Tritium Production and Processing Systems for ST-E1</a></li><li><a href="thalia-hera-ukaea-tritium-accountancy-2026.html">Development of Analytical Techniques for Tritium Accountancy Around the Fusion Fuel Cycle (HERA and THALIA)</a></li><li><a href="tritium-accountancy.html">Tritium Accountancy</a></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a></li><li><a href="tritium-doubling-time.html">Tritium Doubling Time</a></li><li><a href="tritium-retention.html">Tritium Retention</a></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a></li><li><a href="yang-2026-st-e1-tritium-tmap8-surrogate-models.html">Multiscale Assessment of Tritium Behavior in Preliminary Fusion Pilot Plant Design Using Surrogate Models in TMAP8</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

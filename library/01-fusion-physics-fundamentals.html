@@ -1,0 +1,313 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Physics Fundamentals — Project Lux</title><meta name="description" content="The binding energy per nucleon curve peaks at iron-56 (~8.8 MeV/nucleon). Everything lighter than iron releases energy when fused; everything heavier releases…"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/01-fusion-physics-fundamentals.html"><meta property="og:title" content="Physics Fundamentals — Project Lux"><meta property="og:description" content="The binding energy per nucleon curve peaks at iron-56 (~8.8 MeV/nucleon). Everything lighter than iron releases energy when fused; everything heavier releases…"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/01-fusion-physics-fundamentals.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Synthesis</p><p class="eyebrow">Synthesis · Document 01</p><h1 id="doc-title">Physics Fundamentals</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Synthesis</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-08-26">26 August 2026</time></dd></div><div><dt>First written</dt><dd>25 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=physics">physics</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#1-why-fusion-releases-energy">1. Why fusion releases energy</a></li><li><a href="#2-the-coulomb-barrier-and-why-stars-are-needed">2. The Coulomb barrier and why stars are needed</a></li><li><a href="#3-the-candidate-reactions">3. The candidate reactions</a></li><li><a href="#4-the-lawson-criteria">4. The Lawson criteria</a></li><li><a href="#5-q-the-definitions-and-how-they-are-abused">5. Q: the definitions, and how they are abused</a></li><li><a href="#6-magnetic-confinement-the-governing-parameters">6. Magnetic confinement: the governing parameters</a></li><li><a href="#7-inertial-confinement-a-different-set-of-parameters">7. Inertial confinement: a different set of parameters</a></li><li><a href="#8-alpha-physics-and-the-burning-plasma-regime">8. Alpha physics and the burning-plasma regime</a></li><li><a href="#9-where-ai-enters-the-physics">9. Where AI enters the physics</a></li><li><a href="#10-a-summary-table-of-what-must-be-achieved">10. A summary table of what must be achieved</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><em>Project Lux · What fusion actually requires, and why it is hard</em></p>
+<hr/>
+<h2 id="1-why-fusion-releases-energy">1. Why fusion releases energy<a aria-hidden="true" class="heading-link" href="#1-why-fusion-releases-energy" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The binding energy per nucleon curve peaks at iron-56 (~8.8 MeV/nucleon). Everything lighter than iron releases energy when fused; everything heavier releases energy when split. Fusion sits on the steep left-hand side of that curve, which is why it is so energetically favourable: helium-4 is an unusually tightly bound nucleus, and forming it from lighter nuclei liberates a large fraction of the available mass-energy.</p>
+<p>For deuterium-tritium fusion, the mass defect corresponds to <strong>17.59 MeV per reaction</strong>. Per unit mass of fuel this is roughly:</p>
+<ul>
+<li><strong>4× more</strong> energy per kilogram than uranium fission</li>
+<li><strong>~10 million×</strong> more than burning coal or methane</li>
+</ul>
+<p>One gram of D-T fuel, fully burned, releases about <strong>340 GJ</strong> — approximately the energy in 11 tonnes of coal.</p>
+<hr/>
+<h2 id="2-the-coulomb-barrier-and-why-stars-are-needed">2. The Coulomb barrier and why stars are needed<a aria-hidden="true" class="heading-link" href="#2-the-coulomb-barrier-and-why-stars-are-needed" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Two positively charged nuclei repel. To fuse, they must approach within the range of the strong nuclear force (~1 femtometre), against a Coulomb potential of order:</p>
+<pre><code>V_c = Z₁Z₂e² / (4πε₀ r)  ≈ 1.4 MeV·fm × Z₁Z₂ / r[fm]
+</code></pre>
+<p>For D-T (Z₁=Z₂=1) at r = 1 fm, that is roughly <strong>1.4 MeV</strong> — far above any temperature achievable in a laboratory or, for that matter, in the core of the Sun (~1.3 keV).</p>
+<p>Fusion happens anyway for two reasons:</p>
+<ol>
+<li><strong>Quantum tunnelling.</strong> Nuclei do not need to surmount the barrier; they can tunnel through it. The probability is governed by the Gamow factor, <code>exp(-√(E_G/E))</code>, which is exponentially sensitive to energy.</li>
+<li><strong>The Maxwellian tail.</strong> In a thermal plasma most particles sit near the mean energy, but the exponential tail contains particles at many times that energy. Because the tunnelling probability rises steeply with energy while the number of available particles falls steeply, the product peaks at a characteristic energy well above the mean — the <strong>Gamow peak</strong>.</li>
+</ol>
+<p>The practical consequence: fusion in a thermal plasma is dominated by a small, energetic minority of the ion population, and the reaction rate is extremely sensitive to temperature.</p>
+<hr/>
+<h2 id="3-the-candidate-reactions">3. The candidate reactions<a aria-hidden="true" class="heading-link" href="#3-the-candidate-reactions" tabindex="-1" title="Link to this section">#</a></h2>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Reaction</th>
+<th scope="col">Products</th>
+<th scope="col">Energy release</th>
+<th scope="col">Neutron fraction</th>
+<th scope="col">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D + T → ⁴He + n</strong></td>
+<td>α (3.52 MeV) + n (14.07 MeV)</td>
+<td><strong>17.59 MeV</strong></td>
+<td><strong>80%</strong></td>
+<td>Highest cross-section at lowest temperature. The only realistic near-term fuel.</td>
+</tr>
+<tr>
+<td><strong>D + D → T + p</strong> (~50%)</td>
+<td>T (1.01) + p (3.02)</td>
+<td>4.03 MeV</td>
+<td>0%</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>D + D → ³He + n</strong> (~50%)</td>
+<td>³He (0.82) + n (2.45)</td>
+<td>3.27 MeV</td>
+<td>~66% of this branch</td>
+<td>D-D combined needs ~10× the <a href="triple-product.html">triple product</a> of D-T</td>
+</tr>
+<tr>
+<td><strong>D + ³He → ⁴He + p</strong></td>
+<td>α (3.6) + p (14.7)</td>
+<td><strong>18.35 MeV</strong></td>
+<td>~0% direct</td>
+<td>But D-D side reactions still make neutrons. ³He is scarce.</td>
+</tr>
+<tr>
+<td><strong>T + T → ⁴He + 2n</strong></td>
+<td>α + 2n</td>
+<td>11.3 MeV</td>
+<td>high</td>
+<td>Parasitic</td>
+</tr>
+<tr>
+<td><strong>p + ¹¹B → 3 ⁴He</strong></td>
+<td>3 α (8.68 MeV total)</td>
+<td><strong>8.68 MeV</strong></td>
+<td><strong>~0%</strong></td>
+<td>Aneutronic. Requires ~10× the temperature and defeats bremsstrahlung losses only marginally.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="why-d-t-wins-by-default">Why D-T wins by default<a aria-hidden="true" class="heading-link" href="#why-d-t-wins-by-default" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The D-T cross-section peaks at about <strong>5 barns near 64 keV</strong> in the centre-of-mass frame — roughly <strong>100× larger</strong> than D-D at the same energy, and it peaks at a much lower energy than any alternative. In the temperature range where machines actually operate (<strong>10–25 keV</strong>), D-T's Maxwellian-averaged reactivity <code>⟨σv⟩</code> is approximately:</p>
+<pre><code>⟨σv⟩_DT ≈ 1.1 × 10⁻²⁴ · T²  m³/s     (T in keV, valid ~8–25 keV)
+</code></pre>
+<p>peaking at about <strong>8.7 × 10⁻²² m³/s near 64 keV</strong>.</p>
+<p>This quadratic dependence is why the triple product formulation works, and it is why <strong>every machine that has ever produced significant fusion energy has used D-T</strong> — and why every machine that uses D-T inherits the 14.1 MeV neutron problem described in <a href="09-engineering-challenges.html">Document 09</a>.</p>
+<h3 id="the-aneutronic-temptation">The aneutronic temptation<a aria-hidden="true" class="heading-link" href="#the-aneutronic-temptation" tabindex="-1" title="Link to this section">#</a></h3>
+<p>p-¹¹B is seductive: no neutrons, no tritium, no breeding blanket, no activation, and the possibility of <strong><a href="direct-energy-conversion.html">direct energy conversion</a></strong> from charged alphas to electricity without a steam cycle. Five of the 56 companies in the FIA survey are pursuing it.</p>
+<p>The physics is punishing. The Coulomb barrier is five times higher (Z=1×5), the reactivity peaks near <strong>600 keV</strong>, and — critically — <strong>bremsstrahlung radiation losses scale as Z_eff² n² √T</strong>. With boron's Z=5 in the plasma, radiated power tends to exceed fusion power across most of the operating space. Achieving net energy requires either non-Maxwellian ion distributions, alpha-channeling to recycle energy, or operating far from thermal equilibrium — all unproven at scale.</p>
+<p><strong>Status, August 2026</strong>: <a href="hb11-energy.html">HB11 Energy</a> reported a ~10× increase in measured alpha yield at ELI Beamlines (Czechia) in May 2026 using a chirped-pulse petawatt driver on a boron-hydride target. <a href="tae-technologies.html">TAE Technologies</a> has reached ~75 million K for ~30 ms — still 5–10× below what p-¹¹B requires. <strong>No facility has demonstrated sustained <a href="aneutronic-fusion.html">aneutronic fusion</a>, let alone breakeven.</strong></p>
+<hr/>
+<h2 id="4-the-lawson-criteria">4. The <a href="lawson-criterion.html">Lawson criteria</a><a aria-hidden="true" class="heading-link" href="#4-the-lawson-criteria" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="41-the-energy-balance">4.1 The energy balance<a aria-hidden="true" class="heading-link" href="#41-the-energy-balance" tabindex="-1" title="Link to this section">#</a></h3>
+<p>John Lawson's 1955 analysis (declassified 1957) asked a simple question: under what conditions does a fusion plasma produce more energy than it costs to sustain?</p>
+<p>Define the <strong>energy confinement time</strong> τ_E as the ratio of stored plasma energy to the power required to maintain it:</p>
+<pre><code>τ_E = W / P_loss     where  W = 3nT (for a two-species plasma at equal temperature)
+</code></pre>
+<p>Power balance for a self-heating plasma requires that the fusion power deposited in charged products exceeds all losses:</p>
+<pre><code>P_α  ≥  P_conduction + P_bremsstrahlung
+</code></pre>
+<p>For D-T, the alpha carries <strong>20%</strong> of the reaction energy (3.52 of 17.59 MeV); the neutron's 80% escapes the plasma immediately and cannot heat it.</p>
+<h3 id="42-the-results">4.2 The results<a aria-hidden="true" class="heading-link" href="#42-the-results" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Working the balance through gives two commonly quoted forms:</p>
+<p><strong>Lawson parameter (<a href="ignition.html">Ignition</a>, D-T):</strong></p>
+<pre><code>n τ_E  ≳  1.5 × 10²⁰  m⁻³·s        (minimum near T ≈ 25 keV)
+</code></pre>
+<p><strong>Triple product (ignition, D-T):</strong></p>
+<pre><code>n T τ_E  ≳  3 × 10²¹  m⁻³·keV·s     (minimum near T ≈ 14 keV)
+</code></pre>
+<p>Equivalently, in pressure terms, <code>p τ_E ≳ 8–10 atm·s</code>. Real plasmas with peaked profiles and impurities require <strong>roughly 3–5× more</strong> than these idealised figures.</p>
+<h3 id="43-a-caution-on-terminology">4.3 A caution on terminology<a aria-hidden="true" class="heading-link" href="#43-a-caution-on-terminology" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Wurzel and Hsu (arXiv:2505.03834) make a point worth repeating: it should be <strong>"Lawson criteria"</strong>, plural. There are two separate requirements — a condition on <code>nτ_E</code> <em>and</em> a condition on temperature — and "the Lawson criterion" is often used loosely to mean the ignition condition specifically, when Lawson himself was describing criteria for <em>a useful reactor</em>, which he took to mean an energy gain of about 2.</p>
+<hr/>
+<h2 id="5-q-the-definitions-and-how-they-are-abused">5. Q: the definitions, and how they are abused<a aria-hidden="true" class="heading-link" href="#5-q-the-definitions-and-how-they-are-abused" tabindex="-1" title="Link to this section">#</a></h2>
+<p>This is where most public confusion about fusion lives. There are at least four distinct quantities called "gain".</p>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Symbol</th>
+<th scope="col">Definition</th>
+<th scope="col">What it measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Q_sci</strong> (scientific)</td>
+<td>P_fusion / P_heating-into-plasma</td>
+<td>The plasma's own performance. <strong>Ignores everything else.</strong></td>
+</tr>
+<tr>
+<td><strong>Q_target</strong> (ICF)</td>
+<td>Fusion yield / laser energy delivered to target</td>
+<td>NIF's headline number</td>
+</tr>
+<tr>
+<td><strong>Q_wp</strong> (wall-plug)</td>
+<td>Fusion energy out / total electrical energy drawn from the grid</td>
+<td>The honest engineering number</td>
+</tr>
+<tr>
+<td><strong>Q_eng</strong> (engineering)</td>
+<td>Net electricity exported / total electricity consumed by the plant</td>
+<td>What determines whether a plant is a generator or a load</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-gap-between-them">The gap between them<a aria-hidden="true" class="heading-link" href="#the-gap-between-them" tabindex="-1" title="Link to this section">#</a></h3>
+<p>NIF's 8.6 MJ shot on 7 April 2025 had <strong>Q_target = 4.13</strong>. But NIF's laser system draws roughly <strong>300–400 MJ from the grid</strong> to deliver 2.08 MJ to the target — a wall-plug efficiency near 0.5%. On a Q_wp basis, that shot was around <strong>0.02</strong>. This is not a criticism of NIF, which was built as a weapons-physics facility and was never designed for efficiency; it is a caution about headlines.</p>
+<p>Similarly, <a href="jet.html">JET</a>'s 69 MJ record (DTE3, 3 October 2023) corresponded to <strong>Q_sci ≈ 0.33</strong>, achieved on a machine consuming hundreds of megawatts of grid power during a pulse.</p>
+<h3 id="useful-landmarks-on-the-q-scale">Useful landmarks on the Q scale<a aria-hidden="true" class="heading-link" href="#useful-landmarks-on-the-q-scale" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong>Q = 1</strong> — scientific breakeven. The plasma returns as much as was put into it.</li>
+<li><strong>Q = 5</strong> — alpha self-heating equals external heating. The plasma is now substantially heating itself.</li>
+<li><strong>Q ≈ 10</strong> — <a href="iter.html">ITER</a>'s design target. A genuine <strong><a href="burning-plasma.html">burning plasma</a></strong>: alpha heating is the dominant heat source.</li>
+<li><strong>Q = ∞</strong> — ignition. External heating can be switched off entirely and the burn sustains itself.</li>
+<li><strong>Q_eng &gt; 1</strong> — the plant exports power. For a thermal-cycle plant with ~35–40% conversion efficiency and realistic <a href="recirculating-power.html">recirculating power</a>, this typically requires <strong>Q_sci in the range 10–30+</strong>.</li>
+</ul>
+<p>That last row is the one that matters commercially, and it is why "breakeven" achieved at Q_sci = 1 is a scientific milestone rather than an economic one.</p>
+<hr/>
+<h2 id="6-magnetic-confinement-the-governing-parameters">6. Magnetic confinement: the governing parameters<a aria-hidden="true" class="heading-link" href="#6-magnetic-confinement-the-governing-parameters" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="61-beta--the-efficiency-of-magnetic-confinement">6.1 <a href="plasma-beta.html">Beta</a> — the efficiency of magnetic confinement<a aria-hidden="true" class="heading-link" href="#61-beta--the-efficiency-of-magnetic-confinement" tabindex="-1" title="Link to this section">#</a></h3>
+<pre><code>β = plasma pressure / magnetic pressure = 2μ₀ p / B²
+</code></pre>
+<p>Typical <a href="tokamak.html">Tokamak</a> values are <strong>1–5%</strong>. Spherical tokamaks reach higher (20–40%); stellarators typically 4–5%; field-reversed configurations approach β ≈ 1 by construction. Beta is limited by magnetohydrodynamic (MHD) instability. The empirical <strong>Troyon limit</strong> expresses this via normalised beta:</p>
+<pre><code>β_N = β · a·B / I_p        with β_N ≲ 3–4  (%·m·T/MA) conventionally
+</code></pre>
+<h3 id="62-the-b⁴-scaling--the-single-most-important-design-insight">6.2 <a href="b4-scaling.html">The B⁴ scaling</a> — the single most important design insight<a aria-hidden="true" class="heading-link" href="#62-the-b⁴-scaling--the-single-most-important-design-insight" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Fusion power density goes as:</p>
+<pre><code>P_fus/V = ¼ n² ⟨σv⟩ E_fus
+</code></pre>
+<p>Since <code>p = 2nT</code>, and <code>⟨σv⟩/T² ≈ constant</code> over 8–25 keV, this becomes <code>P_fus/V ∝ p²</code>. And since <code>p = β B²/2μ₀</code>:</p>
+<pre><code>P_fus / V  ∝  β² B⁴
+</code></pre>
+<p><strong>Fusion power density scales as the fourth power of magnetic field.</strong> Doubling B at fixed beta gives 16× the power density — or allows the same power from a machine of far smaller volume.</p>
+<p>This is the entire thesis behind high-field compact tokamaks. Conventional low-temperature superconductors (Nb₃Sn, as used in ITER) top out around 12–13 T on the conductor. <strong>REBCO high-temperature superconducting tape</strong> can operate above 20 T. That difference is why <a href="sparc.html">SPARC</a> aims to achieve what ITER achieves in roughly <strong>1/40th the plasma volume</strong>, and why the entire private tokamak sector reorganised around HTS after about 2018.</p>
+<h3 id="63-confinement-scaling">6.3 Confinement scaling<a aria-hidden="true" class="heading-link" href="#63-confinement-scaling" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Empirical multi-machine regression gives the ITER Physics Basis scaling for <a href="h-mode.html">H-mode</a> energy confinement, <strong>IPB98(y,2)</strong>:</p>
+<pre><code>τ_E = 0.0562 · I_p^0.93 · B^0.15 · P^-0.69 · n^0.41 · M^0.19 · R^1.97 · ε^0.58 · κ^0.78
+</code></pre>
+<p>Note the exponents: confinement improves strongly with <strong>plasma current</strong> and <strong>major radius</strong>, weakly with field, and <em>degrades</em> with heating power (P^-0.69). That last term is why simply adding heating power does not straightforwardly buy performance — a phenomenon called power degradation.</p>
+<p>Extrapolating this scaling from present machines to reactor scale is one of the field's persistent uncertainties, and it is a principal reason ITER is as large as it is.</p>
+<h3 id="64-operational-limits">6.4 Operational limits<a aria-hidden="true" class="heading-link" href="#64-operational-limits" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong><a href="greenwald-density-limit.html">Greenwald density limit</a></strong>: <code>n_G [10²⁰ m⁻³] = I_p[MA] / (π a²[m²])</code>. Exceeding it historically triggers disruptions. <em>In January 2026 <a href="east.html">EAST</a> reported confirming a "density-free region" — a route to operating past this limit — which if it generalises is significant for reactor design.</em></li>
+<li><strong><a href="safety-factor.html">Safety factor q</a></strong>: <code>q ≈ a B_t / (R B_p)</code>. Values of q₉₅ below ~2 invite kink instabilities.</li>
+<li><strong>Disruptions</strong>: a sudden, complete loss of confinement dumping the full plasma thermal and magnetic energy into the wall in milliseconds, plus runaway electron beams. On a reactor-scale machine a single unmitigated <a href="disruption.html">Disruption</a> can cause serious damage. Prediction and avoidance is now an active machine-learning problem (see §8).</li>
+</ul>
+<h3 id="65-h-mode-the-pedestal-and-elms">6.5 H-mode, the <a href="pedestal.html">Pedestal</a>, and ELMs<a aria-hidden="true" class="heading-link" href="#65-h-mode-the-pedestal-and-elms" tabindex="-1" title="Link to this section">#</a></h3>
+<p>In 1982 on ASDEX, above a threshold heating power, plasmas were observed to spontaneously transition into a <strong>high-confinement mode (H-mode)</strong> with roughly double the energy confinement time. The mechanism is the formation of an <strong>edge transport barrier</strong> — a narrow "pedestal" region of steep pressure gradient at the plasma boundary where turbulence is suppressed by sheared flow.</p>
+<p>H-mode is the baseline operating scenario for ITER and essentially every reactor design. It comes with a defect: the steep pedestal periodically collapses in <strong>edge-localised modes (ELMs)</strong>, expelling several percent of the plasma energy onto the <a href="divertor.html">Divertor</a> in under a millisecond. Uncontrolled ELMs would destroy a reactor divertor. Mitigation strategies include resonant magnetic perturbations, pellet pacing, and naturally ELM-free regimes such as <strong>quasi-continuous exhaust (QCE)</strong> and <strong><a href="negative-triangularity.html">negative triangularity</a></strong> operation.</p>
+<h3 id="66-transport">6.6 Transport<a aria-hidden="true" class="heading-link" href="#66-transport" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Classical (collisional) transport across field lines would give confinement times of hours. Real plasmas do far worse because of <strong>microturbulence</strong> — drift-wave instabilities driven by the very gradients that confinement creates:</p>
+<ul>
+<li><strong>ITG</strong> (ion temperature gradient) modes — dominant ion heat transport</li>
+<li><strong>TEM</strong> (trapped electron modes)</li>
+<li><strong>ETG</strong> (electron temperature gradient) modes</li>
+<li><strong>Micro-tearing modes</strong> — increasingly important at high beta</li>
+</ul>
+<p>Gyrokinetic codes (GENE, CGYRO, GYRO, XGC) simulate these from first principles at enormous computational cost. The SPARC first-campaign predictions in <code>papers/SPARC-first-campaign-CGYRO-predictions.pdf</code> are an example of nonlinear CGYRO being used to forecast a machine's performance before it exists.</p>
+<p><strong>Neoclassical transport</strong> — the collisional transport corrected for toroidal geometry and trapped-particle orbits — sets a floor. In stellarators it is not a floor but a design problem: an unoptimised <a href="stellarator.html">Stellarator</a> has catastrophic neoclassical losses, which is why <strong>quasi-symmetry</strong> and <strong>quasi-isodynamicity</strong> optimisation exists (see <a href="04-magnetic-confinement-devices.html">Document 04</a>).</p>
+<h3 id="67-the-bootstrap-current">6.7 The <a href="bootstrap-current.html">bootstrap current</a><a aria-hidden="true" class="heading-link" href="#67-the-bootstrap-current" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A toroidal plasma with a pressure gradient spontaneously drives its own toroidal current — the <strong>bootstrap current</strong> — via trapped-particle dynamics. In a tokamak this is enormously useful: it reduces the external current drive needed for steady-state operation, and advanced scenarios aim for bootstrap fractions above 70%. In a stellarator it is usually a nuisance to be minimised, since the confining field is generated externally by design.</p>
+<hr/>
+<h2 id="7-inertial-confinement-a-different-set-of-parameters">7. <a href="inertial-confinement.html">Inertial confinement</a>: a different set of parameters<a aria-hidden="true" class="heading-link" href="#7-inertial-confinement-a-different-set-of-parameters" tabindex="-1" title="Link to this section">#</a></h2>
+<p>ICF replaces magnetic confinement with <strong>inertia</strong>: compress fuel so violently that it burns before it can fly apart. Confinement time is set by the disassembly time, of order <code>R/c_s</code> — nanoseconds.</p>
+<p>The Lawson criteria still apply, but they are reformulated in terms of <strong><a href="areal-density.html">areal density</a></strong>:</p>
+<pre><code>ρR  [g/cm²]
+</code></pre>
+<h3 id="key-thresholds">Key thresholds<a aria-hidden="true" class="heading-link" href="#key-thresholds" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong>ρR ≥ 0.3 g/cm²</strong> in the hot spot — the range of a 3.5 MeV alpha in DT at 10 keV. Below this, alphas escape and cannot bootstrap the burn.</li>
+<li><strong>ρR ≈ 1–3 g/cm²</strong> total fuel — required for high burn fraction</li>
+<li><strong>Burn fraction</strong>: <code>f ≈ ρR / (ρR + H_B)</code> with <code>H_B ≈ 7 g/cm²</code>. So even ρR = 3 g/cm² burns only ~30% of the fuel.</li>
+</ul>
+<h3 id="the-implosion">The implosion<a aria-hidden="true" class="heading-link" href="#the-implosion" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li>Peak fuel density must reach <strong>~1,000× solid density</strong> (several hundred g/cm³)</li>
+<li><strong>Implosion velocity</strong> 350–400 km/s</li>
+<li><strong>Convergence ratio</strong> (initial radius / final hot-spot radius) of <strong>25–40</strong></li>
+</ul>
+<p>That convergence ratio is the crux of ICF's difficulty. Compressing a shell by a factor of 30 in radius while keeping it spherical to within a few percent means suppressing <strong>Rayleigh-Taylor instability</strong> at both the ablation front and the hot-spot interface. Any capsule imperfection — a fill tube, a surface roughness, a dust mote — seeds a spike that can penetrate and <a href="quench.html">Quench</a> the hot spot. This is why the April 2025 record shot's enabling factor was reported as <em>a higher-quality high-density-carbon (diamond) capsule</em>, not a change in the laser.</p>
+<h3 id="drive-schemes">Drive schemes<a aria-hidden="true" class="heading-link" href="#drive-schemes" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong>Indirect drive</strong> (NIF): lasers heat the interior of a gold or depleted-uranium <strong>hohlraum</strong>, which re-radiates a near-Planckian X-ray bath that ablates the capsule. Symmetry is excellent; efficiency is poor (~10–15% of laser energy reaches the capsule).</li>
+<li><strong>Direct drive</strong> (OMEGA, and most laser-fusion startups): lasers illuminate the capsule directly. Much more efficient, much harder to keep symmetric, and vulnerable to <strong>laser-plasma instabilities</strong> (stimulated Raman and Brillouin scattering, two-plasmon decay) that scatter light and pre-heat the fuel with hot electrons.</li>
+<li><strong><a href="fast-ignition.html">Fast ignition</a></strong> (<a href="focused-energy.html">Focused Energy</a>, <a href="marvel-fusion.html">Marvel Fusion</a>): compress the fuel with one pulse, then ignite it with a separate ultra-short petawatt pulse. Decouples compression from ignition, potentially raising gain substantially. Unproven.</li>
+<li><strong>Magneto-inertial / pulsed magnetic</strong> (Sandia's Z, <a href="pacific-fusion.html">Pacific Fusion</a>): compress a magnetised fuel column with a pulsed-power-driven liner. Relaxes the density requirement because the embedded magnetic field insulates the fuel and traps alphas.</li>
+</ul>
+<hr/>
+<h2 id="8-alpha-physics-and-the-burning-plasma-regime">8. Alpha physics and the burning-plasma regime<a aria-hidden="true" class="heading-link" href="#8-alpha-physics-and-the-burning-plasma-regime" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A <strong>burning plasma</strong> is one in which alpha self-heating dominates. This is qualitatively different from anything achieved in magnetic confinement to date, and it is what ITER and SPARC are built to study.</p>
+<p>Two new problem classes appear:</p>
+<ol>
+<li>
+<p><strong>Fast-ion confinement.</strong> 3.5 MeV alphas have gyroradii and orbits much larger than thermal ions. If the field has ripple, resonances, or 3D error fields, alphas are lost before they thermalise — losing both the heating and, on the way out, potentially damaging the wall. This is a first-order design constraint for stellarators, whose 3D fields make good fast-ion confinement genuinely hard to arrange.</p>
+</li>
+<li>
+<p><strong>Alpha-driven instabilities.</strong> A population of super-Alfvénic alphas can resonantly excite <strong>Alfvén eigenmodes</strong> (TAEs, RSAEs, EPMs), which in turn transport the alphas outward — a self-defeating loop. Whether this is benign or severe at reactor scale is not settled, and it is one of the specific things ITER is designed to answer.</p>
+</li>
+</ol>
+<p>Alpha heating also means the plasma becomes a <strong>coupled, self-regulating, nonlinear system</strong>: fusion power depends on temperature, temperature depends on alpha heating, alpha heating depends on fusion power. Control of such a system — avoiding thermal runaway in one direction and quench in the other — has never been demonstrated.</p>
+<hr/>
+<h2 id="9-where-ai-enters-the-physics">9. Where AI enters the physics<a aria-hidden="true" class="heading-link" href="#9-where-ai-enters-the-physics" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Machine learning has moved from a peripheral tool to a load-bearing one:</p>
+<ul>
+<li><strong>Magnetic control.</strong> DeepMind and EPFL demonstrated deep reinforcement learning controlling the full plasma shape and position on the <a href="tcv.html">TCV</a> tokamak (<em>Nature</em>, 2022) — the controller learned to command 19 coils directly, replacing hand-tuned control laws.</li>
+<li><strong>Instability avoidance.</strong> DeepMind with Korea's KFE and Princeton demonstrated RL that <em>avoids</em> tearing instabilities on <a href="diii-d.html">DIII-D</a> by steering the plasma away from unstable regions in real time (<em>Nature</em>, 2024).</li>
+<li><strong>Disruption prediction.</strong> Fusion Recurrent Neural Network (FRNN) predictors, cross-machine transfer learning, and the DisruptionBench benchmark (2025) are converging on predictors deployable in real-time plasma control systems.</li>
+<li><strong>Surrogate modelling.</strong> Physics-informed deep learning is being used to predict NIF ignition (<em>Science</em>, 2024) and to replace expensive gyrokinetic runs inside design loops.</li>
+<li><strong>Design optimisation.</strong> Stellarator optimisation has been transformed: quasi-single-stage frameworks fold coil feasibility directly into plasma-boundary optimisation, and latent diffusion models are now generating candidate quasi-isodynamic configurations (arXiv:2608.16938, 2026).</li>
+</ul>
+<p>The DOE's June 2026 roadmap treats this as structural, not incidental — it makes an <strong>"AI-Fusion Digital Convergence Platform"</strong> one of only two Build-pillar key actions, alongside physical infrastructure.</p>
+<hr/>
+<h2 id="10-a-summary-table-of-what-must-be-achieved">10. A summary table of what must be achieved<a aria-hidden="true" class="heading-link" href="#10-a-summary-table-of-what-must-be-achieved" tabindex="-1" title="Link to this section">#</a></h2>
+<div aria-label="Table 3 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Requirement</th>
+<th scope="col">D-T value</th>
+<th scope="col">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ion temperature</td>
+<td>10–20 keV (100–200 million K)</td>
+<td><strong>Routinely achieved</strong> since the 1990s</td>
+</tr>
+<tr>
+<td>Triple product for ignition</td>
+<td>~3 × 10²¹ m⁻³·keV·s (ideal)</td>
+<td><strong>Achieved at NIF</strong>; approached in tokamaks</td>
+</tr>
+<tr>
+<td>Q_sci &gt; 1</td>
+<td>—</td>
+<td><strong>Achieved (ICF only)</strong>, 11 times at NIF</td>
+</tr>
+<tr>
+<td>Q_sci ≈ 10 (burning plasma)</td>
+<td>—</td>
+<td><strong>Never achieved.</strong> ITER 2039; SPARC targeting Q&gt;1 in 2027</td>
+</tr>
+<tr>
+<td>Steady-state operation</td>
+<td>Hours to continuous</td>
+<td>1,066 s (EAST); 1,337 s (<a href="hh70.html">HH70</a>) — but not in D-T, not burning</td>
+</tr>
+<tr>
+<td>Tritium breeding, TBR &gt; 1.1</td>
+<td>—</td>
+<td><strong>Never demonstrated</strong></td>
+</tr>
+<tr>
+<td>Materials to 15 dpa/yr</td>
+<td>—</td>
+<td><strong>No test facility exists</strong></td>
+</tr>
+<tr>
+<td>Divertor heat flux &lt; 10 MW/m²</td>
+<td>—</td>
+<td>Demonstrated in mitigation experiments; not integrated with a burning core</td>
+</tr>
+<tr>
+<td>Q_eng &gt; 1</td>
+<td>—</td>
+<td><strong>Never achieved by anyone, anywhere</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The pattern is clear. The plasma-physics rows are largely green. The engineering rows are largely empty. That asymmetry is the subject of the rest of this dossier.</p>
+<hr/>
+<p><strong>Continue to:</strong> <a href="02-history-1920-2026.html">02 — History 1920–2026</a> · <a href="03-confinement-approaches.html">03 — Confinement Approaches</a> · <a href="09-engineering-challenges.html">09 — Engineering Challenges</a></p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/synthesis/01-fusion-physics-fundamentals.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/synthesis/01-fusion-physics-fundamentals.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="02-history-1920-2026.html">History 1920-2026</a> <small>Synthesis</small></li><li><a href="03-confinement-approaches.html">Confinement Approaches</a> <small>Synthesis</small></li><li><a href="04-magnetic-confinement-devices.html">Magnetic Confinement Devices</a> <small>Synthesis</small></li><li><a href="09-engineering-challenges.html">Engineering Challenges</a> <small>Synthesis</small></li><li><a href="fusionmae-crossref-metadata-2026.html">FusionMAE: Self-supervised Pretraining for Fusion Diagnostics and Control</a> <small>Source note</small></li><li><a href="hl3-data-driven-rl-control-2025.html">Data-driven Dynamics and Reinforcement-learning Control on HL-3</a> <small>Source note</small></li><li><a href="tcv-predict-first-rampdown-2025.html">Learning Plasma Dynamics and Robust Ramp-down Trajectories at TCV</a> <small>Source note</small></li><li><a href="tokamak-agnostic-elm-crossref-metadata-2026.html">Explainable Tokamak-agnostic ELM Forecasting</a> <small>Source note</small></li></ul></section><details class="backlinks"><summary>Linked from 16 library notes</summary><ul><li><a href="00-executive-summary.html">Executive Summary</a></li><li><a href="07-private-fusion-industry.html">The Private Fusion Industry</a></li><li><a href="16-heating-current-drive-fuelling.html">Heating, Current Drive and Fuelling</a></li><li><a href="26-appendix-quantitative-data.html">Appendix: Quantitative Progress Data</a></li><li><a href="31-plasma-physics-deeper-cuts.html">Plasma Physics: The Deeper Cuts</a></li><li><a href="39-the-discourse.html">The Discourse</a></li><li><a href="40-ai-for-fusion-transferable-control.html">AI for Fusion: From Device-Specific Models to Transferable Control</a></li><li><a href="aneutronic-fusion.html">Aneutronic Fusion (p-¹¹B)</a></li><li><a href="greenwald-density-limit.html">Greenwald Density Limit</a></li><li><a href="h-mode.html">H-mode</a></li><li><a href="hb11-energy.html">HB11 Energy</a></li><li><a href="lawson-criterion.html">Lawson Criteria</a></li><li><a href="moc-physics.html">MOC — Physics</a></li><li><a href="plasma-beta.html">Beta</a></li><li><a href="quench.html">Quench</a></li><li><a href="triple-product.html">Triple Product</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

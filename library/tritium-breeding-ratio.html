@@ -1,0 +1,98 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Tritium Breeding Ratio (TBR) — Project Lux</title><meta name="description" content="Tritium bred per tritium consumed. The precondition for fusion existing as an energy source."><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/tritium-breeding-ratio.html"><meta property="og:title" content="Tritium Breeding Ratio (TBR) — Project Lux"><meta property="og:description" content="Tritium bred per tritium consumed. The precondition for fusion existing as an energy source."><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/tritium-breeding-ratio.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Concept</p><p class="eyebrow">Concept</p><h1 id="doc-title">Tritium Breeding Ratio (TBR)</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Concept</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-11-02">2 November 2026</time></dd></div><div><dt>First written</dt><dd>26 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=engineering">engineering</a><a href="index.html?topic=materials">materials</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#why-it-is-not-optional">Why it is not optional</a></li><li><a href="#the-reactions">The reactions</a></li><li><a href="#the-achievability-bands">The achievability bands</a></li><li><a href="#what-actually-binds">What actually binds</a></li><li><a href="#declared-values-and-their-conflicts">Declared values, and their conflicts</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p>Tritium bred per tritium consumed. <strong>The precondition for fusion existing as an energy source.</strong></p>
+<h2 id="why-it-is-not-optional">Why it is not optional<a aria-hidden="true" class="heading-link" href="#why-it-is-not-optional" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A 1 GW plant burns <strong>~55.6 kg/year</strong> against a world civilian inventory of <strong>30–40 kg</strong>, produced as
+a CANDU byproduct at <strong>under 0.13 kg per reactor-year</strong>, at <strong>$30,000–35,000/gram</strong>, decaying 5.5%
+annually. <strong>One plant would consume more than the world holds in its first year</strong>, and there is no
+market to buy from.</p>
+<h2 id="the-reactions">The reactions<a aria-hidden="true" class="heading-link" href="#the-reactions" tabindex="-1" title="Link to this section">#</a></h2>
+<pre><code>n + ⁶Li → T + ⁴He + 4.8 MeV      (exothermic, large low-energy cross-section)
+n + ⁷Li → T + ⁴He + n − 2.5 MeV  (endothermic, regenerates the neutron)
+</code></pre>
+<p>Each fusion yields one neutron, and neutrons are lost to structure, ports and diagnostics — so
+TBR &gt; 1 generally needs <strong>neutron multiplication</strong> by <a href="beryllium.html">Beryllium</a> or lead. <strong>Design target:
+TBR &gt; 1.1</strong> (DOE roadmap); failure threshold 1.0. <strong>A 10% margin.</strong></p>
+<h2 id="the-achievability-bands">The achievability bands<a aria-hidden="true" class="heading-link" href="#the-achievability-bands" tabindex="-1" title="Link to this section">#</a></h2>
+<p>From <a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Abdou <em>et al.</em> 2021</a>, the primary source
+for a band the vault previously carried on the DOE roadmap's authority alone:</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Required TBR</th>
+<th scope="col">Self-sufficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt; 1.15</td>
+<td><strong>Unlikely</strong></td>
+</tr>
+<tr>
+<td>1.05 – 1.15</td>
+<td><strong>Possible</strong></td>
+</tr>
+<tr>
+<td>≤ 1.05</td>
+<td><strong>Attained with high confidence</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Maximum achievable</strong> for the most detailed blanket designs is estimated at <strong>1.15</strong>, with high
+confidence only at <strong>1.05</strong> — so requirement and capability occupy the same interval. That is the
+whole difficulty.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>The uncertainty is comparable to the margin, and biased
+Nuclear data uncertainty runs to a few percent, with 12% flux discrepancies between cross-section
+libraries (<a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a>). Worse, it is <strong>biased</strong>: integral experiments
+found calculation <strong>overestimated</strong> tritium production by an <strong>average factor of 1.14</strong> — an error
+in the dangerous direction, larger than the margin it eats. Abdou <em>et al.</em> call it <em>"alarming"</em> and
+report a recommended safety factor of <strong>&gt;1.1 to 1.2</strong>.</p>
+</aside>
+<h2 id="what-actually-binds">What actually binds<a aria-hidden="true" class="heading-link" href="#what-actually-binds" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Not this quantity. Breeding is downstream of the plasma: what binds is
+<strong><a href="tritium-burn-fraction.html"><code>η_f · f_b</code></a></strong> with processing time, while <strong><a href="availability.html">Availability and RAMI</a></strong> sets a
+floor below which no blanket suffices. <strong>No blanket improvement rescues a plant whose burn fraction
+is too low</strong> (<a href="09-engineering-challenges.html">Engineering Challenges</a>). The surplus is also the only <strong>divertible</strong> tritium a
+plant makes — <a href="tritium-accountancy.html">Tritium Accountancy</a>.</p>
+<h2 id="declared-values-and-their-conflicts">Declared values, and their conflicts<a aria-hidden="true" class="heading-link" href="#declared-values-and-their-conflicts" tabindex="-1" title="Link to this section">#</a></h2>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Design</th>
+<th scope="col">TBR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DOE roadmap target</td>
+<td>&gt; 1.1</td>
+</tr>
+<tr>
+<td><a href="helios.html">Helios</a></td>
+<td>1.3 idealised; &lt; 1.15 required</td>
+</tr>
+<tr>
+<td><a href="st-e1.html">ST-E1</a></td>
+<td>1.146 full coverage, 1.085–1.14 with penetrations — <strong>reconciled 2026-11-02</strong></td>
+</tr>
+<tr>
+<td><a href="st-e1.html">ST-E1</a> neutronics</td>
+<td>1.169 (MCNP) · 1.194 (G4Tokamak) — above its own fuel-cycle baseline</td>
+</tr>
+<tr>
+<td><a href="arc.html">ARC</a>- / <a href="step.html">STEP</a>-class <em>required</em></td>
+<td>&lt; 1.2, if burn efficiency reaches 0.5–1%</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every declared figure, the disagreements between and within them, and what could not be resolved:
+<strong><a href="declared-tbr-values.html">Declared TBR Values and Their Conflicts</a></strong>.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>The <em>required</em> value moves too, and upward
+Declared values are what designs claim to achieve. What they must achieve is a separate
+quantity, and <a href="meschini-2025-trapping-tritium-self-sufficiency.html">Meschini <em>et al.</em> 2025</a> raise it
+<strong>2–5%</strong> once <a href="tritium-retention.html">trapping</a> is modelled. Against an achievable ceiling Abdou
+puts at <strong>1.15</strong>, a requirement already near 1.1 has little room to absorb that.</p>
+</aside>
+<p><strong>Never demonstrated.</strong> <a href="iter.html">ITER</a>'s Test Blanket Modules are first, from <strong>2039</strong>; <a href="unity-3.html">UNITY-3</a> and
+<a href="librti.html">LIBRTI</a> answer it sooner.</p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/concepts/tritium-breeding-ratio.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/concepts/tritium-breeding-ratio.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="09-engineering-challenges.html">Engineering Challenges</a> <small>Synthesis</small></li><li><a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a> <small>Synthesis</small></li><li><a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency</a> <small>Source note</small></li><li><a href="availability.html">Availability and RAMI</a> <small>Concept</small></li><li><a href="baby-tritium-self-sufficiency-experiment.html">Advancing Tritium Self-Sufficiency in Fusion Power Plants: Insights from the BABY Experiment</a> <small>Source note</small></li><li><a href="declared-tbr-values.html">Declared TBR Values and Their Conflicts</a> <small>Concept</small></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a> <small>Concept</small></li><li><a href="doe-fusion-science-technology-roadmap-2026.html">DOE Fusion Science and Technology Roadmap</a> <small>Source note</small></li><li><a href="iter.html">ITER</a> <small>Entity</small></li><li><a href="librti.html">LIBRTI</a> <small>Entity</small></li><li><a href="lithium-6.html">Lithium-6</a> <small>Concept</small></li><li><a href="tritium-accountancy.html">Tritium Accountancy</a> <small>Concept</small></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a> <small>Concept</small></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a> <small>Concept</small></li><li><a href="unity-3.html">UNITY-3</a> <small>Entity</small></li></ul></section><details class="backlinks"><summary>Linked from 53 library notes</summary><ul><li><a href="00-executive-summary.html">Executive Summary</a></li><li><a href="09-engineering-challenges.html">Engineering Challenges</a></li><li><a href="16-heating-current-drive-fuelling.html">Heating, Current Drive and Fuelling</a></li><li><a href="17-diagnostics-control-disruption.html">Diagnostics, Control and Disruption Mitigation</a></li><li><a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a></li><li><a href="22-critical-materials-supply-chains.html">Critical Materials and Supply Chains</a></li><li><a href="28-vacuum-wall-conditioning-tritium-plant.html">Vacuum, Wall Conditioning and the Tritium Plant</a></li><li><a href="37-military-dual-use-security.html">Military, Dual-Use and Security</a></li><li><a href="43-fusion-waste-classification-and-disposal.html">Fusion Waste: Classification, Clearance and Disposal</a></li><li><a href="44-state-capital-and-the-public-balance-sheet.html">State Capital and the Public Balance Sheet</a></li><li><a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency</a></li><li><a href="arc.html">ARC</a></li><li><a href="astral-systems.html">Astral Systems</a></li><li><a href="availability.html">Availability and RAMI</a></li><li><a href="baby-tritium-self-sufficiency-experiment.html">Advancing Tritium Self-Sufficiency in Fusion Power Plants: Insights from the BABY Experiment</a></li><li><a href="beryllium.html">Beryllium</a></li><li><a href="cfetr.html">CFETR</a></li><li><a href="declared-tbr-values.html">Declared TBR Values and Their Conflicts</a></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a></li><li><a href="doe-fusion-science-technology-roadmap-2026.html">DOE Fusion Science and Technology Roadmap</a></li><li><a href="eu-demo.html">EU DEMO</a></li><li><a href="helios.html">Helios</a></li><li><a href="helium-ash.html">Helium Ash</a></li><li><a href="infinity-two.html">Infinity Two</a></li><li><a href="librti.html">LIBRTI</a></li><li><a href="lithium-6.html">Lithium-6</a></li><li><a href="lithium-lead-eutectic.html">Lithium-Lead Eutectic (PbLi)</a></li><li><a href="meschini-2023-tritium-fuel-cycle-arc-step.html">Modeling and analysis of the tritium fuel cycle for ARC- and STEP-class D-T fusion power plants</a></li><li><a href="meschini-2025-trapping-tritium-self-sufficiency.html">Impact of trapping on tritium self-sufficiency and tritium inventories in fusion power plant fuel cycles</a></li><li><a href="moc-engineering.html">MOC — Engineering</a></li><li><a href="moc-start-here.html">START HERE</a></li><li><a href="nuclear-data-fendl.html">Nuclear Data and FENDL</a></li><li><a href="overview-of-the-helios-design.html">Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant</a></li><li><a href="pellet-injection.html">Pellet Injection</a></li><li><a href="sindelar-2023-tritium-accountancy-control-challenges-fusion.html">Assessment of Challenges for Tritium Accountancy and Control in Fusion Energy Systems</a></li><li><a href="spherical-tokamak.html">Spherical Tokamak</a></li><li><a href="srnl-2013-tritium-accountancy-in-fusion-systems.html">Tritium Accountancy in Fusion Systems</a></li><li><a href="st-e1.html">ST-E1</a></li><li><a href="st-e1-neutronics-crossref-metadata-2026.html">Nuclear Technology Considerations and Neutronics for the ST-E1 Fusion Power Plant</a></li><li><a href="st-e1-tritium-systems-crossref-metadata-2026.html">Tritium Production and Processing Systems for ST-E1</a></li><li><a href="step.html">STEP</a></li><li><a href="tokamak-energy.html">Tokamak Energy</a></li><li><a href="tritium-accountancy.html">Tritium Accountancy</a></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a></li><li><a href="tritium-doubling-time.html">Tritium Doubling Time</a></li><li><a href="tritium-retention.html">Tritium Retention</a></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a></li><li><a href="type-one-energy.html">Type One Energy</a></li><li><a href="ukaea-2026-vanadium-strategy.html">UKAEA Vanadium Strategy (LIBRTI conference presentation)</a></li><li><a href="unity-3.html">UNITY-3</a></li><li><a href="vanadium-alloys.html">Vanadium Alloys</a></li><li><a href="willis-2026-st-e1-pre-concept-design-overview.html">Tokamak Energy&#x27;s Pre-concept Design for a Fusion Power Plant: An Overview of ST-E1</a></li><li><a href="yang-2026-st-e1-tritium-tmap8-surrogate-models.html">Multiscale Assessment of Tritium Behavior in Preliminary Fusion Pilot Plant Design Using Surrogate Models in TMAP8</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

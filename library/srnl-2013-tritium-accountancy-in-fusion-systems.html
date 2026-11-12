@@ -1,0 +1,100 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Tritium Accountancy in Fusion Systems — Project Lux</title><meta name="description" content="The framework paper. A five-page Savannah River National Laboratory conference paper setting out how nuclear material accountancy is actually constructed, and why a…"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/srnl-2013-tritium-accountancy-in-fusion-systems.html"><meta property="og:title" content="Tritium Accountancy in Fusion Systems — Project Lux"><meta property="og:description" content="The framework paper. A five-page Savannah River National Laboratory conference paper setting out how nuclear material accountancy is actually constructed, and why a…"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/srnl-2013-tritium-accountancy-in-fusion-systems.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Source note</p><p class="eyebrow">Source note</p><h1 id="doc-title">Tritium Accountancy in Fusion Systems</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Source note</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-10-19">19 October 2026</time></dd></div><div><dt>First written</dt><dd>19 October 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div><div><dt>Source date</dt><dd>2013</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=security">security</a><a href="index.html?topic=subsystems">subsystems</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#the-accountancy-structure">The accountancy structure</a></li><li><a href="#the-equations-and-where-fusion-breaks-them">The equations, and where fusion breaks them</a></li><li><a href="#the-fusion-modified-balance">The fusion-modified balance</a></li><li><a href="#access-limitations">Access limitations</a></li><li><a href="#what-this-source-does-not-establish">What this source does not establish</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><strong>The framework paper.</strong> A five-page Savannah River National Laboratory conference paper setting out
+how nuclear material accountancy is actually constructed, and why a continuously operating fusion
+fuel cycle breaks it. Until this ingest the vault asserted that accountancy is <em>"genuinely hard
+because tritium permeates through hot metal"</em> (<a href="11-policy-regulation-safety.html">Policy, Regulation and Safety</a> §5) without holding
+anything that explained the mechanism.</p>
+<h2 id="the-accountancy-structure">The accountancy structure<a aria-hidden="true" class="heading-link" href="#the-accountancy-structure" tabindex="-1" title="Link to this section">#</a></h2>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Term</th>
+<th scope="col">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MBA</strong> — Material Balance Area</td>
+<td>The boundary of the accountancy structure; everything entering or leaving is measured and accounted</td>
+</tr>
+<tr>
+<td><strong>MSA</strong> — Material Sub-Account</td>
+<td>Subdivisions of an MBA, used to localise and minimise inventory differences between process operations</td>
+</tr>
+<tr>
+<td><strong>KMP</strong> — Key Measurement Point</td>
+<td>Where material crossing an MSA boundary is measured</td>
+</tr>
+<tr>
+<td><strong>PI / PIT</strong> — Physical Inventory / Inventory Taking</td>
+<td>The periodic measurement of how much tritium is where</td>
+</tr>
+</tbody>
+</table></div>
+<p>A <strong>single MBA structure</strong> is stated to be adequate and more cost-effective when only tracking
+tritium transfers, decay and breeding — multiple structures being needed for custodianship of
+special nuclear material, which tritium is not.</p>
+<h2 id="the-equations-and-where-fusion-breaks-them">The equations, and where fusion breaks them<a aria-hidden="true" class="heading-link" href="#the-equations-and-where-fusion-breaks-them" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>Inventory difference</strong>, the quantity accountancy exists to compute:</p>
+<pre><code>ID = SI + R − S − EI                               (Eq. 1)
+</code></pre>
+<p><code>SI</code> starting inventory · <code>R</code> receipts · <code>S</code> shipments · <code>EI</code> ending physical inventory. Its
+statistical uncertainty, the <strong>Limit of Error on Inventory Difference (LEID)</strong>, sums the variances:</p>
+<pre><code>σ²_ID = σ²_SI + σ²_R + σ²_S + σ²_EI                (Eq. 2)
+</code></pre>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>Equation 1 assumes the plant can stop, and a power plant cannot
+The paper's central objection: Eq. 1 <em>"is implicit"</em> in requiring that tritium flow <strong>stop long
+enough for physical inventory measurements</strong> to be taken. <em>"Continuous running of the fusion device
+does not allow the tritium process to be stopped to perform tritium PI measurements."</em></p>
+<p>Worse, the uncertainty on a continuously measured flow <strong>grows with time</strong>:</p>
+<pre><code>σ(continuous flow measurements) ∝ √t             (Eq. 3)
+</code></pre>
+<p>So for a continuously operating fuel cycle the receipt and shipment uncertainties <em>"will eventually
+grow with time to the point where the uncertainty in these terms will dominate"</em> the inventory
+terms — and the inventory difference stops meaning anything.</p>
+<p><strong>The stated remedy is to enlarge the MSA boundary</strong> until flows can be physically measured with
+low enough uncertainty. That is an admission: accountancy resolution is traded away to keep the
+arithmetic valid.</p>
+</aside>
+<h2 id="the-fusion-modified-balance">The fusion-modified balance<a aria-hidden="true" class="heading-link" href="#the-fusion-modified-balance" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Fusion adds a source (breeding), a sink (burn-up) and a holdup (retention) that classical
+accountancy has no terms for. The paper proposes a <strong>net</strong> quantity:</p>
+<pre><code>NET = ID + BU = SI + (IN + BR) − (LOSS + OUT) − EI (Eq. 5)
+</code></pre>
+<p><code>BU</code> burn-up · <code>BR</code> breeding · <code>LOSS</code> process losses · <code>OUT</code> flows out.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>Retention is not measured — it is whatever is left over
+The paper states the assumption plainly: <em>"all tritium that is not measured or accounted for in the
+other terms of the equation resides in the FC [fusion chamber]."</em></p>
+<p>So in-vessel retained tritium — the inventory that permeates into walls, dust and coolant — enters
+the books as a <strong>residual</strong>, not a measurement. Every error elsewhere in the balance lands on it.
+This is the precise mechanism behind the vault's existing claim that fusion accountancy is harder
+than for solid fissile material.</p>
+</aside>
+<p>Decay is handled in the receipt and shipment terms by escalating each transfer to the start of the
+inventory period, then decaying the total to match the ending inventory.</p>
+<h2 id="access-limitations">Access limitations<a aria-hidden="true" class="heading-link" href="#access-limitations" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>Inspected in full.</strong> The five-page report was captured to <code>raw/</code> from <code>sti.srs.gov</code> and extracted;
+all equations and quotations above were read from that extract. Prepared under DOE contract
+DE-AC09-08SR22470.</p>
+<p><strong>The report, not the journal version.</strong> This is <strong>SRNL-STI-2013-00384</strong>, the laboratory report. It
+was published as Klein <em>et al.</em>, <em>Fusion Science and Technology</em> <strong>67</strong>:2, 420–423, DOI
+10.13182/FST14-T44 — identified from the reference list of
+<a href="sindelar-2023-tritium-accountancy-control-challenges-fusion.html">Sindelar <em>et al.</em> 2023</a>, which cites
+it as reference 7. <strong>The published version was not inspected or compared against this capture.</strong></p>
+<h2 id="what-this-source-does-not-establish">What this source does not establish<a aria-hidden="true" class="heading-link" href="#what-this-source-does-not-establish" tabindex="-1" title="Link to this section">#</a></h2>
+<ul>
+<li><strong>It is dated 2013.</strong> Thirteen years old at ingest, and it predates every private fusion pilot
+plant design in this vault. Its framework is structural rather than technological, so it ages
+better than a figure would — but nothing here reflects current practice or current instruments.</li>
+<li><strong>No measurement accuracies.</strong> The paper refers to PI measurement techniques and their
+uncertainties but tabulates none; for those see
+<a href="sindelar-2023-tritium-accountancy-control-challenges-fusion.html">Assessment of Challenges for Tritium Accountancy and Control in Fusion Energy Systems</a>.</li>
+<li><strong>No regulatory position.</strong> It notes that tritium is not a special nuclear material and that
+NMC&amp;A requirements therefore come from national rather than IAEA authority, but does not set out
+what any regime requires.</li>
+<li><strong>Nothing measured in a fusion plant.</strong> No D-T power plant has operated a fuel cycle, so the
+continuous-flow problem described here has never been encountered in practice — it is derived from
+the structure of the equations, not from an operating record.</li>
+</ul>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p>Klein, Clark, Harvel, Farmer, Moore, Tovo &amp; Poore (7 authors, Savannah River National Laboratory) · SRNL-STI-2013-00384; published as Fusion Science and Technology 67:2, 420–423, DOI 10.13182/FST14-T44</p><p class="provenance">The source note records a local capture. Captured third-party files are not redistributed here. Publisher and DOI links appear in the note or bibliography.</p><p><a href="../research/sources/srnl-2013-tritium-accountancy-in-fusion-systems.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/sources/srnl-2013-tritium-accountancy-in-fusion-systems.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="11-policy-regulation-safety.html">Policy, Regulation and Safety</a> <small>Synthesis</small></li><li><a href="28-vacuum-wall-conditioning-tritium-plant.html">Vacuum, Wall Conditioning and the Tritium Plant</a> <small>Synthesis</small></li><li><a href="37-military-dual-use-security.html">Military, Dual-Use and Security</a> <small>Synthesis</small></li><li><a href="sindelar-2023-tritium-accountancy-control-challenges-fusion.html">Assessment of Challenges for Tritium Accountancy and Control in Fusion Energy Systems</a> <small>Source note</small></li><li><a href="tritium-accountancy.html">Tritium Accountancy</a> <small>Concept</small></li><li><a href="tritium-breeding-ratio.html">Tritium Breeding Ratio (TBR)</a> <small>Concept</small></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a> <small>Concept</small></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a> <small>Concept</small></li></ul></section><details class="backlinks"><summary>Linked from 6 library notes</summary><ul><li><a href="28-vacuum-wall-conditioning-tritium-plant.html">Vacuum, Wall Conditioning and the Tritium Plant</a></li><li><a href="flynn-larsen-2022-kalman-filters-tritium-accountancy.html">Investigating the application of Kalman Filters for real-time accountancy in fusion fuel cycles</a></li><li><a href="moc-sources.html">MOC — Sources</a></li><li><a href="sindelar-2023-tritium-accountancy-control-challenges-fusion.html">Assessment of Challenges for Tritium Accountancy and Control in Fusion Energy Systems</a></li><li><a href="thalia-hera-ukaea-tritium-accountancy-2026.html">Development of Analytical Techniques for Tritium Accountancy Around the Fusion Fuel Cycle (HERA and THALIA)</a></li><li><a href="tritium-accountancy.html">Tritium Accountancy</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

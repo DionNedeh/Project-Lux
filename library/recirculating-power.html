@@ -1,0 +1,71 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Recirculating Power — Project Lux</title><meta name="description" content="The electricity a fusion plant consumes to run itself, subtracted from gross output. The reason Q_sci and Q_eng diverge so sharply."><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/recirculating-power.html"><meta property="og:title" content="Recirculating Power — Project Lux"><meta property="og:description" content="The electricity a fusion plant consumes to run itself, subtracted from gross output. The reason Q_sci and Q_eng diverge so sharply."><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/recirculating-power.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Concept</p><p class="eyebrow">Concept</p><h1 id="doc-title">Recirculating Power</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Concept</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-09-12">12 September 2026</time></dd></div><div><dt>First written</dt><dd>26 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div><div><dt>Cited on the homepage</dt><dd><a href="../index.html#systems-title">The whole energy system</a></dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=economics">economics</a><a href="index.html?topic=engineering">engineering</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#the-load-list">The load list</a></li><li><a href="#the-consequence">The consequence</a></li><li><a href="#the-stellarator-claim-quantified">The stellarator claim, quantified</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p>The electricity a fusion plant consumes to run itself, subtracted from gross output. <strong>The reason Q_sci and Q_eng diverge so sharply.</strong></p>
+<h2 id="the-load-list">The load list<a aria-hidden="true" class="heading-link" href="#the-load-list" tabindex="-1" title="Link to this section">#</a></h2>
+<ul>
+<li><strong>Cryoplant</strong> for the magnets. Removing heat at 4.5 K costs <strong>250–1,000 W of room-temperature power per watt removed</strong></li>
+<li><strong>Plasma heating and current drive</strong> — tens to &gt;100 MW at 30–50% wall-plug efficiency. Usually the dominant term</li>
+<li><strong>Coolant pumping</strong> — severe for helium, and for liquid metals against MHD drag</li>
+<li><strong>Tritium plant, vacuum systems, controls</strong></li>
+</ul>
+<p>For a tokamak, plausible recirculating fractions are <strong>20–40% of gross output</strong>.</p>
+<h2 id="the-consequence">The consequence<a aria-hidden="true" class="heading-link" href="#the-consequence" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>Q_eng &gt; 1 typically requires Q_sci in the 10–30+ range.</strong> This is why scientific breakeven at Q_sci = 1, while a genuine milestone, is a long way from a generator — and why <a href="q-gain-definitions.html">Q — the Four Gain Definitions</a> insists on saying which Q.</p>
+<p>It is also a direct argument for HTS at 20 K rather than LTS at 4.5 K, which cuts the Carnot penalty by roughly 4–5×, and for <a href="direct-energy-conversion.html">Direct Energy Conversion</a>, which removes the thermal cycle altogether.</p>
+<h2 id="the-stellarator-claim-quantified">The stellarator claim, quantified<a aria-hidden="true" class="heading-link" href="#the-stellarator-claim-quantified" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The <a href="stellarator.html">stellarator</a> case has always rested partly on low recirculating power: no driven
+plasma current, no current-drive load, inherently steady-state. <a href="helios.html">Helios</a> puts numbers to it
+(<a href="overview-of-the-helios-design.html">Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant</a>) — <strong>69.8 MW</strong> of <strong>459.9 MWe</strong> generated, roughly <strong>15%</strong>, against
+the <strong>20–40%</strong> above. The dominant tokamak term is simply absent: once ignited it needs under 1 MW of
+heating, against tens to &gt;100 MW of current drive.</p>
+<p>Its Sankey diagram itemises the self-consumption, which is rarer in published designs than it should
+be:</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Load</th>
+<th scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generated electric</td>
+<td>459.9 MW</td>
+</tr>
+<tr>
+<td>Recirculating pumps</td>
+<td>21.8 MW</td>
+</tr>
+<tr>
+<td>Gross cycle electric</td>
+<td>438.1 MW</td>
+</tr>
+<tr>
+<td>Maintenance and operations</td>
+<td>20.0 MW</td>
+</tr>
+<tr>
+<td>Tritium plant</td>
+<td>15.0 MW</td>
+</tr>
+<tr>
+<td>Cryoplant</td>
+<td>10.5 MW</td>
+</tr>
+<tr>
+<td>ECRH</td>
+<td>2.5 MW</td>
+</tr>
+<tr>
+<td><strong>Net plant electric</strong></td>
+<td><strong>390.1 MW</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The four auxiliary loads total exactly the 48 MW the text quotes, so ECRH sits inside that figure
+rather than beside it. Note what the itemisation shows: <strong>no single dominant term</strong>. In a tokamak,
+current drive alone would exceed this entire list.</p>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>A design projection
+Helios is preconceptual; every figure above is modelled. The values come from the Sankey image, not
+the text layer of the paper.</p>
+</aside>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/concepts/recirculating-power.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/concepts/recirculating-power.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="10-economics-and-markets.html">Economics and Markets</a> <small>Synthesis</small></li><li><a href="24-grid-integration-and-operations.html">Grid Integration and Plant Operations</a> <small>Synthesis</small></li><li><a href="balance-of-plant.html">Balance of Plant</a> <small>Concept</small></li><li><a href="direct-energy-conversion.html">Direct Energy Conversion</a> <small>Concept</small></li><li><a href="gyrotron.html">Gyrotron and ECRH</a> <small>Concept</small></li><li><a href="helios.html">Helios</a> <small>Entity</small></li><li><a href="overview-of-the-helios-design.html">Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant</a> <small>Source note</small></li><li><a href="q-gain-definitions.html">Q — the Four Gain Definitions</a> <small>Concept</small></li><li><a href="stellarator.html">Stellarator</a> <small>Concept</small></li></ul></section><details class="backlinks"><summary>Linked from 19 library notes</summary><ul><li><a href="01-fusion-physics-fundamentals.html">Physics Fundamentals</a></li><li><a href="03-confinement-approaches.html">Confinement Approaches</a></li><li><a href="09-engineering-challenges.html">Engineering Challenges</a></li><li><a href="16-heating-current-drive-fuelling.html">Heating, Current Drive and Fuelling</a></li><li><a href="18-superconductors-and-magnets.html">Superconductors and Magnet Engineering</a></li><li><a href="30-power-plant-designs-compared.html">Power Plant Designs Compared</a></li><li><a href="balance-of-plant.html">Balance of Plant</a></li><li><a href="bootstrap-current.html">Bootstrap Current</a></li><li><a href="direct-energy-conversion.html">Direct Energy Conversion</a></li><li><a href="gyrotron.html">Gyrotron and ECRH</a></li><li><a href="helios.html">Helios</a></li><li><a href="lcoe-fusion.html">Fusion LCOE and Capital Cost</a></li><li><a href="lithium-lead-eutectic.html">Lithium-Lead Eutectic (PbLi)</a></li><li><a href="moc-economics-policy.html">MOC — Economics, Policy and Markets</a></li><li><a href="moc-engineering.html">MOC — Engineering</a></li><li><a href="overview-of-the-helios-design.html">Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant</a></li><li><a href="primary-heat-transfer-system.html">Primary Heat Transfer System (PHTS)</a></li><li><a href="q-gain-definitions.html">Q — the Four Gain Definitions</a></li><li><a href="stellarator.html">Stellarator</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

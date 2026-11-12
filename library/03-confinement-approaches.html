@@ -1,0 +1,347 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Confinement Approaches — Project Lux</title><meta name="description" content="Project Lux · Every way anyone is seriously trying to confine a fusion plasma"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/03-confinement-approaches.html"><meta property="og:title" content="Confinement Approaches — Project Lux"><meta property="og:description" content="Project Lux · Every way anyone is seriously trying to confine a fusion plasma"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/03-confinement-approaches.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Synthesis</p><p class="eyebrow">Synthesis · Document 03</p><h1 id="doc-title">Confinement Approaches</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Synthesis</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-08-29">29 August 2026</time></dd></div><div><dt>First written</dt><dd>25 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=machines">machines</a><a href="index.html?topic=physics">physics</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#the-fundamental-problem">The fundamental problem</a></li><li><a href="#part-i-magnetic-confinement">Part I: Magnetic Confinement</a></li><li><a href="#part-ii-inertial-confinement">Part II: Inertial Confinement</a></li><li><a href="#part-iii-magneto-inertial-fusion-mif">Part III: Magneto-Inertial Fusion (MIF)</a></li><li><a href="#part-iv-electrostatic-and-other-approaches">Part IV: Electrostatic and other approaches</a></li><li><a href="#part-v-how-to-compare-them">Part V: How to compare them</a></li><li><a href="#evidence-in-raw">Evidence in raw/</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><em>Project Lux · Every way anyone is seriously trying to confine a fusion plasma</em></p>
+<hr/>
+<h2 id="the-fundamental-problem">The fundamental problem<a aria-hidden="true" class="heading-link" href="#the-fundamental-problem" tabindex="-1" title="Link to this section">#</a></h2>
+<p>To fuse, a plasma must be held at 100–200 million K at sufficient density for sufficient time. No material container can touch it — any solid wall would both vaporise and, more importantly, <a href="quench.html">Quench</a> the plasma instantly by radiating away its energy through impurity contamination.</p>
+<p>There are exactly <strong>three physical strategies</strong> for holding a plasma without a wall, and they are distinguished by which term of the Lawson product they maximise:</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Strategy</th>
+<th scope="col">Density</th>
+<th scope="col">Confinement time</th>
+<th scope="col">Mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Magnetic confinement (MCF)</strong></td>
+<td>~10²⁰ m⁻³ (a millionth of atmospheric)</td>
+<td>seconds to continuous</td>
+<td>Magnetic fields deflect charged particles</td>
+</tr>
+<tr>
+<td><strong><a href="inertial-confinement.html">Inertial confinement</a> (ICF)</strong></td>
+<td>~10³¹ m⁻³ (1000× solid)</td>
+<td>~10⁻¹⁰ s</td>
+<td>Fuel inertia — it burns before it can expand</td>
+</tr>
+<tr>
+<td><strong>Magneto-inertial (MIF)</strong></td>
+<td>~10²⁴–10²⁸ m⁻³</td>
+<td>~10⁻⁶ s</td>
+<td>Compress a magnetised plasma; field insulates during compression</td>
+</tr>
+</tbody>
+</table></div>
+<p>Note that these span <strong>eleven orders of magnitude in density</strong> and a comparable range in time, while the product <code>nτ</code> must land in the same narrow band. This is why the engineering of the three routes has almost nothing in common — a laser fusion plant and a <a href="tokamak.html">Tokamak</a> share the fuel and essentially nothing else.</p>
+<p>The distribution of effort in the private sector as of 2026 (FIA survey, 56 companies):</p>
+<ul>
+<li><strong>Magnetic confinement — 26 companies (46%)</strong></li>
+<li><strong>Inertial confinement — 12 companies (21%)</strong></li>
+<li><strong>Magneto-inertial — 9 companies (16%)</strong></li>
+<li><strong>Hybrid electrostatic — 7 companies (13%)</strong></li>
+<li><strong>Muon-catalysed — 1 company</strong></li>
+</ul>
+<hr/>
+<h2 id="part-i-magnetic-confinement">Part I: Magnetic Confinement<a aria-hidden="true" class="heading-link" href="#part-i-magnetic-confinement" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-geometry-problem">The geometry problem<a aria-hidden="true" class="heading-link" href="#the-geometry-problem" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A charged particle in a magnetic field spirals along field lines — confined perpendicular to the field, free along it. So field lines must not end at a wall. The obvious solution is a torus: bend the field into a doughnut so the lines close on themselves.</p>
+<p>But a purely toroidal field fails. The field is stronger on the inside of the torus than the outside, and this gradient plus the field-line curvature causes <strong>charge-dependent vertical drift</strong>: ions drift up, electrons drift down. The resulting vertical electric field drives an <strong>E×B drift</strong> that pushes the entire plasma outward into the wall in microseconds.</p>
+<p>The fix is to give the field lines a <strong>helical twist</strong>, so that a particle following a line spends time both above and below the midplane, and the drifts cancel. This is the <strong>rotational transform</strong>, and how you generate it defines the machine:</p>
+<ul>
+<li><strong>Tokamak</strong> — drive a large toroidal current through the plasma itself; its poloidal field twists the lines</li>
+<li><strong><a href="stellarator.html">Stellarator</a></strong> — twist the lines using complex, 3D external coils, requiring no plasma current</li>
+<li><strong>Reversed field pinch</strong> — a tokamak-like device where the toroidal field reverses at the edge, with a much weaker external field</li>
+<li><strong>Spheromak / FRC</strong> — let the plasma generate essentially all of its own field, in a self-organised state</li>
+</ul>
+<hr/>
+<h3 id="1-the-tokamak">1. The Tokamak<a aria-hidden="true" class="heading-link" href="#1-the-tokamak" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Principle.</strong> Strong toroidal field from external coils (typically 5–12 T), plus a poloidal field from a plasma current of several megamperes driven inductively by a central solenoid acting as a transformer primary.</p>
+<p><strong>Strengths.</strong></p>
+<ul>
+<li>By far the best-understood confinement scheme. Sixty years and hundreds of machines of empirical scaling, validated theory, and mature diagnostics.</li>
+<li>Highest triple products ever achieved in magnetic confinement.</li>
+<li>Axisymmetric — good fast-alpha confinement, comparatively simple coils.</li>
+<li><a href="h-mode.html">H-mode</a> gives a factor-of-two confinement bonus for free.</li>
+</ul>
+<p><strong>Weaknesses.</strong></p>
+<ul>
+<li><strong>Disruptions.</strong> The plasma current is both the source of confinement and a stored energy reservoir. Losing it dumps the full thermal and magnetic energy into the wall in milliseconds and can generate multi-megaampere runaway electron beams. This is the tokamak's fundamental design vulnerability, and it worsens with size.</li>
+<li><strong>Pulsed by nature.</strong> An inductive transformer cannot drive current forever. Steady-state operation requires non-inductive current drive (neutral beams, RF) which costs <a href="recirculating-power.html">recirculating power</a>, or high bootstrap fraction, or accepting pulsed operation with thermal storage.</li>
+<li><strong>Density limit.</strong> Greenwald limit constrains operating space (though <a href="east.html">EAST</a> reported a route past it in January 2026).</li>
+</ul>
+<p><strong>Who is pursuing it.</strong> <a href="iter.html">ITER</a>, <a href="sparc.html">SPARC</a>/<a href="arc.html">ARC</a> (CFS), <a href="jt-60sa.html">JT-60SA</a>, EAST/<a href="best-tokamak.html">BEST</a>/<a href="cfetr.html">CFETR</a>, <a href="kstar.html">KSTAR</a>, <a href="diii-d.html">DIII-D</a>, <a href="west.html">WEST</a>, <a href="t-15md.html">T-15MD</a>, <a href="hh70.html">HH70</a>/HH170 (<a href="energy-singularity.html">Energy Singularity</a>), plus the spherical variants below. <strong>5 companies</strong> report conventional tokamaks and <strong>3</strong> spherical tokamaks in the FIA survey.</p>
+<hr/>
+<h3 id="2-the-spherical-tokamak">2. The Spherical Tokamak<a aria-hidden="true" class="heading-link" href="#2-the-spherical-tokamak" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Principle.</strong> Squash the tokamak's aspect ratio (R/a) from ~3 down to ~1.5. The plasma becomes a cored apple rather than a doughnut.</p>
+<p><strong>Strengths.</strong></p>
+<ul>
+<li><strong>Much higher beta.</strong> Spherical tokamaks routinely reach β of 20–40% versus a few percent conventionally. Since fusion power goes as β²B⁴, high beta partially substitutes for high field.</li>
+<li>Compact, potentially cheaper machines.</li>
+<li>Naturally higher <a href="bootstrap-current.html">bootstrap current</a> fraction.</li>
+</ul>
+<p><strong>Weaknesses.</strong></p>
+<ul>
+<li><strong>The centre column.</strong> There is very little room on the inboard side for the central solenoid, the toroidal-field conductors, <em>and</em> neutron shielding. In a D-T reactor the centre column takes a brutal neutron dose with almost no space to shield it. This is the spherical tokamak's central unsolved engineering problem.</li>
+<li>Solenoid-free start-up is required, which is an active research area.</li>
+<li>Less confinement data than conventional tokamaks.</li>
+</ul>
+<p><strong>Who.</strong> UK <strong><a href="step.html">STEP</a></strong> (the flagship national bet), <strong><a href="tokamak-energy.html">Tokamak Energy</a></strong> (<a href="st40.html">ST40</a> — which achieved 100 million K in 2022 — and the ST80-HTS successor), <strong>ENN</strong> in China, <a href="mast-upgrade.html">MAST-Upgrade</a> and NSTX-U as research devices.</p>
+<hr/>
+<h3 id="3-the-stellarator">3. The Stellarator<a aria-hidden="true" class="heading-link" href="#3-the-stellarator" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Principle.</strong> Generate the entire confining field, including the rotational transform, from external coils. No plasma current is required.</p>
+<p><strong>Strengths.</strong></p>
+<ul>
+<li><strong>No disruptions.</strong> With no large plasma current, the tokamak's principal failure mode simply does not exist. This is a profound advantage for a power plant that must run at 90%+ availability.</li>
+<li><strong>Intrinsically steady-state.</strong> No transformer, no current drive, no pulsing. A stellarator can in principle run continuously.</li>
+<li><strong>No density limit</strong> of the Greenwald type; stellarators operate at high density comfortably.</li>
+</ul>
+<p><strong>Weaknesses.</strong></p>
+<ul>
+<li><strong>Geometric complexity.</strong> W7-X's 50 non-planar superconducting coils are shaped to roughly 1 mm tolerance. Manufacturing cost and schedule risk are severe, and maintenance access through a 3D coil set is genuinely difficult.</li>
+<li><strong>Neoclassical transport.</strong> An unoptimised 3D field has catastrophic collisionless particle losses. This is why stellarators lost to tokamaks in 1969 — and why they came back once computers could optimise the field.</li>
+<li><strong>Fast-alpha confinement.</strong> Good alpha confinement in 3D geometry is hard to arrange and is a live design constraint for reactor-scale stellarators.</li>
+</ul>
+<p><strong>The optimisation revolution.</strong> Modern stellarators are <em>designed</em>, not drawn. Two families of optimisation target:</p>
+<ul>
+<li><strong>Quasi-symmetry</strong> — engineer the field <em>strength</em> to have a hidden symmetry (quasi-axisymmetric, quasi-helical, or quasi-poloidal) even though the geometry is fully 3D. A particle then behaves as if it were in a symmetric device, recovering good confinement. HSX (Wisconsin) demonstrated quasi-helical symmetry experimentally.</li>
+<li><strong>Quasi-isodynamicity</strong> — arrange the field so that collisionless particle orbits close on themselves, eliminating neoclassical transport by a different route. W7-X is optimised this way.</li>
+</ul>
+<p>Recent method advances (2026) include <strong>quasi-single-stage optimisation</strong>, which folds coil buildability directly into the plasma-boundary optimisation rather than solving the two problems sequentially, and generative models producing candidate configurations directly.</p>
+<p><strong>Who.</strong> <strong><a href="wendelstein-7-x.html">Wendelstein 7-X</a></strong> (Germany — the world leader), <strong>LHD</strong> (Japan, retired 2025), <strong><a href="type-one-energy.html">Type One Energy</a></strong> (<a href="infinity-two.html">Infinity Two</a>, TVA site in Tennessee), <strong><a href="thea-energy.html">Thea Energy</a></strong> (Eos — using arrays of simple <em>planar</em> coils rather than complex 3D ones), <strong><a href="proxima-fusion.html">Proxima Fusion</a></strong> (Stellaris, Munich), <strong><a href="renaissance-fusion.html">Renaissance Fusion</a></strong>, <strong><a href="helical-fusion.html">Helical Fusion</a></strong>, <strong><a href="gauss-fusion.html">Gauss Fusion</a></strong>, <strong><a href="stellarex.html">Stellarex</a></strong>. <strong>8 companies</strong> in the FIA survey — the largest single magnetic category, which would have been unimaginable in 2010.</p>
+<hr/>
+<h3 id="4-the-magnetic-mirror">4. The <a href="magnetic-mirror.html">Magnetic Mirror</a><a aria-hidden="true" class="heading-link" href="#4-the-magnetic-mirror" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Principle.</strong> A linear (not toroidal) field with strong magnetic "plugs" at each end. Particles moving along the axis are reflected by the magnetic gradient — the magnetic-moment invariant makes a converging field act as a mirror.</p>
+<p><strong>Strengths.</strong></p>
+<ul>
+<li><strong>Simple, linear geometry.</strong> Cylindrical vessel, simple coils, straightforward maintenance access, easy to segment for replacement.</li>
+<li>High beta.</li>
+<li><strong><a href="direct-energy-conversion.html">Direct energy conversion</a> is natural.</strong> Charged particles escaping the ends can be decelerated against an electrostatic field, converting their kinetic energy directly to electricity without a steam cycle. Realta demonstrated exactly this in June 2026.</li>
+</ul>
+<p><strong>Weaknesses.</strong></p>
+<ul>
+<li><strong>End losses.</strong> Particles in the "loss cone" of velocity space escape immediately. This is intrinsic and is why the US cancelled the <a href="mftf-b.html">MFTF-B</a> mirror program in 1986 on the day it was completed.</li>
+<li>Historically poor confinement relative to toroidal devices.</li>
+</ul>
+<p><strong>Why it is back.</strong> Two changes. First, HTS magnets allow far higher mirror ratios than were possible in the 1980s — <a href="wham.html">WHAM</a> achieved <strong>17 T</strong> on the confined plasma. Higher mirror ratio directly shrinks the loss cone. Second, tandem mirror configurations and modern theory address the losses more effectively than 1980s designs.</p>
+<p><strong>Who.</strong> <strong><a href="realta-fusion.html">Realta Fusion</a></strong> (WHAM at UW-Madison → Anvil → Hammir), <strong><a href="novatron.html">Novatron Fusion</a></strong> (Sweden), plus gas dynamic trap and centrifugal mirror variants. Notably, CFS is supplying Realta's magnets — an early sign of a fusion <em>supply chain</em> rather than 56 vertically integrated companies.</p>
+<hr/>
+<h3 id="5-field-reversed-configuration-frc">5. <a href="field-reversed-configuration.html">Field-Reversed Configuration (FRC)</a><a aria-hidden="true" class="heading-link" href="#5-field-reversed-configuration-frc" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Principle.</strong> A self-organised, elongated plasmoid in which the plasma's own current reverses the applied field, creating closed field lines with <strong>no toroidal field at all</strong>. <a href="plasma-beta.html">Beta</a> approaches 1 — the plasma pressure nearly equals the magnetic pressure.</p>
+<p><strong>Strengths.</strong></p>
+<ul>
+<li><strong>β ≈ 1</strong> is the highest of any configuration; magnetic field is used with maximum efficiency.</li>
+<li>Simple, linear geometry with a natural <a href="divertor.html">Divertor</a> at each end.</li>
+<li>The high beta makes <strong>advanced aneutronic fuels</strong> (p-¹¹B, D-³He) more plausible than in any other scheme, because those fuels need enormous pressure.</li>
+<li>Translatable — the plasmoid can be formed in one place and moved to another.</li>
+</ul>
+<p><strong>Weaknesses.</strong></p>
+<ul>
+<li>Stability. FRCs are theoretically vulnerable to tilt and rotational modes; historically they were short-lived.</li>
+<li>Confinement scaling is far less established than tokamaks.</li>
+</ul>
+<p><strong>Who.</strong> <strong><a href="tae-technologies.html">TAE Technologies</a></strong> (the largest FRC effort; C-2W/"Norm", targeting eventual p-¹¹B), <strong><a href="helion-energy.html">Helion Energy</a></strong> (colliding, compressed FRCs with pulsed direct energy recovery), <strong>NearStar Fusion</strong>, <strong>Princeton Fusion Systems</strong>. <strong>3 companies</strong> report pure FRC; Helion's approach is usually classed as magneto-inertial.</p>
+<hr/>
+<h3 id="6-other-magnetic-schemes">6. Other magnetic schemes<a aria-hidden="true" class="heading-link" href="#6-other-magnetic-schemes" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong>Levitated dipole</strong> — a superconducting ring levitated inside the vacuum chamber, mimicking a planetary magnetosphere. Remarkable stability and natural density peaking. <strong><a href="openstar-technologies.html">OpenStar Technologies</a></strong> (New Zealand) achieved plasma in 2024. Recent work explores D-T levitated dipole plants (arXiv:2602.20564).</li>
+<li><strong>Reversed field pinch</strong> — RFX-mod2 (Italy), MST (Wisconsin). Low external field requirement; self-organised states.</li>
+<li><strong>Z-pinch</strong> — the oldest idea, revived. See magneto-inertial below.</li>
+<li><strong>Levitron, plectoneme, centrifugal mirror</strong> — single-company approaches in the FIA survey.</li>
+</ul>
+<hr/>
+<h2 id="part-ii-inertial-confinement">Part II: Inertial Confinement<a aria-hidden="true" class="heading-link" href="#part-ii-inertial-confinement" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-principle">The principle<a aria-hidden="true" class="heading-link" href="#the-principle" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Deliver energy to the surface of a millimetre-scale fuel capsule fast enough that the surface blows off (ablates) and the reaction drives the remaining shell inward at 350–400 km/s. The fuel compresses to ~1,000× solid density and ~100 million K in a central hot spot, ignites, and a burn wave propagates outward through the cold dense fuel before the whole assembly disassembles — in about 100 picoseconds.</p>
+<p>Confinement is provided by nothing but the fuel's own inertia.</p>
+<h3 id="drive-approaches">Drive approaches<a aria-hidden="true" class="heading-link" href="#drive-approaches" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Indirect drive (NIF).</strong> Lasers enter a small cylindrical <strong>hohlraum</strong> of gold or depleted uranium and heat its inner wall, which re-radiates a near-blackbody X-ray field at a few hundred eV. Those X-rays ablate the capsule.</p>
+<ul>
+<li><em>Advantage</em>: the X-ray bath is highly uniform, which relaxes the beam-symmetry requirement enormously.</li>
+<li><em>Disadvantage</em>: only ~10–15% of laser energy reaches the capsule. Terrible for a power plant.</li>
+</ul>
+<p><strong>Direct drive (OMEGA, most startups).</strong> Lasers illuminate the capsule directly.</p>
+<ul>
+<li><em>Advantage</em>: several times more efficient coupling.</li>
+<li><em>Disadvantage</em>: requires extraordinary beam-to-beam uniformity, and suffers <strong>laser-plasma instabilities</strong> — stimulated Raman and Brillouin scattering redirect laser light, and two-plasmon decay generates hot electrons that pre-heat the fuel and destroy compressibility.</li>
+</ul>
+<p><strong><a href="fast-ignition.html">Fast ignition</a>.</strong> Compress the fuel with a nanosecond pulse, then ignite it separately with a picosecond petawatt pulse (or a laser-accelerated ion beam). Decoupling compression from heating relaxes the symmetry requirement and could raise gain substantially. Pursued by <strong><a href="focused-energy.html">Focused Energy</a></strong> and <strong><a href="marvel-fusion.html">Marvel Fusion</a></strong>; not yet demonstrated at ignition scale.</p>
+<p><strong>Shock ignition, and "quantum-enhanced" schemes.</strong> Variants that use a final strong shock to ignite, or nanostructured targets to enhance coupling. Marvel Fusion's approach uses nanostructured targets with ultrashort pulses.</p>
+<h3 id="the-gap-between-nif-and-a-power-plant">The gap between NIF and a power plant<a aria-hidden="true" class="heading-link" href="#the-gap-between-nif-and-a-power-plant" tabindex="-1" title="Link to this section">#</a></h3>
+<p>NIF has demonstrated the physics. It is nothing like a power plant, and the gaps are all engineering:</p>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Parameter</th>
+<th scope="col">NIF today</th>
+<th scope="col">IFE power plant requires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repetition rate</td>
+<td>~1 shot per several hours</td>
+<td><strong>10–20 Hz</strong></td>
+</tr>
+<tr>
+<td>Laser wall-plug efficiency</td>
+<td>~0.5%</td>
+<td><strong>~10%</strong></td>
+</tr>
+<tr>
+<td>Target gain</td>
+<td>4.13</td>
+<td><strong>50–100+</strong></td>
+</tr>
+<tr>
+<td>Target cost</td>
+<td>~$100,000s, hand-made</td>
+<td><strong>&lt;$0.50</strong>, mass-produced</td>
+</tr>
+<tr>
+<td>Targets per year</td>
+<td>~hundreds</td>
+<td><strong>~500 million</strong></td>
+</tr>
+<tr>
+<td>Chamber survival</td>
+<td>Replaceable optics, few shots</td>
+<td>Must survive 10⁹ shots/yr</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every one of those is a factor of 10³ to 10⁶. That is the honest scope of the IFE problem — and it is why the August 2026 announcement that <strong>Inertia and LLNL cut cryogenic D-T fuel layering from days to 2–3 hours</strong> matters far more than it sounds: target throughput is a first-order barrier.</p>
+<p>DOE's <strong>IFE-STAR</strong> program ($42M across three hubs — Colorado State's RISE, University of Rochester, and LLNL's STARFIRE) targets exactly these gaps, with driver research at 1–10 Hz using krypton fluoride and diode-pumped solid-state lasers.</p>
+<p><strong>Who.</strong> LLNL/NIF and Rochester's LLE (public); <strong><a href="xcimer-energy.html">Xcimer Energy</a></strong> (excimer laser driver, "Athena" plant architecture approved by DOE August 2026), <strong>Focused Energy</strong>, <strong>Marvel Fusion</strong>, <strong><a href="first-light-fusion.html">First Light Fusion</a></strong>, <strong><a href="longview-fusion.html">Longview Fusion</a></strong>, <strong><a href="ex-fusion.html">EX-Fusion</a></strong>, <strong><a href="blue-laser-fusion.html">Blue Laser Fusion</a></strong>, <strong>LaserFusionX</strong>, <strong><a href="inertia-enterprises.html">Inertia Enterprises</a></strong>. <strong>12 companies</strong>.</p>
+<hr/>
+<h2 id="part-iii-magneto-inertial-fusion-mif">Part III: <a href="magneto-inertial-fusion.html">Magneto-Inertial Fusion (MIF)</a><a aria-hidden="true" class="heading-link" href="#part-iii-magneto-inertial-fusion-mif" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-principle-1">The principle<a aria-hidden="true" class="heading-link" href="#the-principle-1" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Sit between the two extremes. Embed a magnetic field in the fuel <em>before</em> compressing it. The field suppresses thermal conduction losses to the wall and traps charged fusion products, so the fuel does not need to reach ICF densities to burn — relaxing the compression requirement by orders of magnitude. But it is still compressed and pulsed, so it does not need MCF's long confinement times.</p>
+<p>The appeal is that it targets the least-demanding corner of parameter space: <strong>10²⁴–10²⁸ m⁻³ and microseconds</strong>, instead of 10³¹/nanoseconds or 10²⁰/seconds.</p>
+<h3 id="variants">Variants<a aria-hidden="true" class="heading-link" href="#variants" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>Magnetized Liner Inertial Fusion (MagLIF).</strong> Sandia's <a href="z-machine.html">Z Machine</a> drives ~20 MA through a metal liner, imploding it onto pre-magnetised, laser-preheated D-T fuel. Has produced substantial neutron yields and appears in the Lawson-progress dataset as a distinct experimental line.</p>
+<p><strong>Magnetized Target Fusion (MTF).</strong> <strong><a href="general-fusion.html">General Fusion</a></strong>'s approach: inject a magnetised plasma into a rotating cavity of liquid lead-lithium, then collapse the cavity with pneumatic or mechanical pistons. The liquid metal is elegant in principle — it <em>is</em> the first wall, <em>is</em> the breeding blanket, and <em>is</em> the coolant, and being liquid it cannot suffer neutron damage. <strong>LM26 (<a href="lm26.html">Lawson Machine 26</a>)</strong> has reached <strong>0.72 keV</strong> (~8.4 million °C) and is funded through end-2028.</p>
+<p><strong>Pulsed-magnetic / pulser-driven ICF.</strong> <strong><a href="pacific-fusion.html">Pacific Fusion</a></strong> uses coordinated electromagnetic pulses rather than lasers. Its June 2026 milestone: a scaled module prototype delivering <strong>&gt;440 GW peak power at ~1.1 MV</strong>. Pulsed power is enormously more efficient than lasers (&gt;50% wall-plug vs ~10% aspiration), which is the strategic argument for the whole approach.</p>
+<p><strong>Sheared-flow-stabilized Z-pinch.</strong> <strong><a href="zap-energy.html">Zap Energy</a></strong>'s FuZE and FuZE-Q. A classic Z-pinch is violently unstable to sausage and kink modes — this killed the concept in the 1950s. Zap's insight is that a sheared axial flow stabilises those modes, allowing a pinch with <strong>no external magnetic coils at all</strong>. Zap has reported electron temperatures above <strong>1 keV</strong> (&gt;10 million °C). If it works, the machine is radically simpler and cheaper than anything else in fusion.</p>
+<p><strong>Colliding/compressed FRC.</strong> <strong>Helion</strong>: form two FRCs, accelerate them toward each other at over a million mph, collide and compress them magnetically. When the fused plasma expands against the magnetic field, it induces a current directly back into the coils — <strong>direct electricity recovery, no steam cycle</strong>. Helion also targets <strong>D-³He</strong>, breeding its own ³He from D-D side reactions.</p>
+<p><strong>Who.</strong> 9 companies: General Fusion, Zap Energy, Pacific Fusion, Helion (usually classed here), NearStar, Fuse, plus dense plasma focus and plasma-jet variants.</p>
+<hr/>
+<h2 id="part-iv-electrostatic-and-other-approaches">Part IV: Electrostatic and other approaches<a aria-hidden="true" class="heading-link" href="#part-iv-electrostatic-and-other-approaches" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>7 companies</strong> in the FIA survey pursue hybrid electrostatic schemes — magnetic-electrostatic confinement, electrostatic cusps, inertial-electrostatic lattice confinement, augmented beam-target.</p>
+<p>The classic form is the <strong>Farnsworth-Hirsch fusor</strong>: accelerate ions electrostatically toward a central grid. Fusors work — they are a standard amateur science project — but a fundamental result (the Rider limit and related analyses) shows that any scheme relying on a non-Maxwellian ion distribution in a collisional plasma loses more energy to collisional thermalisation and bremsstrahlung than it gains from fusion. Getting around this requires either recirculating the lost energy at very high efficiency or operating in a regime where the standard analysis does not apply. Companies in this category argue for specific escapes from the theorem; none has demonstrated one.</p>
+<p><strong><a href="avalanche-energy.html">Avalanche Energy</a></strong> pursues a compact magneto-electrostatic "Orbitron" targeting small (kilowatt-scale) modular units and near-term revenue from neutron/isotope applications rather than grid power — a business model worth noting as distinct.</p>
+<p><strong>Muon-catalysed fusion</strong> (1 company). Replace an electron with a muon; the 207× heavier muon orbits 207× closer, screening the nuclear charge so effectively that fusion occurs at room temperature. It genuinely works. The problem is the <strong>alpha-sticking</strong> limit: a muon catalyses roughly 100–150 fusions before sticking to a helium nucleus and being lost, while producing the muon costs far more energy than 150 D-T reactions release. Making this work requires a breakthrough in muon production efficiency of roughly an order of magnitude.</p>
+<hr/>
+<h2 id="part-v-how-to-compare-them">Part V: How to compare them<a aria-hidden="true" class="heading-link" href="#part-v-how-to-compare-them" tabindex="-1" title="Link to this section">#</a></h2>
+<p>There is no single figure of merit, but these axes separate the approaches usefully:</p>
+<div aria-label="Table 3 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col"></th>
+<th scope="col">Tokamak</th>
+<th scope="col">Stellarator</th>
+<th scope="col">Mirror</th>
+<th scope="col">FRC</th>
+<th scope="col">Laser ICF</th>
+<th scope="col">MIF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Physics maturity</strong></td>
+<td>Very high</td>
+<td>High</td>
+<td>Medium</td>
+<td>Low-Medium</td>
+<td>High (NIF)</td>
+<td>Low-Medium</td>
+</tr>
+<tr>
+<td><strong><a href="disruption.html">Disruption</a> risk</strong></td>
+<td><strong>High</strong></td>
+<td>None</td>
+<td>None</td>
+<td>Low</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>Steady-state capable</strong></td>
+<td>Hard</td>
+<td><strong>Natural</strong></td>
+<td>Natural</td>
+<td>Pulsed</td>
+<td>Pulsed</td>
+<td>Pulsed</td>
+</tr>
+<tr>
+<td><strong>Engineering complexity</strong></td>
+<td>Medium</td>
+<td><strong>Very high</strong></td>
+<td><strong>Low</strong></td>
+<td>Low</td>
+<td>Very high</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>Beta (field efficiency)</strong></td>
+<td>1–5%</td>
+<td>4–5%</td>
+<td>High</td>
+<td><strong>~1</strong></td>
+<td>N/A</td>
+<td>High</td>
+</tr>
+<tr>
+<td><strong>Direct energy conversion</strong></td>
+<td>No</td>
+<td>No</td>
+<td><strong>Yes</strong></td>
+<td><strong>Yes</strong></td>
+<td>No</td>
+<td>Sometimes</td>
+</tr>
+<tr>
+<td><strong>Maintenance access</strong></td>
+<td>Hard</td>
+<td><strong>Very hard</strong></td>
+<td><strong>Easy</strong></td>
+<td>Easy</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>Aneutronic fuel plausible</strong></td>
+<td>No</td>
+<td>No</td>
+<td>Maybe</td>
+<td><strong>Yes</strong></td>
+<td>No</td>
+<td>Maybe</td>
+</tr>
+<tr>
+<td><strong>Nearest net-energy demo</strong></td>
+<td><strong>SPARC 2027</strong></td>
+<td>2030s</td>
+<td>2030s</td>
+<td>Late 2020s</td>
+<td>NIF (done)</td>
+<td>Late 2020s</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-honest-assessment">The honest assessment<a aria-hidden="true" class="heading-link" href="#the-honest-assessment" tabindex="-1" title="Link to this section">#</a></h3>
+<p><strong>The tokamak is winning on physics and losing on engineering.</strong> It has by far the strongest empirical basis, the highest achieved performance, and the only near-term credible path to Q&gt;1 in magnetic confinement (SPARC, 2027). It also has disruptions, pulsed operation, and a first wall that must survive being 2 metres from a <a href="burning-plasma.html">burning plasma</a>.</p>
+<p><strong>The stellarator is the best reactor concept and the worst construction project.</strong> No disruptions and inherently continuous operation are exactly what a utility wants. Building the coils is exactly what a utility does not want to pay for. The whole question is whether design optimisation — planar-coil arrays like Thea's, or quasi-single-stage optimisation — can make them buildable at cost.</p>
+<p><strong>Mirrors and FRCs are the high-variance bets with the best endgame.</strong> Simple geometry, easy maintenance, direct energy conversion, and a plausible route to aneutronic fuels. Also the least data.</p>
+<p><strong>ICF has the only demonstrated ignition and the largest engineering gap.</strong> NIF proved the physics that Nuckolls proposed in 1972. Turning that into 20 shots per second with $0.25 targets is a manufacturing problem of a scale the field has never attempted.</p>
+<p><strong>MIF is a genuine attempt to find an easier corner of parameter space</strong>, and its leading exponents — General Fusion's liquid wall, Helion's direct recovery, Zap's coil-free pinch — each solve a <em>different</em> one of fusion's engineering problems by construction rather than by effort. If any of them works, it likely works cheaply.</p>
+<p>The field's current state is best described not as a race between these but as <strong>a portfolio</strong>, deliberately maintained. The DOE roadmap explicitly funds "Advancing Confinement Approaches" as a challenge area covering tokamaks, stellarators and IFE simultaneously, and the FIA data shows no convergence: the market has emphatically <strong>not</strong> settled on a winner.</p>
+<h2 id="evidence-in-raw">Evidence in <code>raw/</code><a aria-hidden="true" class="heading-link" href="#evidence-in-raw" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Primary sources held in this vault that evidence the claims above:</p>
+<ul>
+<li><a href="novel-approach-proton-boron-11-fusion-2026.html">A Novel Approach to Proton-Boron-11 Fusion</a></li>
+</ul>
+<hr/>
+<p><strong>Continue to:</strong> <a href="04-magnetic-confinement-devices.html">04 — Magnetic Confinement Devices</a> · <a href="05-inertial-confinement-fusion.html">05 — Inertial Confinement Fusion</a> · <a href="07-private-fusion-industry.html">07 — The Private Fusion Industry</a></p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/synthesis/03-confinement-approaches.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/synthesis/03-confinement-approaches.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="04-magnetic-confinement-devices.html">Magnetic Confinement Devices</a> <small>Synthesis</small></li><li><a href="05-inertial-confinement-fusion.html">Inertial Confinement Fusion</a> <small>Synthesis</small></li><li><a href="07-private-fusion-industry.html">The Private Fusion Industry</a> <small>Synthesis</small></li></ul></section><details class="backlinks"><summary>Linked from 21 library notes</summary><ul><li><a href="01-fusion-physics-fundamentals.html">Physics Fundamentals</a></li><li><a href="02-history-1920-2026.html">History 1920-2026</a></li><li><a href="30-power-plant-designs-compared.html">Power Plant Designs Compared</a></li><li><a href="31-plasma-physics-deeper-cuts.html">Plasma Physics: The Deeper Cuts</a></li><li><a href="36-fusions-global-periphery.html">Fusion&#x27;s Global Periphery</a></li><li><a href="avalanche-energy.html">Avalanche Energy</a></li><li><a href="first-light-fusion.html">First Light Fusion</a></li><li><a href="gauss-fusion.html">Gauss Fusion</a></li><li><a href="kstar.html">KSTAR</a></li><li><a href="lm26.html">Lawson Machine 26 (LM26)</a></li><li><a href="magneto-inertial-fusion.html">Magneto-Inertial Fusion (MIF)</a></li><li><a href="neofusion.html">NeoFusion</a></li><li><a href="novatron.html">Novatron Fusion Group</a></li><li><a href="novel-approach-proton-boron-11-fusion-2026.html">A Novel Approach to Proton-Boron-11 Fusion</a></li><li><a href="openstar-technologies.html">OpenStar Technologies</a></li><li><a href="st40.html">ST40</a></li><li><a href="stellarator.html">Stellarator</a></li><li><a href="stellarex.html">Stellarex Energy</a></li><li><a href="tokamak.html">Tokamak</a></li><li><a href="xcimer-energy.html">Xcimer Energy</a></li><li><a href="zap-energy.html">Zap Energy</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

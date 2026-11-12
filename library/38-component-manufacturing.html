@@ -1,0 +1,169 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Component Manufacturing — Project Lux</title><meta name="description" content="Project Lux · How you actually build the parts, and why a fleet is a factory problem"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/38-component-manufacturing.html"><meta property="og:title" content="Component Manufacturing — Project Lux"><meta property="og:description" content="Project Lux · How you actually build the parts, and why a fleet is a factory problem"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/38-component-manufacturing.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Synthesis</p><p class="eyebrow">Synthesis · Document 38</p><h1 id="doc-title">Component Manufacturing</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Synthesis</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-11-02">2 November 2026</time></dd></div><div><dt>First written</dt><dd>25 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=engineering">engineering</a><a href="index.html?topic=manufacturing">manufacturing</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#1-the-problem-statement">1. The problem statement</a></li><li><a href="#2-the-tungsten-monoblock--fusions-defining-component">2. The tungsten monoblock — fusion&#x27;s defining component</a></li><li><a href="#3-the-joining-technologies">3. The joining technologies</a></li><li><a href="#4-the-qualification-result-that-matters">4. The qualification result that matters</a></li><li><a href="#5-beyond-the-divertor-the-other-manufacturing-problems">5. Beyond the divertor: the other manufacturing problems</a></li><li><a href="#6-the-transition-nobody-has-made">6. The transition nobody has made</a></li><li><a href="#7-assessment">7. Assessment</a></li><li><a href="#8-stellarator-coils-from-bespoke-geometry-to-repeatable-planar-units">8. Stellarator coils: from bespoke geometry to repeatable planar units</a></li><li><a href="#9-vanadium-alloy-a-material-with-a-process-history-but-no-production-line">9. Vanadium alloy: a material with a process history but no production line</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><em>Project Lux · How you actually build the parts, and why a fleet is a factory problem</em></p>
+<hr/>
+<h2 id="1-the-problem-statement">1. The problem statement<a aria-hidden="true" class="heading-link" href="#1-the-problem-statement" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Every other document in this dossier treats components as things that exist: a <a href="divertor.html">Divertor</a>, a blanket module, a magnet. This one asks how they are made, and the answer determines whether fusion can scale.</p>
+<p>The gap between one machine and a fleet is a <strong>manufacturing</strong> gap. <a href="iter.html">ITER</a> has <strong>54 divertor cassettes</strong> and <strong>440 blanket modules</strong>. A single divertor cassette carries <strong>thousands of <a href="tungsten-pfc.html">tungsten</a> monoblocks</strong>. A fleet of a hundred plants, each replacing its divertor every year or two, implies <strong>millions of precision-bonded, actively cooled, high-heat-flux components per decade</strong> — produced to nuclear quality standards, from materials that are difficult to machine, joined by processes that are difficult to qualify.</p>
+<p>Nobody makes these at that rate. Nobody has ever needed to.</p>
+<hr/>
+<h2 id="2-the-tungsten-monoblock--fusions-defining-component">2. The tungsten monoblock — fusion's defining component<a aria-hidden="true" class="heading-link" href="#2-the-tungsten-monoblock--fusions-defining-component" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The plasma-facing surface of a modern divertor is built from <strong>monoblocks</strong>: rectangular blocks of tungsten, roughly 25 mm across, each drilled through with a hole carrying a <strong>copper-alloy cooling tube</strong>, threaded onto that tube in a row like beads on a string.</p>
+<p>Each monoblock must:</p>
+<ul>
+<li>Survive <strong>10–20 MW/m²</strong> of steady heat flux, plus transients</li>
+<li>Conduct that heat through a <strong>tungsten-to-copper bond</strong> across a large thermal-expansion mismatch</li>
+<li>Endure <strong>thousands of thermal cycles</strong> without the bond failing</li>
+<li>Do all of the above while being neutron-irradiated and eroded</li>
+</ul>
+<p><strong>The bond is the hard part.</strong> Tungsten and copper have very different thermal expansion coefficients, so every thermal cycle works the joint. A single failed bond creates a hot spot that melts, and one melted monoblock can contaminate an entire plasma.</p>
+<hr/>
+<h2 id="3-the-joining-technologies">3. The joining technologies<a aria-hidden="true" class="heading-link" href="#3-the-joining-technologies" tabindex="-1" title="Link to this section">#</a></h2>
+<p>There is no single answer; several processes are in qualification simultaneously.</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Technique</th>
+<th scope="col">How it works</th>
+<th scope="col">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HIP</strong> (Hot Isostatic Pressing)</td>
+<td>Component held at high temperature under high isostatic gas pressure; diffusion bonds the interfaces and closes porosity</td>
+<td>The workhorse. Also used to <strong>close residual pores in additively manufactured parts</strong></td>
+</tr>
+<tr>
+<td><strong>HRP</strong> (Hot Radial Pressing)</td>
+<td><strong>Pressurises only the internal cooling tube</strong>, expanding it against the monoblock, while the joining zone is held in vacuum at bonding temperature</td>
+<td>Elegant: radial diffusion bonding without pressurising the whole part. Used for DEMO divertor target mock-ups with advanced W-alloy monoblocks</td>
+</tr>
+<tr>
+<td><strong>Brazing</strong></td>
+<td>Filler metal melted at the interface — <strong>Cu-Mn-based fillers</strong> are common</td>
+<td>Simpler and cheaper; lower temperature capability</td>
+</tr>
+<tr>
+<td><strong>Functionally graded interlayers</strong></td>
+<td>A <strong>W/Cu functionally graded material</strong> between the tungsten and the copper, so the thermal expansion mismatch is spread over a gradient rather than concentrated at a discontinuity</td>
+<td>Attacks the root cause rather than the symptom</td>
+</tr>
+<tr>
+<td><strong>Diffusion welding</strong></td>
+<td>Solid-state joining under pressure and temperature</td>
+<td>Under qualification</td>
+</tr>
+<tr>
+<td><strong>Plasma spraying</strong></td>
+<td>W-based coatings deposited directly onto a heat sink</td>
+<td>Under qualification; avoids a discrete joint entirely</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="additive-manufacturing-enters">Additive manufacturing enters<a aria-hidden="true" class="heading-link" href="#additive-manufacturing-enters" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The newest route: <strong>tungsten monoblock components produced via Laser Powder Bed Fusion (LPBF), then post-processed by HIP</strong> — the HIP step both closes residual porosity from the printing process <em>and</em> simulates the diffusion bond between heat sink and tungsten.</p>
+<p>Additive manufacturing is attractive for fusion for reasons beyond geometry: it allows <strong>internal cooling channel designs</strong> that cannot be machined, it reduces the number of joints (each of which is a failure site), and it suits <strong>low-volume, high-complexity</strong> production. DEMO divertor work is exploring <strong>fibre reinforcement combined with additive manufacturing</strong> for the same reason.</p>
+<p>Tungsten is, however, among the hardest materials to print — high melting point, high thermal conductivity, brittle, and prone to cracking on rapid solidification. That it works at all is recent.</p>
+<hr/>
+<h2 id="4-the-qualification-result-that-matters">4. The qualification result that matters<a aria-hidden="true" class="heading-link" href="#4-the-qualification-result-that-matters" tabindex="-1" title="Link to this section">#</a></h2>
+<p>The most important published number in this area:</p>
+<blockquote>
+<p>Small-scale tungsten monoblock mock-ups manufactured by <strong>different bonding technologies</strong> were tested under high heat flux in the <strong>ITER Divertor Test Facility</strong>, and <strong>all W monoblocks endured repetitive heat load at 20 MW/m² for 1,000 cycles without failure.</strong></p>
+</blockquote>
+<p>Two things follow from this.</p>
+<p><strong>First, the technology works.</strong> 20 MW/m² is at the top of the material limit band (<a href="09-engineering-challenges.html">Document 09</a>), and 1,000 cycles without failure across <em>multiple different bonding routes</em> is a genuinely strong result. The divertor's steady-state heat flux problem is, at the component level, solved.</p>
+<p><strong>Second, note what the test did not include.</strong> These were <strong>unirradiated</strong> mock-ups. Neutron irradiation embrittles tungsten, raises its ductile-to-brittle transition temperature, transmutes it to rhenium and osmium, and degrades the copper alloy heat sink. <strong>A component that survives 1,000 cycles at 20 MW/m² fresh is not demonstrated to survive them at 30 dpa</strong> — and, per <a href="09-engineering-challenges.html">Document 09</a>, there is no facility that can find out.</p>
+<p>The DOE roadmap's Challenge Area B milestones say exactly this: mid-term, <em>"test tungsten and Cu-alloy mockups for fatigue, creep, and thermomechanical durability"</em>; long-term, <em>"validate tungsten-based and liquid-metal PFCs under fusion-prototypic neutron, heat, and plasma flux"</em> and <em>"demonstrate component-scale endurance: recrystallization resistance, crack thresholds, and transmutation effects."</em></p>
+<h3 id="where-this-is-being-tested-today">Where this is being tested today<a aria-hidden="true" class="heading-link" href="#where-this-is-being-tested-today" tabindex="-1" title="Link to this section">#</a></h3>
+<ul>
+<li><strong>ITER Divertor Test Facility</strong> — high heat flux qualification</li>
+<li><strong><a href="west.html">WEST</a></strong> (CEA Cadarache) — high heat flux testing of newly developed tungsten components in an actual <a href="tokamak.html">Tokamak</a> with an actively cooled tungsten divertor</li>
+<li><strong>W7-X</strong> — tungsten-based divertor development for a <a href="stellarator.html">Stellarator</a> geometry</li>
+<li><strong><a href="mpex.html">MPEX</a></strong> (ORNL) — commissioning to deliver plasma exposure testing, a near-term DOE milestone</li>
+</ul>
+<hr/>
+<h2 id="5-beyond-the-divertor-the-other-manufacturing-problems">5. Beyond the divertor: the other manufacturing problems<a aria-hidden="true" class="heading-link" href="#5-beyond-the-divertor-the-other-manufacturing-problems" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="blanket-modules">Blanket modules<a aria-hidden="true" class="heading-link" href="#blanket-modules" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Larger, more complex, and made from materials that are themselves not yet qualified. A breeding blanket module contains breeder material, a neutron multiplier, coolant channels, tritium purge paths, and structural steel — all in a component that must be neutronically transparent enough to breed, thick enough to shield, and strong enough to hold pressure.</p>
+<p>DOE's near-term materials milestone is telling: <strong>establish domestic industrial heat capability for multi-tonne Fe-alloy and 500 kg V-alloy heats.</strong> A "heat" is a single melt of steel. The United States currently cannot melt fusion-grade reduced-activation steel at industrial scale. That is not a research problem; it is a foundry problem, and it is on the critical path.</p>
+<h3 id="thick-section-welding">Thick-section welding<a aria-hidden="true" class="heading-link" href="#thick-section-welding" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Vacuum vessels are made of thick stainless steel sections joined by long welds. <a href="25-failure-case-studies.html">Document 25</a> documents what happens when this goes wrong: ITER's vessel sectors distorted beyond tolerance during segment welding, invalidating the automated field-joint assembly method for the entire machine.</p>
+<p>DOE's long-term milestone — <em>"qualify domestic manufacturing of thick-section heats and additive builds"</em> — reflects that this is a capability, not a given.</p>
+<h3 id="hts-magnets">HTS magnets<a aria-hidden="true" class="heading-link" href="#hts-magnets" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Covered in <a href="18-superconductors-and-magnets.html">Document 18</a>. The manufacturing summary: ~10,000 km/year of global REBCO tape capacity, cables (VIPER, CORC, HRP-bonded stacks) that must be wound into non-planar geometries, and <strong>the first US modular HTS magnet production line only funded in July 2026</strong> via <a href="arpa-e.html">ARPA-E</a>'s $20 m to <a href="thea-energy.html">Thea Energy</a>.</p>
+<h3 id="targets-for-inertial-fusion">Targets, for inertial fusion<a aria-hidden="true" class="heading-link" href="#targets-for-inertial-fusion" tabindex="-1" title="Link to this section">#</a></h3>
+<p>An entirely different manufacturing problem and arguably the largest one in the field. A laser IFE plant at 15 Hz consumes roughly <strong>500 million targets per year</strong>, each a near-perfect sphere with a cryogenic D-T layer, at a unit cost below <strong>$0.50</strong> (<a href="05-inertial-confinement-fusion.html">Document 05</a>).</p>
+<p>The August 2026 <strong>Inertia / LLNL</strong> result — cutting cryogenic D-T fuel layer formation from <strong>days to 2–3 hours</strong>, with a path below an hour, while maintaining ignition-proven tolerances — is a manufacturing result, not a physics one, and it is the most consequential IFE development of the year for exactly that reason.</p>
+<hr/>
+<h2 id="6-the-transition-nobody-has-made">6. The transition nobody has made<a aria-hidden="true" class="heading-link" href="#6-the-transition-nobody-has-made" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Fusion components today are made the way research hardware is made: <strong>small batches, hand-finished, individually inspected, by a handful of specialist suppliers, at costs nobody optimises</strong>.</p>
+<p>A fleet requires the opposite: <strong>high volume, automated, statistically controlled, multi-sourced, cost-driven</strong> — the transition every technology makes on its way from prototype to product, and the one that generates the learning curve fusion's economics depend on (<a href="10-economics-and-markets.html">Document 10</a>).</p>
+<p>The obstacles are specific:</p>
+<ol>
+<li><strong>No qualified materials</strong> means no stable specification to manufacture against (<a href="23-standards-codes-liability.html">Document 23</a>)</li>
+<li><strong>No codes</strong> means every component requires bespoke justification, which cannot be automated</li>
+<li><strong>No volume</strong> means no supplier will invest in tooling — and no volume exists until plants are built</li>
+<li><strong>Concentrated inputs</strong> — tungsten, REBCO, beryllium, Li-6 — cap throughput regardless of demand (<a href="22-critical-materials-supply-chains.html">Document 22</a>)</li>
+<li><strong>Nuclear quality assurance</strong> adds documentation and traceability overhead to every part</li>
+</ol>
+<p>That third item is the classic chicken-and-egg of first-of-a-kind industries, and it is what the DOE roadmap's <strong>"Seed Fusion Supply Chains"</strong> action and CFS's decision to sell magnets as a merchant product are both attempts to break.</p>
+<hr/>
+<h2 id="7-assessment">7. Assessment<a aria-hidden="true" class="heading-link" href="#7-assessment" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>At the component level, fusion's high-heat-flux problem is in better shape than the popular account suggests.</strong> Tungsten monoblocks bonded by several independent routes have survived 1,000 cycles at 20 MW/m² in the ITER Divertor Test Facility. That is a real, qualified, multi-vendor result.</p>
+<p><strong>At the system level, the same components have never been tested irradiated</strong>, and the facility to do so does not exist. This is the same gap that appears in <a href="09-engineering-challenges.html">Document 09</a>, restated in manufacturing terms: <em>we can build the part, and we cannot yet certify it will survive a reactor.</em></p>
+<p><strong>The unglamorous milestones matter most.</strong> A domestic melt capability for multi-tonne reduced-activation steel; a US HTS magnet production line; a cryogenic pellet extrusion system that runs at reactor rates; a target factory. None of these will make a headline, and each of them is a precondition for a fleet.</p>
+<p><strong>The single clearest statement of fusion's real status</strong> may be this: the United States, in 2026, funded its first production line for fusion magnets and does not yet have the industrial capacity to melt fusion-grade structural steel at scale. The physics is nearly ready. <strong>The factories have not been built.</strong></p>
+<h2 id="8-stellarator-coils-from-bespoke-geometry-to-repeatable-planar-units">8. Stellarator coils: from bespoke geometry to repeatable planar units<a aria-hidden="true" class="heading-link" href="#8-stellarator-coils-from-bespoke-geometry-to-repeatable-planar-units" tabindex="-1" title="Link to this section">#</a></h2>
+<p><a href="wendelstein-7-x.html">Wendelstein 7-X</a> demonstrates the traditional manufacturing problem: 50 individually complex non-planar superconducting coils held to roughly millimetre-scale geometry. <a href="thea-energy.html">Thea Energy</a>'s answer is not to improve that production line but to replace it with many simple planar <a href="rebco.html">REBCO High-Temperature Superconductor</a> shaping coils whose currents synthesise the three-dimensional field.</p>
+<p><a href="canis.html">Canis</a> is the first local primary evidence for that manufacturing argument. The programme made <strong>nine complete winding packs from 45 double pancakes</strong>, using REBCO from <strong>three suppliers</strong> without tailoring the baseline process to each supplier. A dedicated line reached roughly <strong>half a day takt time</strong> and <strong>no more than three days total production time per double pancake</strong>. The coils were assembled as a 3 × 3 array and operated at <strong>20 K</strong>. Two static field patterns measured 25 cm from the array had RMS errors of <strong>0.56% and 0.60%</strong> against prediction (<a href="prototyping-test-canis-hts-planar-coil-array.html">Prototyping and Test of the Canis HTS Planar Coil Array for Stellarator Field Shaping</a>).</p>
+<p>This closes the recorded gap only at prototype scale. Canis was flat; it did not create toroidal flux, closed flux surfaces, quasisymmetry or a plasma, and it did not reproduce the forces, currents or systems density of <a href="eos.html">Eos</a>. Transient control, multiple quench scenarios, manufacturing-defect robustness and dense field-shaping-unit integration remained future work. The demonstrated claim is therefore narrower and more useful than “the planar-coil stellarator works”: <strong>repeatable planar HTS coil manufacture and coupled static control have been shown; integrated stellarator performance has not.</strong></p>
+<h2 id="9-vanadium-alloy-a-material-with-a-process-history-but-no-production-line">9. Vanadium alloy: a material with a process history but no production line<a aria-hidden="true" class="heading-link" href="#9-vanadium-alloy-a-material-with-a-process-history-but-no-production-line" tabindex="-1" title="Link to this section">#</a></h2>
+<p><em>Added 2026-11-02.</em></p>
+<p><a href="vanadium-alloys.html">V-4Cr-4Ti</a> is the clearest case in this document of a material whose
+<em>metallurgy</em> is better understood than its <em>manufacture</em>.
+<a href="ukaea-2026-vanadium-strategy.html">UKAEA's vanadium strategy</a> compiles the documented heats:</p>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Heat</th>
+<th scope="col">Scale</th>
+<th scope="col">Route</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Industrial (Johnson &amp; Smith)</td>
+<td><strong>1200 kg</strong></td>
+<td>Aluminothermic-reduction V + high-purity Cr/Ti → EBM purification → double vacuum-arc melting → extrusion → warm/cold rolling → repeated vacuum anneal 1000–1050 °C</td>
+</tr>
+<tr>
+<td>NIFS-HEAT-1 (Muroga <em>et al.</em>)</td>
+<td><strong>30 kg</strong>, 200 kg planned</td>
+<td>EBM of V, Cr, Ti → vacuum arc remelting; no downstream forming</td>
+</tr>
+<tr>
+<td>SWIP-30 (Fu <em>et al.</em>)</td>
+<td><strong>30 kg</strong></td>
+<td>Double EBM in high vacuum → hot forging → hot rolling (~85% deformation) → cold rolling → vacuum anneal 1273–1293 K</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three heats, three continents, three decades — and a <strong>1200 kg</strong> ceiling. Tubing technology for
+high-purity low-activation V-4Cr-4Ti exists (Nagasaka <em>et al.</em> 2003), and gas tungsten arc and
+laser welding have been demonstrated with post-weld heat treatment optimised through precipitation
+control. So forming and joining are not blank.</p>
+<p><strong>What is blank is qualification and volume.</strong> UKAEA is attempting qualification by a <em>novel
+digital route</em> — Bayesian optimisation over literature and tensile data to 900 °C producing a
+surrogate model, with EPRI engaged for regulatory acceptance — precisely because the
+irradiation-and-test campaign the conventional route would demand does not exist and would take
+decades. Impurity control is the binding constraint, and a standard composition with impurity
+limits has <strong>not yet been specified</strong>.</p>
+<aside class="callout callout-note"><p class="callout-label">Note</p>
+<p>Compare Canis above
+Canis is the pattern this document rewards: a dedicated line, a measured takt time, repeatable
+output. Vanadium has none of those — no takt time, no line, no supplier base. The contrast is the
+point. A design can select a material in a paper far faster than an industry can learn to melt
+it, and <a href="st-e1.html">ST-E1</a> has selected this one. See <a href="22-critical-materials-supply-chains.html">Critical Materials and Supply Chains</a> §5.</p>
+</aside>
+<hr/>
+<p><strong>Continue to:</strong> <a href="39-the-discourse.html">39 — The Discourse</a> · <a href="22-critical-materials-supply-chains.html">22 — Critical Materials and Supply Chains</a> · <a href="09-engineering-challenges.html">09 — Engineering Challenges</a></p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/synthesis/38-component-manufacturing.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/synthesis/38-component-manufacturing.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="05-inertial-confinement-fusion.html">Inertial Confinement Fusion</a> <small>Synthesis</small></li><li><a href="09-engineering-challenges.html">Engineering Challenges</a> <small>Synthesis</small></li><li><a href="10-economics-and-markets.html">Economics and Markets</a> <small>Synthesis</small></li><li><a href="18-superconductors-and-magnets.html">Superconductors and Magnet Engineering</a> <small>Synthesis</small></li><li><a href="22-critical-materials-supply-chains.html">Critical Materials and Supply Chains</a> <small>Synthesis</small></li><li><a href="23-standards-codes-liability.html">Standards, Codes and Liability</a> <small>Synthesis</small></li><li><a href="25-failure-case-studies.html">Failure Case Studies</a> <small>Synthesis</small></li><li><a href="39-the-discourse.html">The Discourse</a> <small>Synthesis</small></li></ul></section><details class="backlinks"><summary>Linked from 16 library notes</summary><ul><li><a href="00-executive-summary.html">Executive Summary</a></li><li><a href="37-military-dual-use-security.html">Military, Dual-Use and Security</a></li><li><a href="blue-laser-fusion.html">Blue Laser Fusion</a></li><li><a href="canis.html">Canis</a></li><li><a href="ex-fusion.html">EX-Fusion</a></li><li><a href="inertia-enterprises.html">Inertia Enterprises</a></li><li><a href="moc-engineering.html">MOC — Engineering</a></li><li><a href="mpex.html">MPEX</a></li><li><a href="prototyping-test-canis-hts-planar-coil-array.html">Prototyping and Test of the Canis HTS Planar Coil Array for Stellarator Field Shaping</a></li><li><a href="rafm-steel.html">Reduced-Activation Steels</a></li><li><a href="rayleigh-taylor-instability.html">Rayleigh-Taylor Instability in ICF</a></li><li><a href="renaissance-fusion.html">Renaissance Fusion</a></li><li><a href="tungsten-pfc.html">Tungsten Plasma-Facing Components</a></li><li><a href="ukaea-2026-vanadium-strategy.html">UKAEA Vanadium Strategy (LIBRTI conference presentation)</a></li><li><a href="vanadium-alloys.html">Vanadium Alloys</a></li><li><a href="west.html">WEST</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

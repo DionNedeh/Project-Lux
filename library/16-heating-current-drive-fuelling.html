@@ -1,0 +1,199 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Heating, Current Drive and Fuelling — Project Lux</title><meta name="description" content="Project Lux · How you actually get a plasma to 150 million degrees, keep current flowing in it, and feed it"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/16-heating-current-drive-fuelling.html"><meta property="og:title" content="Heating, Current Drive and Fuelling — Project Lux"><meta property="og:description" content="Project Lux · How you actually get a plasma to 150 million degrees, keep current flowing in it, and feed it"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/16-heating-current-drive-fuelling.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Synthesis</p><p class="eyebrow">Synthesis · Document 16</p><h1 id="doc-title">Heating, Current Drive and Fuelling</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Synthesis</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-08-26">26 August 2026</time></dd></div><div><dt>First written</dt><dd>25 August 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=engineering">engineering</a><a href="index.html?topic=subsystems">subsystems</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#why-this-is-a-document-of-its-own">Why this is a document of its own</a></li><li><a href="#1-ohmic-heating--and-why-it-runs-out">1. Ohmic heating — and why it runs out</a></li><li><a href="#2-neutral-beam-injection-nbi">2. Neutral Beam Injection (NBI)</a></li><li><a href="#3-electron-cyclotron-resonance-heating-ecrh-and-gyrotrons">3. Electron Cyclotron Resonance Heating (ECRH) and gyrotrons</a></li><li><a href="#4-ion-cyclotron-resonance-heating-icrh">4. Ion Cyclotron Resonance Heating (ICRH)</a></li><li><a href="#5-current-drive--the-steady-state-problem">5. Current drive — the steady-state problem</a></li><li><a href="#6-using-heating-for-control-not-just-heat">6. Using heating for control, not just heat</a></li><li><a href="#7-fuelling">7. Fuelling</a></li><li><a href="#8-what-this-means-for-plant-design">8. What this means for plant design</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p><em>Project Lux · How you actually get a plasma to 150 million degrees, keep current flowing in it, and feed it</em></p>
+<hr/>
+<h2 id="why-this-is-a-document-of-its-own">Why this is a document of its own<a aria-hidden="true" class="heading-link" href="#why-this-is-a-document-of-its-own" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A <a href="tokamak.html">Tokamak</a> is often described as if the magnets were the machine. They are not. The magnets <em>hold</em> the plasma; something else has to <strong>heat it, drive current in it, and refuel it</strong> — continuously, from outside a vacuum vessel, through ports that also want to be occupied by breeding blanket.</p>
+<p>These auxiliary systems are, collectively, among the largest cost items in a fusion plant, the dominant contributors to <a href="recirculating-power.html">recirculating power</a>, and the systems that most constrain where the blanket can go. <a href="iter.html">ITER</a>'s heating systems alone represent a multi-billion-euro procurement across three technologies, each of which required its own dedicated test facility.</p>
+<p>They also set a hard limit on plant economics. Every megawatt of heating power is a megawatt drawn from the plant's own output at 30–50% wall-plug efficiency, which is why Q_eng and Q_sci diverge so sharply (<a href="01-fusion-physics-fundamentals.html">Document 01 §5</a>).</p>
+<hr/>
+<h2 id="1-ohmic-heating--and-why-it-runs-out">1. Ohmic heating — and why it runs out<a aria-hidden="true" class="heading-link" href="#1-ohmic-heating--and-why-it-runs-out" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A tokamak's plasma current is driven inductively: the central solenoid acts as a transformer primary, the plasma as a single-turn secondary. That current dissipates resistively and heats the plasma. Free, simple, and the only heating the earliest tokamaks had.</p>
+<p>It fails for a specific and elegant reason. <strong>Plasma resistivity scales as T⁻³/²</strong> (Spitzer resistivity). The hotter the plasma gets, the better a conductor it becomes, and the less the same current heats it. Ohmic heating saturates around <strong>1–2 keV</strong> — roughly 10–20 million K.</p>
+<p>D-T fusion needs 10–20 keV. So every fusion-relevant device needs <strong>auxiliary heating</strong>, and the search for it defined 1970s fusion engineering. PLT's achievement of 60 million K in 1978 using neutral beams was the moment this was settled.</p>
+<hr/>
+<h2 id="2-neutral-beam-injection-nbi">2. <a href="neutral-beam-injection.html">Neutral Beam Injection (NBI)</a><a aria-hidden="true" class="heading-link" href="#2-neutral-beam-injection-nbi" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-principle">The principle<a aria-hidden="true" class="heading-link" href="#the-principle" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Accelerate ions electrostatically to high energy, <strong>neutralise them</strong> so they can cross the magnetic field, inject them into the plasma, where they re-ionise and thermalise by collisions — depositing energy and momentum.</p>
+<p>NBI is unique among heating methods in that it does four things at once:</p>
+<ul>
+<li><strong>Heats</strong> the plasma</li>
+<li><strong>Drives current</strong> (the beam carries directional momentum)</li>
+<li><strong>Fuels</strong> the plasma (the beam particles are fuel)</li>
+<li><strong>Drives rotation</strong> (which stabilises certain MHD modes)</li>
+</ul>
+<p>That combination is why it remains the workhorse despite being the most mechanically complex option.</p>
+<h3 id="the-negative-ion-problem">The negative-ion problem<a aria-hidden="true" class="heading-link" href="#the-negative-ion-problem" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Here is the engineering fork that defines modern NBI.</p>
+<p>To penetrate to the centre of a large, dense plasma, beam particles must be energetic — for ITER, around <strong>1 MeV per nucleon-equivalent</strong>. But the neutralisation efficiency of <strong>positive</strong> ions collapses above roughly 100 keV/amu: a fast D⁺ simply will not pick up an electron from a gas target.</p>
+<p><strong>Negative ions (D⁻) neutralise efficiently at any energy</strong> — you are stripping a loosely bound extra electron rather than capturing one. So every high-energy fusion beamline must be built around negative ions.</p>
+<p>That decision cascades into difficulty:</p>
+<ul>
+<li>D⁻ is fragile. Its binding energy is under 1 eV, so it is destroyed by collisions with background gas, by stray electric fields, and by photons.</li>
+<li>Producing D⁻ in quantity requires a <strong>caesiated surface</strong> — caesium evaporated onto the plasma grid lowers the work function so that atoms bouncing off it pick up an electron. Caesium then migrates, contaminates, and must be continuously managed.</li>
+<li>Co-extracted electrons must be dumped before the acceleration stage or they consume the entire power supply.</li>
+<li>The whole accelerator sits at −1 MV inside an SF₆-insulated vessel, and voltage holding at that level across large-area grids is itself a research problem.</li>
+</ul>
+<h3 id="iters-system">ITER's system<a aria-hidden="true" class="heading-link" href="#iters-system" tabindex="-1" title="Link to this section">#</a></h3>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col"></th>
+<th scope="col"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total NBI heating power</td>
+<td><strong>33 MW</strong></td>
+</tr>
+<tr>
+<td>Beam energy</td>
+<td><strong>~1 MeV</strong></td>
+</tr>
+<tr>
+<td>Negative deuterium ion current</td>
+<td><strong>40 A per injector</strong></td>
+</tr>
+<tr>
+<td>Power delivered per injector</td>
+<td><strong>~16.5 MW</strong></td>
+</tr>
+<tr>
+<td>Pulse length</td>
+<td><strong>one hour</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-test-facilities-that-had-to-be-built-first">The test facilities that had to be built first<a aria-hidden="true" class="heading-link" href="#the-test-facilities-that-had-to-be-built-first" tabindex="-1" title="Link to this section">#</a></h3>
+<p>ITER's beams were considered too risky to build without a full-scale prototype, so a dedicated facility — <strong>PRIMA / <a href="nbtf-spider-mitica.html">NBTF</a></strong>, at Consorzio RFX in Padua, Italy — was constructed to house two test stands:</p>
+<ul>
+<li><strong>SPIDER</strong> — <em>Source for the Production of Ions of Deuterium Extracted from Rf plasma</em>. A full ITER-scale negative ion source, operating since <strong>2018</strong>, developing caesium injection strategies, beam uniformity and co-extracted electron control.</li>
+<li><strong>MITICA</strong> — the complete <strong>1 MV</strong> injector: source, electrostatic accelerator, neutraliser, residual ion dump, and calorimeter. In advanced construction.</li>
+</ul>
+<p>The existence of these facilities is itself informative: <strong>a heating system for ITER required a research programme comparable in scale to a mid-sized tokamak</strong>. Any company claiming a compact machine with substantial NBI power inherits that problem.</p>
+<h3 id="the-private-sector-twist">The private-sector twist<a aria-hidden="true" class="heading-link" href="#the-private-sector-twist" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Some concepts use beams not as auxiliary heating but as the <strong>primary physics mechanism</strong>:</p>
+<ul>
+<li><strong><a href="tae-technologies.html">TAE Technologies</a></strong> drives its <a href="field-reversed-configuration.html">field-reversed configuration</a> entirely with neutral beams — the beams sustain the FRC against decay, provide a stabilising fast-ion population, and heat. TAE's 2025-26 announcement that "Norm" achieved plasma formation with <strong>neutral beams alone</strong> was a simplification of exactly this kind.</li>
+<li>Beam-driven fast-ion populations are also central to several mirror concepts.</li>
+</ul>
+<hr/>
+<h2 id="3-electron-cyclotron-resonance-heating-ecrh-and-gyrotrons">3. Electron Cyclotron Resonance Heating (ECRH) and gyrotrons<a aria-hidden="true" class="heading-link" href="#3-electron-cyclotron-resonance-heating-ecrh-and-gyrotrons" tabindex="-1" title="Link to this section">#</a></h2>
+<h3 id="the-principle-1">The principle<a aria-hidden="true" class="heading-link" href="#the-principle-1" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Launch microwaves at the <strong>electron cyclotron frequency</strong> — the frequency at which electrons gyrate around the magnetic field lines, <code>f_ce = eB / 2πm_e</code> ≈ <strong>28 GHz per tesla</strong>. At the resonant surface, electrons absorb the wave energy directly.</p>
+<p>ECRH has properties no other heating method has:</p>
+<ul>
+<li><strong>Extreme localisation.</strong> Because the resonance depends on local B, and B varies across the plasma, you can deposit power at a chosen radius by choosing a frequency — or by steering a mirror. Deposition widths of a few centimetres in a metres-wide plasma are routine.</li>
+<li><strong>No coupling structure inside the vessel.</strong> The wave propagates in vacuum; the launcher can sit behind a port. Nothing has to touch the plasma.</li>
+<li><strong>Polarisation-selectable current drive</strong> (ECCD).</li>
+</ul>
+<p>That localisation is what makes ECRH the primary tool for <strong>MHD control</strong> (see §6) rather than merely bulk heating.</p>
+<h3 id="the-gyrotron">The gyrotron<a aria-hidden="true" class="heading-link" href="#the-gyrotron" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Generating megawatts of continuous millimetre-wave power required a device class of its own. A <strong>gyrotron</strong> is a fast-wave vacuum electron tube: an electron beam spirals in a strong superconducting magnet, and the electrons bunch in gyration phase, radiating coherently at the cyclotron frequency into a high-order cavity mode.</p>
+<p><strong>ITER requires 24 gyrotrons at 170 GHz, 1 MW each, for 3,600-second pulses.</strong></p>
+<p>That specification — megawatt, continuous, at a wavelength of 1.8 mm — is at the edge of what vacuum electronics can do. The engineering problems are the collector (dumping a megawatt of spent beam), the output window (a synthetic-diamond disc, the only material that is both transparent at 170 GHz and able to conduct the heat away), and mode purity.</p>
+<h3 id="the-2026-milestone">The 2026 milestone<a aria-hidden="true" class="heading-link" href="#the-2026-milestone" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The first <strong>170 GHz, 1 MW gyrotron for the <a href="dtt.html">DTT</a> ECRH system</strong> completed acceptance testing at the <strong>FALCON facility in Lausanne</strong> (EPFL Swiss Plasma Center):</p>
+<ul>
+<li><strong>1 MW of RF power at 170 GHz for 100-second pulses</strong>, delivered into an RF load as a 3 cm-diameter Gaussian beam</li>
+<li>Pre-series tube manufactured by <strong>THALES</strong>: <strong>1.02 MW</strong>, RF power stability <strong>&lt;5%</strong>, <strong>efficiency 40%</strong>, five consecutive 100 s pulses with no parasitic modes</li>
+<li><strong>95% reliability — 19 successful pulses out of 20 attempts</strong></li>
+</ul>
+<p>This is a <strong>joint F4E and DTT procurement</strong>, supplying both ITER and DTT — a rare instance of two major programmes sharing a component line, which is precisely how a supply chain is supposed to work.</p>
+<p>The ITER tubes use a high-order <strong>TE₃₁,₁₁</strong> cavity mode. Development spans 14 GHz to sub-THz, and <strong>megawatt-class sub-THz gyrotrons</strong> are already proposed for future high-field devices — because resonance frequency scales with B, a 12 T machine like <a href="sparc.html">SPARC</a> needs roughly twice ITER's frequency for the same resonance position.</p>
+<hr/>
+<h2 id="4-ion-cyclotron-resonance-heating-icrh">4. Ion Cyclotron Resonance Heating (ICRH)<a aria-hidden="true" class="heading-link" href="#4-ion-cyclotron-resonance-heating-icrh" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Same idea, ions instead of electrons: <code>f_ci ≈ 15 MHz per tesla</code> for deuterium. Tens of megahertz — radio frequencies, not microwaves.</p>
+<p><strong>Advantages:</strong> heats ions directly (which is what fuses); the RF sources are conventional, efficient and comparatively cheap; it can heat the plasma core; and minority-species schemes (a few percent of hydrogen or ³He in a deuterium plasma) give strong, well-localised absorption.</p>
+<p><strong>Disadvantages, and they are serious:</strong> ICRH requires an <strong>antenna inside the vacuum vessel</strong>, close to the plasma. That antenna:</p>
+<ul>
+<li>Occupies wall area that the breeding blanket wants</li>
+<li>Is exposed to the plasma edge, so it sputters impurities into the plasma</li>
+<li>Suffers from poor and variable coupling that depends sensitively on the edge density profile</li>
+<li>Generates RF sheaths that accelerate ions into nearby surfaces</li>
+</ul>
+<p>ICRH's reputation is that it works well when it works and is temperamental. It remains in ITER's suite (<strong>20 MW</strong>) because heating ions directly is too valuable to abandon.</p>
+<hr/>
+<h2 id="5-current-drive--the-steady-state-problem">5. Current drive — the steady-state problem<a aria-hidden="true" class="heading-link" href="#5-current-drive--the-steady-state-problem" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A tokamak's plasma current cannot be sustained inductively forever: the central solenoid is a transformer, and transformers have a finite volt-second budget. When it runs out, the pulse ends.</p>
+<p>There are three ways out, and every tokamak power plant design is some combination of them:</p>
+<h3 id="51-accept-pulsed-operation">5.1 Accept pulsed operation<a aria-hidden="true" class="heading-link" href="#51-accept-pulsed-operation" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Run for hundreds or thousands of seconds, then pause to re-charge the solenoid. This is ITER's approach and the <a href="eu-demo.html">EU DEMO</a> baseline. It works, but it makes the plant a pulsed heat source — with consequences covered in <a href="24-grid-integration-and-operations.html">Document 24</a>.</p>
+<h3 id="52-non-inductive-current-drive">5.2 Non-inductive current drive<a aria-hidden="true" class="heading-link" href="#52-non-inductive-current-drive" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Drive current directly with waves or beams:</p>
+<div aria-label="Table 2 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Method</th>
+<th scope="col">Efficiency</th>
+<th scope="col">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NBI current drive</strong></td>
+<td>Best current-drive efficiency of the RF/beam methods</td>
+<td>But large, complex, and blanket-hostile</td>
+</tr>
+<tr>
+<td><strong>ECCD</strong> (electron cyclotron)</td>
+<td>Lower efficiency</td>
+<td>Superbly localised — the tool of choice for <em>targeted</em> current drive at a specific surface</td>
+</tr>
+<tr>
+<td><strong>LHCD</strong> (lower hybrid)</td>
+<td>Highest efficiency of the RF methods</td>
+<td>But deposits off-axis and couples poorly at reactor-relevant densities</td>
+</tr>
+<tr>
+<td><strong>ICRF fast wave</strong></td>
+<td>Moderate</td>
+<td>Antenna problems as above</td>
+</tr>
+</tbody>
+</table></div>
+<p>All of them cost recirculating power. A plant driving 100% of its current non-inductively would likely be a net energy consumer.</p>
+<h3 id="53-bootstrap-current--the-way-out">5.3 <a href="bootstrap-current.html">Bootstrap current</a> — the way out<a aria-hidden="true" class="heading-link" href="#53-bootstrap-current--the-way-out" tabindex="-1" title="Link to this section">#</a></h3>
+<p>A toroidal plasma with a pressure gradient <strong>drives its own current</strong> through trapped-particle dynamics. This is free current, and the bootstrap fraction rises with plasma pressure (specifically with poloidal beta).</p>
+<p><strong>Advanced tokamak scenarios</strong> target bootstrap fractions of <strong>70–90%</strong>, driving only the remainder externally. This is the only credible route to a steady-state tokamak power plant, and it is why "advanced scenario" development is a permanent line item in every fusion programme.</p>
+<p>The catch: high bootstrap fraction requires broad, hollow current profiles that are more MHD-unstable, and reaching them requires <strong>internal transport barriers</strong> that are themselves delicate. The steady-state tokamak is a genuinely harder physics problem than the pulsed one.</p>
+<p><strong>Stellarators avoid the entire question</strong>, because their confining field is generated externally. This is the single strongest argument for the concept, and it is why the private <a href="stellarator.html">Stellarator</a> sector exists.</p>
+<hr/>
+<h2 id="6-using-heating-for-control-not-just-heat">6. Using heating for control, not just heat<a aria-hidden="true" class="heading-link" href="#6-using-heating-for-control-not-just-heat" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Modern practice treats heating systems as <strong>actuators in a control loop</strong>, not just power supplies. This is where ECRH's localisation earns its cost.</p>
+<h3 id="neoclassical-tearing-modes-ntms">Neoclassical tearing modes (NTMs)<a aria-hidden="true" class="heading-link" href="#neoclassical-tearing-modes-ntms" tabindex="-1" title="Link to this section">#</a></h3>
+<p>An NTM is a magnetic island that grows at a rational surface (typically q = 2 or q = 3/2) because the island flattens the pressure profile inside itself, removing the local bootstrap current, which makes the island grow further. It is self-reinforcing.</p>
+<p>NTMs <strong>degrade confinement significantly and can trigger disruptions</strong>. The fix is precise: deposit <strong>electron cyclotron current drive exactly inside the island</strong>, replacing the missing bootstrap current. This requires real-time island detection, real-time mirror steering, and modulation synchronised to the island's rotation. It works, and it is standard practice on <a href="asdex-upgrade.html">ASDEX Upgrade</a>, <a href="diii-d.html">DIII-D</a> and <a href="tcv.html">TCV</a>.</p>
+<h3 id="sawteeth">Sawteeth<a aria-hidden="true" class="heading-link" href="#sawteeth" tabindex="-1" title="Link to this section">#</a></h3>
+<p>The plasma core periodically reorganises when q falls below 1, in a rapid internal reconnection called a <strong>sawtooth crash</strong>. Sawteeth are not intrinsically harmful — they expel <a href="helium-ash.html">helium ash</a> from the core, which is useful — but <strong>large sawtooth crashes seed NTMs</strong>. So the goal is sawtooth <em>pacing</em>: keeping crashes small and frequent rather than rare and violent, again using localised ECCD or ICRH near the q = 1 surface.</p>
+<p>A related and elegant phenomenon: in <strong>hybrid scenarios</strong>, off-axis current drive raises the core q above 1, shrinking or eliminating the q = 1 surface. The result is a <strong>sawtooth-free regime with a broad, shear-free core current profile, a large non-inductive current fraction and improved confinement</strong> — one of the more promising reactor scenarios. ASDEX Upgrade work on "flux pumping" explores how the plasma self-organises to maintain this state.</p>
+<h3 id="elm-control">ELM control<a aria-hidden="true" class="heading-link" href="#elm-control" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Edge-localised modes are handled by <strong>resonant magnetic perturbation coils</strong>, <strong>pellet pacing</strong> (deliberately triggering small ELMs before large ones can build), or by operating in naturally ELM-free regimes: <strong>quasi-continuous exhaust</strong>, <strong><a href="negative-triangularity.html">negative triangularity</a></strong>, or the <strong>X-point radiator</strong>.</p>
+<h3 id="internal-transport-barriers">Internal transport barriers<a aria-hidden="true" class="heading-link" href="#internal-transport-barriers" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Long central heating — usually NBI — can establish an <strong>internal transport barrier</strong>: a region of suppressed turbulence in the plasma core producing peaked density and pressure profiles. ITBs raise performance substantially and are central to advanced scenarios, but they are fragile and prone to triggering MHD when the pressure gradient gets too steep.</p>
+<hr/>
+<h2 id="7-fuelling">7. Fuelling<a aria-hidden="true" class="heading-link" href="#7-fuelling" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A <a href="burning-plasma.html">burning plasma</a> consumes fuel and must be refilled, continuously, from outside.</p>
+<h3 id="gas-puffing">Gas puffing<a aria-hidden="true" class="heading-link" href="#gas-puffing" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Simply admit neutral gas at the edge. Cheap, simple, and <strong>it does not work well for a reactor</strong>: neutrals ionise within centimetres of the plasma boundary and never reach the core. Gas puffing fuels the edge and the <a href="divertor.html">Divertor</a>, which is useful for <a href="detachment.html">Detachment</a> control, but it cannot sustain a core density profile.</p>
+<h3 id="pellet-injection--the-only-viable-core-fuelling-method"><a href="pellet-injection.html">Pellet injection</a> — the only viable core fuelling method<a aria-hidden="true" class="heading-link" href="#pellet-injection--the-only-viable-core-fuelling-method" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Freeze deuterium-tritium into a solid pellet a few millimetres across and fire it into the plasma at hundreds of metres per second. The pellet ablates as it penetrates, depositing fuel deep inside.</p>
+<p>The physics has a useful quirk: on the <strong>high-field side</strong> of the torus, ablated material drifts <em>inward</em> rather than outward (a curvature-driven ∇B drift effect). So <strong>high-field-side injection</strong> delivers fuel much deeper than the pellet's mechanical penetration alone would suggest — which is why reactor designs route pellet guide tubes over the top of the machine and inject from the inboard side.</p>
+<p>Pellet injection also does double duty as <strong>ELM pacing</strong> and, in shattered form, as the <strong><a href="disruption.html">Disruption</a> mitigation system</strong> (<a href="17-diagnostics-control-disruption.html">Document 17</a>).</p>
+<h3 id="the-engineering-and-who-owns-it">The engineering, and who owns it<a aria-hidden="true" class="heading-link" href="#the-engineering-and-who-owns-it" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Cryogenic pellet injection is a specialised discipline with a small number of world experts, and <strong><a href="ornl.html">Oak Ridge National Laboratory</a> has been its centre for four decades</strong>. Two 2026 developments make the point:</p>
+<ul>
+<li><strong><a href="wendelstein-7-x.html">Wendelstein 7-X</a>'s record 43-second, world-record-triple-product discharge was fed by roughly 90 frozen hydrogen pellets from a one-of-a-kind injector built at ORNL in Tennessee.</strong> The best confinement result in stellarator history depended on an American fuelling system.</li>
+<li><strong>On 6 August 2026, ORNL licensed four cryogenic pellet fuelling inventions to <a href="type-one-energy.html">Type One Energy</a></strong>, including a <strong>novel extrusion system capable of producing pellets at rates appropriate for reactor operation</strong>. That last clause is the important one: research injectors fire tens of pellets per discharge; a power plant needs a continuous extrusion line running for months.</li>
+</ul>
+<h3 id="why-fuelling-connects-to-the-tritium-problem">Why fuelling connects to the tritium problem<a aria-hidden="true" class="heading-link" href="#why-fuelling-connects-to-the-tritium-problem" tabindex="-1" title="Link to this section">#</a></h3>
+<p>Only <strong>1–3% of injected tritium fuses per pass</strong>. Everything else is pumped out and recycled. Fuelling throughput therefore sets the <strong>tritium inventory held up in the fuelling system</strong>, which is a first-order term in a plant's total tritium inventory — and tritium inventory is both a cost (at $30,000–35,000/g) and a safety-case limit.</p>
+<p>This is why <strong>Direct Internal Recycling</strong> — routing pumped exhaust back to the fuelling system without full isotope separation — appears as a DOE roadmap mid-term milestone. It is a fuelling-system innovation with fuel-cycle consequences.</p>
+<hr/>
+<h2 id="8-what-this-means-for-plant-design">8. What this means for plant design<a aria-hidden="true" class="heading-link" href="#8-what-this-means-for-plant-design" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Three conclusions follow from the whole chapter, and they are not obvious from the outside.</p>
+<p><strong>1. Heating systems compete with the blanket for wall area.</strong> Every port occupied by a beamline, an ICRH antenna or an ECRH launcher is a hole in the breeding blanket, and each hole reduces the <a href="tritium-breeding-ratio.html">tritium breeding ratio</a>. <strong>The heating system and the fuel cycle are in direct geometric conflict</strong>, and that conflict is one of the least-discussed constraints in reactor design. ECRH is favoured partly because it needs the smallest aperture.</p>
+<p><strong>2. Heating power is the dominant recirculating load.</strong> At 30–50% wall-plug efficiency, 100 MW of injected heating costs 200–330 MW of plant output. This is why the difference between Q_sci = 10 and Q_sci = 30 matters so much economically.</p>
+<p><strong>3. These systems are as immature as the reactor.</strong> ITER's beams needed their own dedicated multi-decade test facility. Gyrotrons at ITER specification were only demonstrated at 100-second pulses in 2026 — against a 3,600-second requirement. Reactor-rate pellet extrusion was licensed to industry for the first time in August 2026. <strong>The auxiliary systems are on the same development timeline as the machines they serve, and they are rarely counted in fusion timelines.</strong></p>
+<hr/>
+<p><strong>Continue to:</strong> <a href="17-diagnostics-control-disruption.html">17 — Diagnostics, Control and Disruption Mitigation</a> · <a href="18-superconductors-and-magnets.html">18 — Superconductors and Magnet Engineering</a> · <a href="09-engineering-challenges.html">09 — Engineering Challenges</a></p>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p><a href="../research/synthesis/16-heating-current-drive-fuelling.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/synthesis/16-heating-current-drive-fuelling.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="01-fusion-physics-fundamentals.html">Physics Fundamentals</a> <small>Synthesis</small></li><li><a href="09-engineering-challenges.html">Engineering Challenges</a> <small>Synthesis</small></li><li><a href="17-diagnostics-control-disruption.html">Diagnostics, Control and Disruption Mitigation</a> <small>Synthesis</small></li><li><a href="18-superconductors-and-magnets.html">Superconductors and Magnet Engineering</a> <small>Synthesis</small></li><li><a href="24-grid-integration-and-operations.html">Grid Integration and Plant Operations</a> <small>Synthesis</small></li></ul></section><details class="backlinks"><summary>Linked from 12 library notes</summary><ul><li><a href="17-diagnostics-control-disruption.html">Diagnostics, Control and Disruption Mitigation</a></li><li><a href="24-grid-integration-and-operations.html">Grid Integration and Plant Operations</a></li><li><a href="36-fusions-global-periphery.html">Fusion&#x27;s Global Periphery</a></li><li><a href="bootstrap-current.html">Bootstrap Current</a></li><li><a href="elm.html">Edge-Localised Mode (ELM)</a></li><li><a href="gyrotron.html">Gyrotron and ECRH</a></li><li><a href="moc-engineering.html">MOC — Engineering</a></li><li><a href="moc-start-here.html">START HERE</a></li><li><a href="nbtf-spider-mitica.html">NBTF — SPIDER and MITICA</a></li><li><a href="neoclassical-tearing-mode.html">Neoclassical Tearing Mode (NTM)</a></li><li><a href="neutral-beam-injection.html">Neutral Beam Injection (NBI)</a></li><li><a href="pellet-injection.html">Pellet Injection</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

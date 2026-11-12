@@ -1,0 +1,231 @@
+[
+  {
+    "id": "L01",
+    "title": "Learning a better plasma ramp-down",
+    "category": "ai",
+    "label": "Experimental control",
+    "date": "2025",
+    "revised": "2026-08-26",
+    "note": "wiki/sources/tcv-predict-first-rampdown-2025.md",
+    "subtitle": "Learned dynamics and predict-first experiments at TCV.",
+    "source": "Wang, A. M. et al. Learning plasma dynamics and robust rampdown trajectories with predict-first experiments at TCV. Nature Communications 16, 8877 (2025).",
+    "url": "https://doi.org/10.1038/s41467-025-63917-x",
+    "claim": "The researchers trained a neural dynamics model on 311 TCV pulses, including five high-performance examples. They used reinforcement learning to design ramp-down trajectories and tested those trajectories in experiments.",
+    "limits": "The result concerns a specific phase of a discharge on one research tokamak. It does not demonstrate full-plant autonomy or a measured electricity saving.",
+    "access": "The repository holds a captured article and a source summary. For this draft, the note was read and the core claim was cross-checked against the publisher PDF search result. The publisher HTML retrieval failed; that is an access limit, not evidence against the study.",
+    "cites": [
+      [
+        "stage-control",
+        "AI roles: Control"
+      ],
+      [
+        "evidence",
+        "Selected studies"
+      ]
+    ],
+    "keywords": "TCV Wang rampdown 311 pulses reinforcement learning",
+    "source_sha256": "5e53e2428636943eb4dddf14aa6d349773fc5b58f97d0616829eb0612c1e8971",
+    "draft_added": "2026-11-11",
+    "note_copy": "notes/tcv-predict-first-rampdown-2025.md"
+  },
+  {
+    "id": "L02",
+    "title": "Testing learned control on HL-3",
+    "category": "ai",
+    "label": "Experimental control",
+    "date": "2025",
+    "revised": "2026-08-26",
+    "note": "wiki/sources/hl3-data-driven-rl-control-2025.md",
+    "subtitle": "Reinforcement learning trained in a data-driven simulator.",
+    "source": "Wu, N. et al. High-fidelity data-driven dynamics model for reinforcement learning-based control in HL-3 tokamak. Communications Physics 8, 393 (2025).",
+    "url": "https://doi.org/10.1038/s42005-025-02302-y",
+    "claim": "The study uses historical machine data to train a dynamics model, then trains a reinforcement-learning controller in that simulator. It reports a 400 ms trajectory at a 1 kHz control rate on HL-3.",
+    "limits": "This is bounded experimental control. It does not establish full-discharge management, long-duration reliability, or safe behavior in every off-normal condition.",
+    "access": "The repository holds a captured article and a source summary. This draft read the note and cross-checked the headline result against the indexed author-hosted paper. The publisher HTML retrieval failed.",
+    "cites": [
+      [
+        "evidence",
+        "Selected studies"
+      ]
+    ],
+    "keywords": "HL-3 Wu reinforcement learning 400 milliseconds 1 kHz",
+    "source_sha256": "2c2f45b52c770931dbf785e4d6c215f06244f87055a7fd92e65b3ed3dfd89299",
+    "draft_added": "2026-11-11",
+    "note_copy": "notes/hl3-data-driven-rl-control-2025.md"
+  },
+  {
+    "id": "L03",
+    "title": "Forecasting across two tokamaks",
+    "category": "ai",
+    "label": "Offline forecasting",
+    "date": "2026",
+    "revised": "2026-08-26",
+    "note": "wiki/sources/tokamak-agnostic-elm-crossref-metadata-2026.md",
+    "subtitle": "DIII-D to KSTAR: one transfer, with clear boundaries.",
+    "source": "Joung, S. et al. Explainable tokamak-agnostic ELM forecasting. Communications Physics (2026). Bibliographic identity and title as recorded in the Lux note.",
+    "url": "https://doi.org/10.1038/s42005-026-02689-2",
+    "claim": "The Lux source note describes a neural forecaster trained on DIII-D and applied to KSTAR without retraining its weights, after physics-consistent preprocessing. The task is forecasting the onset of Type-I edge-localized modes.",
+    "limits": "One source–target pair is not universal portability. Forecasting is not closed-loop suppression of an instability. Detailed findings retain the source note’s medium-confidence designation.",
+    "access": "The local raw record contains Crossref metadata, not full article text. The earlier library note records checking the primary article page; this draft read that note and did not independently retrieve the full paper.",
+    "cites": [
+      [
+        "stage-predict",
+        "AI roles: Predict"
+      ],
+      [
+        "evidence",
+        "Selected studies"
+      ]
+    ],
+    "keywords": "ELM DIII-D KSTAR Joung instability transfer",
+    "source_sha256": "918cffe7b33e3e25852540afff5a1c70c10e3520c92b42c5e67e7e258ba7611d",
+    "draft_added": "2026-11-11",
+    "note_copy": "notes/tokamak-agnostic-elm-crossref-metadata-2026.md"
+  },
+  {
+    "id": "L04",
+    "title": "Learning from plasma diagnostics",
+    "category": "ai",
+    "label": "Offline model evaluation",
+    "date": "2026",
+    "revised": "2026-08-26",
+    "note": "wiki/sources/fusionmae-crossref-metadata-2026.md",
+    "subtitle": "FusionMAE and reusable representations of experimental data.",
+    "source": "Yang, Z. et al. FusionMAE: self-supervised pretraining for fusion diagnostics and control. Communications Physics 9, 232 (2026). Bibliographic identity and title as recorded in the Lux note.",
+    "url": "https://doi.org/10.1038/s42005-026-02626-3",
+    "claim": "FusionMAE uses masked reconstruction of diagnostic signals to learn representations for downstream tasks. The repository describes offline evaluation on recorded HL-3 data, including missing-signal recovery and state-related tasks.",
+    "limits": "Offline performance does not establish safe closed-loop control, transfer to a different tokamak, or power-plant reliability. The note assigns medium confidence to detailed findings.",
+    "access": "The raw capture is Crossref metadata. It does not preserve the article’s full text. This draft uses the existing summary and retains its access limitation; no new full-paper review was performed.",
+    "cites": [
+      [
+        "stage-learn",
+        "AI roles: Learn"
+      ]
+    ],
+    "keywords": "FusionMAE Yang diagnostics masked autoencoder representation self-supervised",
+    "source_sha256": "f7847b3249207dd8824da150a591df871dac3c0c54b5d8ad09fb0be602980140",
+    "draft_added": "2026-11-11",
+    "note_copy": "notes/fusionmae-crossref-metadata-2026.md"
+  },
+  {
+    "id": "L05",
+    "title": "Surrogate models for a fusion fuel cycle",
+    "category": "engineering",
+    "label": "Simulation · preprint",
+    "date": "2026",
+    "revised": "2026-10-19",
+    "note": "wiki/sources/yang-2026-st-e1-tritium-tmap8-surrogate-models.md",
+    "subtitle": "ST-E1 tritium modeling, with unresolved source inconsistencies.",
+    "source": "Yang, Simon, Yildirim, Trueba, Robinson & Shimada. Multiscale Assessment of Tritium Behavior in Preliminary Fusion Pilot Plant Design Using Surrogate Models in TMAP8. arXiv:2604.19647v1 (21 April 2026).",
+    "url": "https://arxiv.org/abs/2604.19647v1",
+    "claim": "This version uses Gaussian-process surrogates for component simulations within a larger modeled fuel cycle. The work explores tritium retention and recovery for a preliminary ST-E1 plant design.",
+    "limits": "This is a simulation, not a hardware result or proof of tritium self-sufficiency. The repository records inconsistent cost-reduction, uncertainty, and temperature statements, plus conflicting design inputs. No performance or efficiency improvement is asserted here.",
+    "access": "A PDF and text extraction are held in the repository. This draft read the existing source note, including its conflict record. The library snapshot describes v1 as an unreviewed preprint on 19 October 2026; later publication status was not checked.",
+    "cites": [
+      [
+        "library",
+        "Selected reading shelf"
+      ]
+    ],
+    "keywords": "surrogate TMAP8 Yang tritium fuel cycle ST-E1 preprint simulation",
+    "source_sha256": "7105c95b8ed97216fef7f48ac8b1dd73e707cd89dd4c127c082b2ccec0b5a9ff",
+    "draft_added": "2026-11-11",
+    "note_copy": "notes/yang-2026-st-e1-tritium-tmap8-surrogate-models.md"
+  },
+  {
+    "id": "L06",
+    "title": "AI for fusion: the evidence ladder",
+    "category": "ai",
+    "label": "Research synthesis",
+    "date": "2026",
+    "revised": "2026-08-26",
+    "note": "wiki/synthesis/40-ai-for-fusion-transferable-control.md",
+    "subtitle": "From offline prediction to bounded experimental control.",
+    "source": "Project Lux. Document 40 — AI for Fusion: From Device-Specific Models to Transferable Control. Repository synthesis, updated 26 August 2026.",
+    "url": null,
+    "claim": "The Lux synthesis separates representation learning, prediction, transfer, simulated policies, and live experimental control. These categories describe what a result actually tests and help keep a useful research advance in perspective.",
+    "limits": "This is a secondary synthesis, not an additional experiment. Its assurance architecture is an engineering interpretation. The cited studies do not demonstrate integrated AI-controlled power-plant operation.",
+    "access": "The complete repository synthesis was consulted for the page’s framing. The draft briefs below are a selected reading path; they are not a conversion or fresh validation of the entire wiki.",
+    "related": [
+      "L01",
+      "L02",
+      "L03",
+      "L04"
+    ],
+    "cites": [
+      [
+        "purpose",
+        "Project purpose"
+      ],
+      [
+        "explore",
+        "AI roles and evidence ladder"
+      ]
+    ],
+    "keywords": "AI evidence ladder control assurance learn predict",
+    "source_sha256": "1be04cdd5921b671df7a865a7ed690a09ab598f06144156f34a95c2ebbdb9ab9",
+    "draft_added": "2026-11-11",
+    "note_copy": "notes/40-ai-for-fusion-transferable-control.md"
+  },
+  {
+    "id": "L07",
+    "title": "From fusion energy to useful electricity",
+    "category": "engineering",
+    "label": "Concept guide",
+    "date": "2026",
+    "revised": "2026-09-12",
+    "note": "wiki/concepts/recirculating-power.md",
+    "subtitle": "Why the power a plant consumes matters alongside its output.",
+    "source": "Project Lux. Recirculating Power. Repository concept note, updated 12 September 2026.",
+    "url": null,
+    "claim": "A fusion plant must power its own systems, including heating, magnets and their cooling, pumps, vacuum equipment, and fuel handling. Those loads affect the electricity available for export.",
+    "limits": "Plasma gain, target gain, total electrical input, and exported electricity use different accounting boundaries. A better control metric does not by itself measure an improvement in plant energy efficiency. This brief introduces the distinction without assigning a plant-wide gain or efficiency value.",
+    "access": "This brief draws on the repository concept note. Its quantitative plant examples have not been reverified for this draft and are intentionally not reproduced in the brief.",
+    "related": [
+      "L08"
+    ],
+    "cites": [
+      [
+        "systems-title",
+        "The whole energy system"
+      ]
+    ],
+    "keywords": "energy balance efficiency electricity gain recirculating power",
+    "source_sha256": "f820990c8812658a41243a75fb55676922669950e11442bbf70e21f6ed5a91ad",
+    "draft_added": "2026-11-11",
+    "note_copy": "notes/recirculating-power.md"
+  },
+  {
+    "id": "L08",
+    "title": "The engineering beyond the plasma",
+    "category": "engineering",
+    "label": "Research synthesis",
+    "date": "2026",
+    "revised": "2026-10-19",
+    "note": "wiki/synthesis/09-engineering-challenges.md",
+    "subtitle": "Materials, fuel, heat removal, and the challenge of a whole plant.",
+    "source": "Project Lux. Document 09 — Engineering Challenges. Repository synthesis, updated 19 October 2026.",
+    "url": null,
+    "claim": "The Lux engineering synthesis examines the systems around a fusion plasma: materials exposed to neutrons, heat removal, fuel availability, component maintenance, and plant operation. These interact, so progress in one area does not settle the whole engineering case.",
+    "limits": "These are research and engineering questions, not claims that Lux operates a plant or has solved them. This short brief is a guided entry into the repository; it is not a fresh technical audit of the full synthesis.",
+    "access": "The existing synthesis was consulted for scope and engineering context. No new plant, hardware, or economic validation was performed.",
+    "related": [
+      "L05",
+      "L07"
+    ],
+    "cites": [
+      [
+        "purpose",
+        "Project purpose"
+      ],
+      [
+        "systems-title",
+        "The whole energy system"
+      ]
+    ],
+    "keywords": "materials engineering fuel tritium heat maintenance challenges",
+    "source_sha256": "42e15df6913c17e90d8b581d6af7bfd81af725add2abf3498e85bfb256b26366",
+    "draft_added": "2026-11-11",
+    "note_copy": "notes/09-engineering-challenges.md"
+  }
+]

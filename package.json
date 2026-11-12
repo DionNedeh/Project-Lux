@@ -1,0 +1,15 @@
+{
+  "name": "project-lux",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Project Lux: AI, fusion, and a dated research library",
+  "scripts": {
+    "build": "python tools/build_site.py",
+    "check": "python tools/check_site.py && node --check site.js && node --check library.js",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "axe-core": "4.14.0"
+  }
+}

@@ -1,0 +1,64 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Modeling and analysis of the tritium fuel cycle for ARC- and STEP-class D-T fusion power plants — Project Lux</title><meta name="description" content="The first source in this vault to apply Abdou et al. &#x27;s fuel-cycle method to named private-sector plant designs rather than to a generic DEMO. Full text held; CC BY…"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/meschini-2023-tritium-fuel-cycle-arc-step.html"><meta property="og:title" content="Modeling and analysis of the tritium fuel cycle for ARC- and STEP-class D-T fusion power plants — Project Lux"><meta property="og:description" content="The first source in this vault to apply Abdou et al. &#x27;s fuel-cycle method to named private-sector plant designs rather than to a generic DEMO. Full text held; CC BY…"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/meschini-2023-tritium-fuel-cycle-arc-step.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Source note</p><p class="eyebrow">Source note</p><h1 id="doc-title">Modeling and analysis of the tritium fuel cycle for ARC- and STEP-class D-T fusion power plants</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Source note</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-11-02">2 November 2026</time></dd></div><div><dt>First written</dt><dd>2 November 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div><div><dt>Source date</dt><dd>2023-09-14</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=designs">designs</a><a href="index.html?topic=subsystems">subsystems</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#what-it-models">What it models</a></li><li><a href="#the-headline-requirement">The headline requirement</a></li><li><a href="#why-burn-fraction-dominates-in-one-number">Why burn fraction dominates, in one number</a></li><li><a href="#what-it-does-not-establish">What it does not establish</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p>The first source in this vault to apply
+<a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Abdou <em>et al.</em>'s</a> fuel-cycle method to
+<strong>named private-sector plant designs</strong> rather than to a generic DEMO. Full text held;
+<strong>CC BY 4.0</strong>, version of record.</p>
+<aside class="callout callout-note"><p class="callout-label">Note</p>
+<p>Citation year
+This paper cites its parent as <em>Abdou et al 2020 Nucl. Fusion 61 013001</em>. That is the
+<strong>same paper</strong> this vault holds as <a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency</a> —
+online 2020, issue-dated 2021. One work, two years in circulation.</p>
+</aside>
+<h2 id="what-it-models">What it models<a aria-hidden="true" class="heading-link" href="#what-it-models" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A time-dependent, system-level fuel cycle in Matlab Simulink, applied to three designs:
+<strong><a href="arc.html">ARC</a>-class</strong>, breeding in a 2LiF + BeF₂ (FLiBe) liquid immersion blanket; and <strong>two
+<a href="step.html">STEP</a>-class</strong> variants, one with a liquid-lithium blanket, one with an encapsulated
+breeding blanket of FLiBe pebbles, gas-cooled.</p>
+<h2 id="the-headline-requirement">The headline requirement<a aria-hidden="true" class="heading-link" href="#the-headline-requirement" tabindex="-1" title="Link to this section">#</a></h2>
+<p><strong>Required <a href="tritium-breeding-ratio.html">TBR</a> stays below 1.2 — but only if tritium burn
+efficiency reaches 0.5–1%.</strong> The paper calls that <em>"significant, but attainable"</em> improvement
+over current ability. It is bounded against a maximum achievable TBR the authors put at
+<strong>1.1–1.2 depending on blanket design</strong>, so the margin is thin by construction.</p>
+<p>Three further conditions come attached, and all three are demanding:</p>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Requirement</th>
+<th scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plant availability</td>
+<td><strong>&gt; 70%</strong></td>
+</tr>
+<tr>
+<td>Tritium processing time</td>
+<td><strong>&lt; 4 h</strong></td>
+</tr>
+<tr>
+<td><a href="direct-internal-recycling.html">Direct internal recycling</a></td>
+<td><strong>required</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="why-burn-fraction-dominates-in-one-number">Why burn fraction dominates, in one number<a aria-hidden="true" class="heading-link" href="#why-burn-fraction-dominates-in-one-number" tabindex="-1" title="Link to this section">#</a></h2>
+<p>Run the model at ITER's expected achievable <a href="tritium-burn-fraction.html">burn fraction</a> of
+<strong>f_b = 0.36%</strong> — two pellet injectors, maximum fuelling 120 Pa m³ s⁻¹ — and the required TBR
+for self-sufficiency in <a href="eu-demo.html">DEMO</a> becomes <strong>1.82</strong>, which the authors note is far above
+anything achievable. This is the paper's clearest statement of the reframing
+<a href="tritium-burn-fraction.html"><code>η_f · f_b</code></a> carries: breeding cannot rescue a plant that burns
+almost none of what it is fed.</p>
+<p><strong><a href="tritium-doubling-time.html">Doubling time</a> buys relief.</strong> At <code>t_d</code> = 1 year, self-sufficiency
+is <em>"highly unlikely"</em> below 1% burn efficiency; at <code>t_d</code> = 5 years it becomes <em>"much easier
+to achieve"</em>.</p>
+<h2 id="what-it-does-not-establish">What it does <strong>not</strong> establish<a aria-hidden="true" class="heading-link" href="#what-it-does-not-establish" tabindex="-1" title="Link to this section">#</a></h2>
+<ul>
+<li><strong>Nothing measured.</strong> A system-level model of two unbuilt plant classes, benchmarked against
+no operating fuel cycle, because none exists.</li>
+<li><strong>Not ST-E1.</strong> The STEP-class liquid-lithium case is the nearest analogue to
+<a href="st-e1.html">ST-E1</a>'s architecture, but it is STEP, modelled independently of Tokamak Energy.</li>
+<li><strong>No trapping.</strong> Tritium held in first wall, divertor and blanket is outside this model —
+the gap its own authors closed two years later in
+<a href="meschini-2025-trapping-tritium-self-sufficiency.html">Impact of trapping on tritium self-sufficiency and tritium inventories in fusion power plant fuel cycles</a>.</li>
+</ul>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p>S. Meschini (Politecnico di Torino), S. E. Ferry, R. Delaporte-Mathurin, D. G. Whyte (MIT Plasma Science and Fusion Center) · Nuclear Fusion 63 126005 (34 pp), DOI 10.1088/1741-4326/acf3fc, CC BY 4.0</p><p class="provenance">The source note records a local capture. Captured third-party files are not redistributed here. Publisher and DOI links appear in the note or bibliography.</p><p><a href="../research/sources/meschini-2023-tritium-fuel-cycle-arc-step.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/sources/meschini-2023-tritium-fuel-cycle-arc-step.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="28-vacuum-wall-conditioning-tritium-plant.html">Vacuum, Wall Conditioning and the Tritium Plant</a> <small>Synthesis</small></li><li><a href="30-power-plant-designs-compared.html">Power Plant Designs Compared</a> <small>Synthesis</small></li><li><a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency</a> <small>Source note</small></li><li><a href="arc.html">ARC</a> <small>Entity</small></li><li><a href="availability.html">Availability and RAMI</a> <small>Concept</small></li><li><a href="declared-tbr-values.html">Declared TBR Values and Their Conflicts</a> <small>Concept</small></li><li><a href="dennis-whyte.html">Dennis Whyte</a> <small>Entity</small></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a> <small>Concept</small></li><li><a href="meschini-2025-trapping-tritium-self-sufficiency.html">Impact of trapping on tritium self-sufficiency and tritium inventories in fusion power plant fuel cycles</a> <small>Source note</small></li><li><a href="spherical-tokamak.html">Spherical Tokamak</a> <small>Concept</small></li><li><a href="st-e1.html">ST-E1</a> <small>Entity</small></li><li><a href="step.html">STEP</a> <small>Entity</small></li><li><a href="tritium-breeding-ratio.html">Tritium Breeding Ratio (TBR)</a> <small>Concept</small></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a> <small>Concept</small></li><li><a href="tritium-doubling-time.html">Tritium Doubling Time</a> <small>Concept</small></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a> <small>Concept</small></li></ul></section><details class="backlinks"><summary>Linked from 10 library notes</summary><ul><li><a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a></li><li><a href="arc.html">ARC</a></li><li><a href="availability.html">Availability and RAMI</a></li><li><a href="declared-tbr-values.html">Declared TBR Values and Their Conflicts</a></li><li><a href="direct-internal-recycling.html">Direct Internal Recycling (DIR)</a></li><li><a href="meschini-2025-trapping-tritium-self-sufficiency.html">Impact of trapping on tritium self-sufficiency and tritium inventories in fusion power plant fuel cycles</a></li><li><a href="moc-sources.html">MOC — Sources</a></li><li><a href="step.html">STEP</a></li><li><a href="tritium-burn-fraction.html">Tritium Burn Fraction</a></li><li><a href="tritium-doubling-time.html">Tritium Doubling Time</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

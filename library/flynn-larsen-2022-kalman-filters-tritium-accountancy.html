@@ -1,0 +1,67 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Investigating the application of Kalman Filters for real-time accountancy in fusion fuel cycles — Project Lux</title><meta name="description" content="The source that addresses the continuous-flow problem in tritium accountancy directly: conventional accountancy assumes static batches in controlled conditions, and…"><link rel="canonical" href="https://dionnedeh.github.io/Project-Lux/library/flynn-larsen-2022-kalman-filters-tritium-accountancy.html"><meta property="og:title" content="Investigating the application of Kalman Filters for real-time accountancy in fusion fuel cycles — Project Lux"><meta property="og:description" content="The source that addresses the continuous-flow problem in tritium accountancy directly: conventional accountancy assumes static batches in controlled conditions, and…"><meta property="og:type" content="website"><meta property="og:url" content="https://dionnedeh.github.io/Project-Lux/library/flynn-larsen-2022-kalman-filters-tritium-accountancy.html"><meta property="og:image" content="https://dionnedeh.github.io/Project-Lux/assets/social-card.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css?v=2f3c42de51db"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../assets/mark.svg" width="34" height="34" alt=""><span>LUX <small>by Voelori</small></span></a><nav aria-label="Main navigation"><a href="../index.html#purpose">The purpose</a><a href="../index.html#explore">AI &amp; fusion</a><a href="../library/index.html">Research library</a><a href="../method.html">Our approach</a></nav></div></header><main id="main"><section class="doc-head"><div class="wrap reading"><p class="breadcrumbs"><a href="../index.html">Project Lux</a> / <a href="index.html">Research library</a> / Source note</p><p class="eyebrow">Source note</p><h1 id="doc-title">Investigating the application of Kalman Filters for real-time accountancy in fusion fuel cycles</h1><dl class="doc-meta"><div><dt>Document type</dt><dd>Source note</dd></div><div><dt>Research note updated</dt><dd><time datetime="2026-11-02">2 November 2026</time></dd></div><div><dt>First written</dt><dd>2 November 2026</dd></div><div><dt>Added to this site</dt><dd>11 November 2026</dd></div><div><dt>Library assessment</dt><dd>High confidence · stable</dd></div><div><dt>Source date</dt><dd>2022-01-28</dd></div></dl><p class="snapshot-note">A dated research record. Statements about schedules, policy, or company progress reflect the note’s date. <a href="../method.html#reading-the-evidence">How to read the evidence</a></p><div class="topic-links" role="navigation" aria-label="Topics"><a href="index.html?topic=computation">computation</a><a href="index.html?topic=subsystems">subsystems</a></div><details class="doc-toc" open><summary>On this page</summary><ol><li><a href="#method">Method</a></li><li><a href="#the-result">The result</a></li><li><a href="#the-limitation-the-authors-state-themselves">The limitation the authors state themselves</a></li><li><a href="#what-it-does-not-establish">What it does not establish</a></li></ol></details></div></section><article class="wrap reading doc-body" aria-labelledby="doc-title"><div class="prose"><p>The source that addresses the <strong>continuous-flow problem</strong> in
+<a href="tritium-accountancy.html">tritium accountancy</a> directly: conventional accountancy assumes static
+batches in controlled conditions, and a fusion plant will run continuously.</p>
+<aside class="callout callout-note"><p class="callout-label">Note</p>
+<p>Accepted manuscript, not the version of record
+The capture is the <strong>DOE accepted manuscript</strong> released through OSTI PAGES, not Elsevier's
+published version. Content was not compared against the version of record. Authored under
+contract 89303321CEM000080 for the DOE Office of Environmental Management; the paper's
+acknowledgements also credit support from the Office of Fusion Energy Sciences.</p>
+</aside>
+<h2 id="method">Method<a aria-hidden="true" class="heading-link" href="#method" tabindex="-1" title="Link to this section">#</a></h2>
+<p>A simple fuel-cycle concept is defined and each component's tritium inventory evolved in time
+by Euler approximation of a series of differential equations in Python. Sensor measurements are
+then <em>simulated</em> at specific points and passed through a <strong>Kalman Filter</strong> — a state-prediction
+algorithm standard in radar, robotics and hydrology, which the authors state had <strong>not</strong>
+previously been applied to tritium inventory accountancy.</p>
+<h2 id="the-result">The result<a aria-hidden="true" class="heading-link" href="#the-result" tabindex="-1" title="Link to this section">#</a></h2>
+<div aria-label="Table 1 — scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Stage</th>
+<th scope="col">Percent error against the model's true value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simulated raw sensor</td>
+<td><strong>64.37%</strong></td>
+</tr>
+<tr>
+<td>Kalman Filter, end of day 1</td>
+<td><strong>≈ 0.633%</strong></td>
+</tr>
+<tr>
+<td>Kalman Filter, end of day 3</td>
+<td><strong>≈ 0.001%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The authors measure this against <em>"the accountancy standard of 1%"</em> — the filter crosses that
+threshold within a day of simulated operation. A tenfold increase in sampling frequency tightens
+the estimate further and reaches its optimum earlier.</p>
+<h2 id="the-limitation-the-authors-state-themselves">The limitation the authors state themselves<a aria-hidden="true" class="heading-link" href="#the-limitation-the-authors-state-themselves" tabindex="-1" title="Link to this section">#</a></h2>
+<aside class="callout callout-warning"><p class="callout-label">Warning</p>
+<p>The filter fails on accumulating bias
+Given a measurement system with a bias accumulating over the three-day period, the Kalman
+Filter <em>"accurately predicts the mean of the sensor measurement but has an increasingly large
+spread from the true value"</em> — which is useless, because the true value is what accountancy
+needs. A <strong>Bias-Aware Kalman Filter</strong> is named as ongoing work, deferred to a follow-on paper.</p>
+</aside>
+<p>This matters because the paper also names the conditions a real fuel-cycle sensor will face —
+high vibration, ground-loop issues, radiofrequency-generating components — all of which
+accumulate exactly the biases the implemented filter cannot handle.</p>
+<h2 id="what-it-does-not-establish">What it does <strong>not</strong> establish<a aria-hidden="true" class="heading-link" href="#what-it-does-not-establish" tabindex="-1" title="Link to this section">#</a></h2>
+<ul>
+<li><strong>No real sensor data.</strong> Every measurement is simulated from the model it is then validated
+against, so the 0.001% figure measures self-consistency, not instrument performance.</li>
+<li><strong>A simple fuel cycle.</strong> The authors note designs have grown more complex since Abdou's 1985
+paper, and that understanding plasma-vessel contributions and losses is required before this
+is usable commercially — the same unmeasurable terms recorded in <a href="tritium-accountancy.html">Tritium Accountancy</a>.</li>
+<li><strong>Not the 1% standard's provenance.</strong> The paper cites the figure without deriving it.</li>
+<li><strong>Nishi <em>et al.</em> 2006 is this paper's reference [1]</strong> — "Study on tritium accountancy in fusion
+DEMO plant at JAERI", <em>Fusion Engineering and Design</em> 81(1-7) 745–751. That citation is now
+confirmed from a held source, but the paper itself remains <strong>not held</strong>, so the instrument
+accuracies on <a href="tritium-accountancy.html">Tritium Accountancy</a> still reach this vault at second hand.</li>
+</ul>
+</div><section class="source-box provenance-box"><h2>About this research note</h2><p>H. B. Flynn, George Larsen (Savannah River National Laboratory, Aiken, South Carolina) · Fusion Engineering and Design 176 (2022) 113037, DOI 10.1016/j.fusengdes.2022.113037; DOE accepted manuscript, OSTI 1856104, report SRNL-STI-2021-00621</p><p class="provenance">The source note records a local capture. Captured third-party files are not redistributed here. Publisher and DOI links appear in the note or bibliography.</p><p><a href="../research/sources/flynn-larsen-2022-kalman-filters-tritium-accountancy.md" download>Download this research note (.md)</a></p><p class="provenance">Published from <code>research/sources/flynn-larsen-2022-kalman-filters-tritium-accountancy.md</code>. Source text is preserved; this page adds navigation, accessible tables, and resolved links. Library confidence is an editorial assessment, not independent certification. <a href="../method.html#publication">Publication method</a>.</p></section><section class="related-reading"><h2>Continue exploring</h2><ul><li><a href="11-policy-regulation-safety.html">Policy, Regulation and Safety</a> <small>Synthesis</small></li><li><a href="19-simulation-codes-nuclear-data.html">Simulation, Codes and Nuclear Data</a> <small>Synthesis</small></li><li><a href="28-vacuum-wall-conditioning-tritium-plant.html">Vacuum, Wall Conditioning and the Tritium Plant</a> <small>Synthesis</small></li><li><a href="abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.html">Physics and Technology Considerations for the Deuterium–Tritium Fuel Cycle and Conditions for Tritium Fuel Self Sufficiency</a> <small>Source note</small></li><li><a href="sindelar-2023-tritium-accountancy-control-challenges-fusion.html">Assessment of Challenges for Tritium Accountancy and Control in Fusion Energy Systems</a> <small>Source note</small></li><li><a href="srnl-2013-tritium-accountancy-in-fusion-systems.html">Tritium Accountancy in Fusion Systems</a> <small>Source note</small></li><li><a href="thalia-hera-ukaea-tritium-accountancy-2026.html">Development of Analytical Techniques for Tritium Accountancy Around the Fusion Fuel Cycle (HERA and THALIA)</a> <small>Source note</small></li><li><a href="tritium-accountancy.html">Tritium Accountancy</a> <small>Concept</small></li><li><a href="tritium-retention.html">Tritium Retention</a> <small>Concept</small></li><li><a href="tritium-start-up-inventory.html">Tritium Start-up Inventory</a> <small>Concept</small></li><li><a href="us-doe.html">US Department of Energy — Office of Fusion</a> <small>Entity</small></li></ul></section><details class="backlinks"><summary>Linked from 2 library notes</summary><ul><li><a href="moc-sources.html">MOC — Sources</a></li><li><a href="tritium-accountancy.html">Tritium Accountancy</a></li></ul></details><nav class="doc-nav" aria-label="Continue reading"><a href="index.html">← Research library</a><a href="#doc-title">Back to the top ↑</a></nav></article></main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="../index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="../method.html">Evidence &amp; method</a><a href="../updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer></body></html>

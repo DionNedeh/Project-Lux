@@ -1,0 +1,1976 @@
+{
+  "concepts/activation-products.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/activation-products.md",
+    "source_sha256": "7469ca3eecb840737a49552a3debeb48413883c2811a6bce6d795b478af01273",
+    "source_updated": "2026-08-29",
+    "text_sha256": "7469ca3eecb840737a49552a3debeb48413883c2811a6bce6d795b478af01273"
+  },
+  "concepts/alfven-eigenmodes.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/alfven-eigenmodes.md",
+    "source_sha256": "2520e32b33e055b0f4824df04465dca37650649fd2873a73ad992efe355dd228",
+    "source_updated": "2026-08-26",
+    "text_sha256": "2520e32b33e055b0f4824df04465dca37650649fd2873a73ad992efe355dd228"
+  },
+  "concepts/aneutronic-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/aneutronic-fusion.md",
+    "source_sha256": "529d4b8f4b2dc59eb82fb444c0ef743b2f96c7644daac388d60498d31f2504e6",
+    "source_updated": "2026-08-29",
+    "text_sha256": "529d4b8f4b2dc59eb82fb444c0ef743b2f96c7644daac388d60498d31f2504e6"
+  },
+  "concepts/areal-density.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/areal-density.md",
+    "source_sha256": "709978bb69c8c9235a3980184eead8b087ea05ff036bf88726be155913ec1eb7",
+    "source_updated": "2026-08-26",
+    "text_sha256": "709978bb69c8c9235a3980184eead8b087ea05ff036bf88726be155913ec1eb7"
+  },
+  "concepts/availability.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/availability.md",
+    "source_sha256": "65e3d9e0cc1a8a4ee1df8ac35c68149bb6dc2102263aeeb2da9ceb5bd3196fb6",
+    "source_updated": "2026-11-02",
+    "text_sha256": "9497334240ec3598be4efa37837594667dfeb124e9bbba09eca513dd26a3eb3e"
+  },
+  "concepts/b4-scaling.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/b4-scaling.md",
+    "source_sha256": "782c6bb1e05c0f980c2cfc7d25bfa211b7e6f526b962ec43ea1832a626024b00",
+    "source_updated": "2026-08-26",
+    "text_sha256": "782c6bb1e05c0f980c2cfc7d25bfa211b7e6f526b962ec43ea1832a626024b00"
+  },
+  "concepts/balance-of-plant.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/balance-of-plant.md",
+    "source_sha256": "c824a91ab1616d8e78bbae01eaf2930d953df75ccd6b3de2a457ef711407bbf7",
+    "source_updated": "2026-09-12",
+    "text_sha256": "c824a91ab1616d8e78bbae01eaf2930d953df75ccd6b3de2a457ef711407bbf7"
+  },
+  "concepts/beryllium.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/beryllium.md",
+    "source_sha256": "2d24ad9f2a3ba5a8af402041811d08c43e3865c25706aca1da910ac877a23a63",
+    "source_updated": "2026-08-29",
+    "text_sha256": "2d24ad9f2a3ba5a8af402041811d08c43e3865c25706aca1da910ac877a23a63"
+  },
+  "concepts/bootstrap-current.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/bootstrap-current.md",
+    "source_sha256": "93440cad50d114bc56f03c8d170cf8305c438c407ccb2fcc553ac90631d0cca8",
+    "source_updated": "2026-08-26",
+    "text_sha256": "93440cad50d114bc56f03c8d170cf8305c438c407ccb2fcc553ac90631d0cca8"
+  },
+  "concepts/boronization.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/boronization.md",
+    "source_sha256": "694a08a9f0439a7706e7cde6c95b76d532668eefd4a25a03942ffa889a038ace",
+    "source_updated": "2026-08-29",
+    "text_sha256": "694a08a9f0439a7706e7cde6c95b76d532668eefd4a25a03942ffa889a038ace"
+  },
+  "concepts/burn-control.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/burn-control.md",
+    "source_sha256": "dd678616e2a15b9fd998a8294a9a351f7469b5ef0cd36908842fdc3b67814207",
+    "source_updated": "2026-08-26",
+    "text_sha256": "dd678616e2a15b9fd998a8294a9a351f7469b5ef0cd36908842fdc3b67814207"
+  },
+  "concepts/burning-plasma.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/burning-plasma.md",
+    "source_sha256": "d3c7070fb96675ac9afca29bf07b1272b185ae143577a0e56b20b3ff689409e9",
+    "source_updated": "2026-08-26",
+    "text_sha256": "d3c7070fb96675ac9afca29bf07b1272b185ae143577a0e56b20b3ff689409e9"
+  },
+  "concepts/decay-heat.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/decay-heat.md",
+    "source_sha256": "42db2d6fdcd1c35460fd75392da0b078daae2734d756023b2620821d23a68cfb",
+    "source_updated": "2026-08-29",
+    "text_sha256": "42db2d6fdcd1c35460fd75392da0b078daae2734d756023b2620821d23a68cfb"
+  },
+  "concepts/declared-tbr-values.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/declared-tbr-values.md",
+    "source_sha256": "b819c05618c7b4ea99c057b577004a25f08427b367cb58b7c650c656d5cfa0db",
+    "source_updated": "2026-11-02",
+    "text_sha256": "b819c05618c7b4ea99c057b577004a25f08427b367cb58b7c650c656d5cfa0db"
+  },
+  "concepts/detachment.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/detachment.md",
+    "source_sha256": "ceb52a346899305427e39cf33d8a7edf815a97864dc4f32e6a12984279ca272f",
+    "source_updated": "2026-08-26",
+    "text_sha256": "ceb52a346899305427e39cf33d8a7edf815a97864dc4f32e6a12984279ca272f"
+  },
+  "concepts/direct-and-indirect-drive.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/direct-and-indirect-drive.md",
+    "source_sha256": "a095d5323c9cba76b65e4142e3b67028b3b14e9bb9f63489b1970bda84b074bd",
+    "source_updated": "2026-08-26",
+    "text_sha256": "a095d5323c9cba76b65e4142e3b67028b3b14e9bb9f63489b1970bda84b074bd"
+  },
+  "concepts/direct-energy-conversion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/direct-energy-conversion.md",
+    "source_sha256": "e4744f32071cb10182ffb4ed16c04bd5d9e78f5a7eb22fb984be761d2769e7c4",
+    "source_updated": "2026-08-26",
+    "text_sha256": "e4744f32071cb10182ffb4ed16c04bd5d9e78f5a7eb22fb984be761d2769e7c4"
+  },
+  "concepts/direct-internal-recycling.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/direct-internal-recycling.md",
+    "source_sha256": "6e85dd9372e6ae1025269611ee16f0089246cd72818684d34c4c84ba0e81c9a1",
+    "source_updated": "2026-11-02",
+    "text_sha256": "65727b4c10fc1279af18746566b749365ce9074c960fbdc6cea6f0545d574bf9"
+  },
+  "concepts/displacements-per-atom.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/displacements-per-atom.md",
+    "source_sha256": "3688e3cc3bc06cb5175dfd819bd86913a20921fd00335c2756723523bb290d65",
+    "source_updated": "2026-11-02",
+    "text_sha256": "687c6085099b223c4ee1cf68061087ca379fd87bf59ae1b9fce4b7afd298f96d"
+  },
+  "concepts/disruption.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/disruption.md",
+    "source_sha256": "0f6f354491f0dbb2c30e8b48d879cd9bb3145857f6cb7d9f3d858f4b158e0d01",
+    "source_updated": "2026-08-26",
+    "text_sha256": "0f6f354491f0dbb2c30e8b48d879cd9bb3145857f6cb7d9f3d858f4b158e0d01"
+  },
+  "concepts/divertor.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/divertor.md",
+    "source_sha256": "0ee2953ae9c50c8e3a4d775246f4c362e9f3e0bcfa5b77b2ec453f7f8e4bb2af",
+    "source_updated": "2026-09-08",
+    "text_sha256": "0ee2953ae9c50c8e3a4d775246f4c362e9f3e0bcfa5b77b2ec453f7f8e4bb2af"
+  },
+  "concepts/dpa-vs-appm.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/dpa-vs-appm.md",
+    "source_sha256": "35c2831201af17ac279a6d0c8e96f8d41294b0bb1a387fd988b0669f67e0a83e",
+    "source_updated": "2026-08-26",
+    "text_sha256": "35c2831201af17ac279a6d0c8e96f8d41294b0bb1a387fd988b0669f67e0a83e"
+  },
+  "concepts/elm.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/elm.md",
+    "source_sha256": "446a4669eec7a22e80539c1832fb3e5ee37c009a0a35b4e4a7c9d4847ff1de50",
+    "source_updated": "2026-08-26",
+    "text_sha256": "446a4669eec7a22e80539c1832fb3e5ee37c009a0a35b4e4a7c9d4847ff1de50"
+  },
+  "concepts/fast-ignition.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/fast-ignition.md",
+    "source_sha256": "bbbff18c915e4f79140f7c4723daafe19d54ab4aaded28fb8d6eb339ac467df5",
+    "source_updated": "2026-08-26",
+    "text_sha256": "bbbff18c915e4f79140f7c4723daafe19d54ab4aaded28fb8d6eb339ac467df5"
+  },
+  "concepts/field-reversed-configuration.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/field-reversed-configuration.md",
+    "source_sha256": "5ec2838e9f56161d587df2b0773933e17ed7209c60b5a055806a0c1ce11fbd6f",
+    "source_updated": "2026-08-26",
+    "text_sha256": "5ec2838e9f56161d587df2b0773933e17ed7209c60b5a055806a0c1ce11fbd6f"
+  },
+  "concepts/greenwald-density-limit.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/greenwald-density-limit.md",
+    "source_sha256": "41fa145ec67bd029cebccdefb6e902409df6d3086f805f3eb1a3b4a02437c294",
+    "source_updated": "2026-08-26",
+    "text_sha256": "41fa145ec67bd029cebccdefb6e902409df6d3086f805f3eb1a3b4a02437c294"
+  },
+  "concepts/gyrotron.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/gyrotron.md",
+    "source_sha256": "e514d704207f430b2a98cf89bdcae8e0eeaad43ea66287832fa5a2c363b0d4b0",
+    "source_updated": "2026-08-26",
+    "text_sha256": "e514d704207f430b2a98cf89bdcae8e0eeaad43ea66287832fa5a2c363b0d4b0"
+  },
+  "concepts/h-mode.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/h-mode.md",
+    "source_sha256": "3634883e4027938540c80ba3a90c369eba41412d2668c7edd3323666136ac4f8",
+    "source_updated": "2026-08-26",
+    "text_sha256": "3634883e4027938540c80ba3a90c369eba41412d2668c7edd3323666136ac4f8"
+  },
+  "concepts/helium-ash.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/helium-ash.md",
+    "source_sha256": "5c0ca7def94d5eaa9742103cd91b259f778c02f6dbdb4b27aa280c9e878425f1",
+    "source_updated": "2026-08-26",
+    "text_sha256": "5c0ca7def94d5eaa9742103cd91b259f778c02f6dbdb4b27aa280c9e878425f1"
+  },
+  "concepts/helium-embrittlement.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/helium-embrittlement.md",
+    "source_sha256": "e38d2a9ad69f5f547f71f558688c603dd6fd6e6689653d070ad402b25f7d1b1a",
+    "source_updated": "2026-08-26",
+    "text_sha256": "e38d2a9ad69f5f547f71f558688c603dd6fd6e6689653d070ad402b25f7d1b1a"
+  },
+  "concepts/ignition.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/ignition.md",
+    "source_sha256": "1123db35243c97fe3cf78cb1b3dace2eaa92c849511480c99922cfa80e4f3f7e",
+    "source_updated": "2026-08-26",
+    "text_sha256": "1123db35243c97fe3cf78cb1b3dace2eaa92c849511480c99922cfa80e4f3f7e"
+  },
+  "concepts/inertial-confinement.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/inertial-confinement.md",
+    "source_sha256": "f2bf8ac72c345e5cf4e3927d7b94b4d8d20a30681f39e3b78c3406cfcaa4cc4c",
+    "source_updated": "2026-08-29",
+    "text_sha256": "f2bf8ac72c345e5cf4e3927d7b94b4d8d20a30681f39e3b78c3406cfcaa4cc4c"
+  },
+  "concepts/isotope-effect.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/isotope-effect.md",
+    "source_sha256": "8fee5666e12d7ca2a83bc1a3723cc45dbdf126cfe5f44d2a54847097adaf0efc",
+    "source_updated": "2026-08-26",
+    "text_sha256": "8fee5666e12d7ca2a83bc1a3723cc45dbdf126cfe5f44d2a54847097adaf0efc"
+  },
+  "concepts/l-h-transition.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/l-h-transition.md",
+    "source_sha256": "c36c2e4a76a3ca1d0fed410f7c7728b53bc3fcd7d67d5b346a1af332270255fa",
+    "source_updated": "2026-08-26",
+    "text_sha256": "c36c2e4a76a3ca1d0fed410f7c7728b53bc3fcd7d67d5b346a1af332270255fa"
+  },
+  "concepts/lawson-criterion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/lawson-criterion.md",
+    "source_sha256": "0f8efa953b1d1e451ff8d4ca4a98aedc94eb91d189cf3f1766433e7830ae9de0",
+    "source_updated": "2026-08-26",
+    "text_sha256": "0f8efa953b1d1e451ff8d4ca4a98aedc94eb91d189cf3f1766433e7830ae9de0"
+  },
+  "concepts/lcoe-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/lcoe-fusion.md",
+    "source_sha256": "b05ad357a774a6c2c6c40f44b069111959a14e56ba1a96ecb9f078aef78338c8",
+    "source_updated": "2026-08-26",
+    "text_sha256": "b05ad357a774a6c2c6c40f44b069111959a14e56ba1a96ecb9f078aef78338c8"
+  },
+  "concepts/lithium-6.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/lithium-6.md",
+    "source_sha256": "9754a7fe83dc3d4879c0f2d919bfc125a62e82e7a6b61a496174dd72ceebca83",
+    "source_updated": "2026-11-02",
+    "text_sha256": "92ddc59740cb9e91ce8fb71bfe827d0427d32b0c4282108358ef833f227d6358"
+  },
+  "concepts/lithium-lead-eutectic.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/lithium-lead-eutectic.md",
+    "source_sha256": "8890f2c6765255a1c85b4c1b500409cf08fbe6208243baa357b26ddf8f367401",
+    "source_updated": "2026-09-12",
+    "text_sha256": "8890f2c6765255a1c85b4c1b500409cf08fbe6208243baa357b26ddf8f367401"
+  },
+  "concepts/magnetic-mirror.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/magnetic-mirror.md",
+    "source_sha256": "782cc6a509fbc931fd06aad2eed91eb2ecf51f6dfba2ad9906b1c63b283c6a4f",
+    "source_updated": "2026-08-26",
+    "text_sha256": "782cc6a509fbc931fd06aad2eed91eb2ecf51f6dfba2ad9906b1c63b283c6a4f"
+  },
+  "concepts/magneto-inertial-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/magneto-inertial-fusion.md",
+    "source_sha256": "4368d37c169c7795d45c39fc44bb68dc56c6f56dfd9fd0fe2fe1914ea0f63401",
+    "source_updated": "2026-08-26",
+    "text_sha256": "4368d37c169c7795d45c39fc44bb68dc56c6f56dfd9fd0fe2fe1914ea0f63401"
+  },
+  "concepts/medical-isotopes.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/medical-isotopes.md",
+    "source_sha256": "96761c843f2cff0ce397e3c76e9d10b7041a35d675993dcca3d3d5452bdf6bed",
+    "source_updated": "2026-08-26",
+    "text_sha256": "96761c843f2cff0ce397e3c76e9d10b7041a35d675993dcca3d3d5452bdf6bed"
+  },
+  "concepts/milestone-tranching.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/milestone-tranching.md",
+    "source_sha256": "45dd1891ca54dce581785e660d534da8683a452ba2ad1f343ad4f2db2715fd44",
+    "source_updated": "2026-08-26",
+    "text_sha256": "45dd1891ca54dce581785e660d534da8683a452ba2ad1f343ad4f2db2715fd44"
+  },
+  "concepts/negative-triangularity.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/negative-triangularity.md",
+    "source_sha256": "540b45feb239cf73f28d712b0129ed117dc74dba7031db6e9a84f72a4fa58294",
+    "source_updated": "2026-08-26",
+    "text_sha256": "540b45feb239cf73f28d712b0129ed117dc74dba7031db6e9a84f72a4fa58294"
+  },
+  "concepts/neoclassical-tearing-mode.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/neoclassical-tearing-mode.md",
+    "source_sha256": "04fd6396a8c339ab25a872e2e29866265032563f8f99ab16460083816910e643",
+    "source_updated": "2026-08-26",
+    "text_sha256": "04fd6396a8c339ab25a872e2e29866265032563f8f99ab16460083816910e643"
+  },
+  "concepts/neutral-beam-injection.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/neutral-beam-injection.md",
+    "source_sha256": "1c36b63f0be8a6cac3d1c5a7525d9876613af1e80e2e37d06c9f6bdf79c57a16",
+    "source_updated": "2026-08-26",
+    "text_sha256": "1c36b63f0be8a6cac3d1c5a7525d9876613af1e80e2e37d06c9f6bdf79c57a16"
+  },
+  "concepts/nuclear-data-fendl.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/nuclear-data-fendl.md",
+    "source_sha256": "6acf3b130ff391e9e9c1fbe14fd4bb16932c3e4a1affe8a66de276db5d2fd599",
+    "source_updated": "2026-11-02",
+    "text_sha256": "7eefa1d637d0888f35af8236e5f52e5885765cc36be6b97e32b56c5b9c6b39db"
+  },
+  "concepts/pedestal.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/pedestal.md",
+    "source_sha256": "3b2b087ec3dedd1e5f5e6a6696f2fe91006ad64e3227a215406f41b78aabf1a1",
+    "source_updated": "2026-08-26",
+    "text_sha256": "3b2b087ec3dedd1e5f5e6a6696f2fe91006ad64e3227a215406f41b78aabf1a1"
+  },
+  "concepts/pellet-injection.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/pellet-injection.md",
+    "source_sha256": "5e88c167f4863d62a1ae8e96434711e6fcb8a0ba5f1df4f5da501faaba920ce4",
+    "source_updated": "2026-10-19",
+    "text_sha256": "5e88c167f4863d62a1ae8e96434711e6fcb8a0ba5f1df4f5da501faaba920ce4"
+  },
+  "concepts/plasma-beta.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/plasma-beta.md",
+    "source_sha256": "b6b88b5f4d684e8f7c96d2bc2561f95767aee6c679fbe26b94c681951fab313c",
+    "source_updated": "2026-08-26",
+    "text_sha256": "b6b88b5f4d684e8f7c96d2bc2561f95767aee6c679fbe26b94c681951fab313c"
+  },
+  "concepts/primary-heat-transfer-system.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/primary-heat-transfer-system.md",
+    "source_sha256": "c6ca27caba9da5dde771386a8f8fdbc0bbc66fc85b684bb6fdb4b69db786e02f",
+    "source_updated": "2026-09-12",
+    "text_sha256": "c6ca27caba9da5dde771386a8f8fdbc0bbc66fc85b684bb6fdb4b69db786e02f"
+  },
+  "concepts/q-gain-definitions.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/q-gain-definitions.md",
+    "source_sha256": "e538c52ca777da469931d7eccedec61eb5b4bf9770309ca67ccd6adfd8eb13e0",
+    "source_updated": "2026-10-19",
+    "text_sha256": "e538c52ca777da469931d7eccedec61eb5b4bf9770309ca67ccd6adfd8eb13e0"
+  },
+  "concepts/quasi-symmetry.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/quasi-symmetry.md",
+    "source_sha256": "d98e91161a3a39390da51da490c3b7841b66468f8042faf521e0b16ac501477d",
+    "source_updated": "2026-08-29",
+    "text_sha256": "d98e91161a3a39390da51da490c3b7841b66468f8042faf521e0b16ac501477d"
+  },
+  "concepts/quench.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/quench.md",
+    "source_sha256": "38bfe3d0c766a39c121d5d6ad98894e55312b0037956fe4f14905be06937c8d5",
+    "source_updated": "2026-09-08",
+    "text_sha256": "38bfe3d0c766a39c121d5d6ad98894e55312b0037956fe4f14905be06937c8d5"
+  },
+  "concepts/rafm-steel.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/rafm-steel.md",
+    "source_sha256": "ffb55ac8022e52e66f3586b2347cb190dba781cc2398d1ea6d6215a4e4ada6f6",
+    "source_updated": "2026-11-02",
+    "text_sha256": "2f73544082f44757d522efeb18053d61c5718724735808411b94415214c79e44"
+  },
+  "concepts/rayleigh-taylor-instability.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/rayleigh-taylor-instability.md",
+    "source_sha256": "2bf2b6653fa085de622dcc6217872e64eb25b3749a9c0cf508a459f75d8f078d",
+    "source_updated": "2026-08-26",
+    "text_sha256": "2bf2b6653fa085de622dcc6217872e64eb25b3749a9c0cf508a459f75d8f078d"
+  },
+  "concepts/rebco.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/rebco.md",
+    "source_sha256": "e24e469da990045e5a442ff98e7f691f7cbd4353e0b30971fad47fa3af4479b1",
+    "source_updated": "2026-09-02",
+    "text_sha256": "e24e469da990045e5a442ff98e7f691f7cbd4353e0b30971fad47fa3af4479b1"
+  },
+  "concepts/recirculating-power.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/recirculating-power.md",
+    "source_sha256": "f820990c8812658a41243a75fb55676922669950e11442bbf70e21f6ed5a91ad",
+    "source_updated": "2026-09-12",
+    "text_sha256": "f820990c8812658a41243a75fb55676922669950e11442bbf70e21f6ed5a91ad"
+  },
+  "concepts/runaway-electrons.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/runaway-electrons.md",
+    "source_sha256": "fc0d1224c73158eee1d653ec7acc2030758fd4a1fab6fc5c37cc007c81ec083a",
+    "source_updated": "2026-08-26",
+    "text_sha256": "fc0d1224c73158eee1d653ec7acc2030758fd4a1fab6fc5c37cc007c81ec083a"
+  },
+  "concepts/safety-factor.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/safety-factor.md",
+    "source_sha256": "d92e57fe04bd81bbb6873e6a24c239057102fbe9f7c1a98e2bf11a33da7375fb",
+    "source_updated": "2026-08-26",
+    "text_sha256": "d92e57fe04bd81bbb6873e6a24c239057102fbe9f7c1a98e2bf11a33da7375fb"
+  },
+  "concepts/shattered-pellet-injection.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/shattered-pellet-injection.md",
+    "source_sha256": "afa4aeaf0e03c46c84b202b316f6883347673e65dcb9827e723d97567a96d20f",
+    "source_updated": "2026-08-26",
+    "text_sha256": "afa4aeaf0e03c46c84b202b316f6883347673e65dcb9827e723d97567a96d20f"
+  },
+  "concepts/spherical-tokamak.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/spherical-tokamak.md",
+    "source_sha256": "48e40dce5075852a627889b036255de30635c3f18d0940ec99ce49ee541d16f8",
+    "source_updated": "2026-11-02",
+    "text_sha256": "48e40dce5075852a627889b036255de30635c3f18d0940ec99ce49ee541d16f8"
+  },
+  "concepts/stellarator.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/stellarator.md",
+    "source_sha256": "7e74bade35fe88f3dbdddee70616f5ad44ab0726f85e0bfb1202f257343d1fbf",
+    "source_updated": "2026-09-08",
+    "text_sha256": "7e74bade35fe88f3dbdddee70616f5ad44ab0726f85e0bfb1202f257343d1fbf"
+  },
+  "concepts/super-x-divertor.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/super-x-divertor.md",
+    "source_sha256": "ebe54e051c390aa139c3b1cd8e08a629704960dec17e8610495795b7074218b5",
+    "source_updated": "2026-08-29",
+    "text_sha256": "ebe54e051c390aa139c3b1cd8e08a629704960dec17e8610495795b7074218b5"
+  },
+  "concepts/thermal-storage-pulsed-operation.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/thermal-storage-pulsed-operation.md",
+    "source_sha256": "08c0a21d57db88295f9b2c64cd55d81db7e3dbcd2007c77ba1aa0f647ea0d0fa",
+    "source_updated": "2026-09-12",
+    "text_sha256": "08c0a21d57db88295f9b2c64cd55d81db7e3dbcd2007c77ba1aa0f647ea0d0fa"
+  },
+  "concepts/tokamak.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/tokamak.md",
+    "source_sha256": "1a4219eb46b2540f70b78ecd08aad50e6a1e63a5ac7e3e04a902b38caf6119cf",
+    "source_updated": "2026-08-26",
+    "text_sha256": "1a4219eb46b2540f70b78ecd08aad50e6a1e63a5ac7e3e04a902b38caf6119cf"
+  },
+  "concepts/triple-product.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/triple-product.md",
+    "source_sha256": "87a579c72bc1496ed504d6c999b05cb842f1947faedf848ecdc7b192333d609f",
+    "source_updated": "2026-08-26",
+    "text_sha256": "87a579c72bc1496ed504d6c999b05cb842f1947faedf848ecdc7b192333d609f"
+  },
+  "concepts/tritium-accountancy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/tritium-accountancy.md",
+    "source_sha256": "ff230bea0032c291ba2e2186fb85660cdca1d607515228f958632f8f0f61ea6f",
+    "source_updated": "2026-11-02",
+    "text_sha256": "4bb2f838677b7b845df647a9b7098b7ff233598d8a0dce3b62c7c4d90ea63f28"
+  },
+  "concepts/tritium-breeding-ratio.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/tritium-breeding-ratio.md",
+    "source_sha256": "103895e3f9614254209c556bbd5f0c957df70baaf83fafc97592b7cbfbcc71e2",
+    "source_updated": "2026-11-02",
+    "text_sha256": "3fd1e7710a4fce12797ede3131d2c03874b28791aa859318535a7bce76ec8bac"
+  },
+  "concepts/tritium-burn-fraction.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/tritium-burn-fraction.md",
+    "source_sha256": "d12b9578a21deb8f13c205ca7279d8e7b195721836a81e54be868ad63edc4fe6",
+    "source_updated": "2026-11-02",
+    "text_sha256": "13e6ffd6f8e67bd35512a4a4f0d1d500797b00b873bf067d89e2da5f98e08814"
+  },
+  "concepts/tritium-doubling-time.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/tritium-doubling-time.md",
+    "source_sha256": "67b2fd1b41b88425f561d00d5d5746a8c097c02640585fc2a08e8755504a787a",
+    "source_updated": "2026-11-02",
+    "text_sha256": "67b2fd1b41b88425f561d00d5d5746a8c097c02640585fc2a08e8755504a787a"
+  },
+  "concepts/tritium-retention.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/tritium-retention.md",
+    "source_sha256": "7e17c6ccd28cc1d56eaac02b113b83ac823746938f9637acec118085b7254920",
+    "source_updated": "2026-11-02",
+    "text_sha256": "7e17c6ccd28cc1d56eaac02b113b83ac823746938f9637acec118085b7254920"
+  },
+  "concepts/tritium-start-up-inventory.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/tritium-start-up-inventory.md",
+    "source_sha256": "326259d819fa8a9bd0db9c3ded9e69654eee353646bc7b869e1629b2626168f8",
+    "source_updated": "2026-11-02",
+    "text_sha256": "fbf602e09ab7fc818402f10f8bf974f252e290a9cfa93b29eddf84946a34a73b"
+  },
+  "concepts/tungsten-pfc.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/tungsten-pfc.md",
+    "source_sha256": "dfdd69dd126650bf518a83c357048488ff4ec5e1dbdcf656c6a15e29e95b4f0b",
+    "source_updated": "2026-09-08",
+    "text_sha256": "dfdd69dd126650bf518a83c357048488ff4ec5e1dbdcf656c6a15e29e95b4f0b"
+  },
+  "concepts/vanadium-alloys.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/vanadium-alloys.md",
+    "source_sha256": "aceac53256a6c4a86dbae63dc6d675b8777bc348fa290e13c92719a7868d9868",
+    "source_updated": "2026-11-02",
+    "text_sha256": "aceac53256a6c4a86dbae63dc6d675b8777bc348fa290e13c92719a7868d9868"
+  },
+  "concepts/z-pinch.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/concepts/z-pinch.md",
+    "source_sha256": "90024454c70a7cb76269243c79487504ec72b11d663d2427956f565eb5a0638f",
+    "source_updated": "2026-08-26",
+    "text_sha256": "90024454c70a7cb76269243c79487504ec72b11d663d2427956f565eb5a0638f"
+  },
+  "entities/aditya-u.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/aditya-u.md",
+    "source_sha256": "8b7e361c14059b83cf8bfaeb735fbc223b3a4d3d57a66446e0ad42f110e0e2eb",
+    "source_updated": "2026-08-26",
+    "text_sha256": "8b7e361c14059b83cf8bfaeb735fbc223b3a4d3d57a66446e0ad42f110e0e2eb"
+  },
+  "entities/alcator-c-mod.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/alcator-c-mod.md",
+    "source_sha256": "f8ecfbbbcd27ceee8f130cb257561d497312abfe9a49be2e671390b4f81f4389",
+    "source_updated": "2026-08-26",
+    "text_sha256": "f8ecfbbbcd27ceee8f130cb257561d497312abfe9a49be2e671390b4f81f4389"
+  },
+  "entities/arc.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/arc.md",
+    "source_sha256": "8a541dcec7aac29bbe59a359742a80db28f6550e229f7c1e7ea4acc6f7f95368",
+    "source_updated": "2026-11-02",
+    "text_sha256": "6e7e37db6485040118f9f9816f20e242f48d9b12268297e8569e8353b5ebfe84"
+  },
+  "entities/arpa-e.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/arpa-e.md",
+    "source_sha256": "6a71bdc5d00857a2507eb64738fa328438aa48292d759bf1471fb24ac30dec65",
+    "source_updated": "2026-08-26",
+    "text_sha256": "6a71bdc5d00857a2507eb64738fa328438aa48292d759bf1471fb24ac30dec65"
+  },
+  "entities/asdex-upgrade.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/asdex-upgrade.md",
+    "source_sha256": "b3e466d9f7aa309024b74906ab4bfdfede3eb8e21f4a2b550b63729ac1012c1d",
+    "source_updated": "2026-08-26",
+    "text_sha256": "b3e466d9f7aa309024b74906ab4bfdfede3eb8e21f4a2b550b63729ac1012c1d"
+  },
+  "entities/asipp.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/asipp.md",
+    "source_sha256": "f12ba7914810d3eea19ac24f4ed3064a2122228eac71e5db2138c1456a41f950",
+    "source_updated": "2026-08-26",
+    "text_sha256": "f12ba7914810d3eea19ac24f4ed3064a2122228eac71e5db2138c1456a41f950"
+  },
+  "entities/astral-systems.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/astral-systems.md",
+    "source_sha256": "5d42b7a34b7ba61cf3b6d0ed2adf3f48780bdb792a4a1263f23f7e16d9efc445",
+    "source_updated": "2026-08-26",
+    "text_sha256": "5d42b7a34b7ba61cf3b6d0ed2adf3f48780bdb792a4a1263f23f7e16d9efc445"
+  },
+  "entities/avalanche-energy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/avalanche-energy.md",
+    "source_sha256": "12cbaeae0b7bc2f15d6a8210c2c3c60672dfc69f76bae705ce92eb8b0614bdf9",
+    "source_updated": "2026-08-26",
+    "text_sha256": "12cbaeae0b7bc2f15d6a8210c2c3c60672dfc69f76bae705ce92eb8b0614bdf9"
+  },
+  "entities/best-tokamak.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/best-tokamak.md",
+    "source_sha256": "d0345b41525949270dbaf69163b09f98fbbb88ad2c5633d312ea8da958417f65",
+    "source_updated": "2026-08-26",
+    "text_sha256": "d0345b41525949270dbaf69163b09f98fbbb88ad2c5633d312ea8da958417f65"
+  },
+  "entities/black-moon-energy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/black-moon-energy.md",
+    "source_sha256": "50315ea203c8aeff163cd72d8fa452cded5b0bae2516e8275530d3ae87c127dc",
+    "source_updated": "2026-08-26",
+    "text_sha256": "50315ea203c8aeff163cd72d8fa452cded5b0bae2516e8275530d3ae87c127dc"
+  },
+  "entities/blue-laser-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/blue-laser-fusion.md",
+    "source_sha256": "a869e2d8f73f20b28c8b96758bdad0b60eeb00b71861e8d7031bfabac1d9547b",
+    "source_updated": "2026-08-26",
+    "text_sha256": "a869e2d8f73f20b28c8b96758bdad0b60eeb00b71861e8d7031bfabac1d9547b"
+  },
+  "entities/canis.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/canis.md",
+    "source_sha256": "c9951069f7f8a69d594df989453e1fccb7b10cfe701de8171b5b1baf60cdbf34",
+    "source_updated": "2026-09-08",
+    "text_sha256": "c9951069f7f8a69d594df989453e1fccb7b10cfe701de8171b5b1baf60cdbf34"
+  },
+  "entities/cfetr.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/cfetr.md",
+    "source_sha256": "d47d78d5094d118b501c265581dbb28b3c69a942312266a354d9361792a85a1c",
+    "source_updated": "2026-08-26",
+    "text_sha256": "d47d78d5094d118b501c265581dbb28b3c69a942312266a354d9361792a85a1c"
+  },
+  "entities/commonwealth-fusion-systems.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/commonwealth-fusion-systems.md",
+    "source_sha256": "4bcdd138249aafb48725d90738397bc5cf12238fd1961b4cde86155158160a67",
+    "source_updated": "2026-08-29",
+    "text_sha256": "4bcdd138249aafb48725d90738397bc5cf12238fd1961b4cde86155158160a67"
+  },
+  "entities/dennis-whyte.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/dennis-whyte.md",
+    "source_sha256": "0aafb07c4b0a7c859ed52238793e61047605da57b37854144211e5e0f06228a3",
+    "source_updated": "2026-08-26",
+    "text_sha256": "0aafb07c4b0a7c859ed52238793e61047605da57b37854144211e5e0f06228a3"
+  },
+  "entities/diii-d.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/diii-d.md",
+    "source_sha256": "d1c5b7c9362f75443ec903ecce08135d949615b71c36a75b6594190b0929e7ed",
+    "source_updated": "2026-08-26",
+    "text_sha256": "d1c5b7c9362f75443ec903ecce08135d949615b71c36a75b6594190b0929e7ed"
+  },
+  "entities/dtt.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/dtt.md",
+    "source_sha256": "d212eeff5b86177b814a7319a0be4508580d777ac1d8b54075e1f92420d9b64e",
+    "source_updated": "2026-08-26",
+    "text_sha256": "d212eeff5b86177b814a7319a0be4508580d777ac1d8b54075e1f92420d9b64e"
+  },
+  "entities/east.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/east.md",
+    "source_sha256": "c630e8f356fb576fe98850b82b592c5f1071f19ab390c789f41364d2244db9ff",
+    "source_updated": "2026-08-26",
+    "text_sha256": "c630e8f356fb576fe98850b82b592c5f1071f19ab390c789f41364d2244db9ff"
+  },
+  "entities/energy-singularity.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/energy-singularity.md",
+    "source_sha256": "dd1e6644bcfed235d2bdc948575f0a7cf506c7fc40585909af4fac8d0f846d45",
+    "source_updated": "2026-08-26",
+    "text_sha256": "dd1e6644bcfed235d2bdc948575f0a7cf506c7fc40585909af4fac8d0f846d45"
+  },
+  "entities/enn.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/enn.md",
+    "source_sha256": "7d694c3f8e690f7933ac40e559826eb00bbb679acf6fb669fd97e7fc60821f98",
+    "source_updated": "2026-08-26",
+    "text_sha256": "7d694c3f8e690f7933ac40e559826eb00bbb679acf6fb669fd97e7fc60821f98"
+  },
+  "entities/eos.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/eos.md",
+    "source_sha256": "74674c8f4156d59b229e30767744262c48766eb7220eb982cb01a2d0d56aed54",
+    "source_updated": "2026-09-08",
+    "text_sha256": "74674c8f4156d59b229e30767744262c48766eb7220eb982cb01a2d0d56aed54"
+  },
+  "entities/eu-demo.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/eu-demo.md",
+    "source_sha256": "2cd8ceabb69597fc58464afde0e75b54e5c6835e10e91be605db29c5d10c8ef4",
+    "source_updated": "2026-10-19",
+    "text_sha256": "2cd8ceabb69597fc58464afde0e75b54e5c6835e10e91be605db29c5d10c8ef4"
+  },
+  "entities/eurofusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/eurofusion.md",
+    "source_sha256": "54c5123f76fa2457c85cad2afc1437b27cb973f62ec2ab54ff6f46519cdd5b8b",
+    "source_updated": "2026-08-29",
+    "text_sha256": "54c5123f76fa2457c85cad2afc1437b27cb973f62ec2ab54ff6f46519cdd5b8b"
+  },
+  "entities/ex-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/ex-fusion.md",
+    "source_sha256": "011522f1494f1fbd53d73902135e67ba3ce57300cd397987681bd1343309b2db",
+    "source_updated": "2026-08-26",
+    "text_sha256": "011522f1494f1fbd53d73902135e67ba3ce57300cd397987681bd1343309b2db"
+  },
+  "entities/first-light-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/first-light-fusion.md",
+    "source_sha256": "3d49f3a873beffcf532237d98c86ff47d2e44ee17bbda04f6a44c7aa8ddef3f7",
+    "source_updated": "2026-08-29",
+    "text_sha256": "3d49f3a873beffcf532237d98c86ff47d2e44ee17bbda04f6a44c7aa8ddef3f7"
+  },
+  "entities/focused-energy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/focused-energy.md",
+    "source_sha256": "fc4431334f920ce6bf57af0ac8585014f94623be76daec7e05fb40e48373dc88",
+    "source_updated": "2026-08-26",
+    "text_sha256": "fc4431334f920ce6bf57af0ac8585014f94623be76daec7e05fb40e48373dc88"
+  },
+  "entities/fpns.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/fpns.md",
+    "source_sha256": "d5185756ce61753fb69375f69e5873666557f91841bf0429baea73449b51ee70",
+    "source_updated": "2026-08-26",
+    "text_sha256": "d5185756ce61753fb69375f69e5873666557f91841bf0429baea73449b51ee70"
+  },
+  "entities/fusion-industry-association.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/fusion-industry-association.md",
+    "source_sha256": "15b13157e770508f173d3d2192442eda2c3759f7caaa649fd969bc0b8c7be283",
+    "source_updated": "2026-08-26",
+    "text_sha256": "15b13157e770508f173d3d2192442eda2c3759f7caaa649fd969bc0b8c7be283"
+  },
+  "entities/gauss-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/gauss-fusion.md",
+    "source_sha256": "9db24af2a8a1b29b2238e26bf9166abb3c727579700e939bc7057f3b07ec7064",
+    "source_updated": "2026-08-26",
+    "text_sha256": "9db24af2a8a1b29b2238e26bf9166abb3c727579700e939bc7057f3b07ec7064"
+  },
+  "entities/general-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/general-fusion.md",
+    "source_sha256": "c3c1914a791c67b470909fb2a0e01d042582cbb3ea6ee9b716097b8899b8fbf6",
+    "source_updated": "2026-08-29",
+    "text_sha256": "c3c1914a791c67b470909fb2a0e01d042582cbb3ea6ee9b716097b8899b8fbf6"
+  },
+  "entities/globus-m2.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/globus-m2.md",
+    "source_sha256": "e0bd95b4ac78eb5a751263c9c4aa5f4194c5f526e972715b1fdf1628244dedda",
+    "source_updated": "2026-08-26",
+    "text_sha256": "e0bd95b4ac78eb5a751263c9c4aa5f4194c5f526e972715b1fdf1628244dedda"
+  },
+  "entities/google.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/google.md",
+    "source_sha256": "16f768661188c53ccbe7676168ada80d49632895d6525266855bffd56ec1347a",
+    "source_updated": "2026-08-26",
+    "text_sha256": "16f768661188c53ccbe7676168ada80d49632895d6525266855bffd56ec1347a"
+  },
+  "entities/h3at.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/h3at.md",
+    "source_sha256": "0a94e94241b12c045c3f63ea66ada0e3eb5bef9e4002f6be5be431f4e80a40ff",
+    "source_updated": "2026-08-26",
+    "text_sha256": "0a94e94241b12c045c3f63ea66ada0e3eb5bef9e4002f6be5be431f4e80a40ff"
+  },
+  "entities/hb11-energy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/hb11-energy.md",
+    "source_sha256": "4b28b09746dc188e67796f2ddec9817a5423b4a1deea90c5980eca0ea37832bf",
+    "source_updated": "2026-08-26",
+    "text_sha256": "4b28b09746dc188e67796f2ddec9817a5423b4a1deea90c5980eca0ea37832bf"
+  },
+  "entities/helical-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/helical-fusion.md",
+    "source_sha256": "7bb4573366c39eb776eaad74fa1b8d850af437b0880a1f864f02f3ebed8ce630",
+    "source_updated": "2026-08-26",
+    "text_sha256": "7bb4573366c39eb776eaad74fa1b8d850af437b0880a1f864f02f3ebed8ce630"
+  },
+  "entities/helion-energy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/helion-energy.md",
+    "source_sha256": "193b94c3545c6d49474fdf7fbf88ca22fb5af567fd588fd837f27d1087a0090f",
+    "source_updated": "2026-08-26",
+    "text_sha256": "193b94c3545c6d49474fdf7fbf88ca22fb5af567fd588fd837f27d1087a0090f"
+  },
+  "entities/helios.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/helios.md",
+    "source_sha256": "d6e6e8d538ae866defac0fbd0920d7541770fa639e3de85874fd7c1d6fbf1c2c",
+    "source_updated": "2026-09-12",
+    "text_sha256": "d6e6e8d538ae866defac0fbd0920d7541770fa639e3de85874fd7c1d6fbf1c2c"
+  },
+  "entities/hh70.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/hh70.md",
+    "source_sha256": "c8c53045fc17772c4981ea2ab1a5da482cc6b1561351bda67a7245e08ded1c23",
+    "source_updated": "2026-08-26",
+    "text_sha256": "c8c53045fc17772c4981ea2ab1a5da482cc6b1561351bda67a7245e08ded1c23"
+  },
+  "entities/iaea.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/iaea.md",
+    "source_sha256": "0c8fbc7f431aa89b92c5ed57ea4178cc660b0c445be8185a560e94fd3a0a964a",
+    "source_updated": "2026-08-26",
+    "text_sha256": "0c8fbc7f431aa89b92c5ed57ea4178cc660b0c445be8185a560e94fd3a0a964a"
+  },
+  "entities/ifmif-dones.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/ifmif-dones.md",
+    "source_sha256": "e80262a8f152c8d15a2ac4a1bd2ab6db82cf3200d2661e027b3d679481b29009",
+    "source_updated": "2026-08-26",
+    "text_sha256": "e80262a8f152c8d15a2ac4a1bd2ab6db82cf3200d2661e027b3d679481b29009"
+  },
+  "entities/inertia-enterprises.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/inertia-enterprises.md",
+    "source_sha256": "fa49fd407f2f9efc2177e70711dd9c785428c1a1127f018b03b67b9aa026976a",
+    "source_updated": "2026-08-26",
+    "text_sha256": "fa49fd407f2f9efc2177e70711dd9c785428c1a1127f018b03b67b9aa026976a"
+  },
+  "entities/infinity-two.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/infinity-two.md",
+    "source_sha256": "3d2cc7d60a4d59b38273402d98cc07f9460f328f77578e2b947bd8d82d4c159e",
+    "source_updated": "2026-08-26",
+    "text_sha256": "3d2cc7d60a4d59b38273402d98cc07f9460f328f77578e2b947bd8d82d4c159e"
+  },
+  "entities/iter.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/iter.md",
+    "source_sha256": "3c020274bc5c11b57169f002cf006c7341a5bc7afe931d738de0cdca96ff01f1",
+    "source_updated": "2026-08-29",
+    "text_sha256": "3c020274bc5c11b57169f002cf006c7341a5bc7afe931d738de0cdca96ff01f1"
+  },
+  "entities/jet-remote-handling.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/jet-remote-handling.md",
+    "source_sha256": "d2b98c84b9637f9d6584a7d3de061ab4274e1a8f70f0d9ab426d50801a2ee14f",
+    "source_updated": "2026-08-26",
+    "text_sha256": "d2b98c84b9637f9d6584a7d3de061ab4274e1a8f70f0d9ab426d50801a2ee14f"
+  },
+  "entities/jet.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/jet.md",
+    "source_sha256": "2e46b7c7d93f49c90b92498c0ffb580d171668298795acd70f1520e59d175e5a",
+    "source_updated": "2026-08-29",
+    "text_sha256": "2e46b7c7d93f49c90b92498c0ffb580d171668298795acd70f1520e59d175e5a"
+  },
+  "entities/jt-60sa.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/jt-60sa.md",
+    "source_sha256": "56acdfbc74d6138819e8dca6c40108a536ce547312c4c4b97197570e3499bf73",
+    "source_updated": "2026-08-26",
+    "text_sha256": "56acdfbc74d6138819e8dca6c40108a536ce547312c4c4b97197570e3499bf73"
+  },
+  "entities/kstar.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/kstar.md",
+    "source_sha256": "1996080fa1cb167f6f3b1d422e893aca1071ea9c3fa9889e2536f92981f69fc5",
+    "source_updated": "2026-08-26",
+    "text_sha256": "1996080fa1cb167f6f3b1d422e893aca1071ea9c3fa9889e2536f92981f69fc5"
+  },
+  "entities/ktm.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/ktm.md",
+    "source_sha256": "e467e24999317201712e63413907319e6284319f8acb6048b8c6d172a87c655b",
+    "source_updated": "2026-08-26",
+    "text_sha256": "e467e24999317201712e63413907319e6284319f8acb6048b8c6d172a87c655b"
+  },
+  "entities/kyoto-fusioneering.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/kyoto-fusioneering.md",
+    "source_sha256": "3f78f416fddd206247524ae1ae73e64f6177cfe6f3d6cf92321113f26976a30e",
+    "source_updated": "2026-08-26",
+    "text_sha256": "3f78f416fddd206247524ae1ae73e64f6177cfe6f3d6cf92321113f26976a30e"
+  },
+  "entities/lhd.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/lhd.md",
+    "source_sha256": "1095245a77722b10435f094ee61a8c542a50902fd62a32565461864a089c0173",
+    "source_updated": "2026-08-26",
+    "text_sha256": "1095245a77722b10435f094ee61a8c542a50902fd62a32565461864a089c0173"
+  },
+  "entities/librti.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/librti.md",
+    "source_sha256": "ab586deaf4d1a180fc124ffaf2b1bebe173d68146ad6818edecdfc48961bd8f9",
+    "source_updated": "2026-11-02",
+    "text_sha256": "6d1b7b465e87c1ba0a2f97ddca56f85d360449dabfe260a3973da3c9047663e1"
+  },
+  "entities/llnl.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/llnl.md",
+    "source_sha256": "4371d60d9269f7f86ad124cea6faca3aad96e970a21d515b5989310ecd590ba8",
+    "source_updated": "2026-08-26",
+    "text_sha256": "4371d60d9269f7f86ad124cea6faca3aad96e970a21d515b5989310ecd590ba8"
+  },
+  "entities/lm26.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/lm26.md",
+    "source_sha256": "44c6c8af956301e8ddf73143fd5d626eee6e32fa5a6609f593f0ad3dfa69507d",
+    "source_updated": "2026-08-29",
+    "text_sha256": "44c6c8af956301e8ddf73143fd5d626eee6e32fa5a6609f593f0ad3dfa69507d"
+  },
+  "entities/longview-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/longview-fusion.md",
+    "source_sha256": "7fc0f1888b1f2d91b14a38117187c60333f343fc4a1cfc81bdc234a5529d6d4b",
+    "source_updated": "2026-08-26",
+    "text_sha256": "7fc0f1888b1f2d91b14a38117187c60333f343fc4a1cfc81bdc234a5529d6d4b"
+  },
+  "entities/manta.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/manta.md",
+    "source_sha256": "bfc55702f1b0c0088a5e631eb2d7e2623e79da174eb51f63d01e67b71a75289d",
+    "source_updated": "2026-08-26",
+    "text_sha256": "bfc55702f1b0c0088a5e631eb2d7e2623e79da174eb51f63d01e67b71a75289d"
+  },
+  "entities/maritime-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/maritime-fusion.md",
+    "source_sha256": "f4181b5bc75460108f06d13a1abd34fee24f74a4528ced5e98fffc0c0a0c5092",
+    "source_updated": "2026-08-26",
+    "text_sha256": "f4181b5bc75460108f06d13a1abd34fee24f74a4528ced5e98fffc0c0a0c5092"
+  },
+  "entities/marvel-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/marvel-fusion.md",
+    "source_sha256": "c089769b9920037fa5faf7ecc4cb49a549ecfbfa0400a13fb2c0a30051c79c6d",
+    "source_updated": "2026-08-26",
+    "text_sha256": "c089769b9920037fa5faf7ecc4cb49a549ecfbfa0400a13fb2c0a30051c79c6d"
+  },
+  "entities/mast-upgrade.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/mast-upgrade.md",
+    "source_sha256": "2655e2524476fd6996f8ea22f3fea7bb8ebd7867f23347839a49a6f91ae19288",
+    "source_updated": "2026-08-26",
+    "text_sha256": "2655e2524476fd6996f8ea22f3fea7bb8ebd7867f23347839a49a6f91ae19288"
+  },
+  "entities/max-planck-ipp.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/max-planck-ipp.md",
+    "source_sha256": "cc2d423600797ec1bf4523055094f57e27e29c3b4f345b76d9cc20c4753c3351",
+    "source_updated": "2026-08-26",
+    "text_sha256": "cc2d423600797ec1bf4523055094f57e27e29c3b4f345b76d9cc20c4753c3351"
+  },
+  "entities/mftf-b.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/mftf-b.md",
+    "source_sha256": "4cf2325f6dbe2da9a03eae2e73416ccc97bf1a3a273540e8544fa59f0d0ae0a0",
+    "source_updated": "2026-08-26",
+    "text_sha256": "4cf2325f6dbe2da9a03eae2e73416ccc97bf1a3a273540e8544fa59f0d0ae0a0"
+  },
+  "entities/microsoft.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/microsoft.md",
+    "source_sha256": "49b7c31b3d4e7950a10e07eca0b4afbc67ba4fae2a2a629b4d581fa6c022f0a0",
+    "source_updated": "2026-08-29",
+    "text_sha256": "49b7c31b3d4e7950a10e07eca0b4afbc67ba4fae2a2a629b4d581fa6c022f0a0"
+  },
+  "entities/mpex.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/mpex.md",
+    "source_sha256": "30b6f2307fefa0f98c1db8ab88df5d2fca00ee6cc90798a6a67080d35e129b60",
+    "source_updated": "2026-08-26",
+    "text_sha256": "30b6f2307fefa0f98c1db8ab88df5d2fca00ee6cc90798a6a67080d35e129b60"
+  },
+  "entities/nbtf-spider-mitica.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/nbtf-spider-mitica.md",
+    "source_sha256": "0b2603983ef29fcc4d482c8c90339ff3728240a3c315446041cba8d1e94e136f",
+    "source_updated": "2026-08-26",
+    "text_sha256": "0b2603983ef29fcc4d482c8c90339ff3728240a3c315446041cba8d1e94e136f"
+  },
+  "entities/neofusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/neofusion.md",
+    "source_sha256": "d448ab7f54734c862a1b15379502ab64264254fef7ffe84f351e6beebb109ab9",
+    "source_updated": "2026-08-26",
+    "text_sha256": "d448ab7f54734c862a1b15379502ab64264254fef7ffe84f351e6beebb109ab9"
+  },
+  "entities/nif.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/nif.md",
+    "source_sha256": "7c583640ecd97440adb4f7352a1e051d85367ea33bca34d6c740630ccb8ec015",
+    "source_updated": "2026-08-29",
+    "text_sha256": "7c583640ecd97440adb4f7352a1e051d85367ea33bca34d6c740630ccb8ec015"
+  },
+  "entities/novatron.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/novatron.md",
+    "source_sha256": "f9d030a394e634242159c433fd373ad174afcc81b8b7792bcfe02f8d9e2fccbb",
+    "source_updated": "2026-08-26",
+    "text_sha256": "f9d030a394e634242159c433fd373ad174afcc81b8b7792bcfe02f8d9e2fccbb"
+  },
+  "entities/nt-tao.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/nt-tao.md",
+    "source_sha256": "62e92f3aa9c879c6d0ad9b2d05956e06b5d3294312120fdc7fa8cec06cd7b934",
+    "source_updated": "2026-08-26",
+    "text_sha256": "62e92f3aa9c879c6d0ad9b2d05956e06b5d3294312120fdc7fa8cec06cd7b934"
+  },
+  "entities/omega-laser.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/omega-laser.md",
+    "source_sha256": "870a5b137ae428dde75c9e0fe2856e4db25c31a9b1640dbdaf53e7ef817bbaa4",
+    "source_updated": "2026-08-26",
+    "text_sha256": "870a5b137ae428dde75c9e0fe2856e4db25c31a9b1640dbdaf53e7ef817bbaa4"
+  },
+  "entities/openstar-technologies.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/openstar-technologies.md",
+    "source_sha256": "bf69392a383b6f4835ca4a9684499e71469c2f61762f9a59b48a0ccd390bd341",
+    "source_updated": "2026-08-26",
+    "text_sha256": "bf69392a383b6f4835ca4a9684499e71469c2f61762f9a59b48a0ccd390bd341"
+  },
+  "entities/ornl.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/ornl.md",
+    "source_sha256": "ae8a886ca3160ec4cbe896fbab02bfef83ad0ff138e4a244e98fd20b8e27597b",
+    "source_updated": "2026-08-26",
+    "text_sha256": "ae8a886ca3160ec4cbe896fbab02bfef83ad0ff138e4a244e98fd20b8e27597b"
+  },
+  "entities/pacific-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/pacific-fusion.md",
+    "source_sha256": "363b7c66649205993777ebfdd3b6eda9cfe1bc07a75ee816b0572ca5513f60ec",
+    "source_updated": "2026-08-29",
+    "text_sha256": "363b7c66649205993777ebfdd3b6eda9cfe1bc07a75ee816b0572ca5513f60ec"
+  },
+  "entities/polaris.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/polaris.md",
+    "source_sha256": "2e5ad5377985e57e5dae286d051b8aff994f0392e898cb6e0395b3e252e86511",
+    "source_updated": "2026-08-26",
+    "text_sha256": "2e5ad5377985e57e5dae286d051b8aff994f0392e898cb6e0395b3e252e86511"
+  },
+  "entities/pppl.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/pppl.md",
+    "source_sha256": "c24f1cc5c3304e082a9907592cc5c29c62de34449204489102270adfc895fb81",
+    "source_updated": "2026-08-29",
+    "text_sha256": "c24f1cc5c3304e082a9907592cc5c29c62de34449204489102270adfc895fb81"
+  },
+  "entities/proxima-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/proxima-fusion.md",
+    "source_sha256": "8bf93a15f80358412526ecb73d303098a34279b0ddcdcffeee5bb230f2252e5d",
+    "source_updated": "2026-08-26",
+    "text_sha256": "8bf93a15f80358412526ecb73d303098a34279b0ddcdcffeee5bb230f2252e5d"
+  },
+  "entities/race-culham.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/race-culham.md",
+    "source_sha256": "4982ded7cd933fc54124d590cfb66184614b0e822b3035e5e33c1ab5eedbdf52",
+    "source_updated": "2026-08-26",
+    "text_sha256": "4982ded7cd933fc54124d590cfb66184614b0e822b3035e5e33c1ab5eedbdf52"
+  },
+  "entities/realta-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/realta-fusion.md",
+    "source_sha256": "1c81790cf09f25f56c0b7e1e97df774647a7ccff1d9b0bceb2f9bb9263dd1d4c",
+    "source_updated": "2026-08-26",
+    "text_sha256": "1c81790cf09f25f56c0b7e1e97df774647a7ccff1d9b0bceb2f9bb9263dd1d4c"
+  },
+  "entities/renaissance-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/renaissance-fusion.md",
+    "source_sha256": "f2ff9174ad8ddc423fa0efb8df3d4f2a715b90d707c5674cdd6942c13cf2202b",
+    "source_updated": "2026-08-26",
+    "text_sha256": "f2ff9174ad8ddc423fa0efb8df3d4f2a715b90d707c5674cdd6942c13cf2202b"
+  },
+  "entities/shine-technologies.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/shine-technologies.md",
+    "source_sha256": "8b8f167e4e73e9d270f0283ba86bbf6085ff18accfe40303e1f4de11f229257c",
+    "source_updated": "2026-08-26",
+    "text_sha256": "8b8f167e4e73e9d270f0283ba86bbf6085ff18accfe40303e1f4de11f229257c"
+  },
+  "entities/sparc.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/sparc.md",
+    "source_sha256": "67822bdb969723671f7bf7b616f22efdae332e83529193b34d182601f8b57c2e",
+    "source_updated": "2026-08-29",
+    "text_sha256": "67822bdb969723671f7bf7b616f22efdae332e83529193b34d182601f8b57c2e"
+  },
+  "entities/sst-1.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/sst-1.md",
+    "source_sha256": "8e2e9fb3decdab1841b70f74863babcf755c568667934b9546358294cfceaf93",
+    "source_updated": "2026-08-26",
+    "text_sha256": "8e2e9fb3decdab1841b70f74863babcf755c568667934b9546358294cfceaf93"
+  },
+  "entities/st-e1.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/st-e1.md",
+    "source_sha256": "e4429a6f5cf560072cfa023c70c4aa2e562d370955a6e6c8c424b92f2395670a",
+    "source_updated": "2026-11-02",
+    "text_sha256": "e4429a6f5cf560072cfa023c70c4aa2e562d370955a6e6c8c424b92f2395670a"
+  },
+  "entities/st40.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/st40.md",
+    "source_sha256": "d6daca32bdab0c8a8563db5c047aecdf5d0c11bde540e640e0e125ba06e136de",
+    "source_updated": "2026-08-26",
+    "text_sha256": "d6daca32bdab0c8a8563db5c047aecdf5d0c11bde540e640e0e125ba06e136de"
+  },
+  "entities/startorus.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/startorus.md",
+    "source_sha256": "56c1de3e53830e887df8aca14e88138591040bda417190f669554d7461e40624",
+    "source_updated": "2026-08-26",
+    "text_sha256": "56c1de3e53830e887df8aca14e88138591040bda417190f669554d7461e40624"
+  },
+  "entities/stellarex.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/stellarex.md",
+    "source_sha256": "adcbc7ede2d2f807321649e4fab3b0035c67a92b288fd58fcd78ca68b1a97cb5",
+    "source_updated": "2026-08-26",
+    "text_sha256": "adcbc7ede2d2f807321649e4fab3b0035c67a92b288fd58fcd78ca68b1a97cb5"
+  },
+  "entities/step.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/step.md",
+    "source_sha256": "0b228a05b03618e5c407bf483c08a6ee856de0cacbf9c651140ebd84501f99fe",
+    "source_updated": "2026-11-02",
+    "text_sha256": "dc34a63ff9988b76b2df1bb50809f6d14bcc3897260c111fbc379846fdc51637"
+  },
+  "entities/t-15md.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/t-15md.md",
+    "source_sha256": "bed1edeed5915cec42e1ac00172a119d530d47e3f8a270b21eae800f7c068502",
+    "source_updated": "2026-08-26",
+    "text_sha256": "bed1edeed5915cec42e1ac00172a119d530d47e3f8a270b21eae800f7c068502"
+  },
+  "entities/t-3.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/t-3.md",
+    "source_sha256": "f227c130d8b03c2b4b81e0cfeced848a5123bd2b923243e40c9658d086135403",
+    "source_updated": "2026-08-26",
+    "text_sha256": "f227c130d8b03c2b4b81e0cfeced848a5123bd2b923243e40c9658d086135403"
+  },
+  "entities/tae-technologies.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/tae-technologies.md",
+    "source_sha256": "9cd31c9b1af70d2e0a4a1ff5d32af112e0c221ad551d2bc73905ce7b28c867ef",
+    "source_updated": "2026-08-26",
+    "text_sha256": "9cd31c9b1af70d2e0a4a1ff5d32af112e0c221ad551d2bc73905ce7b28c867ef"
+  },
+  "entities/tcabr.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/tcabr.md",
+    "source_sha256": "4202cd0ea9d0001b0c9b8d141de26cd342f27cca2fa94668b90e58cca165d371",
+    "source_updated": "2026-08-26",
+    "text_sha256": "4202cd0ea9d0001b0c9b8d141de26cd342f27cca2fa94668b90e58cca165d371"
+  },
+  "entities/tcv.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/tcv.md",
+    "source_sha256": "28cb248618d85f425277f4982bcee6c8828039cb620c8d64d89afece08f6913c",
+    "source_updated": "2026-08-26",
+    "text_sha256": "28cb248618d85f425277f4982bcee6c8828039cb620c8d64d89afece08f6913c"
+  },
+  "entities/tftr.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/tftr.md",
+    "source_sha256": "7a62905d8013c71221788865cf1865b234f6affa255944c3f45cc9b0a5e21d25",
+    "source_updated": "2026-08-26",
+    "text_sha256": "7a62905d8013c71221788865cf1865b234f6affa255944c3f45cc9b0a5e21d25"
+  },
+  "entities/thea-energy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/thea-energy.md",
+    "source_sha256": "5b547a4cf4424b4f403bb0e5648d18c06f3fc2a2de9b983ea2a1ac7e3cb7e22a",
+    "source_updated": "2026-09-08",
+    "text_sha256": "5b547a4cf4424b4f403bb0e5648d18c06f3fc2a2de9b983ea2a1ac7e3cb7e22a"
+  },
+  "entities/tokamak-energy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/tokamak-energy.md",
+    "source_sha256": "88eb180e11619bc4e8768a6a928d88854c9a34b11076c4ca8c8ee5b39c0e9aca",
+    "source_updated": "2026-11-02",
+    "text_sha256": "c353ec1dbbf357c4e12e80ba937bb774c0cf5165eb7f7a16109c006db240316d"
+  },
+  "entities/type-one-energy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/type-one-energy.md",
+    "source_sha256": "029cf49a971ef576c837ec362da46d9fa1bd36be8136ec9a2e5795e368f425ed",
+    "source_updated": "2026-08-26",
+    "text_sha256": "029cf49a971ef576c837ec362da46d9fa1bd36be8136ec9a2e5795e368f425ed"
+  },
+  "entities/ukaea.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/ukaea.md",
+    "source_sha256": "a34b7fb974677c916e85063676e5066716763b57db1099f1e5476ab338b35c76",
+    "source_updated": "2026-11-02",
+    "text_sha256": "5b8782013390261d8e1d64495662eb5f158ab6faee4b3dff3c05cfbdf883520f"
+  },
+  "entities/unity-3.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/unity-3.md",
+    "source_sha256": "06e2f07bb86a08ad21885302e06c3c36d6e7337722cef26267312a8b90ef1038",
+    "source_updated": "2026-08-26",
+    "text_sha256": "06e2f07bb86a08ad21885302e06c3c36d6e7337722cef26267312a8b90ef1038"
+  },
+  "entities/us-doe.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/us-doe.md",
+    "source_sha256": "885b701eb37b94ce5a3f339a55ccdb1d487c1b1fa25be092089a9348288708cc",
+    "source_updated": "2026-08-29",
+    "text_sha256": "885b701eb37b94ce5a3f339a55ccdb1d487c1b1fa25be092089a9348288708cc"
+  },
+  "entities/us-nrc.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/us-nrc.md",
+    "source_sha256": "0b2962cbbfe4a7d9ec28eec4138bc42ef0a88af02e755deb0fbcfe29bed0d0f8",
+    "source_updated": "2026-08-26",
+    "text_sha256": "0b2962cbbfe4a7d9ec28eec4138bc42ef0a88af02e755deb0fbcfe29bed0d0f8"
+  },
+  "entities/wendelstein-7-x.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/wendelstein-7-x.md",
+    "source_sha256": "07d21c3634b2d7fd8fe98b26ce470078b64e17a7851b18df9dc545acf3dee82c",
+    "source_updated": "2026-08-26",
+    "text_sha256": "07d21c3634b2d7fd8fe98b26ce470078b64e17a7851b18df9dc545acf3dee82c"
+  },
+  "entities/west.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/west.md",
+    "source_sha256": "7ed51b178c93514deb406caa4a48661f82f462c27c2d921e0a267c23cd581ea2",
+    "source_updated": "2026-08-26",
+    "text_sha256": "7ed51b178c93514deb406caa4a48661f82f462c27c2d921e0a267c23cd581ea2"
+  },
+  "entities/wham.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/wham.md",
+    "source_sha256": "c11b52926b4a1735887249e73b467c490c21059bae1952beb822e26b8e146248",
+    "source_updated": "2026-08-26",
+    "text_sha256": "c11b52926b4a1735887249e73b467c490c21059bae1952beb822e26b8e146248"
+  },
+  "entities/xcimer-energy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/xcimer-energy.md",
+    "source_sha256": "9890f3e95e87b1cefd74b42fc32c6ff619cbd9b79e47cfd51d99fe329594cda4",
+    "source_updated": "2026-08-26",
+    "text_sha256": "9890f3e95e87b1cefd74b42fc32c6ff619cbd9b79e47cfd51d99fe329594cda4"
+  },
+  "entities/yan-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/yan-fusion.md",
+    "source_sha256": "a23521d325b75902d8311309c4ed74af1840be8b56757268bba3faac870b6214",
+    "source_updated": "2026-08-26",
+    "text_sha256": "a23521d325b75902d8311309c4ed74af1840be8b56757268bba3faac870b6214"
+  },
+  "entities/z-machine.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/z-machine.md",
+    "source_sha256": "23c717a85c610a09e969c5f521ece663203db36c0c1831169ebf4091778cd2eb",
+    "source_updated": "2026-08-26",
+    "text_sha256": "23c717a85c610a09e969c5f521ece663203db36c0c1831169ebf4091778cd2eb"
+  },
+  "entities/zap-energy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/zap-energy.md",
+    "source_sha256": "fd7666bd127517bf668393b9626e1723cc9453e1a3a77958ce5f4656e5c7e0c8",
+    "source_updated": "2026-08-26",
+    "text_sha256": "fd7666bd127517bf668393b9626e1723cc9453e1a3a77958ce5f4656e5c7e0c8"
+  },
+  "entities/zeta.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/entities/zeta.md",
+    "source_sha256": "59abad64cc00ffed1c5dd71bdb71bcf87f3822ba63ed2b7bcb65bd2eef37ec64",
+    "source_updated": "2026-08-26",
+    "text_sha256": "59abad64cc00ffed1c5dd71bdb71bcf87f3822ba63ed2b7bcb65bd2eef37ec64"
+  },
+  "moc/moc-companies.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/moc/moc-companies.md",
+    "source_sha256": "b940d0b3740da4bea0812536728d7d73e250770a68d90c382395e4a6eafb5881",
+    "source_updated": "2026-08-29",
+    "text_sha256": "b940d0b3740da4bea0812536728d7d73e250770a68d90c382395e4a6eafb5881"
+  },
+  "moc/moc-economics-policy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/moc/moc-economics-policy.md",
+    "source_sha256": "e596618e8a622e542f27090ad71e8fe29facf19243436f377311acbdfec46335",
+    "source_updated": "2026-08-29",
+    "text_sha256": "e596618e8a622e542f27090ad71e8fe29facf19243436f377311acbdfec46335"
+  },
+  "moc/moc-engineering.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/moc/moc-engineering.md",
+    "source_sha256": "47ed12e533dafdc5139199c0de264e0daff6b15d0fd0a85712866b859bbdd563",
+    "source_updated": "2026-09-12",
+    "text_sha256": "47ed12e533dafdc5139199c0de264e0daff6b15d0fd0a85712866b859bbdd563"
+  },
+  "moc/moc-machines.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/moc/moc-machines.md",
+    "source_sha256": "bf3123a7c190f3ad50f059282b793b7b09c3c00d4a1d3dbe8109d03154efe47c",
+    "source_updated": "2026-09-08",
+    "text_sha256": "bf3123a7c190f3ad50f059282b793b7b09c3c00d4a1d3dbe8109d03154efe47c"
+  },
+  "moc/moc-physics.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/moc/moc-physics.md",
+    "source_sha256": "a792147dcee3e69bb04c6b1552cf570126db0c67d907a41d2f0cfdb8f83a869f",
+    "source_updated": "2026-08-29",
+    "text_sha256": "a792147dcee3e69bb04c6b1552cf570126db0c67d907a41d2f0cfdb8f83a869f"
+  },
+  "moc/moc-sources.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/moc/moc-sources.md",
+    "source_sha256": "d73f9f5afec2cd3e534a2f27ac5e3d9947034e6d51313b9f28061c1c1d47715e",
+    "source_updated": "2026-11-02",
+    "text_sha256": "5e3b25adeec67ae133216c5b01161d89d9f2046b80e8809a69dfc0598aee51fa"
+  },
+  "moc/moc-start-here.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/moc/moc-start-here.md",
+    "source_sha256": "d69515127585f7f4f2c18c6bfbfd3aad6b9ef4588659ae0c550f9432e374479d",
+    "source_updated": "2026-08-29",
+    "text_sha256": "d69515127585f7f4f2c18c6bfbfd3aad6b9ef4588659ae0c550f9432e374479d"
+  },
+  "sources/abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/abdou-2021-dt-fuel-cycle-tritium-self-sufficiency.md",
+    "source_sha256": "5f0683eb249586c8f52edaa09d21c414f67a11fb7eb4636a3e4f609c5de9f8eb",
+    "source_updated": "2026-10-19",
+    "text_sha256": "5f0683eb249586c8f52edaa09d21c414f67a11fb7eb4636a3e4f609c5de9f8eb"
+  },
+  "sources/accelerating-the-fusion-workforce-2025.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/accelerating-the-fusion-workforce-2025.md",
+    "source_sha256": "99072fb04f7db2793f9ae5cef05756c70d47500f71179aef63742af999968c04",
+    "source_updated": "2026-08-26",
+    "text_sha256": "99072fb04f7db2793f9ae5cef05756c70d47500f71179aef63742af999968c04"
+  },
+  "sources/arc-compact-high-field-demonstration-power-plant.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/arc-compact-high-field-demonstration-power-plant.md",
+    "source_sha256": "5e42f7fdf4de0e27d3f4fb446c74247729fb313e8fbab9da0055028de4b219e4",
+    "source_updated": "2026-08-26",
+    "text_sha256": "5e42f7fdf4de0e27d3f4fb446c74247729fb313e8fbab9da0055028de4b219e4"
+  },
+  "sources/baby-tritium-self-sufficiency-experiment.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/baby-tritium-self-sufficiency-experiment.md",
+    "source_sha256": "e594a6b9ab204ef0318aad456d8c14e445b226e99d74964c5efe573774bdcc85",
+    "source_updated": "2026-08-26",
+    "text_sha256": "e594a6b9ab204ef0318aad456d8c14e445b226e99d74964c5efe573774bdcc85"
+  },
+  "sources/china-fusion-device-radiation-safety-2025.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/china-fusion-device-radiation-safety-2025.md",
+    "source_sha256": "1cf096a439f6f5572370ddcc85c92311921daf512340c76fff0ad62e11a550c2",
+    "source_updated": "2026-08-26",
+    "text_sha256": "1cf096a439f6f5572370ddcc85c92311921daf512340c76fff0ad62e11a550c2"
+  },
+  "sources/csis-federal-investment-fusion-infrastructure-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/csis-federal-investment-fusion-infrastructure-2026.md",
+    "source_sha256": "70a108560de85088518615b1d71757653a5e2a24bbd727dee2b95cc6ad98140d",
+    "source_updated": "2026-08-29",
+    "text_sha256": "70a108560de85088518615b1d71757653a5e2a24bbd727dee2b95cc6ad98140d"
+  },
+  "sources/doe-fusion-science-technology-roadmap-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/doe-fusion-science-technology-roadmap-2026.md",
+    "source_sha256": "32305ed0155537f49908fbc56f90bd626bff5814e5a6d95fb06b7af20a610bb1",
+    "source_updated": "2026-08-26",
+    "text_sha256": "32305ed0155537f49908fbc56f90bd626bff5814e5a6d95fb06b7af20a610bb1"
+  },
+  "sources/eurofusion-research-roadmap-2018.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/eurofusion-research-roadmap-2018.md",
+    "source_sha256": "78450b41464a58089c9b2a08e6f4292b0e3ef1ab109ecf478ee34810641705cd",
+    "source_updated": "2026-08-26",
+    "text_sha256": "78450b41464a58089c9b2a08e6f4292b0e3ef1ab109ecf478ee34810641705cd"
+  },
+  "sources/fia-global-fusion-industry-report-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/fia-global-fusion-industry-report-2026.md",
+    "source_sha256": "b69ae75d39144da2431c89ac6c236cf08667e3ac2fa98e59aba42cb99fe0163a",
+    "source_updated": "2026-08-26",
+    "text_sha256": "b69ae75d39144da2431c89ac6c236cf08667e3ac2fa98e59aba42cb99fe0163a"
+  },
+  "sources/first-light-fusion-strategic-update-2025.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/first-light-fusion-strategic-update-2025.md",
+    "source_sha256": "4a34c748c3c3d7aa6d1832ec55957d66ed3ce29c3b6c1aeff48b0ff5af331f67",
+    "source_updated": "2026-08-29",
+    "text_sha256": "4a34c748c3c3d7aa6d1832ec55957d66ed3ce29c3b6c1aeff48b0ff5af331f67"
+  },
+  "sources/flynn-larsen-2022-kalman-filters-tritium-accountancy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/flynn-larsen-2022-kalman-filters-tritium-accountancy.md",
+    "source_sha256": "1dce7d058d212de3b477cef8df162e6e9d1cacc8ac11596d607a396d54c7478a",
+    "source_updated": "2026-11-02",
+    "text_sha256": "1dce7d058d212de3b477cef8df162e6e9d1cacc8ac11596d607a396d54c7478a"
+  },
+  "sources/fusion-commercialization-social-environmental-challenges.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/fusion-commercialization-social-environmental-challenges.md",
+    "source_sha256": "4ad435e6cc5851eec310058f0f867d5dc7e9adb0850f0542ac3c930f7de2c2a8",
+    "source_updated": "2026-08-26",
+    "text_sha256": "4ad435e6cc5851eec310058f0f867d5dc7e9adb0850f0542ac3c930f7de2c2a8"
+  },
+  "sources/fusion-fission-twin-conjoint-public-support-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/fusion-fission-twin-conjoint-public-support-2026.md",
+    "source_sha256": "af384836315c236290daef068485d3824974fe085201a7b533cb7d20ec381826",
+    "source_updated": "2026-08-26",
+    "text_sha256": "af384836315c236290daef068485d3824974fe085201a7b533cb7d20ec381826"
+  },
+  "sources/fusionmae-crossref-metadata-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/fusionmae-crossref-metadata-2026.md",
+    "source_sha256": "f7847b3249207dd8824da150a591df871dac3c0c54b5d8ad09fb0be602980140",
+    "source_updated": "2026-08-26",
+    "text_sha256": "f7847b3249207dd8824da150a591df871dac3c0c54b5d8ad09fb0be602980140"
+  },
+  "sources/general-fusion-layoffs-2025.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/general-fusion-layoffs-2025.md",
+    "source_sha256": "ef9c812c8446792d2dbb25fcf3ce500641be560d7907162ce576f35fcf786718",
+    "source_updated": "2026-08-29",
+    "text_sha256": "ef9c812c8446792d2dbb25fcf3ce500641be560d7907162ce576f35fcf786718"
+  },
+  "sources/gonzalez-de-vicente-2022-fusion-waste.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/gonzalez-de-vicente-2022-fusion-waste.md",
+    "source_sha256": "9651e4e666ebf6c33be79bcc54ca607b42f0a7059e5d07291fba57146226dc9d",
+    "source_updated": "2026-08-29",
+    "text_sha256": "9651e4e666ebf6c33be79bcc54ca607b42f0a7059e5d07291fba57146226dc9d"
+  },
+  "sources/hl3-data-driven-rl-control-2025.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/hl3-data-driven-rl-control-2025.md",
+    "source_sha256": "2c2f45b52c770931dbf785e4d6c215f06244f87055a7fd92e65b3ed3dfd89299",
+    "source_updated": "2026-08-26",
+    "text_sha256": "2c2f45b52c770931dbf785e4d6c215f06244f87055a7fd92e65b3ed3dfd89299"
+  },
+  "sources/iter-safety-licensing-lessons-for-demo.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/iter-safety-licensing-lessons-for-demo.md",
+    "source_sha256": "dd727e76dcc7025d7a4468b0dc4066208ecccda50e89c88b55a610d8d89813c5",
+    "source_updated": "2026-08-26",
+    "text_sha256": "dd727e76dcc7025d7a4468b0dc4066208ecccda50e89c88b55a610d8d89813c5"
+  },
+  "sources/manta-negative-triangularity-pilot-plant.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/manta-negative-triangularity-pilot-plant.md",
+    "source_sha256": "36d87253d73cb851dc32e059a8b6e87b8777560993b3ce5805deb748b85cb615",
+    "source_updated": "2026-08-26",
+    "text_sha256": "36d87253d73cb851dc32e059a8b6e87b8777560993b3ce5805deb748b85cb615"
+  },
+  "sources/marsteller-2025-t2apir-first-results.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/marsteller-2025-t2apir-first-results.md",
+    "source_sha256": "3ac6a557c642f6737429e3998eb9f575ee7f65921864cf04609e68e4012eaaa6",
+    "source_updated": "2026-10-19",
+    "text_sha256": "3ac6a557c642f6737429e3998eb9f575ee7f65921864cf04609e68e4012eaaa6"
+  },
+  "sources/mast-u-superx-divertor-exhaust-control.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/mast-u-superx-divertor-exhaust-control.md",
+    "source_sha256": "2c24f2fd4799f8a90e5407a6dcd1729d2b82fb6a076092ae247094af7d884f31",
+    "source_updated": "2026-08-26",
+    "text_sha256": "2c24f2fd4799f8a90e5407a6dcd1729d2b82fb6a076092ae247094af7d884f31"
+  },
+  "sources/maturation-of-critical-technologies-demo-balance-of-plant.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/maturation-of-critical-technologies-demo-balance-of-plant.md",
+    "source_sha256": "59da13ab73ee5cfbe9a4f5427be158439263c99a0431eaeef88b4ae67078c7b1",
+    "source_updated": "2026-09-12",
+    "text_sha256": "59da13ab73ee5cfbe9a4f5427be158439263c99a0431eaeef88b4ae67078c7b1"
+  },
+  "sources/meschini-2023-tritium-fuel-cycle-arc-step.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/meschini-2023-tritium-fuel-cycle-arc-step.md",
+    "source_sha256": "f0946edf71867e9b22e1412bed2e91e18dd437d221e66d80af20893e7d567d14",
+    "source_updated": "2026-11-02",
+    "text_sha256": "f0946edf71867e9b22e1412bed2e91e18dd437d221e66d80af20893e7d567d14"
+  },
+  "sources/meschini-2025-trapping-tritium-self-sufficiency.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/meschini-2025-trapping-tritium-self-sufficiency.md",
+    "source_sha256": "5155eff8cfa794950ef19d236d90a8e3bda048a00547703f0a74128b8798d4c9",
+    "source_updated": "2026-11-02",
+    "text_sha256": "5155eff8cfa794950ef19d236d90a8e3bda048a00547703f0a74128b8798d4c9"
+  },
+  "sources/novel-approach-proton-boron-11-fusion-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/novel-approach-proton-boron-11-fusion-2026.md",
+    "source_sha256": "70c863301d52bbf5897be7851aeddf558543f309351c5c8ad60713395dc306ba",
+    "source_updated": "2026-08-26",
+    "text_sha256": "70c863301d52bbf5897be7851aeddf558543f309351c5c8ad60713395dc306ba"
+  },
+  "sources/nuclear-fusion-for-ai-data-centers-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/nuclear-fusion-for-ai-data-centers-2026.md",
+    "source_sha256": "36569558aa9c45fef64b60312f695ca905aa841e0abc89c323f69947e088a30d",
+    "source_updated": "2026-08-26",
+    "text_sha256": "36569558aa9c45fef64b60312f695ca905aa841e0abc89c323f69947e088a30d"
+  },
+  "sources/overview-of-the-helios-design.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/overview-of-the-helios-design.md",
+    "source_sha256": "c63ebe4297007fad388c70fe8deeb1d7348e8e38003a1a4b074cd49c18e8fe2a",
+    "source_updated": "2026-09-12",
+    "text_sha256": "c63ebe4297007fad388c70fe8deeb1d7348e8e38003a1a4b074cd49c18e8fe2a"
+  },
+  "sources/prototyping-test-canis-hts-planar-coil-array.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/prototyping-test-canis-hts-planar-coil-array.md",
+    "source_sha256": "9c5554c108061490e29fb0e07b6b7e0678decb3edf4ffb0468bbbed987da0374",
+    "source_updated": "2026-09-02",
+    "text_sha256": "9c5554c108061490e29fb0e07b6b7e0678decb3edf4ffb0468bbbed987da0374"
+  },
+  "sources/public-acceptability-scoping-review-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/public-acceptability-scoping-review-2026.md",
+    "source_sha256": "b2cb48a30d4bda1773682deca0c21a5271220145765ea914bcce87f03d385a7e",
+    "source_updated": "2026-08-26",
+    "text_sha256": "b2cb48a30d4bda1773682deca0c21a5271220145765ea914bcce87f03d385a7e"
+  },
+  "sources/quasi-single-stage-stellarator-optimization-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/quasi-single-stage-stellarator-optimization-2026.md",
+    "source_sha256": "c0d08377e3bc21232725be2db1738f5bec274cc361cc7ef45162d07ad25520a3",
+    "source_updated": "2026-08-26",
+    "text_sha256": "c0d08377e3bc21232725be2db1738f5bec274cc361cc7ef45162d07ad25520a3"
+  },
+  "sources/runaway-electron-generation-iter-mitigated-disruptions-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/runaway-electron-generation-iter-mitigated-disruptions-2026.md",
+    "source_sha256": "1accdd7bc9a4a063cb2b961eb0ddb61b714b86328a47562d9af9aa6065bb7c2a",
+    "source_updated": "2026-08-26",
+    "text_sha256": "1accdd7bc9a4a063cb2b961eb0ddb61b714b86328a47562d9af9aa6065bb7c2a"
+  },
+  "sources/sindelar-2023-tritium-accountancy-control-challenges-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/sindelar-2023-tritium-accountancy-control-challenges-fusion.md",
+    "source_sha256": "cb5de7ba71ab43fd3b2c8a503ffa40122dc92bb70de351db19120ab8352fcf49",
+    "source_updated": "2026-10-19",
+    "text_sha256": "cb5de7ba71ab43fd3b2c8a503ffa40122dc92bb70de351db19120ab8352fcf49"
+  },
+  "sources/sparc-first-campaign-cgyro-predictions.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/sparc-first-campaign-cgyro-predictions.md",
+    "source_sha256": "7cc5d9b9dc38c5715d691fcc12826805c6bd7cd51d18f6342de1411f37efb4ed",
+    "source_updated": "2026-08-26",
+    "text_sha256": "7cc5d9b9dc38c5715d691fcc12826805c6bd7cd51d18f6342de1411f37efb4ed"
+  },
+  "sources/sparc-toroidal-field-model-coil-program.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/sparc-toroidal-field-model-coil-program.md",
+    "source_sha256": "64a267a15899e349414c0a1ee5a6ee0a932d4fc0575f64eb1cc7eb1e7f2de51e",
+    "source_updated": "2026-08-26",
+    "text_sha256": "64a267a15899e349414c0a1ee5a6ee0a932d4fc0575f64eb1cc7eb1e7f2de51e"
+  },
+  "sources/srnl-2013-tritium-accountancy-in-fusion-systems.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/srnl-2013-tritium-accountancy-in-fusion-systems.md",
+    "source_sha256": "6744d390f2765ae75a188fef66a2a711c9c988ac4381e98a0a014ad0e61c2962",
+    "source_updated": "2026-10-19",
+    "text_sha256": "6744d390f2765ae75a188fef66a2a711c9c988ac4381e98a0a014ad0e61c2962"
+  },
+  "sources/st-e1-neutronics-crossref-metadata-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/st-e1-neutronics-crossref-metadata-2026.md",
+    "source_sha256": "091f8d3f45e14eeaf62810d29d879f9d93bdd6abed2409d48da952e0d830f633",
+    "source_updated": "2026-11-02",
+    "text_sha256": "091f8d3f45e14eeaf62810d29d879f9d93bdd6abed2409d48da952e0d830f633"
+  },
+  "sources/st-e1-tritium-systems-crossref-metadata-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/st-e1-tritium-systems-crossref-metadata-2026.md",
+    "source_sha256": "d8398a8833577b043b06b47f2eda356cd2c64ec6d2e9adedf766cdebb271bac6",
+    "source_updated": "2026-11-02",
+    "text_sha256": "d8398a8833577b043b06b47f2eda356cd2c64ec6d2e9adedf766cdebb271bac6"
+  },
+  "sources/tcv-predict-first-rampdown-2025.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/tcv-predict-first-rampdown-2025.md",
+    "source_sha256": "5e53e2428636943eb4dddf14aa6d349773fc5b58f97d0616829eb0612c1e8971",
+    "source_updated": "2026-08-26",
+    "text_sha256": "5e53e2428636943eb4dddf14aa6d349773fc5b58f97d0616829eb0612c1e8971"
+  },
+  "sources/thalia-hera-ukaea-tritium-accountancy-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/thalia-hera-ukaea-tritium-accountancy-2026.md",
+    "source_sha256": "db07d215d5c51216859e1dbb5f07c67e418e09b94abd369529f12836e25804f7",
+    "source_updated": "2026-10-19",
+    "text_sha256": "db07d215d5c51216859e1dbb5f07c67e418e09b94abd369529f12836e25804f7"
+  },
+  "sources/tokamak-agnostic-elm-crossref-metadata-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/tokamak-agnostic-elm-crossref-metadata-2026.md",
+    "source_sha256": "918cffe7b33e3e25852540afff5a1c70c10e3520c92b42c5e67e7e258ba7611d",
+    "source_updated": "2026-08-26",
+    "text_sha256": "918cffe7b33e3e25852540afff5a1c70c10e3520c92b42c5e67e7e258ba7611d"
+  },
+  "sources/tokamak-cooling-systems-and-power-conversion-system-options.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/tokamak-cooling-systems-and-power-conversion-system-options.md",
+    "source_sha256": "deeff440c87828ecc04a2c96fc7e5cbd3514a908d748d1f50c21bd5077c04df1",
+    "source_updated": "2026-09-12",
+    "text_sha256": "deeff440c87828ecc04a2c96fc7e5cbd3514a908d748d1f50c21bd5077c04df1"
+  },
+  "sources/too-cheap-to-meter-stochastic-fusion-costs-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/too-cheap-to-meter-stochastic-fusion-costs-2026.md",
+    "source_sha256": "95dc2f0ffb3c304fd891c8c88ecd3e65a5f2a3c3cff26f82e9b1927abb8e26ee",
+    "source_updated": "2026-08-26",
+    "text_sha256": "95dc2f0ffb3c304fd891c8c88ecd3e65a5f2a3c3cff26f82e9b1927abb8e26ee"
+  },
+  "sources/toward-icf-energy-based-on-heavy-ion-beam.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/toward-icf-energy-based-on-heavy-ion-beam.md",
+    "source_sha256": "2528fda9b9655ec37ad438ff3810ccb99075194ba51bd627223e80b8c74058aa",
+    "source_updated": "2026-08-26",
+    "text_sha256": "2528fda9b9655ec37ad438ff3810ccb99075194ba51bd627223e80b8c74058aa"
+  },
+  "sources/uk-fusion-strategy-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/uk-fusion-strategy-2026.md",
+    "source_sha256": "3f10be5aa12b6f59245b76da0712380a0325ad783f1bf0ffea053bc883fe5c6e",
+    "source_updated": "2026-08-26",
+    "text_sha256": "3f10be5aa12b6f59245b76da0712380a0325ad783f1bf0ffea053bc883fe5c6e"
+  },
+  "sources/ukaea-2026-vanadium-strategy.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/ukaea-2026-vanadium-strategy.md",
+    "source_sha256": "171268be2682ccfde01553f99cb7fdd952f43d645502191501b88541f9919150",
+    "source_updated": "2026-11-02",
+    "text_sha256": "171268be2682ccfde01553f99cb7fdd952f43d645502191501b88541f9919150"
+  },
+  "sources/willis-2026-st-e1-pre-concept-design-overview.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/willis-2026-st-e1-pre-concept-design-overview.md",
+    "source_sha256": "97198d186c29ce1a2348a65484ef349ef4012d9b006dfb8d37e8fa49b85a70a1",
+    "source_updated": "2026-10-19",
+    "text_sha256": "97198d186c29ce1a2348a65484ef349ef4012d9b006dfb8d37e8fa49b85a70a1"
+  },
+  "sources/wurzel-hsu-2025-lawson-criterion-progress-update.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/wurzel-hsu-2025-lawson-criterion-progress-update.md",
+    "source_sha256": "47eaf6ddf6af236c9ebe6fc93901c8c14da197dd6986066def5c5635628bbafd",
+    "source_updated": "2026-08-26",
+    "text_sha256": "47eaf6ddf6af236c9ebe6fc93901c8c14da197dd6986066def5c5635628bbafd"
+  },
+  "sources/yang-2026-st-e1-tritium-tmap8-surrogate-models.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/sources/yang-2026-st-e1-tritium-tmap8-surrogate-models.md",
+    "source_sha256": "7105c95b8ed97216fef7f48ac8b1dd73e707cd89dd4c127c082b2ccec0b5a9ff",
+    "source_updated": "2026-10-19",
+    "text_sha256": "7105c95b8ed97216fef7f48ac8b1dd73e707cd89dd4c127c082b2ccec0b5a9ff"
+  },
+  "synthesis/00-executive-summary.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/00-executive-summary.md",
+    "source_sha256": "c9fca3c538ea2810a2ec910af0fca364ce4ecc208b771ad2ec8fa8b6ecabdfbb",
+    "source_updated": "2026-08-29",
+    "text_sha256": "c9fca3c538ea2810a2ec910af0fca364ce4ecc208b771ad2ec8fa8b6ecabdfbb"
+  },
+  "synthesis/01-fusion-physics-fundamentals.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/01-fusion-physics-fundamentals.md",
+    "source_sha256": "ab1fffeca56f668852ca649b51cf21168da8d16c0761ec25ed8bcb599b56d50b",
+    "source_updated": "2026-08-26",
+    "text_sha256": "ab1fffeca56f668852ca649b51cf21168da8d16c0761ec25ed8bcb599b56d50b"
+  },
+  "synthesis/02-history-1920-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/02-history-1920-2026.md",
+    "source_sha256": "110668fe2081517c83124fa85e747b23f2cbaeb9c2a7006c2c9249c8abe803cb",
+    "source_updated": "2026-08-26",
+    "text_sha256": "110668fe2081517c83124fa85e747b23f2cbaeb9c2a7006c2c9249c8abe803cb"
+  },
+  "synthesis/03-confinement-approaches.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/03-confinement-approaches.md",
+    "source_sha256": "5d198be12fafe5b4daa0b71312be58d03cf8493c2a1683c29e7a59ee830eb01a",
+    "source_updated": "2026-08-29",
+    "text_sha256": "5d198be12fafe5b4daa0b71312be58d03cf8493c2a1683c29e7a59ee830eb01a"
+  },
+  "synthesis/04-magnetic-confinement-devices.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/04-magnetic-confinement-devices.md",
+    "source_sha256": "71d113045d63fe116d0967693abb2da57902ef2620b1220f2685a54bbdc92db4",
+    "source_updated": "2026-09-08",
+    "text_sha256": "71d113045d63fe116d0967693abb2da57902ef2620b1220f2685a54bbdc92db4"
+  },
+  "synthesis/05-inertial-confinement-fusion.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/05-inertial-confinement-fusion.md",
+    "source_sha256": "05a628c1c2a63c4b36549c9fa3f1317498f4d1cb4e39d925db8a5cbc415a71d6",
+    "source_updated": "2026-08-26",
+    "text_sha256": "05a628c1c2a63c4b36549c9fa3f1317498f4d1cb4e39d925db8a5cbc415a71d6"
+  },
+  "synthesis/06-iter-program.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/06-iter-program.md",
+    "source_sha256": "7415ae5fcd5b2834e6fe84d03383a09929ed8ff5411fb7c875233cf87867549b",
+    "source_updated": "2026-08-26",
+    "text_sha256": "7415ae5fcd5b2834e6fe84d03383a09929ed8ff5411fb7c875233cf87867549b"
+  },
+  "synthesis/07-private-fusion-industry.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/07-private-fusion-industry.md",
+    "source_sha256": "b14905795f8f4ac0829ca5ecedc290fd6b23f4e0ba080eeb6cf4a3ec0ef440d1",
+    "source_updated": "2026-09-02",
+    "text_sha256": "b14905795f8f4ac0829ca5ecedc290fd6b23f4e0ba080eeb6cf4a3ec0ef440d1"
+  },
+  "synthesis/08-national-programs.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/08-national-programs.md",
+    "source_sha256": "640cfff259c4df4ad0409c84d7290045c114728709343b0836da8985ac838008",
+    "source_updated": "2026-08-29",
+    "text_sha256": "640cfff259c4df4ad0409c84d7290045c114728709343b0836da8985ac838008"
+  },
+  "synthesis/09-engineering-challenges.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/09-engineering-challenges.md",
+    "source_sha256": "42e15df6913c17e90d8b581d6af7bfd81af725add2abf3498e85bfb256b26366",
+    "source_updated": "2026-10-19",
+    "text_sha256": "42e15df6913c17e90d8b581d6af7bfd81af725add2abf3498e85bfb256b26366"
+  },
+  "synthesis/10-economics-and-markets.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/10-economics-and-markets.md",
+    "source_sha256": "d6e3bce0e9c1bd17a8e1116e17ae3f93c4cb52561e15f67476c9647fd513e766",
+    "source_updated": "2026-08-29",
+    "text_sha256": "d6e3bce0e9c1bd17a8e1116e17ae3f93c4cb52561e15f67476c9647fd513e766"
+  },
+  "synthesis/11-policy-regulation-safety.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/11-policy-regulation-safety.md",
+    "source_sha256": "1e57b82674ba3fcd63b46ee22d8ef311d0bece13a2d26a2646ba4adf3b44e043",
+    "source_updated": "2026-10-19",
+    "text_sha256": "1e57b82674ba3fcd63b46ee22d8ef311d0bece13a2d26a2646ba4adf3b44e043"
+  },
+  "synthesis/12-state-of-play-2026.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/12-state-of-play-2026.md",
+    "source_sha256": "5fc9d7117cfbd74af3e796672ca6e410b1bdd86c5a14c2fb482f868a63af5aec",
+    "source_updated": "2026-08-26",
+    "text_sha256": "5fc9d7117cfbd74af3e796672ca6e410b1bdd86c5a14c2fb482f868a63af5aec"
+  },
+  "synthesis/13-roadmap-to-2040.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/13-roadmap-to-2040.md",
+    "source_sha256": "96770682c4702a00d2486a414176e8beb647d9320295ce75ed93021f042092ed",
+    "source_updated": "2026-09-08",
+    "text_sha256": "96770682c4702a00d2486a414176e8beb647d9320295ce75ed93021f042092ed"
+  },
+  "synthesis/14-open-problems-and-risks.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/14-open-problems-and-risks.md",
+    "source_sha256": "df93f93652c7bea68a615a9de47d6627d0807be04b93a54c3cd5fbae5c86c1c0",
+    "source_updated": "2026-10-19",
+    "text_sha256": "df93f93652c7bea68a615a9de47d6627d0807be04b93a54c3cd5fbae5c86c1c0"
+  },
+  "synthesis/15-references.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/15-references.md",
+    "source_sha256": "6ff932d35c3068e6702c97c138726b4e989bcf630d018a9bc677c20c6e8831c9",
+    "source_updated": "2026-08-26",
+    "text_sha256": "6ff932d35c3068e6702c97c138726b4e989bcf630d018a9bc677c20c6e8831c9"
+  },
+  "synthesis/16-heating-current-drive-fuelling.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/16-heating-current-drive-fuelling.md",
+    "source_sha256": "b0db373a33178809f9daca22c37c117efc0ba6453cfa6150c25a47f7704c02fd",
+    "source_updated": "2026-08-26",
+    "text_sha256": "b0db373a33178809f9daca22c37c117efc0ba6453cfa6150c25a47f7704c02fd"
+  },
+  "synthesis/17-diagnostics-control-disruption.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/17-diagnostics-control-disruption.md",
+    "source_sha256": "fdbdd72bc1ffe44851cab0ab779a80aa7edd17696d3b809f967aa1507701e7a1",
+    "source_updated": "2026-08-26",
+    "text_sha256": "fdbdd72bc1ffe44851cab0ab779a80aa7edd17696d3b809f967aa1507701e7a1"
+  },
+  "synthesis/18-superconductors-and-magnets.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/18-superconductors-and-magnets.md",
+    "source_sha256": "ab554e61e9fd3e6be6027a582f0fa0450a8198707935a74e7d8947a0ac3e39c6",
+    "source_updated": "2026-11-02",
+    "text_sha256": "bd900291d8d60b624134f55ede99b394c6d6ab3bb547535b7ae5f72ca2e57129"
+  },
+  "synthesis/19-simulation-codes-nuclear-data.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/19-simulation-codes-nuclear-data.md",
+    "source_sha256": "2830edfa4fb395481052debfe71f91fb9e9a063cf37e3f58fd98360a2bb053ce",
+    "source_updated": "2026-11-02",
+    "text_sha256": "0a7f6fb4f7351472c28a0d01ef5f9496b552ecc8a6d50d639b8b3da328088f49"
+  },
+  "synthesis/20-fusion-beyond-electricity.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/20-fusion-beyond-electricity.md",
+    "source_sha256": "900cf7d208b4cced8caeafb8bca07543098f7790e3ed812a0de3b9cffe8f6362",
+    "source_updated": "2026-08-26",
+    "text_sha256": "900cf7d208b4cced8caeafb8bca07543098f7790e3ed812a0de3b9cffe8f6362"
+  },
+  "synthesis/21-the-graveyard.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/21-the-graveyard.md",
+    "source_sha256": "cf376216e8c01ce7a7a9094e9ecd4c404aaf3c2b8b026ec334077ef4c39b0227",
+    "source_updated": "2026-08-29",
+    "text_sha256": "cf376216e8c01ce7a7a9094e9ecd4c404aaf3c2b8b026ec334077ef4c39b0227"
+  },
+  "synthesis/22-critical-materials-supply-chains.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/22-critical-materials-supply-chains.md",
+    "source_sha256": "d6ff9b8ef0050f4d875db52eeda5c50daa082780430aa7d1aff91b2cbce0b1a3",
+    "source_updated": "2026-11-02",
+    "text_sha256": "7d40ae9e6738e4d6b44046c6f62147066bd4f9fef4ad83d5f89c6288c9c462fe"
+  },
+  "synthesis/23-standards-codes-liability.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/23-standards-codes-liability.md",
+    "source_sha256": "9443733e997c01d4f2ff9a93e98833d80f65179173ce8df6f7be170b53653de2",
+    "source_updated": "2026-08-29",
+    "text_sha256": "9443733e997c01d4f2ff9a93e98833d80f65179173ce8df6f7be170b53653de2"
+  },
+  "synthesis/24-grid-integration-and-operations.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/24-grid-integration-and-operations.md",
+    "source_sha256": "5aa6a79bb0fc01e7f0ccb672fc085a19e11c3d518f53bed4bd2b85177a8ae258",
+    "source_updated": "2026-09-12",
+    "text_sha256": "5aa6a79bb0fc01e7f0ccb672fc085a19e11c3d518f53bed4bd2b85177a8ae258"
+  },
+  "synthesis/25-failure-case-studies.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/25-failure-case-studies.md",
+    "source_sha256": "a142c4e3cbdde1dd8e91b783abbcab382ae58b25d3069701c71ff4c5fc735234",
+    "source_updated": "2026-09-02",
+    "text_sha256": "a142c4e3cbdde1dd8e91b783abbcab382ae58b25d3069701c71ff4c5fc735234"
+  },
+  "synthesis/26-appendix-quantitative-data.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/26-appendix-quantitative-data.md",
+    "source_sha256": "c4e6d962198c256c41434106185ef4f30fc7008cb530c6f18f268727726ec2c5",
+    "source_updated": "2026-08-26",
+    "text_sha256": "c4e6d962198c256c41434106185ef4f30fc7008cb530c6f18f268727726ec2c5"
+  },
+  "synthesis/27-people-institutions-public-trust.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/27-people-institutions-public-trust.md",
+    "source_sha256": "09167ea127819590feb228c1e6867149c85a60c43e1f5cfb1f4d04db31e882e1",
+    "source_updated": "2026-08-29",
+    "text_sha256": "09167ea127819590feb228c1e6867149c85a60c43e1f5cfb1f4d04db31e882e1"
+  },
+  "synthesis/28-vacuum-wall-conditioning-tritium-plant.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/28-vacuum-wall-conditioning-tritium-plant.md",
+    "source_sha256": "6627fcd37d8d992500e80688b3a4e7f796a1915b799e097410adf50f32143f0e",
+    "source_updated": "2026-11-02",
+    "text_sha256": "895c05e3960de07ddb472211ff30f901d6356bec258ebed2f9a4064cf686e50f"
+  },
+  "synthesis/29-remote-handling-and-maintenance.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/29-remote-handling-and-maintenance.md",
+    "source_sha256": "3ca1168338ec8373cdbc76331860e8fb286730a9efd486a0b4cb808873df3392",
+    "source_updated": "2026-08-26",
+    "text_sha256": "3ca1168338ec8373cdbc76331860e8fb286730a9efd486a0b4cb808873df3392"
+  },
+  "synthesis/30-power-plant-designs-compared.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/30-power-plant-designs-compared.md",
+    "source_sha256": "d8b190db8289936fe43bc2cf14b625ea71106c6098cd129aea2730d5234f8ad0",
+    "source_updated": "2026-10-19",
+    "text_sha256": "d8b190db8289936fe43bc2cf14b625ea71106c6098cd129aea2730d5234f8ad0"
+  },
+  "synthesis/31-plasma-physics-deeper-cuts.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/31-plasma-physics-deeper-cuts.md",
+    "source_sha256": "b2683bd8e10dc320f2f6614be4df3a9e04d4f5165a017658146b74a7e857997b",
+    "source_updated": "2026-08-26",
+    "text_sha256": "b2683bd8e10dc320f2f6614be4df3a9e04d4f5165a017658146b74a7e857997b"
+  },
+  "synthesis/32-heavy-ion-fusion-and-pulsed-power.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/32-heavy-ion-fusion-and-pulsed-power.md",
+    "source_sha256": "6c2e45906fbd88bdb05b2f64d86d2db264d16dbccd6a399988399b964cae04f7",
+    "source_updated": "2026-08-29",
+    "text_sha256": "6c2e45906fbd88bdb05b2f64d86d2db264d16dbccd6a399988399b964cae04f7"
+  },
+  "synthesis/33-safety-environment-decommissioning.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/33-safety-environment-decommissioning.md",
+    "source_sha256": "bd7ac0ea10f4ddb134e04d1bcb1b0c9a3902b30815b949e5cbfa472cf0cf8d88",
+    "source_updated": "2026-08-29",
+    "text_sha256": "bd7ac0ea10f4ddb134e04d1bcb1b0c9a3902b30815b949e5cbfa472cf0cf8d88"
+  },
+  "synthesis/34-investment-mechanics.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/34-investment-mechanics.md",
+    "source_sha256": "50d61d929b484530feb62c44a65b4f24484487a9257ef518a48fb63c35635951",
+    "source_updated": "2026-08-29",
+    "text_sha256": "50d61d929b484530feb62c44a65b4f24484487a9257ef518a48fb63c35635951"
+  },
+  "synthesis/35-fusion-and-climate.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/35-fusion-and-climate.md",
+    "source_sha256": "637a63b8c06934be18de29dc861c892cca0d1ee877eab1532ee6f5a56d60a50b",
+    "source_updated": "2026-08-26",
+    "text_sha256": "637a63b8c06934be18de29dc861c892cca0d1ee877eab1532ee6f5a56d60a50b"
+  },
+  "synthesis/36-fusions-global-periphery.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/36-fusions-global-periphery.md",
+    "source_sha256": "95935cda0f9fb4ba79b6cb2b26f13b397210db9699af9c329d5c91de9afe686b",
+    "source_updated": "2026-08-26",
+    "text_sha256": "95935cda0f9fb4ba79b6cb2b26f13b397210db9699af9c329d5c91de9afe686b"
+  },
+  "synthesis/37-military-dual-use-security.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/37-military-dual-use-security.md",
+    "source_sha256": "e74c01a7fa46c0b9079701be2c16cb2e92a017b309e8b1f365cc522021b87173",
+    "source_updated": "2026-10-19",
+    "text_sha256": "e74c01a7fa46c0b9079701be2c16cb2e92a017b309e8b1f365cc522021b87173"
+  },
+  "synthesis/38-component-manufacturing.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/38-component-manufacturing.md",
+    "source_sha256": "743318b3c4d03f365706447698f9ac88d111850af4ed2ed4dc10f2c733bf5e92",
+    "source_updated": "2026-11-02",
+    "text_sha256": "78e35797c16a52dffb5369a56fd3325bcc2ab7f3940c4e21f2820f549ad8b9f0"
+  },
+  "synthesis/39-the-discourse.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/39-the-discourse.md",
+    "source_sha256": "f8c7d42ef884765b4556f6d5eb23ccae56300c4326ce2c90252ae27afb3c8807",
+    "source_updated": "2026-08-29",
+    "text_sha256": "f8c7d42ef884765b4556f6d5eb23ccae56300c4326ce2c90252ae27afb3c8807"
+  },
+  "synthesis/40-ai-for-fusion-transferable-control.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/40-ai-for-fusion-transferable-control.md",
+    "source_sha256": "1be04cdd5921b671df7a865a7ed690a09ab598f06144156f34a95c2ebbdb9ab9",
+    "source_updated": "2026-08-26",
+    "text_sha256": "1be04cdd5921b671df7a865a7ed690a09ab598f06144156f34a95c2ebbdb9ab9"
+  },
+  "synthesis/41-fusion-regulation-beyond-the-united-states.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/41-fusion-regulation-beyond-the-united-states.md",
+    "source_sha256": "d17c8c7eafc9a443c79b974158c918a073b16a5cca73c8decf5a6a150271ecc1",
+    "source_updated": "2026-08-29",
+    "text_sha256": "d17c8c7eafc9a443c79b974158c918a073b16a5cca73c8decf5a6a150271ecc1"
+  },
+  "synthesis/42-public-acceptability-siting-social-licence.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/42-public-acceptability-siting-social-licence.md",
+    "source_sha256": "69fb6a8b6a75eaac51bdfdcde56de1fd908ed7468a4064a6a29e05630e9949b6",
+    "source_updated": "2026-08-26",
+    "text_sha256": "69fb6a8b6a75eaac51bdfdcde56de1fd908ed7468a4064a6a29e05630e9949b6"
+  },
+  "synthesis/43-fusion-waste-classification-and-disposal.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/43-fusion-waste-classification-and-disposal.md",
+    "source_sha256": "df3a68bf4e4553bfb0f978a0968188cf8c3ca2fe1924ec82b7d1034f54a74644",
+    "source_updated": "2026-08-29",
+    "text_sha256": "df3a68bf4e4553bfb0f978a0968188cf8c3ca2fe1924ec82b7d1034f54a74644"
+  },
+  "synthesis/44-state-capital-and-the-public-balance-sheet.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/44-state-capital-and-the-public-balance-sheet.md",
+    "source_sha256": "9a5f8e3c0566e6c37f4544a7d45f1587da22d686c89e631f1a8b3c46a4d76b39",
+    "source_updated": "2026-08-29",
+    "text_sha256": "9a5f8e3c0566e6c37f4544a7d45f1587da22d686c89e631f1a8b3c46a4d76b39"
+  },
+  "synthesis/45-survivorship-failure-and-retrenchment.md": {
+    "added": "2026-11-11",
+    "source_path": "wiki/synthesis/45-survivorship-failure-and-retrenchment.md",
+    "source_sha256": "819f6070cb2f5bbcdc775a7d6d5805d96414e172be7375588aedcb0fa3d37780",
+    "source_updated": "2026-08-29",
+    "text_sha256": "819f6070cb2f5bbcdc775a7d6d5805d96414e172be7375588aedcb0fa3d37780"
+  }
+}
