@@ -58,11 +58,13 @@ def header(prefix='', library=False):
 def footer(prefix=''):
     return f'''<footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="{prefix}index.html">LUX <small>by Voelori</small></a><p>AI, fusion, and the possibilities ahead.</p><nav aria-label="Footer"><a href="{prefix}method.html">Evidence &amp; method</a><a href="{prefix}updates.html">Updates</a><a href="https://github.com/DionNedeh/Project-Lux">GitHub ↗</a></nav><span class="draft-label">A Voelori research resource</span></div></footer>'''
 
-def page(title, description, path, body, prefix='', scripts=(), noindex=False):
+def page(title, description, path, body, prefix='', scripts=(), noindex=False, full_title=None):
     canonical=ORIGIN+BASE+path
+    # Pages read "<title> — Project Lux"; the homepage leads with the project name instead.
+    full_title=full_title or f'{title} — Project Lux'
     script_html=''.join(f'<script src="{prefix}{asset(s)}" defer></script>' for s in scripts)
     robots='<meta name="robots" content="noindex">' if noindex else ''
-    return f'''<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>{E(title)} — Project Lux</title><meta name="description" content="{E(short(description))}"><link rel="canonical" href="{canonical}"><meta property="og:title" content="{E(title)} — Project Lux"><meta property="og:description" content="{E(short(description))}"><meta property="og:type" content="website"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{ORIGIN+BASE}assets/social-card.png"><meta name="twitter:card" content="summary_large_image">{robots}<link rel="icon" href="{prefix}assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="{prefix}{asset('styles.css')}">{script_html}</head><body>{header(prefix,path=='library/index.html')}<main id="main">{body}</main>{footer(prefix)}</body></html>'''
+    return f'''<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f2e9"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>{E(full_title)}</title><meta name="description" content="{E(short(description))}"><link rel="canonical" href="{canonical}"><meta property="og:title" content="{E(full_title)}"><meta property="og:description" content="{E(short(description))}"><meta property="og:type" content="website"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{ORIGIN+BASE}assets/social-card.png"><meta name="twitter:card" content="summary_large_image">{robots}<link rel="icon" href="{prefix}assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="{prefix}{asset('styles.css')}">{script_html}</head><body>{header(prefix,path=='library/index.html')}<main id="main">{body}</main>{footer(prefix)}</body></html>'''
 
 def load_docs():
     manifest=json.loads((ROOT/'tools/library-manifest.json').read_text(encoding='utf-8'))
@@ -263,7 +265,7 @@ def build_home(docs,refs):
     # The approved visual direction is retained; shared site metadata/navigation is generated.
     body=''.join(str(child) for child in main.contents)
     body=body.replace('<p>Start with a guide, open a study, or inspect its limitations.',f'<p>Start with a guide, open a study, or inspect its limitations.')
-    write('index.html',page('Intelligence for a brighter energy future','Project Lux explores how AI can help advance fusion energy. Explore the experiments, engineering, and evidence.','index.html',body,scripts=('site.js',)))
+    write('index.html',page('Intelligence for a brighter energy future','Project Lux explores how AI can help advance fusion energy. Explore the experiments, engineering, and evidence.','index.html',body,scripts=('site.js',),full_title='Project Lux — Intelligence for a brighter energy future'))
 
 def info_page(title,deck,content,path):
     body=f'<section class="doc-head"><div class="wrap reading"><p class="eyebrow">Project Lux / A Voelori initiative</p><h1>{title}</h1><p class="doc-deck">{deck}</p></div></section><article class="wrap reading doc-body prose">{content}</article>'
