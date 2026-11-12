@@ -36,7 +36,9 @@ def write(rel, text):
     path.write_text(text,encoding='utf-8',newline='\n')
 
 def asset(rel):
-    return rel+'?v='+hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()[:12]
+    # Git normalises text assets to LF. Hash the same text on Windows and Linux.
+    content = (ROOT/rel).read_text(encoding='utf-8').encode('utf-8')
+    return rel+'?v='+hashlib.sha256(content).hexdigest()[:12]
 
 def human(iso):
     d=date.fromisoformat(str(iso)[:10])

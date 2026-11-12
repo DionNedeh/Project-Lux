@@ -16,7 +16,7 @@ Prepared 11 November 2026 for Project Lux's first GitHub Pages release.
 | Static build and all-page validation | 295 HTML pages; 16,863 local link and asset references checked; zero reported errors |
 | Original source text hashes | All 282 published notes matched the recorded normalised text hashes |
 | Repeat generation | All 298 tracked generated outputs were unchanged on a repeat build |
-| Markdown renderer regression tests | 6 passed |
+| Markdown renderer and cross-platform asset regression tests | 7 passed |
 | JavaScript syntax checks | Passed for the homepage and catalogue scripts |
 | Browser suite | 20 passed using installed Microsoft Edge in headless mode on Windows |
 | All-note HTTP and heading check | All 282 complete research pages returned successfully in the local publication preview |
@@ -31,6 +31,8 @@ Manual screenshot review covered the desktop homepage, mobile catalogue, a full 
 ## Deployment verification
 
 The GitHub Actions workflow independently installs the pinned dependencies on Linux, rebuilds the site, checks that committed output is current, runs the renderer and Chromium browser suites, and then deploys the checked artifact. The workflow history records the actual result for each commit; this document does not substitute a local pass for a successful hosted run.
+
+The initial hosted run caught a Windows/Linux line-ending difference in asset version hashes and stopped before deployment. The generator was corrected to hash normalised text, with a regression test covering both line endings and real content changes. The clean-generation deployment gate remains in place.
 
 Live verification uses the same browser suite with `LUX_TEST_URL=https://dionnedeh.github.io/Project-Lux/`. See the release commit's workflow and the task handoff for the observed deployment and live-check result.
 

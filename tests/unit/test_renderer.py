@@ -1,6 +1,8 @@
 from pathlib import Path
 import sys
 import unittest
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
 from bs4 import BeautifulSoup
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'tools'))
@@ -9,6 +11,16 @@ import build_site as b
 class RendererTests(unittest.TestCase):
     def setUp(self):
         self.docs={'target':{'meta':{'title':'Target note'}}}
+
+    def test_asset_version_is_stable_across_checkout_line_endings(self):
+        with TemporaryDirectory() as directory, patch.object(b,'ROOT',Path(directory)):
+            stylesheet=Path(directory)/'styles.css'
+            stylesheet.write_bytes(b'body {\n  color: #333;\n}\n')
+            version=b.asset('styles.css')
+            stylesheet.write_bytes(b'body {\r\n  color: #333;\r\n}\r\n')
+            self.assertEqual(version,b.asset('styles.css'))
+            stylesheet.write_bytes(b'body {\n  color: #444;\n}\n')
+            self.assertNotEqual(version,b.asset('styles.css'))
 
     def test_wrapped_and_code_aliases_are_single_links(self):
         source='[[target|A wrapped\nlabel]] and [[target|`η_f · f_b`]]'
